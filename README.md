@@ -1,6 +1,6 @@
 # CESSDA Technical Guidelines
 
-This repository contains the tchnical guidelines for CESSDA ERIC.
+This repository contains the technical guidelines for CESSDA ERIC.
 
 ## Introduction
 
