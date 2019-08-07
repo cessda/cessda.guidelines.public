@@ -12,8 +12,6 @@ We welcome all feedback you may have when using any of our tools and services.
 
 If you encounter a problem while, please use the "Report a problem" button you find at the lower right corner of the website and choose "Bug" as the value of the Components field.
 
-Before submitting a report, please check the user manual at [....] as the problem might already be addressed there.
-
 ### Suggesting Enhancements
 
 To suggest new functionalities and possible future developments, please use the "Report a problem" button of the respective tool or service and choose "New Feature" or "Improvement" as the value of the Components field.
