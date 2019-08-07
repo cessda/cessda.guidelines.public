@@ -21,9 +21,10 @@ To suggest new functionalities and possible future developments, please use the 
 
 Development of all CESSDA tools and services is aligned with our roadmap and any functional requirements we have.
 
-External contributions can be
+External contributions can be accepted, if they provide funtionality CESSDA deems appropriate and are of acceptable quality.
+Specific requirements and criteria may apply to specific tools.
 
-If you consider to contribute to CESSDA services, please contact support@cessda before proceeding.
+If you consider to contribute to a CESSDA service, please contact support@cessda before proceeding.
 
 ### Practical matters
 

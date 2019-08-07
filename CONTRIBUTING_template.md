@@ -1,6 +1,6 @@
-# Contributing to [[CESSDA XYZ]] -- TEMPLATE! ADOPT BEFORE USE
+# Contributing to [CESSDA XYZ] -- TEMPLATE! ADOPT BEFORE USE
 
-Thank you for considering to contribute to [[CESSDA XYZ]].
+Thank you for considering to contribute to [CESSDA XYZ].
 
 Please note, that we welcome all forms of user feedback and are generally open to many forms of collaboration, but please read this document carefully before proceeding.
 General information on contributing to CESSDA Open Source Software can also be found in the [Contribution Guidelines](https://bitbucket.org/cessda/cessda.guidelines.public/src/master/CONTRIBUTING.md).
@@ -16,12 +16,12 @@ Before submitting a report, please make sure to check the user manual at [....] 
 
 ### Suggesting Enhancements
 
-To suggest new functionalities and possible future developments, please use the "Report a problem" button of the [[CESSDA XYZ]] interface and choose "New Feature".
+To suggest new functionalities and possible future developments, please use the "Report a problem" button of the [CESSDA XYZ] interface and choose "New Feature".
 
 
 ## Contributing to the development
 
-Development of [[CESSDA ZYX]] is aligned with our roadmap and requirements.
+Development of [CESSDA ZYX] is aligned with our roadmap and requirements.
 
 If you consider to contribute this repository, please contact support@cessda.eu before proceeding.
 
