@@ -21,7 +21,7 @@ For all CESSDA tools and services the following requirements must be met
 * The Intellectual Property must be clear.
 * A comprehensive [README](https://technical-reference.readthedocs.io/en/v0.1/developer-guidelines/02-readme.html) must be present.
 * The tool must be of proven acceptable [quality](quality.md).
-* Include contribution guidelines based on the [CONTRIBUTING.md template](CONTRIBUTING.md).
+* Include contribution guidelines based on the [CONTRIBUTING.md template](CONTRIBUTING_template.md).
 
 See also our [policy for archiving source code repositories](archiving.md).
 
