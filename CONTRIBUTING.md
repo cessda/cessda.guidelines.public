@@ -20,7 +20,7 @@ To suggest new functionalities and possible future developments, please use the 
 
 Development of all CESSDA tools and services is aligned with our roadmap and any functional requirements we have.
 
-External contributions can be accepted, if they provide funtionality CESSDA deems appropriate and are of acceptable quality.
+External contributions can be accepted, if they provide functionality CESSDA deems appropriate and are of acceptable quality.
 Specific requirements and criteria may apply to specific tools.
 
 If you want to contribute to CESSDA tools and services, please contact support@cessda.eu before proceeding.
@@ -28,9 +28,8 @@ If you want to contribute to CESSDA tools and services, please contact support@c
 ### Practical matters
 
 CESSDA ERIC reserves the right to accept or reject any contribution.
+
 For CESSDA to consider your contribution, the following criteria must be met.
 
 * You must sign the [CESSDA Contributor License Agreement](https://bit.ly/contrib_req)
 * You must adhere to [CESSDA's quality requirements](https://bitbucket.org/cessda/cessda.guidelines.public/src/master/quality.md)
-
-
