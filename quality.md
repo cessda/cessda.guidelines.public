@@ -6,7 +6,7 @@ The quality and acceptability of CESSDA tools and services is measured through t
 
 For a service to be operated by CESSDA, the following criteria must be met
 
-* All CAs must be met at "Expected"
+* All applicable CAs must be met at "Expected"
 * The relevant programing language's style guide must be followed and enforced through linting
 * unit testing coverage must be at 80% or above
 
