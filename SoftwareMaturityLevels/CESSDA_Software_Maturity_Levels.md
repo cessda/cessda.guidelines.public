@@ -46,31 +46,31 @@ of the technical Research Infrastructure is maintained.
 
 [CESSDA Software maturity levels](#cessda-software-maturity-levels)  
 
-[CA1: Documentation](./CA1_Documentation.md)  
+[CA1: Documentation](CA1_Documentation.md)  
 
-[CA2: Intellectual Property](./CA2-Intellectual-Property.md)  
+[CA2: Intellectual Property](CA2-Intellectual-Property.md)  
 
-[CA3: Extensibility](./CA3-Extensibility.md)  
+[CA3: Extensibility](CA3-Extensibility.md)  
 
-[CA4: Modularity](./CA4-Modularity.md)  
+[CA4: Modularity](CA4-Modularity.md)  
 
-[CA5: Packaging](./CA5-Packaging.md)  
+[CA5: Packaging](CA5-Packaging.md)  
 
-[CA6: Portability](./CA6-Portability.md)  
+[CA6: Portability](CA6-Portability.md)  
 
-[CA7: Standards Compliance](./CA7-Standards-Compliance.md)  
+[CA7: Standards Compliance](CA7-Standards-Compliance.md)  
 
-[CA8: Support](./CA8-Support.md)  
+[CA8: Support](CA8-Support.md)  
 
-[CA9: Verification and Testing](./CA9-Verification-and-Testing.md)  
+[CA9: Verification and Testing](CA9-Verification-and-Testing.md)  
 
-[CA10: Security](./CA10-Security.md)  
+[CA10: Security](CA10-Security.md)  
 
-[CA11: Internationalisation and Localisation](./CA11-Internationalisation-and-Localisation.md)  
+[CA11: Internationalisation and Localisation](CA11-Internationalisation-and-Localisation.md)  
 
-[CA12: Authentication and Authorisation](./CA12-Authentication-and-Authorisation.md)  
+[CA12: Authentication and Authorisation](CA12-Authentication-and-Authorisation.md)  
 
-[References](./SML_References.md)  
+[References](SML_References.md)  
 
 
 ## Glossary
