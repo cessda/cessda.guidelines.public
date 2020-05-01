@@ -1,4 +1,4 @@
-### <a name="ca2_intelectual_property">CA2: Intellectual Property
+### <a name="ca2_intelectual_property"></a>CA2: Intellectual Property
 
 -   Minimum standard - SML2
 
