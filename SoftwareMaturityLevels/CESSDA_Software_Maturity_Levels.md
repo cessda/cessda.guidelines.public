@@ -1,13 +1,12 @@
-# <a name="cessda_software_maturity_levels">CESSDA Software Maturity Levels  
-   
-## Management Summary  
+# CESSDA Software Maturity Levels  
 
+## Management Summary  
 
 ### Audience  
 
 Potential suppliers of software artefacts for the CESSDA technical
 research infrastructure. In the first instance, the CESSDA Service
-Providers, but potentially any software development organisation.
+Providers, but potentially any software development organisation.  
 
 ### Purpose  
 
@@ -15,13 +14,13 @@ This document is based on an extract from CESSDA Technical Architecture
 v1.0, May 2016 (the latest version of the latter can be found at \[5\]).
 It was created so that readers interested in CESSDA's Software Maturity
 Levels (SMLs) can find out more, without having to browse through the
-entire Technical Architecture document.\
-\
+entire Technical Architecture document.  
+
 Usability is not only a political imperative of European Research
 Infrastructure Consortiums' need to maximise their return on investment,
 but is also essential for growth with limited funds and ongoing
-interoperability.\
-\
+interoperability.  
+
 Mandating and checking the sustainability/usability of the software
 components of CESSDA's technical Research Infrastructure is essential if
 it is to strengthen and grow, however there are always risks attached,
@@ -29,7 +28,7 @@ for example: how much effort is required to integrate it into the
 current technical framework, how will it be maintained, does it conform
 to the standards required? Therefore the need to measure the maturity of
 software designed for use by CESSDA is essential to ensure the quality
-of the technical Research Infrastructure is maintained.
+of the technical Research Infrastructure is maintained.  
 
 ## Table of Contents  
 
@@ -77,7 +76,7 @@ of the technical Research Infrastructure is maintained.
 [References](#references)
 
 
-## <a name="glossary"></a>Glossary
+## Glossary
 
 
 | **Acronym**   | **Expansion**               | **Description** |
@@ -88,11 +87,11 @@ of the technical Research Infrastructure is maintained.
  | \-      |      Software artefacts           |        Software products, applications, services, components.|
 
 
-## <a name="scope"></a>Scope
+## Scope
 
 CESSDA Software Maturity Levels.
 
-## <a name="summary"></a>Summary
+## Summary
 
 
 This document lays out an approach for assessing the maturity of the
@@ -102,10 +101,10 @@ others have to meet as a prerequisite to supplying software artefacts
 for the RI.
 
 
-## <a name="software-maturity-levels"></a>Software Maturity Levels
+## Software Maturity Levels
 
 
-### <a name="objective"></a>Objective
+### Objective
 
 Mandating the sustainability/usability of the software components of the
 technical Research Infrastructure is essential if CESSDA is to
@@ -122,7 +121,7 @@ political imperative of research infrastructures as they need to
 demonstrate a return on investment, but is also essential for growth
 with limited funds and ongoing interoperability.
 
-### <a name="background"></a>Background
+### Background
 
 The measurement of maturity can be achieved in various ways. Services
 (and service management) use Capability Maturity Modelling, for example
@@ -135,8 +134,8 @@ adopted TRLs as part of the H2020 programme \[4\] and both FitSM and
 TRLs have been subsequently adopted by the EOSC-hub, which mandates that
 TRL Level 8 is the minimum acceptable for a system to be considered
 production-ready by them. Interestingly, both RRLs and TRLs were devised
-by and are widely used by NASA.\
-\
+by and are widely used by NASA.  
+
 RRLs define 9 levels of maturity ranging from 1 ("software is not
 recommended for reuse") to the most mature 9 ("software is being reused
 by many classes of users..."), however if we are to align a software
@@ -163,14 +162,12 @@ RRL6 - Software is reusable; the software can be reused by most users although t
 |RRL8 - Demonstrated local reusability; the software has been reused by multiple users. RRL9 - Demonstrated extensive reusability; the software is being reused by many classes of users over a wide range of systems.|CMM5 Optimised|SML5 - Demonstrable usability; there is clear evidence that the software is widely used by many users.|
 
 
-* <a name="table1"></a>Table 1: Correspondence of levels in RRL, CML and SML scales*    
+* Table 1: Correspondence of levels in RRL, CML and SML scales*    
 
 
-## <a name="cessda-software-maturity-levels"></a>CESSDA Software maturity levels
+## CESSDA Software maturity levels
 
 
 The software maturity levels provide guidance on what minimum, expected
 and excellent standards look like, and will be used to evaluate the
-products produced by SPs.\
-\
-*[[Next section](#ca1_documentation)]*
+products produced by SPs.

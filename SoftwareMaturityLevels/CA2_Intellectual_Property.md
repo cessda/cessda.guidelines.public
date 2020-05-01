@@ -1,4 +1,4 @@
-### <a name="ca2_intelectual_property"></a>CA2: Intellectual Property
+### CA2: Intellectual Property
 
 -   Minimum standard - SML2
 
@@ -58,6 +58,4 @@ code of the product, in the documentation, and in the expression of the
 software upon execution. The intellectual property rights statements are
 expressed in legal language, machine-readable code, and in concise
 statements in language that can be understood by laypersons, such as a
-pre-written, recognisable license.\
-\
-*[[Previous section](#ca1_documentationl)]* *[[Next section](#ca3_extensibility)]*
+pre-written, recognisable license.

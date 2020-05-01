@@ -1,4 +1,4 @@
-### <a name="ca3_extensibility"></a>CA3: Extensibility
+### CA3: Extensibility
 
 -   Minimum standard - SML3
 
@@ -56,6 +56,4 @@ modifying and extending features across a in multiple scenarios, with
 specific documentation and features to allow the building of extensions
 which are used across a range of domains by multiple user groups. There
 may be a library available of user-generated content for extensions and
-user generated documentation on extension is also available.\
-\
-*[[Previous section](#ca2_intelectual_property)]* *[[Next section](#ca4_modularity)]*
+user generated documentation on extension is also available.

@@ -1,4 +1,4 @@
-### <a name="ca1_documentation">CA1: Documentation
+### CA1: Documentation
 
 The NASA RRL scale looks at the overall document suite, but it would be
 both pragmatic and useful to break that down into three: end-user,
@@ -104,6 +104,4 @@ lifecycle are fully documented, including design, testing and future
 improvement planning. Documentation is appropriate for different
 categories of users. Documentation describes the current version of the
 software. User created documentation and comments form part of the
-documentation available.\
-\
-*[[Previous section](#cessda_software_maturity_levels)]* *[[Next section](#ca2_intelectual_property)]*
+documentation available.
