@@ -32,48 +32,45 @@ of the technical Research Infrastructure is maintained.
 
 ## Table of Contents  
 
-[Glossary](#glossary)
+[Glossary](#glossary)  
 
-[Scope](#scope)
+[Scope](#scope)  
 
-[Summary](#summary)
+[Summary](#summary)  
 
-[Software Maturity Levels](#software-maturity-levels)
+[Software Maturity Levels](#software-maturity-levels)  
 
-[Objective](#objective)
+[Objective](#objective)  
 
-[Background](#background)
+[Background](#background)  
 
-[CESSDA Software maturity levels](#cessda-software-maturity-levels)
+[CESSDA Software maturity levels](#cessda-software-maturity-levels)  
 
-[CA1: Documentation](CA1_Documentation.md)
-- [CA1.1: End-user Documentation](./CA1_Documentation.md)
-- [CA1.2: Operational Documentation](./CA1_Documentation.md)  
-- [CA1.3: Development Documentation](./CA1_Documentation.md)  
+[CA1: Documentation](./CA1_Documentation.md)  
 
-[CA2: Intellectual Property](./#CA2-Intellectual-Property.md)  
+[CA2: Intellectual Property](./CA2-Intellectual-Property.md)  
 
-[CA3: Extensibility](./#CA3-Extensibility.md)  
+[CA3: Extensibility](./CA3-Extensibility.md)  
 
-[CA4: Modularity](./#CA4-Modularity.md)
+[CA4: Modularity](./CA4-Modularity.md)  
 
-[CA5: Packaging](./#CA5-Packaging.md)  
+[CA5: Packaging](./CA5-Packaging.md)  
 
-[CA6: Portability](./#CA6-Portability.md)
+[CA6: Portability](./CA6-Portability.md)  
 
-[CA7: Standards Compliance](./#CA7-Standards-Compliance.md)
+[CA7: Standards Compliance](./CA7-Standards-Compliance.md)  
 
-[CA8: Support](./#CA8-Support.md)
+[CA8: Support](./CA8-Support.md)  
 
-[CA9: Verification and Testing](./#CA9-Verification-and-Testing.md)
+[CA9: Verification and Testing](./CA9-Verification-and-Testing.md)  
 
-[CA10: Security](./#CA10-Security.md)
+[CA10: Security](./CA10-Security.md)  
 
-[CA11: Internationalisation and Localisation](./#CA11-Internationalisation-and-Localisation.md)
+[CA11: Internationalisation and Localisation](./CA11-Internationalisation-and-Localisation.md)  
 
-[CA12: Authentication and Authorisation](./#CA12-Authentication-and-Authorisation.md)
+[CA12: Authentication and Authorisation](./CA12-Authentication-and-Authorisation.md)  
 
-[References](#references)
+[References](./SML_References.md)  
 
 
 ## Glossary
@@ -162,7 +159,7 @@ RRL6 - Software is reusable; the software can be reused by most users although t
 |RRL8 - Demonstrated local reusability; the software has been reused by multiple users. RRL9 - Demonstrated extensive reusability; the software is being reused by many classes of users over a wide range of systems.|CMM5 Optimised|SML5 - Demonstrable usability; there is clear evidence that the software is widely used by many users.|
 
 
-* Table 1: Correspondence of levels in RRL, CML and SML scales*    
+*Table 1: Correspondence of levels in RRL, CML and SML scales*    
 
 
 ## CESSDA Software maturity levels
