@@ -1,5 +1,7 @@
 # CESSDA Software Maturity Levels  
 
+The latest published version can be downloaded in PDF format from [CESSDA Software Maturity Levels](https://doi.org/10.5281/zenodo.2614050).
+
 ## Management Summary  
 
 ### Audience  
@@ -163,7 +165,6 @@ RRL6 - Software is reusable; the software can be reused by most users although t
 
 
 ## CESSDA Software maturity levels
-
 
 The software maturity levels provide guidance on what minimum, expected
 and excellent standards look like, and will be used to evaluate the
