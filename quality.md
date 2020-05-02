@@ -2,7 +2,7 @@
 
 CESSDA requires its tools and services to be of sufficient quality for sustainable operation.
 
-The quality and acceptability criteria for CESSDA tools and services is defined by the [CESSDA Software Maturity Levels](https://doi.org/10.5281/zenodo.2614050).
+The quality and acceptability criteria for CESSDA tools and services are defined by the [CESSDA Software Maturity Levels](./CESSDA_Software_Maturity_Levels.md).
 
 For a service to be operated by CESSDA, the following criteria must be met
 
