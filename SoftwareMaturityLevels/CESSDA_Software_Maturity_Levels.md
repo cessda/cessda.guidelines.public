@@ -75,7 +75,7 @@ of the technical Research Infrastructure is maintained.
 [References](SML_References.md)  
 
 
-## {: #glossary}Glossary
+## Glossary{#glossary}
 
 
 | **Acronym**   | **Expansion**               | **Description** |
