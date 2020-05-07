@@ -34,19 +34,19 @@ of the technical Research Infrastructure is maintained.
 
 ## Table of Contents  
 
-[Glossary](#glossary)  
+[Glossary](#Glossary)
 
-[Scope](#scope)  
+[Scope](#Scope)  
 
-[Summary](#summary)  
+[Summary](#Summary)  
 
-[Software Maturity Levels](#software-maturity-levels)  
+[Software Maturity Levels](#Software-Maturity-Levels)  
 
-[Objective](#objective)  
+[Objective](#Objective)  
 
-[Background](#background)  
+[Background](#Background)  
 
-[CESSDA Software maturity levels](#cessda-software-maturity-levels)  
+[CESSDA Software maturity levels](#Cessda-Software-Maturity-Levels)  
 
 [CA1: Documentation](CA1_Documentation.md)  
 
