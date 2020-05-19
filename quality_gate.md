@@ -1,6 +1,6 @@
 # CESSDA Quality Gate
 
-CESSDA uses [SonarQube](https://sonarqube.cessda.eu) to check the quality of software.
+CESSDA currently uses [SonarQube](https://sonarqube.cessda.eu) to check the quality of software.
 
 The quality gate used by CESSDA is
 
@@ -46,4 +46,3 @@ How secure is the code?
 - E = at least 1 Blocker Vulnerability
 
 See SonarQube [metric definitions](https://sonarqube.cessda.eu/documentation/user-guide/metric-definitions) for further details.
-
