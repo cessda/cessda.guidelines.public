@@ -1,6 +1,8 @@
 ---
 title: Code Archiving
 layout: page
+parent: Software Development
+nav_order: 060
 ---
 
 # CESSDA code archiving

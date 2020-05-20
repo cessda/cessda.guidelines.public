@@ -1,6 +1,8 @@
 ---
 title: Issue Tracking Workflow
 layout: page
+parent: Software Development
+nav_order: 050
 ---
 
 # Issue Tracking Workflow

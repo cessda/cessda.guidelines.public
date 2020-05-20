@@ -1,6 +1,8 @@
 ---
 title: Quality Gate
 layout: page
+parent: Software Development
+nav_order: 030
 ---
 
 # CESSDA Quality Gate

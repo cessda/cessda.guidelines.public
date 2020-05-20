@@ -1,6 +1,8 @@
 ---
 title: Release Policy
 layout: page
+parent: Software Development
+nav_order: 040
 ---
 
 # CESSDA Release policy
