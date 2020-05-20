@@ -1,15 +1,28 @@
 ---
-title: Release Policy
+title: Software Releases
 layout: page
 parent: Software Development
 nav_order: 040
 ---
 
-# CESSDA Release policy
+# Software Releases
+
+Releases of a CESSDA product must follow the [CESSDA Release Policy](#cessda-release-policy).
+
+As evidence of a release, in particular for proof of deliverable,
+the link to the git release tag inside a git repository
+that includes the updated changelog for the version
+referencing the relevant issues in the repository is provided.
+
+For contributions to upstream products, the link to the merged pull request(s) can be used instead,
+the list of changes done must then be included there.
+
+## CESSDA Release policy
 
 * Releases must follow [semantic versioning](https://semver.org/)
 * Releases must have an [up-to-date Changelog](https://technical-reference.readthedocs.io/en/v0.1/developer-guidelines/06-changelog.html)
 * Releases must be tagged in the git repository
 * Releases must be available as Docker images with the release version as tag
-* Release tarballs should be published on zenodo with DOIs referenced in the README.
+* Release tarballs should be published on Zenodo with the version independent DOI
+  suggested for citation unless referring to specific releases
 
