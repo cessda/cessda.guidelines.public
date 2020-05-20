@@ -11,7 +11,7 @@ For a software system to be operated by CESSDA as a TRL-8 production service, th
 * All applicable Software Maturity Level CAs must reach "Expected"
 * The relevant programming language's style guide must be followed and enforced through linting
 * The [quality gate](quality_gate.md) must be met
-* The average [availability](availability.md) over a rolling one month period must be at least 99%
+* The average [availability](availability.md) must be at least 99.9%
 * The [SSL server configuration](ssl_configuration.md) must be consistently rated at 'A' or above
 
 
@@ -19,7 +19,7 @@ For a software system to be operated by CESSDA as a TRL-7 beta service, the foll
 
 * All applicable Software Maturity Level CAs must reach "Expected"
 * The quality gate is relaxed to 50% Code Test Coverage and 10% Duplicated Code Lines
-* The average availability over a rolling one month period must be at least 90%
+* The average availability must be at least 90.0%
 * The SSL server configuration must be rated at 'B' or above
 
 
@@ -27,5 +27,5 @@ For a software system to be considered as a candidate for future integration, th
 
 * All applicable Software Maturity Level CAs must reach "Minimum"
 * The quality gate is relaxed to 50% Code Test Coverage and 10% Duplicated Code Lines
-* The average availability over a rolling one month period is not relevant
+* The average availability is not relevant
 * The SSL server configuration must be rated at 'B' or above
