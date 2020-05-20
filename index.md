@@ -1,3 +1,8 @@
+---
+title: Home
+layout: home
+---
+
 # CESSDA Technical Guidelines
 
 This repository contains the technical guidelines for CESSDA ERIC.
@@ -21,11 +26,11 @@ For all CESSDA tools and services the following requirements must be met
     * Ensure all files cary a short header, preferrably through its [SPDX indentifier](https://spdx.org/) `SPDX-License-Identifier: Apache-2.0`.
 * The Intellectual Property must be clear.
 * A comprehensive [README](https://technical-reference.readthedocs.io/en/v0.1/developer-guidelines/02-readme.html) must be present.
-* The tool must be of proven acceptable [quality](quality.md).
-* The CESSDA [release policy](releases.md) must be followed.
+* The tool must be of proven acceptable [quality]({% link quality.md %}).
+* The CESSDA [release policy]({% link releases.md %}) must be followed.
 * Documentation of Rest APIs is available using [OpenAPI Standard](https://swagger.io/docs/specification/about/).
-* The tool must be aligned with CESSDA [infrastructure design](infrastructure.md).
+* The tool must be aligned with CESSDA [infrastructure design]({% link infrastructure.md %}).
 * Include contribution guidelines based on the [CONTRIBUTING.md template](CONTRIBUTING_template.md).
 
-See also our [policy for archiving source code repositories](archiving.md).
+See also our [policy for archiving source code repositories]({% link archiving.md %}).
 

@@ -1,3 +1,8 @@
+---
+title: Quality Gate
+layout: page
+---
+
 # CESSDA Quality Gate
 
 CESSDA currently uses [SonarQube](https://sonarqube.cessda.eu) to check the quality of software.

@@ -1,27 +1,33 @@
-# CESSDA Software Maturity Levels  
+---
+title: Software Maturity Levels
+layout: page
+has_children: true
+---
+
+# CESSDA Software Maturity Levels
 
 The latest published version can be downloaded in PDF format from [CESSDA Software Maturity Levels](https://doi.org/10.5281/zenodo.2614050).
 
-## Management Summary  
+## Management Summary
 
-### Audience  
+### Audience
 
 Potential suppliers of software artefacts for the CESSDA technical
 research infrastructure. In the first instance, the CESSDA Service
-Providers, but potentially any software development organisation.  
+Providers, but potentially any software development organisation.
 
-### Purpose  
+### Purpose
 
 This document is based on an extract from CESSDA Technical Architecture
 v1.0, May 2016 (the latest version of the latter can be found at \[5\]).
 It was created so that readers interested in CESSDA's Software Maturity
 Levels (SMLs) can find out more, without having to browse through the
-entire Technical Architecture document.  
+entire Technical Architecture document.
 
 Usability is not only a political imperative of European Research
 Infrastructure Consortiums' need to maximise their return on investment,
 but is also essential for growth with limited funds and ongoing
-interoperability.  
+interoperability.
 
 Mandating and checking the sustainability/usability of the software
 components of CESSDA's technical Research Infrastructure is essential if
@@ -30,65 +36,7 @@ for example: how much effort is required to integrate it into the
 current technical framework, how will it be maintained, does it conform
 to the standards required? Therefore the need to measure the maturity of
 software designed for use by CESSDA is essential to ensure the quality
-of the technical Research Infrastructure is maintained.  
-
-## Table of Contents  
-
-[Glossary](#Glossary)
-
-[Scope](#Scope)  
-
-[Summary](#Summary)  
-
-[Software Maturity Levels](#Software-Maturity-Levels)  
-
-[Objective](#Objective)  
-
-[Background](#Background)  
-
-[CESSDA Software maturity levels](#Cessda-Software-Maturity-Levels)  
-
-[CA1: Documentation](CA1_Documentation.md)  
-
-[CA2: Intellectual Property](CA2-Intellectual-Property.md)  
-
-[CA3: Extensibility](CA3-Extensibility.md)  
-
-[CA4: Modularity](CA4-Modularity.md)  
-
-[CA5: Packaging](CA5-Packaging.md)  
-
-[CA6: Portability](CA6-Portability.md)  
-
-[CA7: Standards Compliance](CA7-Standards-Compliance.md)  
-
-[CA8: Support](CA8-Support.md)  
-
-[CA9: Verification and Testing](CA9-Verification-and-Testing.md)  
-
-[CA10: Security](CA10-Security.md)  
-
-[CA11: Internationalisation and Localisation](CA11-Internationalisation-and-Localisation.md)  
-
-[CA12: Authentication and Authorisation](CA12-Authentication-and-Authorisation.md)  
-
-[References](SML_References.md)  
-
-
-## Glossary
-
-
-| **Acronym**   | **Expansion**               | **Description** |
-|----------------------|----------------------|----------------------|
-| API      |     Application Programming Interface |   *"In computer programming, an application programming interface (API) is a set of routines, protocols, and tools for building software and applications."* Source: [[Wikipedia: Application programming interface]](https://en.wikipedia.org/wiki/Application_programming_interface)|
- | CI      |      Continuous Integration      |         *"The practice, in software engineering, of merging all developer working copies to a shared [mainline](https://en.wikipedia.org/wiki/Trunk_(software)) several times a day."* Source: [[Wikipedia: Continuous Integration]](https://en.wikipedia.org/wiki/Continuous_integration)|
- | RI       |     \[CESSDA\] Research Infrastructure |  "*A seamless social science data archive service for the whole of the European Research Area (ERA), which is capable of supporting the research needs of the next generation of social scientists wherever in Europe they may be, or beyond."* Source: [[CESSDA SaW project overview]](https://www.cessda.eu/Projects/All-projects/CESSDA-SaW)|
- | \-      |      Software artefacts           |        Software products, applications, services, components.|
-
-
-## Scope
-
-CESSDA Software Maturity Levels.
+of the technical Research Infrastructure is maintained.
 
 ## Summary
 
@@ -133,7 +81,7 @@ adopted TRLs as part of the H2020 programme \[4\] and both FitSM and
 TRLs have been subsequently adopted by the EOSC-hub, which mandates that
 TRL Level 8 is the minimum acceptable for a system to be considered
 production-ready by them. Interestingly, both RRLs and TRLs were devised
-by and are widely used by NASA.  
+by and are widely used by NASA.
 
 RRLs define 9 levels of maturity ranging from 1 ("software is not
 recommended for reuse") to the most mature 9 ("software is being reused
@@ -161,7 +109,7 @@ RRL6 - Software is reusable; the software can be reused by most users although t
 |RRL8 - Demonstrated local reusability; the software has been reused by multiple users. RRL9 - Demonstrated extensive reusability; the software is being reused by many classes of users over a wide range of systems.|CMM5 Optimised|SML5 - Demonstrable usability; there is clear evidence that the software is widely used by many users.|
 
 
-*Table 1: Correspondence of levels in RRL, CML and SML scales*    
+*Table 1: Correspondence of levels in RRL, CML and SML scales*
 
 
 ## CESSDA Software maturity levels

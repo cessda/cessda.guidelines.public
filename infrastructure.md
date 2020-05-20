@@ -1,3 +1,8 @@
+---
+title: Infrastructure Design
+layout: page
+---
+
 # CESSDA Infrastructure Design
 
 CESSDA Infrastructure is based on Docker Containers orchestrated by Kubernetes.

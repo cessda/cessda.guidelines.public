@@ -1,3 +1,8 @@
+---
+title: CESSDA Quality Requirements
+layout: page
+---
+
 # CESSDA Quality Requirements
 
 CESSDA requires its software-based tools and services to be of sufficient quality for sustainable operation.
@@ -10,9 +15,9 @@ For a software system to be operated by CESSDA as a TRL-8 production service, th
 
 * All applicable Software Maturity Level CAs must reach "Expected"
 * The relevant programming language's style guide must be followed and enforced through linting
-* The [quality gate](quality_gate.md) must be met
-* The average [availability](availability.md) must be at least 99.9%
-* The [SSL server configuration](ssl_configuration.md) must be consistently rated at 'A' or above
+* The [quality gate]({% link quality_gate.md %}) must be met
+* The average [availability]({% link availability.md %}) must be at least 99.9%
+* The [SSL server configuration]({% link ssl_configuration.md %}) must be consistently rated at 'A' or above
 
 
 For a software system to be operated by CESSDA as a TRL-7 beta service, the following criteria must be met:

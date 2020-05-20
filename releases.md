@@ -1,3 +1,8 @@
+---
+title: Release Policy
+layout: page
+---
+
 # CESSDA Release policy
 
 * Releases must follow [semantic versioning](https://semver.org/)

@@ -1,3 +1,10 @@
+---
+title: "CA7: Standards Compliance"
+layout: page
+parent: Software Maturity Levels
+nav_order: 107
+---
+
 ### CA7: Standards Compliance
 
 -   Minimum standard - SML1

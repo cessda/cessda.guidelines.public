@@ -1,3 +1,8 @@
+---
+title: Issue Tracking Workflow
+layout: page
+---
+
 # Issue Tracking Workflow
 
 We use Bitbucket Issue Tracking for projects that need an issue tracker for Service Providers and CESSDA MO use. Where a product is made up of many components, only one of the repositories will have the issue tracker enabled, to avoid confusion.

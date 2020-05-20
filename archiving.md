@@ -1,3 +1,8 @@
+---
+title: Code Archiving
+layout: page
+---
+
 # CESSDA code archiving
 
 In certain cases, CESSDA can ensure continued access to open source code of orphaned software developed in research projects associated with CESSDA.
