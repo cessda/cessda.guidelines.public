@@ -10,23 +10,8 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-FROM jekyll/builder AS build
-WORKDIR /jekyllwork/
-
-# Make the jekyllwork directory writable
-RUN chmod 777 /jekyllwork/
+FROM ruby:2 AS build
 
 # Install Gem dependencies
 COPY Gemfile ./
 RUN bundle install
-
-# Build the site
-COPY . .
-RUN jekyll build
-
-# Hosting with Nginx
-FROM nginx:1.16 AS final
-
-# Copy configuration and html
-COPY nginx/nginx.conf /etc/nginx/
-COPY --from=build /jekyllwork/_site/ /usr/share/nginx/html/
