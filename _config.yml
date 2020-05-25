@@ -7,6 +7,13 @@ baseurl: /job/cessda.guidelines.public/job/quality-seperation/lastSuccessfulBuil
 theme: just-the-docs
 search_enabled: false
 
+defaults:
+ -
+  scope:
+    type: pages
+  values:
+    permalink: /:path/:basename:output_ext
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
