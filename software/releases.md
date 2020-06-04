@@ -2,6 +2,7 @@
 title: Software Releases
 layout: page
 parent: Software Development
+has_children: true
 nav_order: 040
 ---
 
@@ -23,6 +24,5 @@ the list of changes done must then be included there.
 * Releases must have an [up-to-date Changelog](https://technical-reference.readthedocs.io/en/v0.1/developer-guidelines/06-changelog.html)
 * Releases must be tagged in the git repository
 * Releases must be available as Docker images with the release version as tag
-* Release tarballs should be published on Zenodo with the version independent DOI
-  suggested for citation unless referring to specific releases
+* Release tarballs should be [published]({% link software/publication.md %})
 

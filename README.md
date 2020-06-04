@@ -11,7 +11,7 @@ To get started locally, make sure to [have Ruby installed](https://jekyllrb.com/
 ```bash
 gem install jekyll bundler
 bundle install
-bundle exec jekyll serve
+bundle exec jekyll serve --config _config.yml,_devsettings.yml
 ```
 
 ### Menu structure

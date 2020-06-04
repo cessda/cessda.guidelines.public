@@ -10,7 +10,7 @@ nav_order: 010
 For all CESSDA tools and services the following requirements must be met
 
 * The tool's [license](https://technical-reference.readthedocs.io/en/v0.1/developer-guidelines/01-basics.html) must be clearly stated.
-    * Unless otherwise agreed, APACHE-2.0 should be used.
+    * Unless otherwise agreed, [APACHE-2.0](https://choosealicense.com/licenses/apache-2.0/) should be used.
     * Include the full license text in a `LICENSE.txt` in the repository root.
     * Ensure all files cary a short header, preferrably through its [SPDX indentifier](https://spdx.org/) `SPDX-License-Identifier: Apache-2.0`.
 * The Intellectual Property must be clear.
