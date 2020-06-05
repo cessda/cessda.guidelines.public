@@ -14,7 +14,7 @@ If this is agreed with CESSDA ERIC, the following requirements must be met
 * The intellectual property must be assigned to CESSDA ERIC.
 * Licenses and contributors must be clearly stated.
 * The purpose and original development reason (such as grant specifications) must be clearly stated.
-* The projects must have an appropriate [README](https://technical-reference.readthedocs.io/en/v0.1/developer-guidelines/02-readme.html),
+* The projects must have an appropriate [README]({{ site.technical-reference.url }}developer-guidelines/02-readme.html),
   which makes clear that development has ceased.
 
 Before ownership can be transferred, the following must be done

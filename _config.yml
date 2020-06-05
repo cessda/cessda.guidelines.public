@@ -15,6 +15,10 @@ defaults:
   values:
     permalink: /:path/:basename:output_ext
 
+technical-reference:
+  version: "v0.2"
+  url: "https://technical-reference.readthedocs.io/en/v0.2/"
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
