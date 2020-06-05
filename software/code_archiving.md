@@ -7,7 +7,8 @@ nav_order: 060
 
 # CESSDA code archiving
 
-In certain cases, CESSDA can ensure continued access to open source code of orphaned software developed in research projects associated with CESSDA.
+In certain cases, CESSDA can ensure continued access to open source code of orphaned software
+developed in research projects associated with CESSDA.
 
 If this is agreed with CESSDA ERIC, the following requirements must be met
 

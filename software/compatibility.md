@@ -16,9 +16,9 @@ Thus any CESSDA service must follow the following design principles, building up
 * Configuration must be read from the environment on startup.
 
 * Rest APIs
-    * Use API versioning.
-    * Provide [OpenAPI](https://www.openapis.org/) documentation.
-    * Implement `X-Request-ID` headers.
+  * Use API versioning.
+  * Provide [OpenAPI](https://www.openapis.org/) documentation.
+  * Implement `X-Request-ID` headers.
 
 * Logs must be streamed to `STDOUT` and should follow [NSD JSON Schema](https://gitlab.nsd.no/logging/log-schema).
 

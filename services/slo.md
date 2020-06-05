@@ -10,7 +10,7 @@ nav_order: 020
 ## Security
 
 * All CESSDA services must have proper SSL setup with an A rating on the
-Qualys [SSL server test](https://www.ssllabs.com/ssltest/index.html).
+  Qualys [SSL server test](https://www.ssllabs.com/ssltest/index.html).
 * Security updates are applied within one working day.
 * Non-critical updates are applied within one month.
 

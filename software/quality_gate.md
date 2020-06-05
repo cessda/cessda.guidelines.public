@@ -20,7 +20,7 @@ The quality gate used by CESSDA is
 The CESSDA build pipeline will automatically test all code before it is deployed.
 A software build of a new commit will fail and prevent deployment, if the quality gate is not reached for new code in that commit.
 
-### Maintainability Rating
+## Maintainability Rating
 
 If the estimated time required to fix security and reliability issues is:
 
@@ -30,8 +30,7 @@ If the estimated time required to fix security and reliability issues is:
 - between 21 to 50% the rating is a D
 - anything over 50% is an E
 
-
-### Reliability Rating
+## Reliability Rating
 
 How buggy is the code?
 
@@ -41,8 +40,7 @@ How buggy is the code?
 - D = at least 1 Critical Bug
 - E = at least 1 Blocker Bug
 
-
-### Security Rating
+## Security Rating
 
 How secure is the code?
 
