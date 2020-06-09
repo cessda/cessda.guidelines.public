@@ -14,12 +14,13 @@ For all CESSDA tools and services the following requirements must be met
   * Include the full license text in a `LICENSE.txt` in the repository root.
   * Ensure all files cary a short header, preferrably through its [SPDX indentifier](https://spdx.org/)
   `SPDX-License-Identifier: Apache-2.0`.
+
 * The Intellectual Property must be clear.
 * A comprehensive [README]({{ site.technical-reference.url }}developer-guidelines/02-readme.html) must be present.
 * The tool must be of proven acceptable [quality]({% link services/requirements.md %}).
 * The CESSDA [release policy]({% link software/releases.md %}) must be followed.
 * Documentation of Rest APIs is available using [OpenAPI Standard](https://swagger.io/docs/specification/about/).
 * The tool must be aligned with CESSDA [infrastructure design]({% link software/compatibility.md %}).
-* Include contribution guidelines based on the [CONTRIBUTING.md template](CONTRIBUTING_template.md).
+* Include contribution guidelines based on the [CONTRIBUTING.md template](../CONTRIBUTING_template.md).
 
 

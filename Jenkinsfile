@@ -27,6 +27,19 @@ pipeline {
 	agent any
 
 	stages {
+		stage('Test Documentation') {
+			agent {
+				dockerfile {
+					filename 'jekyll.Dockerfile'
+					reuseNode true
+				}
+			}
+			steps {
+				sh "jekyll build --config _config.yml,_devsettings.yml"
+                sh "bundle exec rake lint"
+                sh "bundle exec rake htmlproofer"
+			}
+		}
 		// Compiles documentation
 		stage('Build Documentation') {
 			agent {
