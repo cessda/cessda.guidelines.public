@@ -1,6 +1,6 @@
-## CESSDA Software Maturity Levels
+# CESSDA Software Maturity Levels
 
-*CESSDA Technical Framework Workplan phase 4, Deliverable 1 (a component of the Technical Architecture)*
+## CESSDA Technical Framework Workplan phase 4, Deliverable 1 (a component of the Technical Architecture)
 
 **Status:** Public
 
