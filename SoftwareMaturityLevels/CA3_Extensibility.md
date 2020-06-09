@@ -5,13 +5,13 @@ parent: Software Maturity Levels
 nav_order: 103
 ---
 
-### CA3: Extensibility
+## CA3: Extensibility
 
--   Minimum standard - SML3
+- Minimum standard - SML3
 
--   Expected standard - SML4
+- Expected standard - SML4
 
--   Excellent standard - SML5
+- Excellent standard - SML5
 
 *SML1 - Initial usability:* The software was not designed with
 extensibility in mind, so there is either no ability to extend or modify

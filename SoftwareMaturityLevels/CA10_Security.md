@@ -5,13 +5,13 @@ parent: Software Maturity Levels
 nav_order: 110
 ---
 
-### CA10: Security
+## CA10: Security
 
--   Minimum standard - SML1
+- Minimum standard - SML1
 
--   Expected standard - SML3
+- Expected standard - SML3
 
--   Excellent standard - SML5
+- Excellent standard - SML5
 
 *SML1 - Initial usability:* Security was addressed in the development
 phases up to and including design.

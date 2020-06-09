@@ -5,13 +5,13 @@ parent: Software Maturity Levels
 nav_order: 107
 ---
 
-### CA7: Standards Compliance
+## CA7: Standards Compliance
 
--   Minimum standard - SML1
+- Minimum standard - SML1
 
--   Expected standard - SML3
+- Expected standard - SML3
 
--   Excellent standard - SML5
+- Excellent standard - SML5
 
 *SML1 - Initial usability:* The software and software development
 process comply, at least in part, with locally defined standards and

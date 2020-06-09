@@ -5,13 +5,13 @@ parent: Software Maturity Levels
 nav_order: 112
 ---
 
-### CA12: Authentication and Authorisation
+## CA12: Authentication and Authorisation
 
--   Minimum standard - SML2
+- Minimum standard - SML2
 
--   Expected standard - SML3
+- Expected standard - SML3
 
--   Excellent standard - SML5
+- Excellent standard - SML5
 
 SML1 - Initial usability: Single user mode, no fine-grained
 authorization.

@@ -1,5 +1,4 @@
-#  <a name="version_history">Version History
-
+## Version History
 
 | **Version**  | **Release Date**  | **Comment** |
 |--------------|-------------------|-------------|

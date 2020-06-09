@@ -41,16 +41,13 @@ of the technical Research Infrastructure is maintained.
 
 ## Summary
 
-
 This document lays out an approach for assessing the maturity of the
 components of the technical Research Infrastructure (RI), so that over
 time CESSDA can mandate minimum levels that Service Providers (SPs) and
 others have to meet as a prerequisite to supplying software artefacts
 for the RI.
 
-
 ## Software Maturity Levels
-
 
 ### Objective
 
@@ -100,7 +97,6 @@ CML and SML scales. Given that one of CESSDA's goals is to have its
 tools and services listed in the EOSC Market Place, the requirements
 imposed by CESSDA will be continuously adopted to ensure compliance.
 
-
 | **Reuse Readiness Levels** | **Capability Maturity Levels** | **CESSDA Software maturity levels**|
 |----------------------|----------------------|----------------------|
 |RRL1 - Limited reusability; not recommended for reuse. RRL2 - Initial reusability; reuse not practical|CMM1 Initial (chaotic, ad hoc or reactive)|SML1 - Initial usability; software use is not recommended.|
@@ -109,9 +105,7 @@ RRL5 - Reuse is possible; might be reused by most users with some effort, cost, 
 RRL6 - Software is reusable; the software can be reused by most users although there may be some cost and risk. RRL7 - Software is highly reusable; the software can be reused by most users with minimum cost and risk.|CMM4 Managed|SML4 - Software is usable; with little effort, cost, and risk.|
 |RRL8 - Demonstrated local reusability; the software has been reused by multiple users. RRL9 - Demonstrated extensive reusability; the software is being reused by many classes of users over a wide range of systems.|CMM5 Optimised|SML5 - Demonstrable usability; there is clear evidence that the software is widely used by many users.|
 
-
 *Table 1: Correspondence of levels in RRL, CML and SML scales*
-
 
 ## CESSDA Software maturity levels
 
