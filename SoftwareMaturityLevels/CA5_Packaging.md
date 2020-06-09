@@ -5,7 +5,7 @@ parent: Software Maturity Levels
 nav_order: 105
 ---
 
-## CA5: Packaging
+# CA5: Packaging
 
 - Minimum standard - SML3
 

@@ -5,7 +5,7 @@ parent: Software Maturity Levels
 nav_order: 107
 ---
 
-## CA7: Standards Compliance
+# CA7: Standards Compliance
 
 - Minimum standard - SML1
 

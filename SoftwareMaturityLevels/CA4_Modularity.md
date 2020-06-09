@@ -5,7 +5,7 @@ parent: Software Maturity Levels
 nav_order: 104
 ---
 
-## CA4: Modularity
+# CA4: Modularity
 
 - Minimum standard - SML3
 

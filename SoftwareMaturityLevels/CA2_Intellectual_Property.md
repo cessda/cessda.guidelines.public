@@ -5,7 +5,7 @@ parent: Software Maturity Levels
 nav_order: 102
 ---
 
-## CA2: Intellectual Property
+# CA2: Intellectual Property
 
 - Minimum standard - SML2
 

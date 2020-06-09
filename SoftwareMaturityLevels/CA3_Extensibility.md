@@ -5,7 +5,7 @@ parent: Software Maturity Levels
 nav_order: 103
 ---
 
-## CA3: Extensibility
+# CA3: Extensibility
 
 - Minimum standard - SML3
 

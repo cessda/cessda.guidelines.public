@@ -5,7 +5,7 @@ parent: Software Maturity Levels
 nav_order: 110
 ---
 
-## CA10: Security
+# CA10: Security
 
 - Minimum standard - SML1
 

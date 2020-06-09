@@ -5,7 +5,7 @@ parent: Software Maturity Levels
 nav_order: 101
 ---
 
-## CA1: Documentation
+# CA1: Documentation
 
 The NASA RRL scale looks at the overall document suite, but it would be
 both pragmatic and useful to break that down into three: end-user,

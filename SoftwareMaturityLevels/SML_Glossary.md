@@ -5,7 +5,7 @@ parent: Software Maturity Levels
 nav_order: 199
 ---
 
-## Glossary
+# Glossary
 
 | **Acronym**   | **Expansion**               | **Description** |
 |----------------------|----------------------|----------------------|

@@ -5,7 +5,7 @@ parent: Software Maturity Levels
 nav_order: 106
 ---
 
-## CA6: Portability
+# CA6: Portability
 
 - Minimum standard - SML3
 
