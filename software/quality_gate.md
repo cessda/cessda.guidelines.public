@@ -50,7 +50,7 @@ How secure is the code?
 ## Implementation
 
 CESSDA currently uses [SonarQube](https://sonarqube.cessda.eu) to automatically calculate these values and ratings.
-See [SonarQube metric definitions](https://sonarqube.cessda.eu/documentation/instance-administration/quality-profiles/) for further details.
+See [SonarQube metric definitions](https://sonarqube.cessda.eu/documentation/user-guide/metric-definitions/) for further details.
 
 Checks are performed on each pipeline build.
 A software build of a new commit will fail and prevent deployment, if the quality gate is not reached for new code in that commit.
