@@ -36,8 +36,7 @@ pipeline {
 			}
 			steps {
 				sh "jekyll build --config _config.yml,_devsettings.yml"
-                // FIXME remove || true once markdown is correct
-                sh "bundle exec rake lint || true"
+                sh "bundle exec rake lint"
                 sh "bundle exec rake htmlproofer"
 			}
 		}
