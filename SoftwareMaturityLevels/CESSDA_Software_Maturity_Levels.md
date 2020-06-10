@@ -105,7 +105,7 @@ RRL5 - Reuse is possible; might be reused by most users with some effort, cost, 
 RRL6 - Software is reusable; the software can be reused by most users although there may be some cost and risk. RRL7 - Software is highly reusable; the software can be reused by most users with minimum cost and risk.|CMM4 Managed|SML4 - Software is usable; with little effort, cost, and risk.|
 |RRL8 - Demonstrated local reusability; the software has been reused by multiple users. RRL9 - Demonstrated extensive reusability; the software is being reused by many classes of users over a wide range of systems.|CMM5 Optimised|SML5 - Demonstrable usability; there is clear evidence that the software is widely used by many users.|
 
-*Table 1: Correspondence of levels in RRL, CML and SML scales*
+**Table 1:** *Correspondence of levels in RRL, CML and SML scales*
 
 ## CESSDA Software maturity levels
 
