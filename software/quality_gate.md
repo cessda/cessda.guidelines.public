@@ -1,8 +1,13 @@
+---
+title: Quality Gate
+layout: page
+parent: Software Development
+nav_order: 030
+---
+
 # CESSDA Quality Gate
 
-CESSDA uses [SonarQube](https://sonarqube.cessda.eu) to check the quality of software.
-
-The quality gate used by CESSDA is
+The following criteria define the CESSDA quality gate.
 
 - Code Test Coverage is at least 80.0%
 - Duplicated Code Lines is less than 3.0%
@@ -10,10 +15,9 @@ The quality gate used by CESSDA is
 - Reliability Rating is A
 - Security Rating is A
 
-The CESSDA build pipeline will automatically test all code before it is deployed.
-A software build of a new commit will fail and prevent deployment, if the quality gate is not reached for new code in that commit.
+## Ratings
 
-### Maintainability Rating
+### Maintainability
 
 If the estimated time required to fix security and reliability issues is:
 
@@ -23,8 +27,7 @@ If the estimated time required to fix security and reliability issues is:
 - between 21 to 50% the rating is a D
 - anything over 50% is an E
 
-
-### Reliability Rating
+### Reliability
 
 How buggy is the code?
 
@@ -34,8 +37,7 @@ How buggy is the code?
 - D = at least 1 Critical Bug
 - E = at least 1 Blocker Bug
 
-
-### Security Rating
+### Security
 
 How secure is the code?
 
@@ -45,5 +47,11 @@ How secure is the code?
 - D = at least 1 Critical Vulnerability
 - E = at least 1 Blocker Vulnerability
 
-See SonarQube [metric definitions](https://sonarqube.cessda.eu/documentation/user-guide/metric-definitions) for further details.
+## Implementation
+
+CESSDA currently uses [SonarQube](https://sonarqube.cessda.eu) to automatically calculate these values and ratings.
+See [SonarQube metric definitions](https://sonarqube.cessda.eu/documentation/user-guide/metric-definitions/) for further details.
+
+Checks are performed on each pipeline build.
+A software build of a new commit will fail and prevent deployment, if the quality gate is not reached for new code in that commit.
 

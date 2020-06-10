@@ -1,10 +1,17 @@
-### CA9: Verification and Testing
+---
+title: "CA9: Verification and Testing"
+layout: page
+parent: Software Maturity Levels
+nav_order: 109
+---
 
--   Minimum standard - SML2
+# CA9: Verification and Testing
 
--   Expected standard - SML3
+- Minimum standard - SML2
 
--   Excellent standard - SML5
+- Expected standard - SML3
+
+- Excellent standard - SML5
 
 *SML1 - Initial usability:* Software application formulated and unit
 testing performed.

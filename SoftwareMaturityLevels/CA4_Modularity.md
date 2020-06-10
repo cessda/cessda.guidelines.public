@@ -1,10 +1,17 @@
-### CA4: Modularity
+---
+title: "CA4: Modularity"
+layout: page
+parent: Software Maturity Levels
+nav_order: 104
+---
 
--   Minimum standard - SML3
+# CA4: Modularity
 
--   Expected standard - SML4
+- Minimum standard - SML3
 
--   Excellent standard - SML5
+- Expected standard - SML4
+
+- Excellent standard - SML5
 
 *SML1 - Initial usability:* There is evidence that the source code was
 written with no designs or consideration for organising the code in

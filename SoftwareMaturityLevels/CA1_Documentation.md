@@ -1,4 +1,11 @@
-### CA1: Documentation
+---
+title: "CA1: Documentation"
+layout: page
+parent: Software Maturity Levels
+nav_order: 101
+---
+
+# CA1: Documentation
 
 The NASA RRL scale looks at the overall document suite, but it would be
 both pragmatic and useful to break that down into three: end-user,
@@ -7,13 +14,13 @@ scoring) of documentation. A mean score can be calculated, if required -
 e.g. in cases where only operational and development documentation are
 required for acceptance.
 
--   Minimum standard - SML2
+- Minimum standard - SML2
 
--   Expected standard - SML3
+- Expected standard - SML3
 
--   Excellent standard - SML5
+- Excellent standard - SML5
 
-#### CA1.1: End-user Documentation
+## CA1.1: End-user Documentation
 
 *SML1 - Initial usability:* Partial or no external documentation
 available; Documentation is insufficient to gain an understanding of the
@@ -40,7 +47,7 @@ user support documentation. Documentation is consistent with current
 version of the software. User created documentation and comments form
 part of the documentation available.
 
-#### CA1.2: Operational Documentation
+## CA1.2: Operational Documentation
 
 *SML1 - Initial usability:* Partial or no external documentation
 available; Documentation is insufficient to gain an understanding for
@@ -72,7 +79,7 @@ be used to teach other users. Documentation is consistent with current
 version of the software. User created documentation and comments form
 part of the documentation available.
 
-#### CA1.3: Development Documentation
+## CA1.3: Development Documentation
 
 *SML1 - Initial usability:* Partial or no external documentation
 available of the application program interface (API); no, partial or

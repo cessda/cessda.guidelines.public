@@ -2,7 +2,8 @@
 
 Thank you for considering contributing to CESSDA Open Source Software.
 
-Please note that we welcome all forms of user feedback and are generally open to many forms of collaboration, but please read this document carefully before proceeding.
+Please note that we welcome all forms of user feedback and are generally open to many forms of collaboration,
+but please read this document carefully before proceeding.
 
 ## User feedback
 
@@ -10,11 +11,14 @@ Please note that we welcome all forms of user feedback and are generally open to
 
 We welcome all feedback you may have when using any of our tools and services.
 
-If you encounter a problem, please use the "Report a problem" button you find at the lower right corner of the respective tool or service and choose "Bug" as the value of the Components field.
+If you encounter a problem, please use the "Report a problem" button you find at the lower right corner of the respective tool or service
+and choose "Bug" as the value of the Components field.
 
 ### Suggesting Enhancements
 
-To suggest new functionalities and possible future developments, please use the "Report a problem" button you find at the lower right corner of the respective tool or service and choose "New Feature" or "Improvement" as the value of the Components field.
+To suggest new functionalities and possible future developments,
+please use the "Report a problem" button you find at the lower right corner of the respective tool or service
+and choose "New Feature" or "Improvement" as the value of the Components field.
 
 ## Contributing to the development
 

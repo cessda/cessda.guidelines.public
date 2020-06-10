@@ -1,10 +1,17 @@
-### CA2: Intellectual Property
+---
+title: "CA2: Intellectual Property"
+layout: page
+parent: Software Maturity Levels
+nav_order: 102
+---
 
--   Minimum standard - SML2
+# CA2: Intellectual Property
 
--   Expected standard - SML3
+- Minimum standard - SML2
 
--   Excellent standard - SML5
+- Expected standard - SML3
+
+- Excellent standard - SML5
 
 *SML1 - Initial usability:* Software developers have been identified and
 their responsibilities have been determined. Relevant policies of

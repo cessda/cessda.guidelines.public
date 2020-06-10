@@ -1,10 +1,17 @@
-### CA6: Portability
+---
+title: "CA6: Portability"
+layout: page
+parent: Software Maturity Levels
+nav_order: 106
+---
 
--   Minimum standard - SML3
+# CA6: Portability
 
--   Expected standard - SML4
+- Minimum standard - SML3
 
--   Excellent standard - SML5
+- Expected standard - SML4
+
+- Excellent standard - SML5
 
 *SML1 - Initial usability:* Porting to the target platform as a whole is
 not feasible (e.g. due to licensing or dependencies not available for

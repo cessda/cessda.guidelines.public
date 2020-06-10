@@ -1,10 +1,17 @@
-### CA11: Internationalisation and Localisation
+---
+title: "CA11: Internationalisation and Localisation"
+layout: page
+parent: Software Maturity Levels
+nav_order: 111
+---
 
--   Minimum standard - SML1
+# CA11: Internationalisation and Localisation
 
--   Expected standard - SML3
+- Minimum standard - SML1
 
--   Excellent standard - SML5
+- Expected standard - SML3
+
+- Excellent standard - SML5
 
 SML1 - Initial usability: Internationalization and Localization not
 addressed.

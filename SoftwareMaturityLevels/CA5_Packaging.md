@@ -1,10 +1,17 @@
-### CA5: Packaging
+---
+title: "CA5: Packaging"
+layout: page
+parent: Software Maturity Levels
+nav_order: 105
+---
 
--   Minimum standard - SML3
+# CA5: Packaging
 
--   Expected standard - SML4
+- Minimum standard - SML3
 
--   Excellent standard - SML5
+- Expected standard - SML4
+
+- Excellent standard - SML5
 
 *SML1 - Initial usability:* Only source code or executable available;
 i.e. no packaging to create a package or container. There is no, or
