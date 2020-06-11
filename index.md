@@ -10,8 +10,8 @@ These guidelines define how CESSDA products are [developed]({% link software/ind
 by following CESSDA's implementation of the
 [EURISE Network Technical Reference]({{ site.technical-reference.url }}).
 
-The guidelines also define how CESSDA [operates services]({% link services/index.md %}) powered by these products
+The guidelines also define how CESSDA [operates services]({% link docs/services/index.md %}) powered by these products
 
-The [Software Maturity Levels]({% link SoftwareMaturityLevels/CESSDA_Software_Maturity_Levels.md %})
+The [Software Maturity Levels]({% link docs/SoftwareMaturityLevels/CESSDA_Software_Maturity_Levels.md %})
 that form the basis for CESSDA Quality Assurance are also included.
 
