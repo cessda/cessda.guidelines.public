@@ -49,7 +49,7 @@ pipeline {
 				}
 			}
 			steps {
-				sh "echo title: \"/job/cessda.guidelines.public/job/${env.BRANCH_NAME}/lastSuccessfulBuild/artifact/_site/\" > _config.jekyll.yml"
+				sh "echo baseurl: \"/job/cessda.guidelines.public/job/${env.BRANCH_NAME}/lastSuccessfulBuild/artifact/_site/\" > _config.jekyll.yml"
 				sh "jekyll build --config _config.yml,_config.jekyll.yml"
 			}
 			post {
