@@ -35,9 +35,9 @@ pipeline {
 				}
 			}
 			steps {
-				sh "jekyll build --config _config.yml,_devsettings.yml"
-                sh "bundle exec rake lint"
-                sh "bundle exec rake htmlproofer"
+				sh "jekyll build"
+				sh "bundle exec rake lint"
+				sh "bundle exec rake htmlproofer"
 			}
 		}
 		// Compiles documentation
@@ -49,7 +49,8 @@ pipeline {
 				}
 			}
 			steps {
-				sh "jekyll build"
+				sh "echo title: \"/job/cessda.guidelines.public/job/${env.BRANCH_NAME}/lastSuccessfulBuild/artifact/_site/\" > _config.jekyll.yml"
+				sh "jekyll build --config _config.yml,_config.jekyll.yml"
 			}
 			post {
 				success {
