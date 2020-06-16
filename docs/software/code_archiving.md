@@ -20,7 +20,7 @@ If this is agreed with CESSDA ERIC, the following requirements must be met
 
 Before ownership can be transferred, the following must be done
 
-* The final version of the code must be [published]({% link software/publication.md %})
+* The final version of the code must be [published]({% link publication.md %})
   with appropriate metadata identifying its origin and submitted to the [CESSDA Community](https://zenodo.org/communities/cessda).
 * The code must be available at [Software Heritage](https://www.softwareheritage.org/archive/).
 * The Zenodo DOI and Software Heritage links must be included in the README.
