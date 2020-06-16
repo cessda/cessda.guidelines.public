@@ -1,3 +1,10 @@
+---
+title: Deploying Core Products to Production
+layout: page
+parent: Platform
+nav_order: 307
+---
+
 # Deploying Core Products to Production
 
 This is the proceedure for deploying a new version of a CESSDA Core Product (one of CDC, CVS, EQB, ELSST) to the production environmemt.

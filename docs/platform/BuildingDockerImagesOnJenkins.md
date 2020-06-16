@@ -5,8 +5,8 @@ This automation ensures that all applications are produced with common naming an
 
 ## For Developers
 
-[Adding the Build Jenkinsfile](AddingTheBuildJenkinsfile/)
+[Adding the Build Jenkinsfile]{% link docs/platform/AddingTheBuildJenkinsfile.md %})
 
 ## For MO Technical Team
 
-[Adding the Deployment Jenkinsfile](AddingTheDeploymentJenkinsfile/)
+[Adding the Deployment Jenkinsfile]{% link docs/platform/AddingTheDeploymentJenkinsfile.md %})
