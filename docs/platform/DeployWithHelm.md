@@ -20,7 +20,7 @@ arose when applications had multiple components as it required large amounts of
 copy and pasting and deployment couldn’t be validated locally. This resulted in large time
 investments debugging these templates.
 
-### Why wasn't Helm adopted sooner?
+### Why wasn't Helm adopted sooner
 
 Before Helm 3, a server-side component called Tiller was needed to communicate
 with the cluster. Many commentators said that there were security flaws with this approach.
@@ -38,10 +38,11 @@ chart. These charts are named directly after the components (i.e. es,
 Searchkit). This allows charts to be developed independently so that
 components can be deployed individually.
 
-* Root Chart
-    * Component 1
-    * Component 2
-    * Etc.
+Root Chart
+
+* Component 1
+* Component 2
+* Etc.
 
 ## How CESSDA charts are deployed
 
@@ -50,11 +51,12 @@ ensure that if deployments do not start, either because of bugs or
 misconfiguration, the deployment will automatically roll back to a known good
 state.
 
-All components of the chart are deployed together. Optional components can be enabled or disabled using a
-variable specified in the *values.yaml* file (typically of the form *enabled:
-true*).
+All components of the chart are deployed together. Optional components can be enabled or disabled
+ using a variable specified in the *values.yaml* file (typically of the form
+  *enabled: true*).
 
 Before deployment, Kubernetes manifests are validated using *kube-score* which
 checks that they follow best practices.
 
-An existing product deployment can be rolled back to a specified previous version, using a Jenkins job *cessda.xxx.rollback* (where 'xxx' is replaced with the product code, e.g. cdc, eqb)
+An existing product deployment can be rolled back to a specified previous version, using a Jenkins
+ job *cessda.xxx.rollback* (where 'xxx' is replaced with the product code, e.g. cdc, eqb)
