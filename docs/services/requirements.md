@@ -2,7 +2,7 @@
 title: Service Requirements
 layout: page
 parent: Service Operation
-nav_order: 010
+nav_order: 401
 ---
 
 # CESSDA Service Requirements

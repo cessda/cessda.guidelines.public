@@ -26,4 +26,3 @@ The description must be self-explanatory and should ideally match the README's s
 ## Citation
 
 The version-independent DOI must be added in the repository's README as recommended citation unless referring to specific releases.
-

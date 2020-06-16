@@ -2,7 +2,7 @@
 title: "CA2: Intellectual Property"
 layout: page
 parent: Software Maturity Levels
-nav_order: 102
+nav_order: 402
 ---
 
 # CA2: Intellectual Property

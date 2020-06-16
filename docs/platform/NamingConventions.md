@@ -1,3 +1,10 @@
+---
+title: Naming Conventions
+layout: page
+parent: Platform
+nav_order: 301
+---
+
 # Naming Conventions (CESSDA Technical Infrastructure)
 
 The naming conventions for products are designed to increase consistency across documentation and between the development,

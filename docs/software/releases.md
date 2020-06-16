@@ -3,7 +3,7 @@ title: Software Releases
 layout: page
 parent: Software Development
 has_children: true
-nav_order: 040
+nav_order: 104
 ---
 
 # Software Releases
@@ -28,4 +28,3 @@ by the responsible user representative has been successfully concluded.
 * Releases must be tagged in the git repository
 * Releases must be available as Docker images with the release version as tag
 * Release tarballs should be [published]({% link docs/software/publication.md %})
-

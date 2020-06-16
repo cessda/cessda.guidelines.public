@@ -2,7 +2,7 @@
 title: Quality Gate
 layout: page
 parent: Software Development
-nav_order: 030
+nav_order: 103
 ---
 
 # CESSDA Quality Gate
@@ -54,4 +54,3 @@ See [SonarQube metric definitions](https://sonarqube.cessda.eu/documentation/use
 
 Checks are performed on each pipeline build.
 A software build of a new commit will fail and prevent deployment, if the quality gate is not reached for new code in that commit.
-
