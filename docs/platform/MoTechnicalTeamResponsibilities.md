@@ -8,22 +8,21 @@
 - Reverse Proxy
 
 ** need link to more details, inc web hooks, branch permissions (PRs) etc **
-
-[needs updating BitbucketNewRepo](BitbucketNewRepo/)
+[N.B. needs updating BitbucketNewRepo](BitbucketNewRepo/)
 
 ## Create Jenkins jobs
 
-- Build from source (see [Building Maven Projects with Jenkins](https://bitbucket.org/cessda/cessda.guidelines.platform/wiki/BuildingMavenProjectsWithJenkins))
-- Build docker image (see [Building with Docker](https://bitbucket.org/cessda/cessda.guidelines.platform/wiki/BuildingWithDocker))
+- Build from source (see [Building Maven Projects with Jenkins]{% link docs/platform/BuildingMavenProjectsWithJenkins.md %})
+- Build docker image (see [Building with Docker]{% link docs/platform/BuildingWithDocker.md %})
 - Deploy to dev
 
 Add alerts to relevant Jenkins jobs so that committer (and other developers) know when the build is broken or some tests fail.
 
-[JenkinsNewJob needs updating](JenkinsNewJob/)
+[N.B. JenkinsNewJob needs updating](JenkinsNewJob/)
 
 ## Create DNS records
 
-Needed for development, staging and production instances. See [CESSDA naming conventions](https://bitbucket.org/cessda/cessda.guidelines.platform/wiki/CessdaNamingConventions.md).
+Needed for development, staging and production instances. See [CESSDA naming conventions]{% link docs/platform/NamingConventions.md %}).
 
 ## Create/edit Jenkinsfile for each repository
 
@@ -33,16 +32,16 @@ A basic pipeline
 - Selenium
 - JMeter – Collaborate with developers
 
-See [TemplateJenkinsfileForJDK11MavenProjects](https://bitbucket.org/cessda/cessda.guidelines.platform/wiki/TemplateJenkinsfileForJDK11MavenProjects) 
-and [Adding the Deployment Jenkinsfile](https://bitbucket.org/cessda/cessda.guidelines.platform/wiki/BuildingDockerImagesOnJenkins.md).
+See [TemplateJenkinsfileForJDK11MavenProjects]({% link docs/platform/TemplateJenkinsfileForJDK11MavenProjects.md %})
+and [Adding the Deployment Jenkinsfile]({% link doc/platform//BuildingDockerImagesOnJenkins.md %}).
 **[N.B. BuildingDockerImagesOnJenkin needs splitting in to two pages]**
 
 Work with developers to create staging builds for user testing
 
-- Staging 
+- Staging
 
 Work with users and developers to approve production builds
 
 ## Update Jenkins version
 
-See [Updating CI Tools](UpdatingCiTools.md)
+See [Updating CI Tools]{% link docs/platform/UpdatingCiTools.md %}).

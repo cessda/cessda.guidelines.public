@@ -72,7 +72,11 @@ pipeline {
         stage('Check Requirements and Deployments') {
             steps {
                 dir('./infrastructure/gcp/') {
-                    build job: 'cessda.product.deploy/master', parameters: [string(name: 'module_image_tag', value: "${image_tag}"), string(name: 'module', value: 'module')], wait: false
+                    build job: 'cessda.product.deploy/master',
+                        parameters: [string(name: 'module_image_tag',
+                        value: "${image_tag}"),
+                        string(name: 'module', value: 'module')],
+                        wait: false
                 }
             }
         }
