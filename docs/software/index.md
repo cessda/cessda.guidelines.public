@@ -16,8 +16,8 @@ At a minimum, the recommendations of the
 [EURISE Network Technical Reference, {{ site.technical-reference.version }}]({{ site.technical-reference.url }})
 must be followed.
 
-To assess the fitness for CESSDA purposes, software systems must pass the [quality gate]({% link quality_gate.md %}).
+To assess the fitness for CESSDA purposes, software systems must pass the [quality gate]({% link docs/software/quality_gate.md %}).
 
-In certain cases, CESSDA can [archive source code repositories]({% link code_archiving.md %})
+In certain cases, CESSDA can [archive source code repositories]({% link docs/software/code_archiving.md %})
 of abandonded software development efforts.
 

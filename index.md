@@ -6,7 +6,7 @@ nav_order: 000
 
 # CESSDA Technical Guidelines
 
-These guidelines define how CESSDA products are [developed]({% link index.md %}),
+These guidelines define how CESSDA products are [developed]({% link docs/software/index.md %}),
 by following CESSDA's implementation of the
 [EURISE Network Technical Reference]({{ site.technical-reference.url }}).
 
