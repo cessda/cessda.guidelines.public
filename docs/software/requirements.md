@@ -21,6 +21,4 @@ For all CESSDA tools and services the following requirements must be met
 * The CESSDA [release policy]({% link docs/software/releases.md %}) must be followed.
 * Documentation of Rest APIs is available using [OpenAPI Standard](https://swagger.io/docs/specification/about/).
 * The tool must be aligned with CESSDA [infrastructure design]({% link docs/software/compatibility.md %}).
-* Include contribution guidelines based on the [CONTRIBUTING.md template](../CONTRIBUTING_template.md).
-
-
+* Include contribution guidelines based on the [CONTRIBUTING.md template]{% link CONTRIBUTING_template.md %}).

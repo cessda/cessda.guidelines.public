@@ -1,8 +1,8 @@
 # CESSDA Technical Guidelines
 
 title: CESSDA Technical Guidelines
-baseurl: /job/cessda.guidelines.public/job/quality-seperation/lastSuccessfulBuild/artifact/_site/
-logo: assets/CESSDA.png
+baseurl: /
+logo: CESSDA.png
 
 # Theme
 theme: just-the-docs
@@ -39,11 +39,10 @@ exclude:
   - nginx/
   - node_modules/
   - README.md
-  - CODE_OF_CONDUCT.md
   - CONTRIBUTING.md
   - CHANGELOG.md
-  - SoftwareMaturityLevels/SML_Title_Page.md
-  - SoftwareMaturityLevels/SML_Version_History.md
+  - docs/sml/SML_Title_Page.md
+  - docs/sml/SML_Version_History.md
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/
