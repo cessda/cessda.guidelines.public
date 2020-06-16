@@ -2,8 +2,6 @@
 
 This shows the general form of a Jenkinsfile used with a Maven project based on JDK11.
 
-*[<= Go back to Home page](Home.md)*
-
 ```groovy
 pipeline {
     environment {
@@ -81,5 +79,3 @@ pipeline {
     }
 }
 ```
-
-*[<= Go back to Home page](Home.md)*

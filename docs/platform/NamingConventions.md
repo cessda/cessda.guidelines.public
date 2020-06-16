@@ -1,10 +1,9 @@
-# Naming Conventions (CESSDA Technical Infrastructure) #
-
-*[<= Go back to Home page](Home.md)*
+# Naming Conventions (CESSDA Technical Infrastructure)
 
 The naming conventions for products are designed to increase consistency across documentation and between the development, staging and production deployments with the aim of increasing the usability of the build, test and deployment scripts.
 
-### Abbreviations
+## Abbreviations
+
 * CDC - [CESSDA Data Catalogue](https://datacatalogue.cessda.eu/)
 * CVS - [CESSDA Vocabulary Service](https://vocabularies.cessda.eu/#!discover)
 * DVS - Dataverse
@@ -12,7 +11,7 @@ The naming conventions for products are designed to increase consistency across 
 * GCP - [Google Cloud Platform](https://cloud.google.com)
 * GKE - [Google Kubernetes Engine](https://console.cloud.google.com/kubernetes/)
 
-### Definitions
+## Definitions
 
 * Product - an overall user experience (e.g. CDC, CVS, DVS, EQB), a User-centric view of an application
 * Application - an engineering view of the collection of components that make up a Product
@@ -21,18 +20,18 @@ The naming conventions for products are designed to increase consistency across 
 * See also [Kubernetes component definitions](https://kubernetes.io/docs/concepts/overview/components/)
 * See also [GCP concepts](https://cloud.google.com/docs/overview/)
 
-
-## Cluster, Workload and Service Names ##
+## Cluster, Workload and Service Names
 
 ### GCP cluster names
 
-
 The prefix `development-`, `management-`, `staging-` or `production-` is used with `cluster` to form the cluser name, e.g. `staging-cluster`.
-
 
 ### Workload and Service/Ingress names
 
-Workloads and services/ingress names generally follow the same pattern and are composed of two parts. The prefix is the lowercase product name abbreviation (e.g. `cdc-`, `cvs-`, `dvs-`, `eqb-`) or lowercase functional abbreviation (`mgmt-`, `monitoring-`). The main part is the name of the component (e.g. `certbot`, `mailrelay`, `reverse`, `osmh-indexer`).
+Workloads and services/ingress names generally follow the same pattern and are composed of two parts. 
+The prefix is the lowercase product name abbreviation (e.g. `cdc-`, `cvs-`, `dvs-`, `eqb-`) 
+or lowercase functional abbreviation (`mgmt-`, `monitoring-`). The main part is the name of 
+the component (e.g. `certbot`, `mailrelay`, `reverse`, `osmh-indexer`).
 
 So the pattern looks like this
 
@@ -42,12 +41,11 @@ So the pattern looks like this
 * DVS: dvs-$component_name (e.g. `dvs-mailrelay`)
 * EQB: eqb-$component_name (e.g. `eqb-frontend`)
 
-
-## Namespaces ##
+## Namespaces
 
 Namespaces are used to group the components of an product within a cluster, whist isolating them from components of other products. Namespaces are named for the product they are contain, in the form of `$product_name`, e.g. `cdc`, `cvs`, `dvs`, `eqb`, `mgmt`, `monitoring`. So a cluster typically has multiple namespaces.
 
-## Clusters ##
+## Clusters
 
 Clusters are named to reflect the various deployment environments. Simple names are used, using the template $environment-cluster. The cluster names chosen are:
 
@@ -56,19 +54,16 @@ Clusters are named to reflect the various deployment environments. Simple names 
 * `production-cluster`
 * `management-cluster`
 
-
-## Storage / Persistent Volume Claims ##
+## Storage / Persistent Volume Claims
 
 Names of persistent volumes track the names of the tools that they serve using the template `$product_name-$component_name-pvc`.
 
-## Configuration / Secrets ##
+## Configuration / Secrets
 
 Names of ConfigMaps and Secrets are of the form `$product_name-$component_name-configmap` and `$product_name-$component_name-secret`.
 
-## Subdomains ##
+## Subdomains
 
 Subdomains are in the form of `$subdomain.cessda.eu`. The subdomain is not the same as the `$product_name`, i.e. for the CESSDA Data Catalogue the subdomain is `datacatalogue`, whereas the `$product_name` is cdc.
 
 For development and staging environments, the `$subdomain` has `-dev` or `-staging` appended (e.g. `datacatalogue-dev`).
-
-*[<= Go back to Home page](Home.md)*

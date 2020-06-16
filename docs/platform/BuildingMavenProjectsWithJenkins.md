@@ -4,11 +4,9 @@ The de facto  build tool for Java Application is Maven. Jenkins Pipeline is used
 
 We have explained  ["Building Docker Images on Jenkins"](BuildingDockerImagesOnJenkins/)
 
-
 * Assumptions are Java and Maven is installed on Jenkins systems's node or Jenkins slave container is configured to run with image already  installed Java and Maven.
 
-
-### Adding the Build Jenkinsfile
+## Adding the Build Jenkinsfile
 
 The Jenkinsfile must be added to the root of the repository. This is the only place that Jenkins will search for the file.
 A Jenkinsfile will always start with a pipeline object that encapsulates the entire job.
@@ -51,6 +49,7 @@ stage('Build Project and Run Sonar Scan') {
     }
 }
 ```
+
 We use a `withMaven{}` step which configures a maven environment to use within a pipeline job by calling `sh mvn`.
 With `withMaven{}`, Jenkins also discovers the generated Maven artefacts, running and publishing JUnit test results and reports.  
 

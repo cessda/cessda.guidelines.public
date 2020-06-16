@@ -17,7 +17,7 @@ For all CESSDA tools and services the following requirements must be met
 
 * The Intellectual Property must be clear.
 * A comprehensive [README]({{ site.technical-reference.url }}developer-guidelines/02-readme.html) must be present.
-* The tool must be of proven acceptable [quality]({% link docs/software/services/requirements.md %}).
+* The tool must be of proven acceptable [quality]({% link docs/software/requirements.md %}).
 * The CESSDA [release policy]({% link docs/software/releases.md %}) must be followed.
 * Documentation of Rest APIs is available using [OpenAPI Standard](https://swagger.io/docs/specification/about/).
 * The tool must be aligned with CESSDA [infrastructure design]({% link docs/software/compatibility.md %}).
