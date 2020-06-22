@@ -27,19 +27,6 @@ pipeline {
 	agent any
 
 	stages {
-		stage('Test Documentation') {
-			agent {
-				dockerfile {
-					filename 'jekyll.Dockerfile'
-					reuseNode true
-				}
-			}
-			steps {
-				sh "jekyll build"
-				sh "bundle exec rake lint"
-				sh "bundle exec rake htmlproofer"
-			}
-		}
 		// Compiles documentation
 		stage('Build Documentation') {
 			agent {
@@ -49,9 +36,15 @@ pipeline {
 				}
 			}
 			stages {
+				stage('Lint Documentation') {
+					steps {
+						sh "bundle exec rake lint"
+					}
+				}
 				stage('Build Deployable Documentation') {
 					steps {
 						sh "jekyll build"
+						sh "bundle exec rake htmlproofer"
 					}
 					when { branch 'master' }
 				}
