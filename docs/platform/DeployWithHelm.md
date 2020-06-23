@@ -7,6 +7,10 @@ nav_order: 308
 
 # Using Helm to deploy products
 
+## Terminology
+
+See [Naming Conventions]({% link docs/platform/NamingConventions.md %}).
+
 ## An Overview
 
 CESSDA uses Kubernetes to deploy and orchestrate containers running on Google
