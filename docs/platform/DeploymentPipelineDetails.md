@@ -9,7 +9,7 @@ nav_order: 306
 
 ## Terminology
 
-See [Naming Conventions](NamingConventions.md).
+See [Naming Conventions]({% link docs/platform/NamingConventions.md %}).
 
 ## Overview
 
@@ -20,11 +20,9 @@ Each component is built by Jenkins. The build is controlled by a
     If the pre-defined [quality gates](https://docs.sonarqube.org/latest/user-guide/quality-gates/) are not passed then there
      is the option to stop the pipeline and abandon the current build or deployment process.
 
-![gcp23-figure1](images/gcp23-figure1.png)
+![gcp23-figure1](../../assets/gcp23-figure1.png)
 
 **Figure 1:** *The pipeline for building applications from source code*
-
-For editable version for Figure 1, see [Application_deployment](https://drive.google.com/open?id=146w3yiVMzW2DlqdzkZ8ahxVf5_Mc2aXY)
 
 Each component is packaged as a [Docker container](https://www.docker.com/resources/what-container) at the end of the build
  process and given a unique image tag based on the Jenkins build number.
@@ -34,11 +32,9 @@ Each component is packaged as a [Docker container](https://www.docker.com/resour
 The pipeline is used to deploy the same build of a component (the Docker container) to the development, staging and production
  environments, but different tests take place between each deployment step.
 
-![gcp23-figure2.png](https://bitbucket.org/repo/gkLr8oL/images/1677085748-gcp23-figure2.png)
+![gcp23-figure2.png](../../assets/gcp23-figure2.png)
 
-**Figure 2:** T*he pipeline for automatically deploying applications to staging*
-
-For editable version for Figure 2, see [Staging_deployment](https://drive.google.com/open?id=1GCJkf9bEMWY311DDXh3AdVJq5gye_O1e)
+**Figure 2:** *The pipeline for automatically deploying applications to staging*
 
 ### Deploying to Development and Staging
 
@@ -73,23 +69,20 @@ stage('Run Selenium Tests')
 
 ### Deploying to Production
 
-![gcp23-figure4](images/gcp23-figure4.png)
+![gcp23-figure4](../../assets/gcp23-figure4.png)
 
 **Figure 4:** *The pipeline for deploying applications to production*
-
-For editable version for Figure 4,
- see [Production_deployment](https://drive.google.com/open?id=1auEaV6A0oSb3HahSiyL-rnDp7ViGgFV-)
 
 Deploying to the `production-cluster` is initiated by a manual step and is done with the Jenkins job `cessda.${app_name}.deploy.
 prod`. To deploy a new version of the application, select ‘Build with parameters’ and enter the staging build number that you
  want to deploy.
 
-![gcp23-figure5-part1](images/gcp23-figure5-part1.png)
+![gcp23-figure5-part1](../../assets/gcp23-figure5-part1.png)
 
-![gcp23-figure5-part2](images/gcp23-figure5-part2.png)
+![gcp23-figure5-part2](../../assets/gcp23-figure5-part2.png)
 
 **Figure 5:** *An example of the production build job from CDC*
 
-The staging build number entered here MUST be a number found in <https://jenkins.cessda.eu/job/cessda.${app_name}.test/> that
- has passed. This is where the staging build numbers are assigned. This also ensures that a development build cannot directly
-  be deployed to production.
+The staging build number entered here MUST be a number found in `https://jenkins.cessda.eu/job/cessda.${app_name}.test`
+ that has passed. This is where the staging build numbers are assigned. This also ensures that
+ a development build cannot directly be deployed to production.

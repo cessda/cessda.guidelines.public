@@ -9,7 +9,7 @@ nav_order: 302
 
 ## Terminology
 
-See [Naming Conventions](NamingConventions.md).
+See [Naming Conventions]({% link docs/platform/NamingConventions.md %}).
 
 ## Platform
 
@@ -46,22 +46,20 @@ The Google Kubernetes Engine (GKE) is an environment for deploying containerized
       services. GKE can operate both in stateless mode, and also can be configured to deploy
        backing services like persistent volumes/storage, and even run database in the cluster.
 
-![GCPMainProjectStructureSandbox](images/GCPSimpleOverview.png)
-
-For a better view [download](images/GCPSimpleOverview.png) the file.
+![GCPMainProjectStructureSandbox](../../assets/GCPMainProjectStructureSandbox.png)
 
 ## CESSDA Development GCP Project
 
-See also [Technical Infrastructure Details](TechnicalInfrastructureDetails.md).
+See also [Technical Infrastructure Details]({% link docs/platform/TechnicalInfrastructureDetails.md %}).
 
 The CESSDA Development GCP Project contains two Kubernetes clusters, `development-cluster` and
- `staging-cluster`. See [GCP Main Project Structure](GCPMainProjectStructure.md) for more details
+ `staging-cluster`. See [GCP Main Project Structure]({% link docs/platform/GcpMainProjectStructure.md %}) for more details
   of the clusters.
 
 ## CESSDA Production GCP Project
 
 The CESSDA Production GCP Project contains two Kubernetes clusters, `production-cluster` and
- `management-cluster`. See [GCP Main Project Structure](GCPMainProjectStructure.md) for more
+ `management-cluster`. See [GCP Main Project Structure]({% link docs/platform/GcpMainProjectStructure.md %}) for more
   details of the `production-cluster`.
 
 The management-cluster contains various utility, monitoring, testing and deployment tools, based
@@ -117,8 +115,8 @@ To put this in the context of a specific tool, the CDC development instance is d
 
 ## Application Deployment Process
 
-See also [Deployment Pipeline overview](DeploymentPipelineOverview.md) and
- [Deployment Pipeline details](DeploymentPipelineDetails.md).
+See also [Deployment Pipeline overview]({% link docs/platform/DeploymentPipelineOverview.md %}) and
+ [Deployment Pipeline details]({% link docs/platform/DeploymentPipelineDetails.md %}).
 
 [Jenkins pipelines](https://jenkins.io/doc/book/pipeline/) are used to build, test and deploy
  components. The general principle is to build once, deploy many times and automatically test en
@@ -128,21 +126,17 @@ See also [Deployment Pipeline overview](DeploymentPipelineOverview.md) and
 
 ### Jenkinsfile examples
 
-See [Example Jenkinsfile with Annotations](TemplateJenkinsfile.md)
+See [Example Jenkinsfile with Annotations]({% link docs/platform/TemplateJenkinsfile.md %}).
 
-See [Jenkinsfile template for JDK8 Maven Projects](TemplateJenkinsfileForJDK8MavenProjects.md).
-
-See [Jenkinsfile template for JDK11 Maven Projects](TemplateJenkinsfileForJDK11MavenProjects.md).
+See [Jenkinsfile template for JDK11 Maven Projects]({% link docs/platform/TemplateJenkinsfileForJDK11MavenProjects.md %}).
 
 ### Example Deployment - CESSDA Data Catalogue
 
 In the case of the CDC, there is a master branch (which can have feature branches, as required).
- When commits are made to master, a successful build deploys to the development cluster, and can
-  be seen at [datacatalogue-dev.cessda.eu](https://datacatalogue-dev.cessda.eu). After further
-   testing, it is automatically deployed to the staging cluster (and is visible at
-    [datacatalogue-staging.cessda.eu](https://datacatalogue-staging.cessda.eu)). If ready to go
+ When commits are made to master, a successful build deploys to the development cluster. After further
+   testing, it is automatically deployed to the staging cluster. If ready to go
      live, it is manually deployed to the `production-cluster`
-     ([datacatalogue.cessda.eu](https://datacatalogue.cessda.eu)).
+     ([datacatalogue.cessda.eu](https://datacatalogue.cessda.eu/)).
 
 ### Deployment vs Application Code
 

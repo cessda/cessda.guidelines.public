@@ -9,7 +9,7 @@ nav_order: 309
 
 ## Terminology
 
-See [Naming Conventions](NamingConventions.md).
+See [Naming Conventions]({% link docs/platform/NamingConventions.md %}).
 
 ## Overview
 
@@ -30,14 +30,14 @@ This system allows developers to keep track of the changes in CESSDA software de
         elements (which will remain private with write access restricted to the CESSDA MO
          Technical team only).
 
-* The design also explains CESSDA's CI/CD automation in [Jenkins](https://cit.cessda.eu/).
+* The design also explains CESSDA's CI/CD automation in [Jenkins](https://jenkins.cessda.eu/).
 
 Jenkins offers a Continuous Integration or Continuous Delivery environment for source code
  repositories using pipelines, as well as automating other routine development and deployment
   tasks. In this design upstream job would be create to parameterizes the Component repository and
    Deployment repository to form a pipeline that compile, builds, builds images, deploys to
     development and staging environments as seen in
-     [Deployment_Pipeline](https://bitbucket.org/cessda/cessda.guidelines.platform/wiki/DeploymentPipeline).
+     [Deployment_Pipeline]({% link docs/platform/DeploymentPipelineOverview.md %}).
       Jenkins deploys automatically into the development and staging
       environments. Jenkins also gives a seamless and more robust way to integrate the entire
        toolchain for build, test, and deployment.
@@ -48,8 +48,4 @@ In this design, there are four clusters in total; three for various environments
  staging and production) in the CI/CD process and the other one (management) which hosts and runs
   the tools used in the build, testing and deployment process.
 
-![GCPMainProjectStructure](images/GCPMainProjectStructure.png)
-
-For a better view [download](images/GCPMainProjectStructure.png) the file.
-
-For editable version, see [cessda-project_structure](https://drive.google.com/open?id=1iwoBWnyE9pLiYwTX7zmMbP32-VBMryEN)
+![GCPMainProjectStructure](../../assets/GCPMainProjectStructure.png)
