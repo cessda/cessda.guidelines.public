@@ -2,7 +2,9 @@
 
 title: CESSDA Technical Guidelines
 baseurl: /
-logo: CESSDA.png
+logo: assets/CESSDA.png
+url: "https://docs.tech.cessda.eu/" # the base hostname & protocol for your site, e.g. http://example.com
+
 
 # Theme
 theme: just-the-docs
