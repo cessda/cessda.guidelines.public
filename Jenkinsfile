@@ -15,7 +15,7 @@
 pipeline {
 
 	options {
-		buildDiscarder logRotator(numToKeepStr: '20')
+		buildDiscarder logRotator(numToKeepStr: '20', artifactNumToKeepStr: '5')
 	}
 
 	environment {
@@ -27,19 +27,6 @@ pipeline {
 	agent any
 
 	stages {
-		stage('Test Documentation') {
-			agent {
-				dockerfile {
-					filename 'jekyll.Dockerfile'
-					reuseNode true
-				}
-			}
-			steps {
-				sh "jekyll build"
-				sh "bundle exec rake lint"
-				sh "bundle exec rake htmlproofer"
-			}
-		}
 		// Compiles documentation
 		stage('Build Documentation') {
 			agent {
@@ -48,13 +35,31 @@ pipeline {
 					reuseNode true
 				}
 			}
-			steps {
-				sh "echo baseurl: \"/job/cessda.guidelines.public/job/${env.BRANCH_NAME}/lastSuccessfulBuild/artifact/_site/\" > _config.jekyll.yml"
-				sh "jekyll build --config _config.yml,_config.jekyll.yml"
-			}
-			post {
-				success {
-					archiveArtifacts '_site/**'
+			stages {
+				stage('Lint Documentation') {
+					steps {
+						sh "bundle exec rake lint"
+					}
+				}
+				stage('Build Deployable Documentation') {
+					steps {
+						sh "jekyll build"
+						sh "bundle exec rake htmlproofer"
+					}
+					when { branch 'master' }
+				}
+				// Corrects links so that the Jenkins preview works
+				stage('Build Test Documentation') {
+					steps {
+						sh "echo baseurl: \"/job/cessda.guidelines.public/job/${env.BRANCH_NAME}/${env.BUILD_NUMBER}/artifact/_site/\" > _config.jenkins.yml"
+						sh "jekyll build --config _config.yml,_config.jenkins.yml"
+					}
+					when { not { branch 'master' } }
+					post {
+						success {
+							archiveArtifacts '_site/**'
+						}
+					}
 				}
 			}
 		}
@@ -69,6 +74,12 @@ pipeline {
 				sh "gcloud auth configure-docker"
 				sh "docker push ${imageTag}"
 				sh "gcloud container images add-tag ${imageTag} ${docker_repo}/${productName}-${componentName}:${env.BRANCH_NAME}-latest"
+			}
+			when { branch 'master' }
+		}
+		stage('Deploy Guidelines') {
+			steps {
+				build job: 'cessda.guidelines.deploy/master', parameters: [string(name: 'imageTag', value: "${env.BRANCH_NAME}-${env.BUILD_NUMBER}")]
 			}
 			when { branch 'master' }
 		}
