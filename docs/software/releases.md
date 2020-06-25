@@ -20,7 +20,7 @@ the list of changes done must then be included there.
 
 ## CESSDA Release policy
 
-A new version of a CESSDA product meeting the [Software Requirements]({% link software/requirements.md %})
+A new version of a CESSDA product meeting the [Software Requirements]({% link docs/software/requirements.md %})
 can be released, once the manual evaluation by the responsible user representative has been successfully concluded.
 
 * Releases must follow [semantic versioning](https://semver.org/)
