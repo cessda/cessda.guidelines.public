@@ -1,3 +1,10 @@
+---
+title: Adding Jenkins support to Docker
+layout: page
+parent: Technical Infrastructure
+nav_order: 313
+---
+
 # Adding Jenkins support to Docker
 
 To build and run applications on the CESSDA GCP environment Docker containers must be created in Jenkins.

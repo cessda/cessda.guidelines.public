@@ -1,7 +1,7 @@
 ---
 title: Deployment Workflow
 layout: page
-parent: Platform
+parent: Technical Infrastructure
 nav_order: 305
 ---
 

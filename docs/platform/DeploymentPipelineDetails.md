@@ -1,7 +1,7 @@
 ---
 title: Deployment Pipeline Details
 layout: page
-parent: Platform
+parent: Technical Infrastructure
 nav_order: 306
 ---
 

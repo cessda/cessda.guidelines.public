@@ -1,7 +1,7 @@
 ---
 title: Deploying Core Products to Production
 layout: page
-parent: Platform
+parent: Technical Infrastructure
 nav_order: 307
 ---
 

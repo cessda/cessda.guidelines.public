@@ -1,8 +1,8 @@
 ---
 title: Jenkinsfile Template for JDK11 Maven Projects
 layout: page
-parent: Platform
-nav_order: 311
+parent: Technical Infrastructure
+nav_order: 318
 ---
 
 # Jenkinsfile Template for JDK11 Maven Projects

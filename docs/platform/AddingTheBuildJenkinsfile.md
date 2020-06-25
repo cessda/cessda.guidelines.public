@@ -1,4 +1,11 @@
-# Adding the Build Jenkinsfile
+---
+title: Adding the Build Jenkinsfile
+layout: page
+parent: Technical Infrastructure
+nav_order: 310
+---
+
+# Adding the Jenkinsfile used to build the component
 
 The Jenkinsfile must be added to the root of the repository. This is the only place that Jenkins will search for the file.
 A Jenkinsfile will always start with a pipeline object that encapsulates the entire job. The form is shown here:

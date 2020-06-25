@@ -1,3 +1,10 @@
+---
+title: Adding the Deployment Jenkinsfile
+layout: page
+parent: Technical Infrastructure
+nav_order: 31x
+---
+
 # Adding the Deployment Jenkinsfile
 
 The deployment code is stored in a different repository to the build code. It uses a parametrised Jenkinsfile so an exact version of the

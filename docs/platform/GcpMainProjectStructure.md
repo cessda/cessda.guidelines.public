@@ -1,7 +1,7 @@
 ---
 title: GCP Main Project Structure
 layout: page
-parent: Platform
+parent: Technical Infrastructure
 nav_order: 303
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Naming Conventions
 layout: page
-parent: Platform
+parent: Technical Infrastructure
 nav_order: 301
 ---
 

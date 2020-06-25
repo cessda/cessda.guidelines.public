@@ -1,7 +1,7 @@
 ---
 title: Depolyment Pipeline Overview
 layout: page
-parent: Platform
+parent: Technical Infrastructure
 nav_order: 304
 ---
 

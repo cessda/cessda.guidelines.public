@@ -1,8 +1,8 @@
 ---
 title: Jenkinsfile Template
 layout: page
-parent: Platform
-nav_order: 310
+parent: Technical Infrastructure
+nav_order: 317
 ---
 
 # Jenkinsfile Template

@@ -1,4 +1,11 @@
-# MO Technical Team Responsibilities
+---
+title: Platform Team Responsibilities
+layout: page
+parent: Technical Infrastructure
+nav_order: 315
+---
+
+# Platform Team Responsibilities
 
 ## Create repositories
 
@@ -12,8 +19,8 @@
 
 ## Create Jenkins jobs
 
-- Build from source (see [Building Maven Projects with Jenkins]{% link docs/platform/BuildingMavenProjectsWithJenkins.md %})
-- Build docker image (see [Building with Docker]{% link docs/platform/BuildingWithDocker.md %})
+- Build from source (see [Building Maven Projects with Jenkins]({% link docs/platform/BuildingMavenProjectsWithJenkins.md %}))
+- Build docker image (see [Building with Docker]({% link docs/platform/BuildingWithDocker.md %}))
 - Deploy to dev
 
 Add alerts to relevant Jenkins jobs so that committer (and other developers) know when the build is broken or some tests fail.
@@ -22,7 +29,7 @@ Add alerts to relevant Jenkins jobs so that committer (and other developers) kno
 
 ## Create DNS records
 
-Needed for development, staging and production instances. See [CESSDA naming conventions]{% link docs/platform/NamingConventions.md %}).
+Needed for development, staging and production instances (see [CESSDA naming conventions]({% link docs/platform/NamingConventions.md %})).
 
 ## Create/edit Jenkinsfile for each repository
 
@@ -33,8 +40,7 @@ A basic pipeline
 - JMeter – Collaborate with developers
 
 See [TemplateJenkinsfileForJDK11MavenProjects]({% link docs/platform/TemplateJenkinsfileForJDK11MavenProjects.md %})
-and [Adding the Deployment Jenkinsfile]({% link doc/platform//BuildingDockerImagesOnJenkins.md %}).
-**[N.B. BuildingDockerImagesOnJenkin needs splitting in to two pages]**
+and [Adding the Deployment Jenkinsfile]({% link docs/platform/AddingTheDeploymentJenkinsfile.md %}).
 
 Work with developers to create staging builds for user testing
 
@@ -44,4 +50,4 @@ Work with users and developers to approve production builds
 
 ## Update Jenkins version
 
-See [Updating CI Tools]{% link docs/platform/UpdatingCiTools.md %}).
+See [Updating CI Tools]({% link docs/platform/UpdatingCiTools.md %}).

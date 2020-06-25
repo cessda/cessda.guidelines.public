@@ -1,7 +1,7 @@
 ---
 title: Technical Infrastructure Overview
 layout: page
-parent: Platform
+parent: Technical Infrastructure
 nav_order: 302
 ---
 
