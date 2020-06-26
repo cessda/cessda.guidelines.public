@@ -46,20 +46,27 @@ pipeline {
 						sh "jekyll build"
 						sh "bundle exec rake htmlproofer"
 					}
-					when { branch 'master' }
+					//when { branch 'master' }
 				}
 				// Corrects links so that the Jenkins preview works
-				stage('Build Test Documentation') {
-					steps {
-						sh "echo baseurl: \"/job/cessda.guidelines.public/job/${env.BRANCH_NAME}/${env.BUILD_NUMBER}/artifact/_site/\" > _config.jenkins.yml"
-						sh "jekyll build --config _config.yml,_config.jenkins.yml"
-					}
-					when { not { branch 'master' } }
-					post {
-						success {
-							archiveArtifacts '_site/**'
-						}
-					}
+				// stage('Build Test Documentation') {
+				// 	steps {
+				// 		sh "echo baseurl: \"/job/cessda.guidelines.public/job/${env.BRANCH_NAME}/${env.BUILD_NUMBER}/artifact/_site/\" > _config.jenkins.yml"
+				// 		sh "jekyll build --config _config.yml,_config.jenkins.yml"
+				// 	}
+				// 	when { not { branch 'master' } }
+				// 	post {
+				// 		success {
+				// 			archiveArtifacts '_site/**'
+				// 		}
+				// 	}
+				// }
+			}
+		}
+		stage('Run SonarQube Scan') {
+			steps{
+				withSonarQubeEnv('cessda-sonar') {
+					sh "${scannerHome}/bin/sonar-scanner"
 				}
 			}
 		}
