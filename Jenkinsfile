@@ -22,6 +22,7 @@ pipeline {
 		productName = 'guidelines'
 		componentName = 'public'
 		imageTag = "${docker_repo}/${productName}-${componentName}:${env.BRANCH_NAME}-${env.BUILD_NUMBER}"
+		scannerHome = tool 'sonar-scanner'
 	}
 
 	agent any
