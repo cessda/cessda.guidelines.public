@@ -49,7 +49,7 @@ pipeline {
 					}
 					when { branch 'master' }
 				}
-				Corrects links so that the Jenkins preview works
+				// Corrects links so that the Jenkins preview works
 				stage('Build Test Documentation') {
 					steps {
 						sh "echo baseurl: \"/job/cessda.guidelines.public/job/${env.BRANCH_NAME}/${env.BUILD_NUMBER}/artifact/_site/\" > _config.jenkins.yml"
