@@ -22,4 +22,4 @@ The process is automated from the time the developer commits source code changes
 
 [Helm charts]({% link platform/DeployWithHelm.md %}) are used to orchestrate the deployment of an application's components.
 
-![DataFlow_Diagram](../../assets/DataFlow_Diagram.png)
+![DataFlow_Diagram](../assets/DataFlow_Diagram.png)

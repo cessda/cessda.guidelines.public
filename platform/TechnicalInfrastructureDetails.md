@@ -47,4 +47,4 @@ In this design, there are four clusters in total; three for various environments
  staging and production) in the CI/CD process and the other one (management) which hosts and runs
   the tools used in the build, testing and deployment process.
 
-![GCPMainProjectStructure](../../assets/GCPMainProjectStructure.png)
+![GCPMainProjectStructure](../assets/GCPMainProjectStructure.png)

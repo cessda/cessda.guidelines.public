@@ -29,16 +29,16 @@ Make sure to use the default settings for the build.
 This will create a new Docker image and push it to the CESSDA repository.
 Make a note of the image tag created. It should match the build number in Jenkins.
 
-![Management Pipeline](../../assets/managementPipeline.png)
+![Management Pipeline](../assets/managementPipeline.png)
 
-![Successful Build](../../assets/successfulBuild.png)
+![Successful Build](../assets/successfulBuild.png)
 
 In the Google Cloud console, open the *cessda-prod* project and select the *mgmt-jenkins* deployment.
 Edit the deployment’s image tag to the one built by Jenkins, then click save.
 Jenkins should then update. This process can take several minutes to complete.
 
-![Deployment Details](../../assets/deploymentDetails.png)
+![Deployment Details](../assets/deploymentDetails.png)
 
-![Deployment File Detail](../../assets/deploymentFileDetail.png)
+![Deployment File Detail](../assets/deploymentFileDetail.png)
 
 If Jenkins doesn’t restart after updating, revert the image tag back to the previous version.

@@ -45,7 +45,7 @@ The Google Kubernetes Engine (GKE) is an environment for deploying containerized
       services. GKE can operate both in stateless mode, and also can be configured to deploy
        backing services like persistent volumes/storage, and even run database in the cluster.
 
-![GCPMainProjectStructureSandbox](../../assets/GCPMainProjectStructureSandbox.png)
+![GCPMainProjectStructureSandbox](../assets/GCPMainProjectStructureSandbox.png)
 
 ## CESSDA Development GCP Project
 

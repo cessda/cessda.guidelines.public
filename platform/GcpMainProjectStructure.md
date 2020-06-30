@@ -22,13 +22,13 @@ The `development-cluster` contains the components of the  CDC, CVS, DVS and EQB 
  monitoring and management services. They are separated within the cluster by various namespaces
   (`cdc`, `cvs`, `dvs`, `eqb`, `mgmt`, `monitoring`).
 
-![GCPMainProjectStructureDevelopment](../../assets/GCPMainProjectStructureDevelopment.png)
+![GCPMainProjectStructureDevelopment](../assets/GCPMainProjectStructureDevelopment.png)
 
 The `staging-cluster` contains the components of the  CDC, CVS, DVS and EQB tools plus some
  monitoring and management services. They are separated within the cluster by various namespaces
   (`cdc`, `cvs`, `dvs`, `eqb`, `mgmt`, `monitoring`).
 
-![GCPMainProjectStructureStaging](../../assets/GCPMainProjectStructureStaging.png)
+![GCPMainProjectStructureStaging](../assets/GCPMainProjectStructureStaging.png)
 
 ### CESSDA Production GCP Project
 
@@ -38,4 +38,4 @@ The `production-cluster` contains the components of the CDC, CVS, DVS and EQB to
  monitoring services. They are separated within the cluster by various namespaces (`cdc`, `cvs`,
   `dvs`, `eqb`, `mgmt`, `monitoring`).
 
-![GCPMainProjectStructureProduction](../../assets/GCPMainProjectStructureProduction.png)
+![GCPMainProjectStructureProduction](../assets/GCPMainProjectStructureProduction.png)
