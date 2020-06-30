@@ -14,10 +14,6 @@ See [Naming Conventions]({% link platform/NamingConventions.md %}).
 
 This is the proceedure for deploying a new version of a CESSDA Core Product (one of CDC, CVS, EQB, ELSST) to the production environmemt.
 
-## Terminology
-
-See [Naming Conventions]({% link platform/NamingConventions.md %}).
-
 ## Relevant Roles
 
 See the 'Tool Coordination' document [NEED LOCATION TO LINK TO] for definition of roles.
