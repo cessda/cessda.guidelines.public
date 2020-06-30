@@ -11,9 +11,11 @@ search_enabled: false
 defaults:
  -
   scope:
-    type: pages
+    path: ""
+    type: "pages"
   values:
     permalink: /:path/:basename:output_ext
+    layout: "page"
 
 technical-reference:
   version: "v0.2"
