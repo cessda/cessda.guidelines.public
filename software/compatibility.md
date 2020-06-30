@@ -1,11 +1,10 @@
 ---
 title: Infrastructure Compatiblity
-layout: page
 parent: Software Development
 nav_order: 102
 ---
 
-# CESSDA Infrastructure Compatiblity
+# {{ page.title }}
 
 CESSDA Infrastructure is based on Docker Containers orchestrated by Kubernetes.
 

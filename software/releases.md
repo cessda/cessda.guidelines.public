@@ -1,12 +1,11 @@
 ---
 title: Software Releases
-layout: page
 parent: Software Development
 has_children: true
 nav_order: 104
 ---
 
-# Software Releases
+# {{ page.title }}
 
 Releases of a CESSDA product must follow the [CESSDA Release Policy](#cessda-release-policy).
 

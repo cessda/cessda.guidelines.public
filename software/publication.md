@@ -1,11 +1,10 @@
 ---
 title: Software Publication
-layout: page
 parent: Software Releases
 grand_parent: Software Development
 ---
 
-# Software Publication
+# {{ page.title }}
 
 Software releases of open source components should be published on Zenodo, as per CESSDA's Publication Policy.
 

@@ -1,11 +1,10 @@
 ---
 title: Quality Gate
-layout: page
 parent: Software Development
 nav_order: 103
 ---
 
-# CESSDA Quality Gate
+# {{ page.title }}
 
 The following criteria define the CESSDA quality gate.
 

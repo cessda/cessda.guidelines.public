@@ -1,11 +1,10 @@
 ---
 title: Service Requirements
-layout: page
 parent: Service Operation
-nav_order: 401
+nav_order: 201
 ---
 
-# CESSDA Service Requirements
+# {{ page.title }}
 
 CESSDA requires its tools and services to be of sufficient quality for sustainable operation.
 

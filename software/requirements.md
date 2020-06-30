@@ -1,11 +1,10 @@
 ---
 title: Software Requirements
-layout: page
 parent: Software Development
 nav_order: 101
 ---
 
-# CESSDA Software Requirements
+# {{ page.title }}
 
 For all CESSDA tools and services the following requirements must be met
 

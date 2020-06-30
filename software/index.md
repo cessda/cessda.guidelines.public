@@ -1,11 +1,10 @@
 ---
 title: Software Development
-layout: page
 has_children: true
 nav_order: 100
 ---
 
-# CESSDA Software Development
+# {{ page.title }}
 
 Development of CESSDA tools and services is carried out using CESSDA-owned git-repositories on Bitbucket.
 
