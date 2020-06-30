@@ -1,11 +1,16 @@
 ---
 title: Deploying Core Products to Production
-layout: page
 parent: Technical Infrastructure
 nav_order: 307
 ---
 
-# Deploying Core Products to Production
+# {{ page.title }}
+
+## Terminology
+
+See [Naming Conventions]({% link docs/platform/NamingConventions.md %}).
+
+## Overview
 
 This is the proceedure for deploying a new version of a CESSDA Core Product (one of CDC, CVS, EQB, ELSST) to the production environmemt.
 

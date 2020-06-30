@@ -1,11 +1,10 @@
 ---
 title: Technical Infrastructure Overview
-layout: page
 parent: Technical Infrastructure
 nav_order: 302
 ---
 
-# Technical Infrastructure Overview
+# {{ page.title }}
 
 ## Terminology
 

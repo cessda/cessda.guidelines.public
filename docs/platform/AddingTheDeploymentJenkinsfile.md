@@ -1,11 +1,16 @@
 ---
 title: Adding the Deployment Jenkinsfile
-layout: page
 parent: Technical Infrastructure
 nav_order: 31x
 ---
 
-# Adding the Deployment Jenkinsfile
+# {{ page.title }}
+
+## Terminology
+
+See [Naming Conventions]({% link docs/platform/NamingConventions.md %}).
+
+## Overview
 
 The deployment code is stored in a different repository to the build code. It uses a parametrised Jenkinsfile so an exact version of the
  application can be deployed (for example, a specific version for production). This parameter can be manually specified or specified

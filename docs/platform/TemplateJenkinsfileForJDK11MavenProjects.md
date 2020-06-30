@@ -1,11 +1,16 @@
 ---
 title: Jenkinsfile Template for JDK11 Maven Projects
-layout: page
 parent: Technical Infrastructure
 nav_order: 318
 ---
 
-# Jenkinsfile Template for JDK11 Maven Projects
+# {{ page.title }}
+
+## Terminology
+
+See [Naming Conventions]({% link docs/platform/NamingConventions.md %}).
+
+## Overview
 
 This shows the general form of a Jenkinsfile used with a Maven project based on JDK11.
 

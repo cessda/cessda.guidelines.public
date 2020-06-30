@@ -1,11 +1,16 @@
 ---
 title: Building with Docker
-layout: page
 parent: Technical Infrastructure
 nav_order: 314
 ---
 
-# Building with Docker
+# {{ page.title }}
+
+## Terminology
+
+See [Naming Conventions]({% link docs/platform/NamingConventions.md %}).
+
+## Overview
 
 Docker is a container framework used to host a large collection of tools. Jenkins offers Docker integration so that tools can be
  used in a pipeline as if they were natively installed.

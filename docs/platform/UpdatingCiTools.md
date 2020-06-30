@@ -1,11 +1,16 @@
 ---
 title: Updating CI Tools
-layout: page
 parent: Technical Infrastructure
 nav_order: 316
 ---
 
-# Updating CI Tools
+# {{ page.title }}
+
+## Terminology
+
+See [Naming Conventions]({% link docs/platform/NamingConventions.md %}).
+
+## Overview
 
 Many 3rd party tools used in the CESSDA CI environment are updated occasionally, either to fix bugs or to add features.
 

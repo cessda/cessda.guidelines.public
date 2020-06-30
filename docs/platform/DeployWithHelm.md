@@ -1,11 +1,10 @@
 ---
 title: Using Helm to deploy products
-layout: page
 parent: Technical Infrastructure
 nav_order: 308
 ---
 
-# Using Helm to deploy products
+# {{ page.title }}
 
 ## Terminology
 

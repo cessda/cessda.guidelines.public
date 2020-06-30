@@ -1,11 +1,10 @@
 ---
 title: Depolyment Pipeline Overview
-layout: page
 parent: Technical Infrastructure
 nav_order: 304
 ---
 
-# Deployment Pipeline Overview
+# {{ page.title }}
 
 ## Terminology
 

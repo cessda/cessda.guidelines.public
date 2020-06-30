@@ -1,11 +1,10 @@
 ---
 title: GCP Main Project Structure
-layout: page
 parent: Technical Infrastructure
 nav_order: 303
 ---
 
-# GCP Main Project Structure
+# {{ page.title }}
 
 ## Terminology
 

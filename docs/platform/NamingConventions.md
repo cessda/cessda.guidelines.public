@@ -1,11 +1,10 @@
 ---
 title: Naming Conventions
-layout: page
 parent: Technical Infrastructure
 nav_order: 301
 ---
 
-# Naming Conventions (CESSDA Technical Infrastructure)
+# {{ page.title }}
 
 The naming conventions for products are designed to increase consistency across documentation and between the development,
  staging and production deployments with the aim of increasing the usability of the build, test and deployment scripts.

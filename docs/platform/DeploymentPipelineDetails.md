@@ -1,11 +1,10 @@
 ---
 title: Deployment Pipeline Details
-layout: page
 parent: Technical Infrastructure
 nav_order: 306
 ---
 
-# Deployment Pipeline Details
+# {{ page.title }}
 
 ## Terminology
 

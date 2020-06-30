@@ -1,11 +1,15 @@
 ---
 title: Platform Team Responsibilities
-layout: page
 parent: Technical Infrastructure
+published: false
 nav_order: 315
 ---
 
-# Platform Team Responsibilities
+# {{ page.title }}
+
+## Terminology
+
+See [Naming Conventions]({% link docs/platform/NamingConventions.md %}).
 
 ## Create repositories
 
@@ -15,6 +19,7 @@ nav_order: 315
 - Reverse Proxy
 
 ** need link to more details, inc web hooks, branch permissions (PRs) etc **
+
 [N.B. needs updating BitbucketNewRepo](BitbucketNewRepo/)
 
 ## Create Jenkins jobs

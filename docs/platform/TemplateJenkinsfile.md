@@ -1,11 +1,16 @@
 ---
 title: Jenkinsfile Template
-layout: page
 parent: Technical Infrastructure
 nav_order: 317
 ---
 
-# Jenkinsfile Template
+# {{ page.title }}
+
+## Terminology
+
+See [Naming Conventions]({% link docs/platform/NamingConventions.md %}).
+
+## Overview
 
 This shows the general form of a Jenkinsfile used with non-Maven projects.
 

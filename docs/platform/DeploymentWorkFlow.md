@@ -1,11 +1,10 @@
 ---
 title: Deployment Workflow
-layout: page
 parent: Technical Infrastructure
 nav_order: 305
 ---
 
-# Deployment Workflow
+# {{ page.title }}
 
 ## Terminology
 

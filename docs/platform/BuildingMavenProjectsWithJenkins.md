@@ -1,11 +1,16 @@
 ---
 title: Building Maven Projects with Jenkins
-layout: page
 parent: Technical Infrastructure
 nav_order: 311
 ---
 
-# Building Maven Projects with Jenkins
+# {{ page.title }}
+
+## Terminology
+
+See [Naming Conventions]({% link docs/platform/NamingConventions.md %}).
+
+## Overview
 
 The de facto  build tool for Java Application is Maven. Jenkins Pipeline is used to automate the build process with Declaration
  pipeline written in groovy language.
