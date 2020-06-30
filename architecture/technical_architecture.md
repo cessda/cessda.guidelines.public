@@ -673,17 +673,17 @@ The following should be considered at a later stage:
 
 - System Operation Manual
 
-    - HW and SW Architecture
+  * HW and SW Architecture
 
-    - Configuration
+  * Configuration
 
-    - User Management
+  * User Management
 
-    - Backup and Restore
+  * Backup and Restore
 
-    - Monitoring
+  * Monitoring
 
-    - Application Management
+  * Application Management
 
 ### System Level
 
