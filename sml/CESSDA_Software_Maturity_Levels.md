@@ -1,11 +1,10 @@
 ---
 title: Software Maturity Levels
-layout: page
 has_children: true
 nav_order: 400
 ---
 
-# CESSDA Software Maturity Levels
+# {{ page.title }}
 
 The latest published version can be downloaded in PDF format from [CESSDA Software Maturity Levels](https://doi.org/10.5281/zenodo.2614050).
 
@@ -19,11 +18,8 @@ Providers, but potentially any software development organisation.
 
 ### Purpose
 
-This document is based on an extract from CESSDA Technical Architecture
-v1.0, May 2016 (the latest version of the latter can be found at \[5\]).
-It was created so that readers interested in CESSDA's Software Maturity
-Levels (SMLs) can find out more, without having to browse through the
-entire Technical Architecture document.
+This document was created so that readers interested in CESSDA's Software Maturity
+ Levels (SMLs) can find out more about the various attributes, levels and expectations that underpin them.
 
 Usability is not only a political imperative of European Research
 Infrastructure Consortiums' need to maximise their return on investment,
@@ -59,27 +55,33 @@ integrate it into the current technical framework?, how will it be
 maintained?, does it conform to the standards required? Therefore the
 need to measure the maturity of software used within CESSDA is essential
 to ensure the quality of the technical Research Infrastructure is
-maintained. Reuse Readiness Levels (RRLs) \[1\], as developed by NASA
+maintained. Reuse Readiness Levels [RRLs][1], as developed by NASA
 Earth Science Data Systems, form the basis upon which the CESSDA
 software maturity assessments are made. Usability is not only a
 political imperative of research infrastructures as they need to
 demonstrate a return on investment, but is also essential for growth
 with limited funds and ongoing interoperability.
 
+[1]: https://cdn.earthdata.nasa.gov/conduit/upload/2004/RRLs_v1.0.pdf
+
 ### Background
 
 The measurement of maturity can be achieved in various ways. Services
 (and service management) use Capability Maturity Modelling, for example
-FitSM \[2\]. A method commonly used for technology is the 9 point
-Technology Readiness Levels (TRLs) scale \[3\], however this does not
+[FitSM][2]. A method commonly used for technology is the 9 point
+[Technology Readiness Levels (TRLs)][3] scale, however this does not
 address usability, which is essential for the development of CESSDA's
 technical Research Infrastructure. RRLs address this gap in the
 assessment of the maturity of software artefacts. Note that the EU
-adopted TRLs as part of the H2020 programme \[4\] and both FitSM and
+adopted TRLs as part of the [H2020 programme][4] and both FitSM and
 TRLs have been subsequently adopted by the EOSC-hub, which mandates that
 TRL Level 8 is the minimum acceptable for a system to be considered
 production-ready by them. Interestingly, both RRLs and TRLs were devised
 by and are widely used by NASA.
+
+[2]: http://fitsm.itemo.org/fitsm
+[3]: https://wiki.eosc-hub.eu/display/EOSC/Service+Maturity+Classification
+[4]: http://ec.europa.eu/research/participants/data/ref/h2020/other/wp/2016-2017/annexes/h2020-wp1617-annex-ga_en.pdf
 
 RRLs define 9 levels of maturity ranging from 1 ("software is not
 recommended for reuse") to the most mature 9 ("software is being reused

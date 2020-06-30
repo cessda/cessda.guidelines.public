@@ -1,11 +1,10 @@
 ---
 title: "CA4: Modularity"
-layout: page
 parent: Software Maturity Levels
 nav_order: 404
 ---
 
-# CA4: Modularity
+# {{ page.title }}
 
 - Minimum standard - SML3
 

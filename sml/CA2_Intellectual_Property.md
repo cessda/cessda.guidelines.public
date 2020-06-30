@@ -1,11 +1,10 @@
 ---
 title: "CA2: Intellectual Property"
-layout: page
 parent: Software Maturity Levels
 nav_order: 402
 ---
 
-# CA2: Intellectual Property
+# {{ page.title }}
 
 - Minimum standard - SML2
 

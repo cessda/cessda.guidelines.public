@@ -1,11 +1,10 @@
 ---
-title: "Glossary"
-layout: page
+title: Glossary
 parent: Software Maturity Levels
 nav_order: 491
 ---
 
-# Glossary
+# {{ page.title }}
 
 | **Acronym**   | **Expansion**               | **Description** |
 |----------------------|----------------------|----------------------|

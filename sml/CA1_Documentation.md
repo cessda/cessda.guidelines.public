@@ -1,11 +1,10 @@
 ---
 title: "CA1: Documentation"
-layout: page
 parent: Software Maturity Levels
 nav_order: 401
 ---
 
-# CA1: Documentation
+# {{ page.title }}
 
 The NASA RRL scale looks at the overall document suite, but it would be
 both pragmatic and useful to break that down into three: end-user,

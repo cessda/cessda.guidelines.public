@@ -1,11 +1,10 @@
 ---
 title: "CA7: Standards Compliance"
-layout: page
 parent: Software Maturity Levels
 nav_order: 407
 ---
 
-# CA7: Standards Compliance
+# {{ page.title }}
 
 - Minimum standard - SML1
 

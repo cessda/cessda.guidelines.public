@@ -1,11 +1,10 @@
 ---
 title: "CA10: Security"
-layout: page
 parent: Software Maturity Levels
 nav_order: 410
 ---
 
-# CA10: Security
+# {{ page.title }}
 
 - Minimum standard - SML1
 

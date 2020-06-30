@@ -1,11 +1,10 @@
 ---
 title: "CA12: Authentication and Authorisation"
-layout: page
 parent: Software Maturity Levels
 nav_order: 412
 ---
 
-# CA12: Authentication and Authorisation
+# {{ page.title }}
 
 - Minimum standard - SML2
 

@@ -1,11 +1,10 @@
 ---
 title: "CA9: Verification and Testing"
-layout: page
 parent: Software Maturity Levels
 nav_order: 409
 ---
 
-# CA9: Verification and Testing
+# {{ page.title }}
 
 - Minimum standard - SML2
 

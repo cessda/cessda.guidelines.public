@@ -1,11 +1,10 @@
 ---
 title: "CA8: Support"
-layout: page
 parent: Software Maturity Levels
 nav_order: 408
 ---
 
-# CA8: Support
+# {{ page.title }}
 
 *Assessment may not be required at this stage. Minimum and expected
 standard levels to be defined in a future version of this document.*

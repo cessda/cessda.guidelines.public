@@ -1,11 +1,10 @@
 ---
 title: "CA5: Packaging"
-layout: page
 parent: Software Maturity Levels
 nav_order: 405
 ---
 
-# CA5: Packaging
+# {{ page.title }}
 
 - Minimum standard - SML3
 
