@@ -29,6 +29,8 @@ technical-reference:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
+# Individual pages that are e.g. in draft format can be hidden using 'published: false' in the Front Matter.
+#
 exclude:
   - .sass-cache/
   - .jekyll-cache/
@@ -43,8 +45,6 @@ exclude:
   - README.md
   - CONTRIBUTING.md
   - CHANGELOG.md
-  - docs/sml/SML_Title_Page.md
-  - docs/sml/SML_Version_History.md
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/
