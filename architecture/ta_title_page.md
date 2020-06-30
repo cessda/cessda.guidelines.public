@@ -1,5 +1,5 @@
 ---
-title: CESSDA Technical Architecture
+title: Document Details
 parent: Technical Architecture
 published: false
 nav_order: 502

@@ -1,11 +1,11 @@
 ---
-title: CESSDA Software Maturity Version History
+title: Version History
 parent: Software Maturity Levels
-published: false
-nav_order: 
+published: 
+nav_order: 493
 ---
 
-# Version History
+# {{ page.title }}
 
 | **Version**  | **Release Date**  | **Comment** |
 |--------------|-------------------|-------------|

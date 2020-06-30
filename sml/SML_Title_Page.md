@@ -1,11 +1,11 @@
 ---
-title: CESSDA Software Maturity Levels Title page
+title: Document Details
 parent: Software Maturity Levels
 published: false
-nav_order: 
+nav_order: 494
 ---
 
-# CESSDA Software Maturity Levels
+# {{ page.title }}
 
 **Status:** Public
 
