@@ -518,7 +518,7 @@ deploys](http://12factor.net/codebase)).
 
 ## Security and Privacy
 
-#### Privacy Assessment
+### Privacy Assessment
 
 Assess privacy Impact rating using the following guidelines (taken from
 the 'Simplified Implementation of the Microsoft SDL'):
