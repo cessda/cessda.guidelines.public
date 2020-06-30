@@ -14,6 +14,6 @@ CESSDA operates services at three levels:
 1. Development
 
 The criteria for software systems to be considered for a CESSDA service
-are defined in the [Service Requirements]({% link docs/services/requirements.md %}).
+are defined in the [Service Requirements]({% link services/requirements.md %}).
 
-For its services, CESSDA has the following [service level objectives]({% link docs/services/slo.md %}).
+For its services, CESSDA has the following [service level objectives]({% link services/slo.md %}).

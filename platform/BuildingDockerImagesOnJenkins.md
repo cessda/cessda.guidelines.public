@@ -8,7 +8,7 @@ nav_order: 313
 
 ## Terminology
 
-See [Naming Conventions]({% link docs/platform/NamingConventions.md %}).
+See [Naming Conventions]({% link platform/NamingConventions.md %}).
 
 ## Overview
 
@@ -17,8 +17,8 @@ This automation ensures that all applications are produced with common naming an
 
 ## For Developers
 
-[Adding the Build Jenkinsfile]({% link docs/platform/AddingTheBuildJenkinsfile.md %})
+[Adding the Build Jenkinsfile]({% link platform/AddingTheBuildJenkinsfile.md %})
 
 ## For MO Technical Team
 
-[Adding the Deployment Jenkinsfile]({% link docs/platform/AddingTheDeploymentJenkinsfile.md %})
+[Adding the Deployment Jenkinsfile]({% link platform/AddingTheDeploymentJenkinsfile.md %})

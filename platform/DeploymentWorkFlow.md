@@ -8,7 +8,7 @@ nav_order: 305
 
 ## Terminology
 
-See [Naming Conventions]({% link docs/platform/NamingConventions.md %}).
+See [Naming Conventions]({% link platform/NamingConventions.md %}).
 
 ## Overview
 
@@ -20,6 +20,6 @@ The process is automated from the time the developer commits source code changes
   However, deployment to the production environment is manually initiated after testing and
    sign-off in the staging environment.
 
-[Helm charts]({% link docs/platform/DeployWithHelm.md %}) are used to orchestrate the deployment of an application's components.
+[Helm charts]({% link platform/DeployWithHelm.md %}) are used to orchestrate the deployment of an application's components.
 
 ![DataFlow_Diagram](../../assets/DataFlow_Diagram.png)

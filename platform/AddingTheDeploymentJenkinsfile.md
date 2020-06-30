@@ -8,7 +8,7 @@ nav_order: 31x
 
 ## Terminology
 
-See [Naming Conventions]({% link docs/platform/NamingConventions.md %}).
+See [Naming Conventions]({% link platform/NamingConventions.md %}).
 
 ## Overview
 

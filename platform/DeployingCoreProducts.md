@@ -8,7 +8,7 @@ nav_order: 307
 
 ## Terminology
 
-See [Naming Conventions]({% link docs/platform/NamingConventions.md %}).
+See [Naming Conventions]({% link platform/NamingConventions.md %}).
 
 ## Overview
 
@@ -16,7 +16,7 @@ This is the proceedure for deploying a new version of a CESSDA Core Product (one
 
 ## Terminology
 
-See [Naming Conventions]({% link docs/platform/NamingConventions.md %}).
+See [Naming Conventions]({% link platform/NamingConventions.md %}).
 
 ## Relevant Roles
 

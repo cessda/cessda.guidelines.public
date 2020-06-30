@@ -8,14 +8,14 @@ nav_order: 311
 
 ## Terminology
 
-See [Naming Conventions]({% link docs/platform/NamingConventions.md %}).
+See [Naming Conventions]({% link platform/NamingConventions.md %}).
 
 ## Overview
 
 The de facto  build tool for Java Application is Maven. Jenkins Pipeline is used to automate the build process with Declaration
  pipeline written in groovy language.
 
-We have explained  ["Building Docker Images on Jenkins"]{% link docs/platform/BuildingDockerImagesOnJenkins.md %})
+We have explained  ["Building Docker Images on Jenkins"]{% link platform/BuildingDockerImagesOnJenkins.md %})
 
 * Assumptions are Java and Maven is installed on Jenkins systems's node or Jenkins slave container is configured to run with
  image already  installed Java and Maven.

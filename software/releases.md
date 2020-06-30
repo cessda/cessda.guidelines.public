@@ -20,11 +20,11 @@ the list of changes done must then be included there.
 
 ## CESSDA Release policy
 
-A new version of a CESSDA product meeting the [Software Requirements]({% link docs/software/requirements.md %})
+A new version of a CESSDA product meeting the [Software Requirements]({% link software/requirements.md %})
 can be released, once the manual evaluation by the responsible user representative has been successfully concluded.
 
 * Releases must follow [semantic versioning](https://semver.org/)
 * Releases must have an [up-to-date Changelog]({{ site.technical-reference.url }}developer-guidelines/06-changelog.html)
 * Releases must be tagged in the git repository
 * Releases must be available as Docker images with the release version as tag
-* Release tarballs should be [published]({% link docs/software/publication.md %})
+* Release tarballs should be [published]({% link software/publication.md %})

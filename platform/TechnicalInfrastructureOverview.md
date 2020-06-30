@@ -8,7 +8,7 @@ nav_order: 302
 
 ## Terminology
 
-See [Naming Conventions]({% link docs/platform/NamingConventions.md %}).
+See [Naming Conventions]({% link platform/NamingConventions.md %}).
 
 ## Platform
 
@@ -49,16 +49,16 @@ The Google Kubernetes Engine (GKE) is an environment for deploying containerized
 
 ## CESSDA Development GCP Project
 
-See also [Technical Infrastructure Details]({% link docs/platform/TechnicalInfrastructureDetails.md %}).
+See also [Technical Infrastructure Details]({% link platform/TechnicalInfrastructureDetails.md %}).
 
 The CESSDA Development GCP Project contains two Kubernetes clusters, `development-cluster` and
- `staging-cluster`. See [GCP Main Project Structure]({% link docs/platform/GcpMainProjectStructure.md %}) for more details
+ `staging-cluster`. See [GCP Main Project Structure]({% link platform/GcpMainProjectStructure.md %}) for more details
   of the clusters.
 
 ## CESSDA Production GCP Project
 
 The CESSDA Production GCP Project contains two Kubernetes clusters, `production-cluster` and
- `management-cluster`. See [GCP Main Project Structure]({% link docs/platform/GcpMainProjectStructure.md %}) for more
+ `management-cluster`. See [GCP Main Project Structure]({% link platform/GcpMainProjectStructure.md %}) for more
   details of the `production-cluster`.
 
 The management-cluster contains various utility, monitoring, testing and deployment tools, based
@@ -114,8 +114,8 @@ To put this in the context of a specific tool, the CDC development instance is d
 
 ## Application Deployment Process
 
-See also [Deployment Pipeline overview]({% link docs/platform/DeploymentPipelineOverview.md %}) and
- [Deployment Pipeline details]({% link docs/platform/DeploymentPipelineDetails.md %}).
+See also [Deployment Pipeline overview]({% link platform/DeploymentPipelineOverview.md %}) and
+ [Deployment Pipeline details]({% link platform/DeploymentPipelineDetails.md %}).
 
 [Jenkins pipelines](https://jenkins.io/doc/book/pipeline/) are used to build, test and deploy
  components. The general principle is to build once, deploy many times and automatically test en
@@ -125,9 +125,9 @@ See also [Deployment Pipeline overview]({% link docs/platform/DeploymentPipeline
 
 ### Jenkinsfile examples
 
-See [Example Jenkinsfile with Annotations]({% link docs/platform/TemplateJenkinsfile.md %}).
+See [Example Jenkinsfile with Annotations]({% link platform/TemplateJenkinsfile.md %}).
 
-See [Jenkinsfile template for JDK11 Maven Projects]({% link docs/platform/TemplateJenkinsfileForJDK11MavenProjects.md %}).
+See [Jenkinsfile template for JDK11 Maven Projects]({% link platform/TemplateJenkinsfileForJDK11MavenProjects.md %}).
 
 ### Example Deployment - CESSDA Data Catalogue
 
