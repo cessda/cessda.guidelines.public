@@ -20,11 +20,11 @@ This system allows developers to keep track of the changes in CESSDA software de
 and enable them to collaborate on those projects or tools.
 There are two types repositories to be used in the CI/CD process; Component and Deployment repositories.
 
-**Component repositories** are software modules or Microservice projects that are version controlled.
-Component repository also contain the Dockerfile which builds the Docker image for the module or project.
+**Component repositories** are software modules or Microservice projects that are version
+controlled. Component repository also contain the Dockerfile which builds the Docker image for the module or project.
 
-**Deployment repository** contains the scripts that run the deployment and also contains some secrets
-used in the setting up Microservices on clouds.
+**Deployment repository** contains the scripts that run the deployment and also contains
+some secrets used in the setting up Microservices on clouds.
 This design separates the repositories containing the application software
 (which may be made Open Source at some point) from those containing the deployment scripts and other sensitive elements
 (which will remain private with write access restricted to the CESSDA MO Technical team only).
@@ -32,8 +32,10 @@ This design separates the repositories containing the application software
 * The design also explains CESSDA's CI/CD automation in [Jenkins](https://jenkins.cessda.eu/).
 Jenkins offers a Continuous Integration or Continuous Delivery environment for source code repositories using pipelines,
 as well as automating other routine development and deployment tasks.
-In this design upstream job would be create to parameterizes the Component repository and Deployment repository
-to form a pipeline that compile, builds, builds images, deploys to  development and staging environments as seen in [Deployment_Pipeline]({% link platform/DeploymentPipelineOverview.md %}).
+In this design upstream job would be create to parameterizes the Component repository
+and Deployment repository to form a pipeline that compile, builds, builds images,
+deploys to  development and staging environments as seen in
+[Deployment_Pipeline]({% link platform/DeploymentPipelineOverview.md %}).
 Jenkins deploys automatically into the development and staging environments.
 Jenkins also gives a seamless and more robust way to integrate the entire toolchain for build, test, and deployment.
 
