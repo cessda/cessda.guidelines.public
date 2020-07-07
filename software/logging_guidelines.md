@@ -13,7 +13,8 @@ on logging which recommends that applications running processes should write the
 In every deployment environments, each process stream should be captured by the execution environments.
 At CESSDA, for each application we have different log streams for the various environments.
 
-This guideline aims to have application logging consistent within the application, consistent across an organization's service portfolio and use industry standards and best practice where relevant,
+This guideline aims to have application logging consistent within the application, consistent across an organization's
+service portfolio and use industry standards and best practice where relevant,
 so the logged event data can be consumed, correlated, analysed and managed by its central logging system.
 
 ## Logging processes
