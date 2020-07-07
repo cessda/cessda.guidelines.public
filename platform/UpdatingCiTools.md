@@ -1,7 +1,7 @@
 ---
 title: Updating CI Tools
 parent: Technical Infrastructure
-nav_order: 316
+nav_order: 375
 ---
 
 # {{ page.title }}

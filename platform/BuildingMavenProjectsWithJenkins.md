@@ -1,7 +1,7 @@
 ---
 title: Building Maven Projects with Jenkins
 parent: Technical Infrastructure
-nav_order: 311
+nav_order: 355
 ---
 
 # {{ page.title }}
@@ -12,19 +12,20 @@ See [Naming Conventions]({% link platform/NamingConventions.md %}).
 
 ## Overview
 
-The de facto  build tool for Java Application is Maven. Jenkins Pipeline is used to automate the build process with Declaration
- pipeline written in groovy language.
+The de facto build tool for Java Applications is Maven.
+A Jenkinsfile is used to automate the build process.
 
-We have explained  ["Building Docker Images on Jenkins"]{% link platform/BuildingDockerImagesOnJenkins.md %})
+See also ["Building Docker Images on Jenkins"]({% link platform/BuildingDockerImagesOnJenkins.md %}) for related information.
 
-* Assumptions are Java and Maven is installed on Jenkins systems's node or Jenkins slave container is configured to run with
- image already  installed Java and Maven.
+* The assumption is that Java and Maven are installed on the Jenkins system node,
+or the Jenkins subordinate container is configured to run with an image which has
+Java and Maven pre-installed.
 
 ## Adding the Build Jenkinsfile
 
-The Jenkinsfile must be added to the root of the repository. This is the only place that Jenkins will search for the file.
-A Jenkinsfile will always start with a pipeline object that encapsulates the entire job.
-The first is define the agent to use for the build as shown below
+The Jenkinsfile must be added to the root of the repository. This is the only place
+that Jenkins will search for the file.
+A Jenkinsfile will always start with a pipeline object that encapsulates the entire job. The first step is to define the agent to use for the build as shown below:
 
 ```groovy
 pipeline{
@@ -32,16 +33,19 @@ pipeline{
 }
 ```
 
-This makes it run with the Jenkins slave container configured which has maven already installed.
+This makes it run with the Jenkins subordinate container configured which has
+Java and Maven already installed.
 
-The next stage is building and running a Sonar scan on the application. To scan Maven projects in sonar the `pom.xml` file needs to have
- this snippet inserted in the `<properties>` section.
+The next stage is building and running a Sonar scan on the application.
+To scan Maven projects in sonar the `pom.xml` file needs to have this snippet
+inserted in the `<properties>` section.
 
 ```xml
 <sonar-maven-plugin.version>3.6.0.1398</sonar-maven-plugin.version>
 ```
 
-In the build section of the pom.xml another snippet must be added. This allows the sonar plugin to be downloaded from Maven Central:
+In the build section of the pom.xml another snippet must be added.
+This allows the sonar plugin to be downloaded from Maven Central:
 
 ```xml
 <plugin>
@@ -65,15 +69,18 @@ stage('Build Project and Run Sonar Scan') {
 }
 ```
 
-We use a `withMaven{}` step which configures a maven environment to use within a pipeline job by calling `sh mvn`.
-With `withMaven{}`, Jenkins also discovers the generated Maven artefacts, running and publishing JUnit test results and reports.  
+We use the `withMaven{}` step which configures a Maven environment to use within
+a pipeline job by calling `sh mvn`.
+Additionally, Jenkins discovers the generated Maven artefacts, running and publishing JUnit test results and reports.  
 
-The healthScaleFactor parameter is an amplification factor that is applied to test failures when computing the test result contribution
- to the build health score. From the above script, it is set to the default, factor 1.0. A factor of 1.0 means that 10% of tests failing
-  will score 90% health score. The factor is persisted with the build results, so changes will only be reflected in new builds.  
+The healthScaleFactor parameter is an amplification factor that is applied to test
+failures when computing the test result contribution to the build health score.
+From the above script, it is set to the default, factor 1.0.
+A factor of 1.0 means that 10% of tests failing will score 90% health score.
+The factor is persisted with the build results, so changes will only be reflected in new builds.  
 
-The command `sh 'mvn clean install sonar:sonar'` cleans any existing resources, builds the projects and generates a report that is
- send to [SonarQube](https://sonarqube.cessda.eu) dashboard.
+The command `sh 'mvn clean install sonar:sonar'` cleans any existing resources,
+builds the projects and generates a report that is sent to [SonarQube](https://sonarqube.cessda.eu) dashboard.
 
 The next stage is to read the SonarQube analysis.  
 
@@ -89,4 +96,4 @@ stage("Get Sonar Quality Gate") {
 ```
 
 The timeout option specifies maximum time to wait for the response of a service call. We set the parameter to one hour.
- The pipeline will be aborted due if quality gate fails.
+The pipeline will be aborted if the Quality Gate fails.

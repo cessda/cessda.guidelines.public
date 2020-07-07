@@ -1,7 +1,8 @@
 ---
-title: Adding Jenkins support to Docker
+title: Building Docker Images on Jenkins
 parent: Technical Infrastructure
-nav_order: 313
+has_children: true
+nav_order: 360
 ---
 
 # {{ page.title }}
