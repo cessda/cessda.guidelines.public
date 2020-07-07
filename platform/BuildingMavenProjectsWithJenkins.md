@@ -25,7 +25,8 @@ Java and Maven pre-installed.
 
 The Jenkinsfile must be added to the root of the repository. This is the only place
 that Jenkins will search for the file.
-A Jenkinsfile will always start with a pipeline object that encapsulates the entire job. The first step is to define the agent to use for the build as shown below:
+A Jenkinsfile will always start with a pipeline object that encapsulates the entire job.
+The first step is to define the agent to use for the build as shown below:
 
 ```groovy
 pipeline{
