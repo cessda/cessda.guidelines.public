@@ -5,7 +5,7 @@ published: true
 nav_order: 510
 ---
 
-## {{ page.title }}
+# {{ page.title }}
 
 Software development (from requirements, through design, documentation and testing to acceptance).
 

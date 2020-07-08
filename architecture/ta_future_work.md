@@ -4,7 +4,8 @@ parent: Technical Architecture
 published: true
 nav_order: 540
 ---
-## {{ page.title }}
+
+# {{ page.title }}
 
 Rather than producing theoretical guidance for all aspects,
 it has been decided that a better approach is to couple the guidance to relevant phases of activity,
@@ -13,7 +14,7 @@ so that e.g. web usability guidance will be produced alongside the development o
 in the same way that the development of the Open Source Metadata Harvester has informed the specification of the development
 environment.
 
-### Web usability
+## Web usability
 
 Use responsive web design, so that applications can be used on smartphone, tablets, laptops and desktop devices.
 To include minimum accessibility standards and HTML/CSS compliance levels that should be met.
@@ -30,7 +31,7 @@ To include minimum accessibility standards and HTML/CSS compliance levels that s
 
 - Error handling
 
-### Application Guidelines
+## Application Guidelines
 
 - User Navigation
 
@@ -41,7 +42,7 @@ To include minimum accessibility standards and HTML/CSS compliance levels that s
 - Logging (covered by 12 factor app, number 6 ([Logs - Treat logs as
     event streams](http://12factor.net/logs)).
 
-### Application Level Security
+## Application Level Security
 
 - Identification, Authentication, Authorisation
 
@@ -57,7 +58,7 @@ To include minimum accessibility standards and HTML/CSS compliance levels that s
 
 - Logging
 
-### Interoperability Standards
+## Interoperability Standards
 
 - DDI C/L
 
@@ -81,7 +82,7 @@ To include minimum accessibility standards and HTML/CSS compliance levels that s
 
 - INSPIRE (ISO19115)
 
-### Technical Environment
+## Technical Environment
 
 - Hardware Architecture and Specifications
 
@@ -107,7 +108,7 @@ To include minimum accessibility standards and HTML/CSS compliance levels that s
 
 - Reliability
 
-### Standard Operating Procedures
+## Standard Operating Procedures
 
 Deployment and in-life operations and maintenance of software artefacts are currently out of scope.
 
@@ -139,33 +140,33 @@ The following should be considered at a later stage:
 
   - Application Management
 
-### System Level
+## System Level
 
 TBC
 
-### System Isolation
+## System Isolation
 
 TBC
 
-### System Configuration and Hardening
+## System Configuration and Hardening
 
 Steps must be taken to protect software from the [OWASP Top 10](https://www.owasp.org/index.php/OWASP_Top_Ten_Cheat_Sheet) vulnerabilities.
 Ideally this should be done centrally, rather than on an application by application basis.
 
-### System Utilities
+## System Utilities
 
 TBC
 
-### Network Level
+## Network Level
 
 TBC
 
-### Business Continuity
+## Business Continuity
 
 Assuming cloud-based deployment, first level of BC is provided by hosting service.
 Second level (for Development Infrastructure) requires further consideration.
 
-### Hosting Services
+## Hosting Services
 
 Deployment and in life operations and maintenance of software artefacts are currently out of scope.
 
@@ -177,7 +178,7 @@ The following should be considered at a later stage:
 
 - SaaS, PaaS, IaaS
 
-### Demo/Proof of Concept
+## Demo/Proof of Concept
 
 Do we need to allow for proof of concept deployments?
 This could be helpful in cases where requirements are unclear, or demand needs to be tested.

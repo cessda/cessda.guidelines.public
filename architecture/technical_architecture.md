@@ -29,10 +29,10 @@ whilst protecting CESSDA's investment in its Research Infrastructure.
 The publication of basic standards for source code quality will ensure
 Service Providers know what is expected of them.
 
-The use of a build server linked to the source code repository will ensure that all source code is automatically tested to ensure it meets common coding standards,
+The use of a build server linked to the source code repository will ensure that all source code is automatically tested
+to ensure it meets common coding standards,
 that there is adequate test case coverage and that basic interoperability standards have been met.
-It will mean that remedial action can be highlighted well before deliverable due
-dates,
+It will mean that remedial action can be highlighted well before deliverable due dates,
 and can act as an input to the interim and final reviews.
 
 Without an intentional (as opposed to ad-hoc or emergent) Technical

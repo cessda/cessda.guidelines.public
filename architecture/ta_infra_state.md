@@ -4,7 +4,8 @@ parent: Technical Architecture
 published: true
 nav_order: 550
 ---
-## {{ page.title }}
+
+# {{ page.title }}
 
 At the date of publication of this version of the Technical Architecture document,
 the CESSDA development infrastructure consists of the following components:

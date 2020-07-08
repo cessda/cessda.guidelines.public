@@ -4,7 +4,7 @@ parent: Technical Architecture
 published: true
 nav_order: 525
 ---
-## {{ page.title }}
+# {{ page.title }}
 
 The CESSDA development infrastructure offers a number of benefits for
 potential suppliers of software artefacts for the CESSDA Research
@@ -12,7 +12,7 @@ Infrastructure, not least of which is a ready made development
 environment that can be used at no cost, and will increase the
 likelihood of software artefacts meeting the agreed acceptance criteria.
 
-### Software code structure
+## Software code structure
 
 Code should be well structured, commented and with minimum complexity.
 Code blocks should not be repeated (i.e. the DRY principle, see e.g.
@@ -48,7 +48,7 @@ database technologies, NoSQL tools and implementation language etc to be adopted
 it would severely limit the flexibility of potential solutions over time,
 as well as increasing the barriers to entry for CESSDA's suppliers.
 
-### Compliance with earlier design decisions
+## Compliance with earlier design decisions
 
 This document is to be taken as **the primary source** of information about decisions intended to guide and inform the development
 and delivery of software artefacts by CESSDA's suppliers.
@@ -58,15 +58,20 @@ That said, detailed 'how to' guides are made available via the CESSDA SCM.
 See for instance the [API guidelines](https://bitbucket.org/cessda/cessda.guidelines.api/wiki/Home)
 or the [guidelines for Developers](https://bitbucket.org/cessda/cessda.guidelines.cit/wiki/Developers).
 
-### Documentation throughout the development lifecycle
+## Documentation throughout the development lifecycle
 
-The following documentation types must be made available in the relevant parts of the *docs* directory of the source code repository for the software artefact,
+The following documentation types must be made available in the relevant parts of the *docs* directory
+of the source code repository for the software artefact,
 and should be maintained and updated throughout the development process, up to the acceptance testing phase:
 
-- Operational: Installation guide (configuration details for deployment,
+### Operational
+
+- Installation guide (configuration details for deployment,
     see also 12 factor app, number 3 [Config - Store config in the environment](http://12factor.net/config))
 
-- Development: Source code commented throughout;
+### Development
+
+- Source code commented throughout;
     Requirements (functional and non-functional, including wireframes for any UI components)
     API documentation, extension/developer's guide; Systems architecture (fit with CESSDA RI);
     Technical specification (implementation details);
