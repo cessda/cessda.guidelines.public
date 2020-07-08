@@ -1,11 +1,11 @@
 ---
 title: Version History
 parent: Technical Architecture
-published: false
+published: true
 nav_order: 593
 ---
 
-# {{ page.title }}
+## {{ page.title }}
 
 | **Version**  | **Release Date**  | **Comment** |
 |--------------|-------------------|-------------|

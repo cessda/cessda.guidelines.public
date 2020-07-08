@@ -1,15 +1,23 @@
 ---
 title: Glossary
 parent: Technical Architecture
-published: false
+published: true
 nav_order: 591
 ---
 
-# {{ page.title }}
+## {{ page.title }}
 
-| **Acronym**   | **Expansion**               | **Description** |
-|----------------------|----------------------|----------------------|
-| API      |     Application Programming Interface |   "In computer programming, an application programming interface (API) is a set of routines, protocols, and tools for building software and applications." Source: [Wikipedia: Application programming interface](<https://en.wikipedia.org/wiki/Application_programming_interface>)|
- | CI      |      Continuous Integration      |         "The practice, in software engineering, of merging all developer working copies to a shared [mainline](https://en.wikipedia.org/wiki/Trunk_(software)) several times a day." Source: [Wikipedia: Continuous Integration](<https://en.wikipedia.org/wiki/Continuous_integration>)|
- | RI       |     \[CESSDA\] Research Infrastructure |  "A seamless social science data archive service for the whole of the European Research Area (ERA), which is capable of supporting the research needs of the next generation of social scientists wherever in Europe they may be, or beyond." Source: [CESSDA SaW project overview](<https://www.cessda.eu/Projects/All-projects/CESSDA-SaW>)|
- | \-  |      Software artefacts           |        Software products, applications, services, components.|
+| Acronym       | Expansion                          | Description                                                                                                                                                                                                                                                                                        |
+|---------------|------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 12 factor app | Heroku Twelve-Factor App           | “The twelve-factor app is a methodology for building software-as-a-service apps.” Source: The Twelve-Factor App                                                                                                                                                                                    |
+| API           | Application Programming Interface  | “In computer programming, an application programming interface (API) is a set of routines, protocols, and tools for building software and applications.” Source: Wikipedia: Application programming interface                                                                                      |
+| CI            | Continuous Integration             | “The practice, in software engineering, of merging all developer working copies to a shared mainline several times a day.” Source: Wikipedia: Continuous Integration                                                                                                                               |
+| CT            | Continuous Testing                 | “The process of executing automated tests as part of the software delivery pipeline to obtain immediate feedback on the business risks associated with a software release candidate.” Source: Wikipedia: Continuous Testing                                                                        |
+| CIT           | Continuous Integration and Testing | A combination of CI and CT                                                                                                                                                                                                                                                                         |
+| COTS          | Commercial Off The Shelf [product] | “Products that are standard manufactured products rather than custom, or bespoke, products.” Source: Wikipedia: Commercial off-the-shelf                                                                                                                                                           |
+| REST          | Representational State Transfer    | “An architectural style consisting of a coordinated set of architectural constraints applied to components, connectors, and data elements, within a distributed hypermedia system.” Source: Wikipedia: REST                                                                                        |
+| RI            | [CESSDA] Research Infrastructure   | “A seamless social science data archive service for the whole of the European Research Area (ERA), which is capable of supporting the research needs of the next generation of social scientists wherever in Europe they may be, or beyond.” Source:  CESSDA SaW project overview                  |
+| SCM           | Source Code Management [system]    | A system for “the management of changes to … computer programs.” Source: Wikipedia: Version Control                                                                                                                                                                                                |
+| -             | Software artefacts                 | Software products, applications, services, components.                                                                                                                                                                                                                                             |
+| -             | Technical debt                     | “Work that needs to be done before a particular job can be considered complete or proper. If the debt is not repaid, then it will keep on accumulating interest, making it hard to implement changes later on.”  Source: Wikipedia: Technical debt                                                 |
+| -             | Usability                          | “The degree to which a product can be used by specified consumers to achieve quantified objectives with effectiveness, efficiency, and satisfaction in a quantified context of use.” Source: Ergonomic Requirements for Office Work with Visual Display Terminals, ISO 9241-11, ISO, Geneva, 1998. |

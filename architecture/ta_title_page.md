@@ -1,7 +1,7 @@
 ---
 title: Document Details
 parent: Technical Architecture
-published: false
+published: true
 nav_order: 594
 ---
 
