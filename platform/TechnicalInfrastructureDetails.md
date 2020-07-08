@@ -16,6 +16,7 @@ The diagram shows a general overview of the GCP projects,
 Jenkins CI/CD toolchain and Bitbucket code repositories and how they are integrated within the deployment pipeline.
 
 * This designs explains the version control systems in [Bitbucket](https://bitbucket.org/cessda/)
+
 This system allows developers to keep track of the changes in CESSDA software development projects,
 and enable them to collaborate on those projects or tools.
 There are two types repositories to be used in the CI/CD process; Component and Deployment repositories.
