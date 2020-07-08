@@ -50,7 +50,7 @@ as no personal data is associated with the accounts, and all service notificatio
 | Avatar                            | Some form of ‘identity’ to associate with the CessdaTechFrame account                                                             | Gravatar                           | <https://en.gravatar.com>                          |
 | Microservice registry             | Similar concept to GitHub etc - version control and access/sharing for containers                                                 | Docker Hub, Google Cloud Platform  | <https://hub.docker.com>/ <https://cloud.google.com> |
 
-### Service Integration
+## Service Integration
 
 There are a number of links between components of the development environment, as detailed below.
 These typically ensure that a change made to one is automatically reflected in the other.
