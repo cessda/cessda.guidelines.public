@@ -1,11 +1,10 @@
 ---
 title: Software Development
-layout: page
 has_children: true
-nav_order: 010
+nav_order: 100
 ---
 
-# CESSDA Software Development
+# {{ page.title }}
 
 Development of CESSDA tools and services is carried out using CESSDA-owned git-repositories on Bitbucket.
 
@@ -20,4 +19,3 @@ To assess the fitness for CESSDA purposes, software systems must pass the [quali
 
 In certain cases, CESSDA can [archive source code repositories]({% link software/code_archiving.md %})
 of abandonded software development efforts.
-

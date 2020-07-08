@@ -1,11 +1,10 @@
 ---
 title: Service Objectives
-layout: page
 parent: Service Operation
-nav_order: 020
+nav_order: 220
 ---
 
-# CESSDA Service Objectives
+# {{ page.title }}
 
 ## Security
 

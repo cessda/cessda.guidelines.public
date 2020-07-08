@@ -1,11 +1,10 @@
 ---
 title: Software Requirements
-layout: page
 parent: Software Development
-nav_order: 010
+nav_order: 110
 ---
 
-# CESSDA Software Requirements
+# {{ page.title }}
 
 For all CESSDA tools and services the following requirements must be met
 
@@ -17,10 +16,8 @@ For all CESSDA tools and services the following requirements must be met
 
 * The Intellectual Property must be clear.
 * A comprehensive [README]({{ site.technical-reference.url }}developer-guidelines/02-readme.html) must be present.
-* The tool must be of proven acceptable [quality]({% link services/requirements.md %}).
+* The tool must be of proven acceptable [quality]({% link software/requirements.md %}).
 * The CESSDA [release policy]({% link software/releases.md %}) must be followed.
 * Documentation of Rest APIs is available using [OpenAPI Standard](https://swagger.io/docs/specification/about/).
 * The tool must be aligned with CESSDA [infrastructure design]({% link software/compatibility.md %}).
 * Include contribution guidelines based on the [CONTRIBUTING.md template](../CONTRIBUTING_template.md).
-
-

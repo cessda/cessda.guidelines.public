@@ -2,7 +2,9 @@
 
 title: CESSDA Technical Guidelines
 baseurl: /
-logo: CESSDA.png
+logo: assets/CESSDA.png
+color_scheme: cessda
+
 
 # Theme
 theme: just-the-docs
@@ -11,13 +13,15 @@ search_enabled: false
 defaults:
  -
   scope:
-    type: pages
+   path: ""
+   type: "pages"
   values:
-    permalink: /:path/:basename:output_ext
+   permalink: /:path/:basename:output_ext
+   layout: "page"
 
 technical-reference:
-  version: "v0.2"
-  url: "https://technical-reference.readthedocs.io/en/v0.2/"
+ version: "v0.2"
+ url: "https://technical-reference.readthedocs.io/en/v0.2/"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -27,24 +31,23 @@ technical-reference:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
+# Individual pages that are e.g. in draft format can be hidden using 'published: false' in the Front Matter.
+#
 exclude:
-  - .sass-cache/
-  - .jekyll-cache/
-  - Dockerfile
-  - Jenkinsfile
-  - gemfiles/
-  - Gemfile
-  - Gemfile.lock
-  - Rakefile
-  - nginx/
-  - node_modules/
-  - README.md
-  - CONTRIBUTING.md
-  - CHANGELOG.md
-  - SoftwareMaturityLevels/SML_Title_Page.md
-  - SoftwareMaturityLevels/SML_Version_History.md
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-
+ - .sass-cache/
+ - .jekyll-cache/
+ - Dockerfile
+ - Jenkinsfile
+ - gemfiles/
+ - Gemfile
+ - Gemfile.lock
+ - Rakefile
+ - nginx/
+ - node_modules/
+ - README.md
+ - CONTRIBUTING.md
+ - CHANGELOG.md
+ - vendor/bundle/
+ - vendor/cache/
+ - vendor/gems/
+ - vendor/ruby/

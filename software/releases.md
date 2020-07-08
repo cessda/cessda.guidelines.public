@@ -1,12 +1,11 @@
 ---
 title: Software Releases
-layout: page
 parent: Software Development
 has_children: true
-nav_order: 040
+nav_order: 140
 ---
 
-# Software Releases
+# {{ page.title }}
 
 Releases of a CESSDA product must follow the [CESSDA Release Policy](#cessda-release-policy).
 
@@ -28,4 +27,3 @@ can be released, once the manual evaluation by the responsible user representati
 * Releases must be tagged in the git repository
 * Releases must be available as Docker images with the release version as tag
 * Release tarballs should be [published]({% link software/publication.md %})
-

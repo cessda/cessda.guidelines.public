@@ -1,11 +1,10 @@
 ---
 title: Infrastructure Compatiblity
-layout: page
 parent: Software Development
-nav_order: 020
+nav_order: 120
 ---
 
-# CESSDA Infrastructure Compatiblity
+# {{ page.title }}
 
 CESSDA Infrastructure is based on Docker Containers orchestrated by Kubernetes.
 
@@ -21,5 +20,3 @@ Thus any CESSDA service must follow the following design principles, building up
   * Implement `X-Request-ID` headers.
 
 * Logs must be streamed to `STDOUT` and should follow [NSD JSON Schema](https://gitlab.nsd.no/logging/log-schema).
-
-
