@@ -7,6 +7,6 @@ task :lint do
 end
 
 task :htmlproofer do
-  options = { :only_4xx => true, :url_ignore => [/github\.com\/pages/] }
+  options = { :only_4xx => true, :allow_hash_href => true }
   HTMLProofer.check_directory("./_site", options).run
 end
