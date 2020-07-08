@@ -19,7 +19,7 @@ This is an introduction to the CESSDA Technical Infrastructure. It provides both
 [Technical Infrastructure Overview]({% link platform/TechnicalInfrastructureOverview.md %}) - is the starting point
  for people who are unfamiliar with CESSDA's Technical Infrastructure. It gives a broad overview
   of the purpose and composition of the various components and deployment environments, the
-   deployment process and the responsibilities of developers vs. the CESSDA MO technical team.
+   deployment process and the responsibilities of developers vs. the CESSDA Platform team.
     It links to the following pages (which can be read in conjunction with it, or on a standalone basis).
 
 ### Follow up Reading

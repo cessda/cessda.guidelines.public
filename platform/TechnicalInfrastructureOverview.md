@@ -145,7 +145,7 @@ and each deployment environment at the point of use.
 All the deployment, monitoring and management code has been separated out from the source code for
 each tool by the use of different repositories.
 So the developers have write access to the application code repositories
-and the CESSDA MO technical team have write access to the deployment code.
+and the CESSDA Platform team have write access to the deployment code.
 This allows for the possibility of making the application source code Open Source
 without revealing the specifics of the configuration of one or more clusters.
 
@@ -153,14 +153,14 @@ without revealing the specifics of the configuration of one or more clusters.
 
 Developers are responsible for delivering code that complies with the prevailing CESSDA Technical standards.
 Source code must comply with the [relevant guidelines]({% link software/index.md %}).
-The CESSDA MO technical team work with Developers to devise and put in place some or all of the tests
+The CESSDA Platform team work with Developers to devise and put in place some or all of the tests
 used to ensure compliance to the guidelines. Developers are expected to fix any defects revealed by the tests.
 
 Developers should provide [Unit tests](https://en.wikipedia.org/wiki/Unit_testing) for their products,
-and the CESSDA MO technical team will work with the developers and/or relevant user groups
+and the CESSDA Platform team will work with the developers and/or relevant user groups
 to develop Selenium tests to cover the main user journeys for each product.  
 
-The CESSDA MO technical team is responsible for creating and updating the scripts
+The CESSDA Platform team is responsible for creating and updating the scripts
 that deploy products to the various build environments (development, staging, production).
 
 There is an reverse proxy in front of all deployed tools,

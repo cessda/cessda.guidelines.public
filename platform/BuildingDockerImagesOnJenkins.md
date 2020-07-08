@@ -20,6 +20,6 @@ This automation ensures that all applications are produced with common naming an
 
 [Adding the Build Jenkinsfile]({% link platform/AddingTheBuildJenkinsfile.md %})
 
-## For MO Technical Team
+## For Platform team
 
 [Adding the Deployment Jenkinsfile]({% link platform/AddingTheDeploymentJenkinsfile.md %})

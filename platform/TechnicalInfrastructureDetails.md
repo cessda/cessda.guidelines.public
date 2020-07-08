@@ -25,11 +25,13 @@ controlled. Component repository also contain the Dockerfile which builds the Do
 
 **Deployment repository** contains the scripts that run the deployment and also contains
 some secrets used in the setting up Microservices on clouds.
+
 This design separates the repositories containing the application software
 (which may be made Open Source at some point) from those containing the deployment scripts and other sensitive elements
-(which will remain private with write access restricted to the CESSDA MO Technical team only).
+(which will remain private with write access restricted to the CESSDA Platform team only).
 
 * The design also explains CESSDA's CI/CD automation in [Jenkins](https://jenkins.cessda.eu/).
+
 Jenkins offers a Continuous Integration or Continuous Delivery environment for source code repositories using pipelines,
 as well as automating other routine development and deployment tasks.
 In this design upstream job would be create to parameterizes the Component repository
@@ -40,6 +42,7 @@ Jenkins deploys automatically into the development and staging environments.
 Jenkins also gives a seamless and more robust way to integrate the entire toolchain for build, test, and deployment.
 
 * Google Kubernetes Engine [GKE](https://console.cloud.google.com/kubernetes/)
+
 In this design, there are four clusters in total; three for various environments
 (development, staging and production) in the CI/CD process and the other one (management)
 which hosts and runs the tools used in the build, testing and deployment process.
