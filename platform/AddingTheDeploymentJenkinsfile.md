@@ -1,7 +1,7 @@
 ---
 title: Adding the Deployment Jenkinsfile
-parent: Technical Infrastructure
-nav_order: 31x
+parent: Building Docker Images on Jenkins
+nav_order: 3602
 ---
 
 # {{ page.title }}

@@ -1,7 +1,7 @@
 ---
 title: GCP Main Project Structure
 parent: Technical Infrastructure
-nav_order: 303
+nav_order: 320
 ---
 
 # {{ page.title }}

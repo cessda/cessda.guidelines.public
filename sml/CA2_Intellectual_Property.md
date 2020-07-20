@@ -1,7 +1,7 @@
 ---
 title: "CA2: Intellectual Property"
 parent: Software Maturity Levels
-nav_order: 402
+nav_order: 415
 ---
 
 # {{ page.title }}

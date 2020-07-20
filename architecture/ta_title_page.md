@@ -2,7 +2,7 @@
 title: Document Details
 parent: Technical Architecture
 published: false
-nav_order: 502
+nav_order: 594
 ---
 
 # {{ page.title }}

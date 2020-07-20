@@ -1,7 +1,8 @@
 ---
-title: Adding Jenkins support to Docker
+title: Building Docker Images on Jenkins
 parent: Technical Infrastructure
-nav_order: 313
+has_children: true
+nav_order: 360
 ---
 
 # {{ page.title }}
@@ -19,6 +20,6 @@ This automation ensures that all applications are produced with common naming an
 
 [Adding the Build Jenkinsfile]({% link platform/AddingTheBuildJenkinsfile.md %})
 
-## For MO Technical Team
+## For Platform team
 
 [Adding the Deployment Jenkinsfile]({% link platform/AddingTheDeploymentJenkinsfile.md %})

@@ -1,7 +1,7 @@
 ---
 title: Using Helm to deploy products
 parent: Technical Infrastructure
-nav_order: 308
+nav_order: 345
 ---
 
 # {{ page.title }}

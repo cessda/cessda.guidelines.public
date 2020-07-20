@@ -3,6 +3,8 @@
 title: CESSDA Technical Guidelines
 baseurl: /
 logo: assets/CESSDA.png
+color_scheme: cessda
+
 
 # Theme
 theme: just-the-docs

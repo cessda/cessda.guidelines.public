@@ -1,7 +1,7 @@
 ---
 title: Adding the Build Jenkinsfile
-parent: Technical Infrastructure
-nav_order: 310
+parent: Building Docker Images on Jenkins
+nav_order: 3601
 ---
 
 # {{ page.title }}
