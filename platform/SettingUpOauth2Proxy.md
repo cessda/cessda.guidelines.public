@@ -1,5 +1,5 @@
 ---
-title: Set up and configure oauth2-proxy
+title: Setup and Configure oauth2-proxy
 parent: Technical Infrastructure
 nav_order: 390
 ---
