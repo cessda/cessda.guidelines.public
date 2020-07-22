@@ -1,3 +1,9 @@
+---
+title: Set up and configure oauth2-proxy
+parent: Technical Infrastructure
+published: false
+nav_order: 390
+---
 # Set up and configure oauth2-proxy
 
 All CESSDA tools and services are exposed to the public internet, but not all of them should be accessible to the public.

@@ -2,7 +2,7 @@
 
 This repository contains the technical guidelines for CESSDA ERIC.
 
-## Technical Implemenation
+## Technical Implementation
 
 The documentation is written in markdown files and compiled to html using [Jekyll](https://jekyllrb.com)
 with the [Just the docs](https://github.com/pmarsceill/just-the-docs) theme.
@@ -24,9 +24,8 @@ the [theme's options](https://pmarsceill.github.io/just-the-docs/docs/navigation
 
 The documentation uses Markdown files with Jekyll headers.
 Markdown uses ATX style headers and maximal line lengths of 140 characters.
-Compliance is checked with [markdownlint](https://github.com/markdownlint/markdownlint) by running
+Compliance is checked with [`markdownlint`](https://github.com/markdownlint/markdownlint) by running
 
 ```shell
 bundle exec rake lint
 ```
-
