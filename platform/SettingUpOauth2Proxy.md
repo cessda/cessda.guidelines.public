@@ -28,17 +28,17 @@ A cookie secret must be generated for each deployment. This could be done at the
 
 Create an OIDC client
 
-![List of clients in Keycloak](/assets/KeycloakClientList.png)
+![List of clients in Keycloak](../assets/KeycloakClientList.png)
 
-![Client creation screen, with an example client id and URL](/assets/KeycloakClientCreation.png)
+![Client creation screen, with an example client id and URL](../assets/KeycloakClientCreation.png)
 
 Set the access type to confidential. This is needed to get the client secret.
 
-![Client settings tab](/assets/KeycloakClientSettings.png)
+![Client settings tab](../assets/KeycloakClientSettings.png)
 
 Retrieve the secret from the credentials tab
 
-![Client credential tab](/assets/KeycloakClientSecret.png)
+![Client credential tab](../assets/KeycloakClientSecret.png)
 
 ### Configure oauth2-proxy
 
