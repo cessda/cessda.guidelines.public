@@ -7,36 +7,35 @@ nav_order: 390
 # {{ page.title }}
 
 All CESSDA tools and services are exposed to the public internet, but not all of them should be accessible to the public.
-Previously we used HAProxy to provide basic authentication, however this encountered issues when used with services that authenticate themselves.
+Previously we used HAProxy to provide basic authentication, however this encountered issues when used with applications that authenticate themselves (such as CVS2).
 
-This document will detail the process of setting up oauth2-proxy,
+This document details the process of setting up *oauth2-proxy*,
 a tool that delegates the authentication to an oauth2 server and stores the session in a cookie.
-This should prevent basic authentication conflicts that occur with CVS2.
 
 ## Setup
 
-Like all other components that are deployed, oauth2-proxy will be deployed using a Helm chart.
+Like all other deployed components, oauth2-proxy is deployed using a Helm chart.
 
-A cookie secret must be generated for each deployment. This could be done at the chart level using Helm.
+A cookie secret must be generated for each deployment. This is done at the chart level using Helm.
 
 - Use the GCP health checks
   - These provide liveness and readiness probes
-- The backend should be configured to use the standard service endpoint of the protected service
+- The backend is configured to use the standard service endpoint of the protected service
   - `--upstream=http://mgmt-graylog:9000/`
 
 ### Set up Keycloak
 
-Create an OIDC client
+Create an OpenID Connect (OIDC) client (see below):
 
 ![List of clients in Keycloak](../assets/KeycloakClientList.png)
 
 ![Client creation screen, with an example client id and URL](../assets/KeycloakClientCreation.png)
 
-Set the access type to confidential. This is needed to get the client secret.
+Set the access type to confidential. This is needed to get the client secret (see below):
 
 ![Client settings tab](../assets/KeycloakClientSettings.png)
 
-Retrieve the secret from the credentials tab
+Retrieve the secret from the credentials tab (see below):
 
 ![Client credential tab](../assets/KeycloakClientSecret.png)
 
