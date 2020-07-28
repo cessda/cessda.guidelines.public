@@ -23,8 +23,17 @@ the [theme's options](https://pmarsceill.github.io/just-the-docs/docs/navigation
 ## Development
 
 The documentation uses Markdown files with Jekyll headers.
-Markdown uses ATX style headers and maximal line lengths of 140 characters.
-Compliance is checked with [`markdownlint`](https://github.com/markdownlint/markdownlint) by running
+We follow the [Google Style Guide for Markdown](https://google.github.io/styleguide/docguide/style.html),
+including ATX style headers and maximal line lengths of 140 characters.
+
+General recommendations:
+
+* Start a new sentence on a new line and use logical places to wrap text if exceeding the line limit.
+* Use lazy numbering for lists and appropriate measures to reduce the need to touch other lines/files when making changes.
+* Use third person point of view and avoid narrative style.
+* Describe current state, avoid use of future tense.
+
+Compliance is checked with [markdownlint](https://github.com/markdownlint/markdownlint) by running
 
 ```shell
 bundle exec rake lint
