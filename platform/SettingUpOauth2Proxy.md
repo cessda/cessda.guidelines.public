@@ -7,7 +7,8 @@ nav_order: 390
 # {{ page.title }}
 
 All CESSDA tools and services are exposed to the public internet, but not all of them should be accessible to the public.
-Previously we used HAProxy to provide basic authentication, however this encountered issues when used with applications that authenticate themselves (such as CVS2).
+Previously we used HAProxy to provide basic authentication, however this encountered issues when used with applications that
+authenticate themselves (such as CVS2).
 
 This document details the process of setting up *oauth2-proxy*,
 a tool that delegates the authentication to an oauth2 server and stores the session in a cookie.
