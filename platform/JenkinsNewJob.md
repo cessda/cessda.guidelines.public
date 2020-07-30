@@ -13,6 +13,7 @@ nav_order: 3703
 See [Naming Conventions]({% link platform/NamingConventions.md %}).
 
 ## Overview
+
 Jenkins is typically used to check out the code from a linked repository,
 but can also run a variety of tests and copy/move build artefacts to other execution environments or repositories.
 Email notifications can be sent automatically whenever a job succeeds or fails (to different people in each case, if required).
@@ -28,6 +29,7 @@ Names of jobs are governed by rules, so for example build jobs must start with *
 
 ## Link it to a Source Code Repository
 
-Now click on the newly created job in the Jenkins dashboard, select *Configure* and scroll down to the *Source Code Management* section. Set up the Repository URL and select the stored Credentials to use.  
+Now click on the newly created job in the Jenkins dashboard, select *Configure* and scroll down to the
+*Source Code Management* section. Set up the Repository URL and select the stored Credentials to use.
 
 ![JenkinsJobGitCredentials1.jpg](../assets/JenkinsJobGitCredentials1.jpg)

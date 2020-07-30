@@ -36,7 +36,7 @@ changes the status to OPEN and assigns it to the Content Contact for the tool.
 - For traceability, the version number of the release **must** be included in the issue.
 
 - The relevant repos must be [tagged](https://confluence.atlassian.com/bitbucket/repository-tags-321860179.html)
-with the release version number.
+    with the release version number.
 
 - For verification purposes, the [changelog](https://keepachangelog.com/en/1.0.0/) **must** be referenced.
 

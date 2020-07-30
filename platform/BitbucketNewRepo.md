@@ -57,7 +57,8 @@ some of which will remain unchanged, others of which need to be edited by the co
 If there is a project in an external location, but with just a few files in it,
 create a repository on Bitbucket and add the code to it (code can be unversioned or in Git/Mercurial).
 
-See [Create a repository for your existing files](https://confluence.atlassian.com/bitbucket/create-a-repository-for-your-existing-files-800695576.html) for more details.
+See [Create a repository for your existing files]
+(<https://confluence.atlassian.com/bitbucket/create-a-repository-for-your-existing-files-800695576.html>) for more details.
 
 ### Import or convert code from an existing tool
 

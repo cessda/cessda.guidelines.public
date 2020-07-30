@@ -22,7 +22,8 @@ See [Updating CI Tools]({% link platform/UpdatingCiTools.md %}).
 - Deployment, via Helm. See [CDC Deployment](https://bitbucket.org/cessda/cessda.cdc.deployment/src/master/) for a working example.
 - Reverse Proxy. See [CDC Reverse](https://bitbucket.org/cessda/cessda.cdc.reverse/src/master/) for a working example.
 - Test. See [CDC Test](https://bitbucket.org/cessda/cessda.cdc.test/src/master/) for a working example.
-- User Guide - generates documentation from Markdown files. See [CDC Userguide](https://bitbucket.org/cessda/cessda.cdc.userguide/src/master/) for a working example.
+- User Guide - generates documentation from Markdown files.
+        See [CDC Userguide](https://bitbucket.org/cessda/cessda.cdc.userguide/src/master/) for a working example.
 
 ## Create Jenkins jobs
 
@@ -31,7 +32,8 @@ See [Create a New Jenkins Job]({% link platform/JenkinsNewJob.md %}).
 ## Create DNS records
 
 Needed for development, staging and production instances (see [CESSDA naming conventions]({% link platform/NamingConventions.md %})).
-Then update the [Product Endpoint Details](https://docs.google.com/spreadsheets/d/1HNkqfw09SCj2ZLeMLH3sUw2LIYyjP6hUIXbpsrWULMo/edit?usp=sharing) file.
+Then update the
+[Product Endpoint Details](https://docs.google.com/spreadsheets/d/1HNkqfw09SCj2ZLeMLH3sUw2LIYyjP6hUIXbpsrWULMo/edit?usp=sharing) file.
 
 ## Create/edit Jenkinsfile for each repository
 

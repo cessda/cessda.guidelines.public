@@ -32,6 +32,7 @@ Define the environment variables and include the generic image tagging statement
         module_name = "module"
         image_tag = "${docker_repo}/${product_name}-${module_name}:${env.BRANCH_NAME}-${env.BUILD_NUMBER}"
     }
+```
 
 Specify the Jenkins agent to use to perform the build
 
@@ -117,7 +118,8 @@ Build the Docker image, tag it and push it to the image registry
         stage('Check Requirements and Deployments') {
             steps {
                 dir('./infrastructure/gcp/') {
-                    build job: 'cessda.cdc.deploy/master', parameters: [string(name: 'osmh_indexer_image_tag', value: "${env.BRANCH_NAME}-${env.BUILD_NUMBER}")], wait: false
+                    build job: 'cessda.cdc.deploy/master', parameters: [string(name: 'osmh_indexer_image_tag',
+                    value: "${env.BRANCH_NAME}-${env.BUILD_NUMBER}")], wait: false
                     }
                 }
             when { branch 'master' }
