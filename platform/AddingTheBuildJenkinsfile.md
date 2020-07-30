@@ -1,6 +1,7 @@
 ---
 title: Adding the Build Jenkinsfile
 parent: Building Docker Images on Jenkins
+grand_parent: Technical Infrastructure
 nav_order: 3601
 ---
 
@@ -20,9 +21,9 @@ pipeline{
 }
 ```
 
-The first bock of significance is the environment block which defines any variables that will be used when building the Docker image.
-Defined here is the product and the module name. The product is the overall application and the module is the specific component of the
- application.
+The first block of significance is the environment block which defines any variables that will be used when building the Docker image.
+The product and the module name are defined here.
+The product is the overall application and the module is a specific component of the application.
 
 ```groovy
 environment
@@ -33,15 +34,15 @@ environment
 }
 ```
 
-The image tag uniquely identifies each build. Unique tags are used in production environments to fix the deployed application version.
+The image tag uniquely identifies each build. Unique tags are used in production environments to set the deployed component version.
 
-The next step is to define the agent that the build will run on. This can be done globally for the entire pipeline, or per stage. We will
- define the default agent using the syntax `agent any`.
- See the [Example Jenkinsfile]({% link platform/TemplateJenkinsfileForJDK11MavenProjects.md %})
-  for more variations on how to configure agents.
+The next step is to define the agent that the build will run on. This can be done globally for the entire pipeline, or per stage.
+The default agent is specified using the syntax `agent any`.
+See the [Example Jenkinsfile]({% link platform/TemplateJenkinsfileForJDK11MavenProjects.md %})
+for more variations on how to configure agents.
 
-We can now define the stages to build the application. For example, for the coffee-api the first stage is building the Docker image.
- The build of the application has been defined in a Dockerfile. This build is run with the following command.
+The stages used to build the component are defined next. For example, for the coffee-api the first stage is building the Docker image.
+ The build of the component has been defined in a Dockerfile. This build is run with the following command.
 
 ```groovy
 stage("Build Docker Image"){
@@ -52,7 +53,7 @@ stage("Build Docker Image"){
 }
 ```
 
-A second stage is used to add the latest tag to the image. Note the gcloud auth configure-docker command, this gives docker permission
+A second stage is used to add a tag to the image. Note the `gcloud auth configure-docker` command, this gives Docker permission
  to push the image to the private docker repo.
 
 ```groovy
@@ -65,5 +66,5 @@ stage('Push Docker image'){
 }
 ```
 
-The latest tag is used to mark the latest image that was built. This should not be used directly and where possible an exact version
+The `latest` tag is used to mark the latest image that was built. This should not be used directly and where possible an exact version
  should be specified. This makes deployments using rolling updates easier and allows easy rollback should issues be encountered.

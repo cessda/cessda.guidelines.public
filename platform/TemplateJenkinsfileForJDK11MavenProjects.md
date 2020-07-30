@@ -14,81 +14,135 @@ See [Naming Conventions]({% link platform/NamingConventions.md %}).
 
 This shows the general form of a Jenkinsfile used with a Maven project based on JDK11.
 
+The first step is to set a log rotation policy and specify the maximum number of builds to keep.
+
 ```groovy
-pipeline {
+pipeline{
+    options {
+        buildDiscarder logRotator(artifactNumToKeepStr: '5', numToKeepStr: '20')
+    }
+}
+```
+
+Define the environment variables and include the generic image tagging statement
+
+```groovy
     environment {
         product_name = "product"
         module_name = "module"
         image_tag = "${docker_repo}/${product_name}-${module_name}:${env.BRANCH_NAME}-${env.BUILD_NUMBER}"
     }
 
-    agent any
+Specify the Jenkins agent to use to perform the build
 
-    stages {
-        stage('Check environment') {
-            steps {
-                echo "Check environment"
-                echo "product_name = ${product_name}"
-                echo "module_name = ${module_name}"
-                echo "image_tag = ${image_tag}"
-            }
-        }
-        stage('Build Project') {
-            agent {
-                docker {
-                    image 'maven:3-jdk-11'
+```groovy
+    agent {
+         label 'jnlp-himem'
+    }
+```
+
+Steps for building a deployable image (from main branch)
+
+```groovy
+stages {
+    stage('Pull SDK Docker Image') {
+        agent {
+            docker {
+                    image 'openjdk:11-jdk'
                     reuseNode true
                 }
             }
-            steps {
-                withMaven {
-                    sh 'export PATH=$MVN_CMD_DIR:$PATH && mvn clean install'
+            stages {
+                stage('Build Project') {
+                    steps {
+                        withMaven {
+                            sh "./mvnw clean install -DbuildNumber=${env.BUILD_NUMBER}"
+                        }
+                    }
+                    when { branch 'master' }
                 }
-            }
-        }
-        stage('Run Sonar Scan') {
-            agent {
-                docker {
-                    image 'maven:3-jdk-11'
-                    reuseNode true
+```
+
+Building from minor branches (for pull requests and integration branches)
+
+```groovy
+                stage('Test Project') {
+                    steps {
+                        withMaven {
+                            sh './mvnw clean verify'
+                        }
+                    }
+                    when { not { branch 'master' } }
                 }
-            }
-            steps {
-                withSonarQubeEnv('cessda-sonar') {
-                    withMaven {
-                        sh 'export PATH=$MVN_CMD_DIR:$PATH && mvn sonar:sonar'
+                stage('Record Issues') {
+                    steps {
+                        recordIssues aggregatingResults: true, tools: [errorProne(), java()]
                     }
                 }
-            }
-        }
-        stage("Get Sonar Quality Gate") {
-            steps {
-                timeout(time: 1, unit: 'HOURS') {
-                    waitForQualityGate abortPipeline: true
+```
+
+Run Sonar scan asnd faiul the build if the Quality Gate is not passed
+
+```groovy
+              stage('Run Sonar Scan') {
+                    steps {
+                        withSonarQubeEnv('cessda-sonar') {
+                            withMaven {
+                                sh "./mvnw sonar:sonar -DbuildNumber=${env.BUILD_NUMBER}"
+                            }
+                        }
+                        timeout(time: 1, unit: 'HOURS') {
+                            waitForQualityGate abortPipeline: true
+                            }
+                    }
+                    when { branch 'master' }
                 }
             }
         }
-        stage('Build and Push Docker Image') {
+```
+
+Build the Docker image, tag it and push it to the image registry
+
+```groovy
+        stage('Build and Push Docker image') {
             steps {
                 sh 'gcloud auth configure-docker'
-                //If the Maven project has the Docker plugin use this
                 withMaven {
-                    sh 'mvn docker:build docker:push'
+                    sh "./mvnw jib:build -Dimage=${image_tag}"
                 }
-                //Otherwise use this in the context of the Dockerfile directory
-                sh("docker build -t ${image_tag} .")
-                sh("docker push ${image_tag}")
-                sh("gcloud container images add-tag ${image_tag} ${docker_repo}/${product_name}-${module_name}:${env.BRANCH_NAME}-latest")
+                sh "gcloud container images add-tag ${image_tag} ${docker_repo}/${product_name}-${module_name}:${env.BRANCH_NAME}-latest"
             }
-        }
+            when { branch 'master' }
+            }
         stage('Check Requirements and Deployments') {
             steps {
                 dir('./infrastructure/gcp/') {
-                    build job: 'cessda.product.deploy/master',
-                        parameters: [string(name: 'module_image_tag',
-                        value: "${image_tag}"),
-                        string(name: 'module', value: 'module')],
-                        wait: false
+                    build job: 'cessda.cdc.deploy/master', parameters: [string(name: 'osmh_indexer_image_tag', value: "${env.BRANCH_NAME}-${env.BUILD_NUMBER}")], wait: false
+                    }
+                }
+            when { branch 'master' }
+            }
+```
+
+Run the static analysis scan, fail the build if the scan reports any critical security vulnerabilities and save the results
+
+```groovy
+      stage('ShiftLeft Scan') {
+            agent {
+                docker {
+                    image 'shiftleft/sast-scan'
+                    reuseNode true
+                }
+            }
+            steps {
+                // The desired build result is UNSTABLE, not FAILURE
+                catchError(buildResult: 'UNSTABLE') {
+                    sh 'scan'
+                }
+            }
+             post {
+                always {
+                    archiveArtifacts 'reports/*'
                 }
             }
         }

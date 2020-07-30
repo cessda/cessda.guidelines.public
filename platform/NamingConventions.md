@@ -50,8 +50,8 @@ So the pattern looks like this
 
 ## Namespaces
 
-Namespaces are used to group the components of an product within a cluster, whist isolating them from components of other products.
- Namespaces are named for the product they are contain, in the form of `$product_name`, e.g. `cdc`, `cvs`, `dvs`, `eqb`, `mgmt`,
+Namespaces are used to group the components of a product within a cluster, whist isolating them from components of other products.
+ Namespaces are named for the product they contain, in the form of $product_name, e.g. `cdc`, `cvs`, `dvs`, `eqb`, `mgmt`,
   `monitoring`. So a cluster typically has multiple namespaces.
 
 ## Clusters
@@ -66,15 +66,15 @@ Clusters are named to reflect the various deployment environments. Simple names 
 
 ## Storage / Persistent Volume Claims
 
-Names of persistent volumes track the names of the tools that they serve using the template `$product_name-$component_name-pvc`.
+Names of persistent volumes track the names of the tools that they serve using the template *$product_name-$component_name-pvc*.
 
 ## Configuration / Secrets
 
-Names of ConfigMaps and Secrets are of the form `$product_name-$component_name-configmap` and `$product_name-$component_name-secret`.
+Names of ConfigMaps and Secrets are of the form *$product_name-$component_name-configmap* and *$product_name-$component_name-secret*.
 
 ## Subdomains
 
-Subdomains are in the form of `$subdomain.cessda.eu`. The subdomain is not the same as the `$product_name`, i.e. for the CESSDA Data
- Catalogue the subdomain is `datacatalogue`, whereas the `$product_name` is cdc.
+Subdomains are in the form of *$subdomain.cessda.eu*. The subdomain is not the same as the $product_name,
+i.e. for the CESSDA Data Catalogue the subdomain is `datacatalogue`, whereas the $product_name is `cdc`.
 
-For development and staging environments, the `$subdomain` has `-dev` or `-staging` appended (e.g. `datacatalogue-dev`).
+For development and staging environments, the $subdomain has `-dev` or `-staging` appended (e.g. `datacatalogue-dev`).
