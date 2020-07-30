@@ -22,7 +22,8 @@ followed by the approach used to achieve it.
     (in both the calling and return structures and formats)
     that will reduce the burden of interacting with multiple services.
 
-See also 12 factor app, number 7 ([Port binding - Export services via port binding](http://12factor.net/port-binding)).
+See also 12 factor app, number 7
+([Port binding - Export services via port binding](http://12factor.net/port-binding)).
 
 ## Sustainable
 
@@ -32,7 +33,8 @@ See also 12 factor app, number 7 ([Port binding - Export services via port bindi
     and deployment environment (via extensions to the technical infrastructure)
     and a central source-code repository will help reduce 'technical debt' and hence facilitate business-driven change to the CESSDA RI.
 
-See also 12 factor app, number 1 ([Codebase - One codebase tracked in revision control, many deploys](http://12factor.net/codebase)).
+See also 12 factor app, number 1
+([Codebase - One codebase tracked in revision control, many deploys](http://12factor.net/codebase)).
 
 ## Extensible
 
@@ -42,7 +44,8 @@ See also 12 factor app, number 1 ([Codebase - One codebase tracked in revision c
     Versioning the APIs and supporting two versions simultaneously allows services to evolve,
     without breaking the contract they provide to their consumers.
 
-See also 12 factor app, number 8 ([Concurrency - Scale out via the process model](http://12factor.net/concurrency)).
+See also 12 factor app, number 8
+([Concurrency - Scale out via the process model](http://12factor.net/concurrency)).
 
 See also 12 factor app, number 9
 ([Disposability - Maximize robustness with fast startup and graceful shutdown](http://12factor.net/disposability)).
@@ -55,7 +58,8 @@ See also 12 factor app, number 9
     The use of RESTful APIs means that the location of services can be changed as required,
     to take advantage of developments in hardware technology.
 
-See also 12 factor app, number 2 ([Dependencies - Explicitly declare and isolate dependencies](http://12factor.net/dependencies)).
+See also 12 factor app, number 2
+([Dependencies - Explicitly declare and isolate dependencies](http://12factor.net/dependencies)).
 
 ## Standards based
 
@@ -64,4 +68,5 @@ See also 12 factor app, number 2 ([Dependencies - Explicitly declare and isolate
     in particular a consistent (in both the calling and return structures and formats) and versioned API will reduce the burden of
     change.
 
-See also 12 factor app, number 4 ([Backing services - Treat backing services as attached resources](http://12factor.net/backing-services)).
+See also 12 factor app, number 4
+([Backing services - Treat backing services as attached resources](http://12factor.net/backing-services)).

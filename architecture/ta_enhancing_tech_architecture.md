@@ -1,7 +1,7 @@
 ---
 title: Appendix 3 - Enhancing the Technical Architecture
 parent: Technical Architecture
-published: true
+published: false
 nav_order: 560
 ---
 
