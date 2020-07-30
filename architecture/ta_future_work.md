@@ -1,35 +1,22 @@
 ---
 title: Appendix 1 - Future Work
 parent: Technical Architecture
-published: true
+published: false
 nav_order: 540
 ---
 
 # {{ page.title }}
 
-Rather than producing theoretical guidance for all aspects,
-it has been decided that a better approach is to couple the guidance to relevant phases of activity,
-so that e.g. web usability guidance will be produced alongside the development of a component that has a User Interface
-(such as the Data Catalogue), so that it can be shaped by feedback,
-in the same way that the development of the Open Source Metadata Harvester has informed the specification of the development
-environment.
+Guidance is produced either in advance of a new type or phase of development,
+or based on the experience of undertaking a new type or phase of development.
 
 ## Web usability
 
 Use responsive web design, so that applications can be used on smartphone, tablets, laptops and desktop devices.
 To include minimum accessibility standards and HTML/CSS compliance levels that should be met.
 
-- Navigation, carousel, menus
-
-- Page layout and content
-
-- Input
-
-- Login and registration
-
-- Form engine (including workflow?)
-
-- Error handling
+In the meantime, the W3C standards site for [Web design and applications](https://www.w3.org/standards/webdesign/)
+is a good place to find guidance.
 
 ## Application Guidelines
 
@@ -39,8 +26,8 @@ To include minimum accessibility standards and HTML/CSS compliance levels that s
 
 - System Error Messages
 
-- Logging (covered by 12 factor app, number 6 ([Logs - Treat logs as
-    event streams](http://12factor.net/logs)).
+- Logging (covered by 12 factor app, number 6
+  ([Logs - Treat logs as event streams](http://12factor.net/logs)).
 
 ## Application Level Security
 

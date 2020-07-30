@@ -1,7 +1,7 @@
 ---
 title: Appendix 2 - Current State of the Infrastructure
 parent: Technical Architecture
-published: true
+published: false
 nav_order: 550
 ---
 
