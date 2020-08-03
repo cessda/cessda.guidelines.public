@@ -27,7 +27,6 @@ pipeline{
         label 'himem'
     }
 
-
     stages{
         // Stages are used to separate distinct parts of a build (for example building and testing)
         stage('Build'){
@@ -84,4 +83,3 @@ pipeline{
     }
 }
 ```
-

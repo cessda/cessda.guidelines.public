@@ -1,10 +1,11 @@
 # CESSDA Technical Guidelines
-
+---
+# If you make changes here, you need to restart Jekyll to apply them
+ 
 title: CESSDA Technical Guidelines
 baseurl: /
 logo: assets/CESSDA.png
 color_scheme: cessda
-
 
 # Theme
 theme: just-the-docs
@@ -25,13 +26,14 @@ technical-reference:
 
 # Exclude from processing.
 # The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
+# Any item listed under the `exclude:` key here will be automatically added
+# to the internal "default list".
 #
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# Individual pages that are e.g. in draft format can be hidden using 'published: false' in the Front Matter.
+# Individual pages that are e.g. in draft format can be hidden 
+# using 'published: false' in the Front Matter.
 #
 exclude:
  - .sass-cache/

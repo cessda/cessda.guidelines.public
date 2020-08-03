@@ -1,6 +1,7 @@
 ---
 title: Adding the Deployment Jenkinsfile
 parent: Building Docker Images on Jenkins
+grand_parent: Technical Infrastructure
 nav_order: 3602
 ---
 
@@ -12,9 +13,9 @@ See [Naming Conventions]({% link platform/NamingConventions.md %}).
 
 ## Overview
 
-The deployment code is stored in a different repository to the build code. It uses a parametrised Jenkinsfile so an exact version of the
- application can be deployed (for example, a specific version for production). This parameter can be manually specified or specified
- automatically by called jobs.
+The component deployment code is stored in a different repository to the build code.
+It uses a parametrised Jenkinsfile so an exact version of the application can be deployed (for example, a specific version for production).
+This parameter can be manually or automatically specified by called jobs.
 
 ```groovy
 parameters
@@ -44,8 +45,8 @@ stage('Create deployment')
 }
 ```
 
-The script coffeepot-deployment.sh substitutes variables from the template yamls and replaces them with the correct values.
- This is done with a series of sed commands to edit the variables.
+The script `coffeepot-deployment.sh` substitutes variables from the template yaml files and replaces them with the correct values.
+ This is done with a series of `sed` commands to edit the variables.
 
 ```bash
 sed "s#DEPLOYMENTNAME#$product_name-$module_name#g; s#NAMESPACE#$product_name#g; s#IMAGENAME#$image_tag#g"
@@ -56,11 +57,10 @@ sed "s/NAMESPACE/$product_name/g" ../k8s/template-coffeepot-namespace.yaml >
  ../k8s/$product_name-$module_name-namespace.yaml
 ```
 
-Note that the first sed has a # character as the delimiter instead of a /. This is because the substitution contains / characters which
+Note that the first `sed` command has a `#` character as the delimiter instead of a `/`.
+This is because the substitution contains `/` characters which would break `sed` if a different character was not used.
 
- would break sed if a different character was not used.
-
-This is applied to a series of template yamls for the deployment and the service for the application. Examples are shown below:
+This is applied to a series of template yaml files for the deployment and the service for the application. Examples are shown below:
 
 ```yaml
 apiVersion: v1
@@ -111,7 +111,7 @@ spec:
     targetPort: 1337
 ```
 
-The generated yamls are deployed with kubectl apply:
+The generated yaml files are deployed using the `kubectl apply` command:
 
 ```bash
 # Create deployment
@@ -122,4 +122,4 @@ kubectl apply -f ../k8s/$product_name-$module_name-service.yaml
 ```
 
 Kubectl apply will apply any configuration changes made to the deployment manifests and update the image used in the deployment.
- Kubernetes will then roll out the new version of the application in a way that minimises downtime.
+Kubernetes will then roll out the new version of the application in a way that minimises downtime.
