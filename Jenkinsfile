@@ -47,7 +47,7 @@ pipeline {
 						sh "jekyll build"
 						sh "bundle exec rake htmlproofer"
 					}
-					when { branch 'master' }
+					/*when { branch 'master' }*/
 				}
 				// Corrects links so that the Jenkins preview works
 				stage('Build Test Documentation') {
@@ -73,7 +73,7 @@ pipeline {
 					waitForQualityGate abortPipeline: true
 				}
 			}
-			/* when { branch 'master' } */
+			when { branch 'master' }
 		}
 		stage('Build Nginx Container') {
 			steps {
