@@ -23,7 +23,7 @@ Email notifications can be sent automatically whenever a job succeeds or fails (
 Click on *New Item*, enter a name and select *Copy existing Item* option
 (enter the name of the relevant template in the *Copy from* text box). Finally press *OK* to create the job.  
 
-![JenkinsNewItem1.jpg](../assets/JenkinsNewItem1.jpg)
+![Jenkins New Item](../assets/jenkins-new-item.png)
 
 Names of jobs are governed by rules, so for example build jobs must start with *Build_*.
 
@@ -32,4 +32,4 @@ Names of jobs are governed by rules, so for example build jobs must start with *
 Now click on the newly created job in the Jenkins dashboard, select *Configure* and scroll down to the
 *Source Code Management* section. Set up the Repository URL and select the stored Credentials to use.
 
-![JenkinsJobGitCredentials1.jpg](../assets/JenkinsJobGitCredentials1.jpg)
+![Jenkins Job Git Credentials](../assets/jenkins-job-git-credentials.png)
