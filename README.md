@@ -22,10 +22,32 @@ the [theme's options](https://pmarsceill.github.io/just-the-docs/docs/navigation
 
 ## Development
 
-The documentation uses Markdown files with Jekyll headers.
-Markdown uses ATX style headers and maximal line lengths of 140 characters.
-Compliance is checked with [`markdownlint`](https://github.com/markdownlint/markdownlint) by running
+The documentation is written using Markdown files with Jekyll headers.
+Coding follows the [Google Style Guide for Markdown](https://google.github.io/styleguide/docguide/style.html),
+including ATX style headers and a maximal line lengths of 140 characters.
+
+Style Guide compliance is checked with [markdownlint](https://github.com/markdownlint/markdownlint) by running
 
 ```shell
 bundle exec rake lint
 ```
+
+Technical documentation is generally used for consultation or reference, instead of being read from beginning to end.
+This use case forms the basis for form and structure of the CESSDA Technical Guidelines.
+
+General recommendations:
+
+* Avoid narrative style in favour of clear, direct and neutral language.
+* Use active voice with a third person point of view.
+* Describe current state, avoid the use of past and future tense.
+* Pages should be to-the-point and ideally above the fold on office screens.
+* Split longer texts into short topical pages and use interlinking.
+* Use lists and structure through headings and short praragraphs.
+* Document state, not historical emergence or decision basis.
+* Avoid ambiguous language and complicated grammatical structure and vocabulary.
+
+Practical recommendations:
+
+* Start a new sentence on a new line and use logical places to wrap text if exceeding the line limit.
+* Use lazy numbering for lists and appropriate measures to reduce the need to touch other lines/files when making changes.
+
