@@ -1,8 +1,7 @@
 ---
 title: Glossary
-parent: Technical Architecture
 published: true
-nav_order: 591
+nav_order: 998
 ---
 
 # {{ page.title }}

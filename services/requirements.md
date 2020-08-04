@@ -16,7 +16,7 @@ For a software system to be operated by CESSDA as a **TRL-8 production service**
 
 * All applicable Software Maturity Level CAs must reach "Expected"
 * The relevant programming language's style guide must be followed and enforced through linting
-* The software [quality gate]({% link software/quality_gate.md %}) must be met
+* The software [quality gate]({% link software/quality-gate.md %}) must be met
 
 For a software system to be operated by CESSDA as a **TRL-7 beta service**, the following criteria must be met:
 

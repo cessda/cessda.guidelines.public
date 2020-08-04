@@ -16,6 +16,6 @@ It does provides guidance on meeting CESSDA's common interoperability characteri
 It is envisaged that subsequent versions will address those areas that are needed by developers of the contemporary RI components,
 so that feedback on their completeness and usefulness can be obtained in context.
 
-It also lays out an approach for assessing the maturity of RI components,
+It also lays out an approach for assessing the maturity of {% include glossary.html entry="RI" %} components,
 so that over time CESSDA can mandate minimum levels that SPs and others have to meet as a prerequisite
 to supplying software artefacts for the RI.
