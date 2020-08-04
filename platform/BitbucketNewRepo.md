@@ -46,7 +46,7 @@ The owner is always **cessda** (as per the screenshot below), but the Project is
 
 If it is a *greenfield development* simply create a new repository, add a description and assign it to one of the above projects.
 
-See [Create and clone a repository](https://confluence.atlassian.com/bitbucket/create-and-clone-a-repository-800695642.html)
+See [Create a repository](<https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository/>)
 for more details.
 
 Then add the [standard contents]({% link platform/GitRepositoryStandardContents.md %}),
@@ -54,22 +54,16 @@ some of which will remain unchanged, others of which need to be edited by the co
 
 ### Create a repository for existing files/projects
 
-If there is a project in an external location, but with just a few files in it,
-create a repository on Bitbucket and add the code to it (code can be unversioned or in Git/Mercurial).
+If there is a project in an external location, but with just a few unversioned files in it,
+create a repository on Bitbucket and add the code to it.
 
-See [Create a repository for your existing files]
-(<https://confluence.atlassian.com/bitbucket/create-a-repository-for-your-existing-files-800695576.html>) for more details.
+See [Add unversioned code to a repository]
+(<https://support.atlassian.com/bitbucket-cloud/docs/add-unversioned-code-to-a-repository/>) for more details.
 
 ### Import or convert code from an existing tool
 
 To get code from an existing project into Bitbucket Cloud quickly from another hosting site or system,
-Bitbucket provides an importer to grab a repository.
-This importer works if the code is in CodePlex, GitHub, Google Code, SourceForge, Subversion,
-or another Git/Mercurial-based hosting site.
-However, if the hosting site doesn't fall into one of these sources or there isn't a URL to enter,
-then [convert the code to Git or Mercurial
-](https://confluence.atlassian.com/bitbucket/import-or-convert-code-from-an-existing-tool-795937450.html#Importorconvertcodefromanexistingtool-convert).
-
-See [Import or convert code
-from an existing tool](https://confluence.atlassian.com/bitbucket/import-or-convert-code-from-an-existing-tool-795937450.html)
+Bitbucket provides an importer to grab a repository. See
+[Import or convert code from
+    an existing tool](<https://support.atlassian.com/bitbucket-cloud/docs/import-or-convert-code-from-an-existing-tool/>).
 for more details.
