@@ -8,7 +8,7 @@ nav_order: 350
 
 ## Terminology
 
-See [Naming Conventions]({% link platform/NamingConventions.md %}).
+See [Naming Conventions]({% link platform/naming-conventions.md %}).
 
 ## Overview
 
@@ -38,7 +38,7 @@ as well as automating other routine development and deployment tasks.
 In this design upstream job would be create to parameterizes the Component repository
 and Deployment repository to form a pipeline that compile, builds, builds images,
 deploys to  development and staging environments as seen in
-[Deployment_Pipeline]({% link platform/DeploymentPipelineOverview.md %}).
+[Deployment_Pipeline]({% link platform/deployment-pipeline-overview.md %}).
 Jenkins deploys automatically into the development and staging environments.
 Jenkins also gives a seamless and more robust way to integrate the entire toolchain for build, test, and deployment.
 

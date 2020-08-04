@@ -9,7 +9,7 @@ nav_order: 3601
 
 ## Terminology
 
-See [Naming Conventions]({% link platform/NamingConventions.md %}).
+See [Naming Conventions]({% link platform/naming-conventions.md %}).
 
 ## Overview
 
@@ -38,7 +38,7 @@ The image tag uniquely identifies each build. Unique tags are used in production
 
 The next step is to define the agent that the build will run on. This can be done globally for the entire pipeline, or per stage.
 The default agent is specified using the syntax `agent any`.
-See the [Example Jenkinsfile]({% link platform/TemplateJenkinsfileForJDK11MavenProjects.md %})
+See the [Example Jenkinsfile]({% link platform/template-jenkinsfile-for-jdk11-maven-projects.md %})
 for more variations on how to configure agents.
 
 The stages used to build the component are defined next. For example, for the coffee-api the first stage is building the Docker image.

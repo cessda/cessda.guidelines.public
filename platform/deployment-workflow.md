@@ -8,7 +8,7 @@ nav_order: 330
 
 ## Terminology
 
-See [Naming Conventions]({% link platform/NamingConventions.md %}).
+See [Naming Conventions]({% link platform/naming-conventions.md %}).
 
 ## Overview
 
@@ -20,6 +20,6 @@ instance of the module or component is deployed to the development and staging e
 However, deployment to the production environment is manually initiated after testing and
 sign-off in the staging environment.
 
-[Helm charts]({% link platform/DeployWithHelm.md %}) are used to orchestrate the deployment of an application's components.
+[Helm charts]({% link platform/deployment-with-helm.md %}) are used to orchestrate the deployment of an application's components.
 
 ![DataFlow_Diagram](../assets/dataflow-diagram.png)

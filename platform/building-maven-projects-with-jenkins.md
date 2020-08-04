@@ -8,14 +8,14 @@ nav_order: 355
 
 ## Terminology
 
-See [Naming Conventions]({% link platform/NamingConventions.md %}).
+See [Naming Conventions]({% link platform/naming-conventions.md %}).
 
 ## Overview
 
 The de facto build tool for Java Applications is Maven.
 A Jenkinsfile is used to automate the build process.
 
-See also [Building Docker Images on Jenkins]({% link platform/BuildingDockerImagesOnJenkins.md %}) for related information.
+See also [Building Docker Images on Jenkins]({% link platform/building-docker-images-on-jenkins.md %}) for related information.
 
 The assumption is that Java and Maven are installed on the Jenkins system node.
 Alternatively the Jenkins subordinate container should be configured to run an image which has Java and Maven pre-installed.

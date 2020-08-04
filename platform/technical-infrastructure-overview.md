@@ -8,7 +8,7 @@ nav_order: 315
 
 ## Terminology
 
-See [Naming Conventions]({% link platform/NamingConventions.md %}).
+See [Naming Conventions]({% link platform/naming-conventions.md %}).
 
 ## Platform
 
@@ -51,15 +51,15 @@ and even run a database in the cluster.
 
 ## CESSDA Development GCP Project
 
-See also [Technical Infrastructure Details]({% link platform/TechnicalInfrastructureDetails.md %}).
+See also [Technical Infrastructure Details]({% link platform/technical-infrastructure-details.md %}).
 
 The CESSDA Development GCP Project contains two Kubernetes clusters, `development-cluster` and `staging-cluster`.
-See [GCP Main Project Structure]({% link platform/GcpMainProjectStructure.md %}) for more details of the clusters.
+See [GCP Main Project Structure]({% link platform/gcp-main-project-structure.md %}) for more details of the clusters.
 
 ## CESSDA Production GCP Project
 
 The CESSDA Production GCP Project contains two Kubernetes clusters, `production-cluster` and `management-cluster`.
- See [GCP Main Project Structure]({% link platform/GcpMainProjectStructure.md %}) for more details of the `production-cluster`.
+ See [GCP Main Project Structure]({% link platform/gcp-main-project-structure.md %}) for more details of the `production-cluster`.
 
 The management-cluster contains various utility, monitoring, testing and deployment tools,
 based on 3rd party components including:
@@ -114,8 +114,8 @@ acts as the staging environment and the `production-cluster` acts as the product
 
 ## Application Deployment Process
 
-See also [Deployment Pipeline overview]({% link platform/DeploymentPipelineOverview.md %})
-and [Deployment Pipeline details]({% link platform/DeploymentPipelineDetails.md %}).
+See also [Deployment Pipeline overview]({% link platform/deployment-pipeline-overview.md %})
+and [Deployment Pipeline details]({% link platform/deployment-pipeline-details.md %}).
 
 [Jenkins pipelines](https://jenkins.io/doc/book/pipeline/) are used to build, test and deploy components.
 The general principle is to build once, deploy many times, configure on launch and automatically test en route.
@@ -125,9 +125,9 @@ The Docker registry is used as local storage to enable the 'build once, deploy m
 
 ### Jenkinsfile examples
 
-See [Example Jenkinsfile with Annotations]({% link platform/TemplateJenkinsfile.md %}).
+See [Example Jenkinsfile with Annotations]({% link platform/template-jenkinsfile.md %}).
 
-See [Jenkinsfile template for JDK11 Maven Projects]({% link platform/TemplateJenkinsfileForJDK11MavenProjects.md %}).
+See [Jenkinsfile template for JDK11 Maven Projects]({% link platform/template-jenkinsfile-for-jdk11-maven-projects.md %}).
 
 ### Example Deployment - CESSDA Data Catalogue
 

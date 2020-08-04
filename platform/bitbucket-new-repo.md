@@ -10,7 +10,7 @@ nav_order: 3701
 
 ## Terminology
 
-See [Naming Conventions]({% link platform/NamingConventions.md %}).
+See [Naming Conventions]({% link platform/naming-conventions.md %}).
 
 ## Instructions for members of the Platform Team
 
@@ -49,7 +49,7 @@ If it is a *greenfield development* simply create a new repository, add a descri
 See [Create a repository](<https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository/>)
 for more details.
 
-Then add the [standard contents]({% link platform/GitRepositoryStandardContents.md %}),
+Then add the [standard contents]({% link platform/gcp-repository-standard-contents.md %}),
 some of which will remain unchanged, others of which need to be edited by the code contributors.
 
 ### Create a repository for existing files/projects
