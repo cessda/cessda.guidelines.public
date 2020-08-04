@@ -12,7 +12,7 @@ by following CESSDA's implementation of the
 
 The guidelines also define how CESSDA [operates services]({% link services/index.md %}) powered by these products
 
-The [Software Maturity Levels]({% link sml/CESSDA_Software_Maturity_Levels.md %})
+The [Software Maturity Levels]({% link sml/cessda-software-maturity-levels.md %})
 that form the basis for CESSDA Quality Assurance are also included.
 
 A description of the [Technical Infrastructure]({% link platform/index.md %})
