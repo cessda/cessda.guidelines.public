@@ -73,7 +73,7 @@ pipeline {
 					waitForQualityGate abortPipeline: true
 				}
 			}
-			when { branch 'master' }
+			/* when { branch 'master' } */
 		}
 		stage('Build Nginx Container') {
 			steps {
