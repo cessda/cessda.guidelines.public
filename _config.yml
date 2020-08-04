@@ -9,12 +9,12 @@ color_scheme: cessda
 
 # Theme
 theme: just-the-docs
-search_enabled: false
+search_enabled: true
 
 defaults:
  -
   scope:
-   path: ""
+   path: "**/*.md"
    type: "pages"
   values:
    permalink: /:path/:basename:output_ext
