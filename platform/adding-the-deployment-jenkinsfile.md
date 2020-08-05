@@ -13,7 +13,7 @@ See [Naming Conventions]({% link platform/naming-conventions.md %}).
 
 ## Overview
 
-The component deployment code is stored in a different repository to the build code.
+The  {% include glossary.html entry="component" %} deployment code is stored in a different repository to the build code.
 It uses a parametrised Jenkinsfile so an exact version of the application can be deployed (for example, a specific version for production).
 This parameter can be manually or automatically specified by called jobs.
 

@@ -12,7 +12,7 @@ See [Naming Conventions]({% link platform/naming-conventions.md %}).
 
 ## Overview
 
-This is the proceedure for deploying a new version of a CESSDA Core Product (one of CDC, CVS, EQB, ELSST) to the production environmemt.
+This is the proceedure for deploying a new version of a CESSDA Core  {% include glossary.html entry="product" %} (one of CDC, CVS, EQB, ELSST) to the production environmemt.
 
 ## Relevant Roles
 

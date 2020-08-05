@@ -126,7 +126,7 @@ The following should be considered at a later stage:
 
   - Monitoring
 
-  - Application Management
+  -  {% include glossary.html entry="Application" %} Management
 
 ## System Level
 

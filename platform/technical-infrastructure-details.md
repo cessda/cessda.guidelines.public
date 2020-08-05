@@ -19,10 +19,10 @@ Jenkins CI/CD toolchain and Bitbucket code repositories and how they are integra
 
 This system allows developers to keep track of the changes in CESSDA software development projects,
 and enable them to collaborate on those projects or tools.
-There are two types repositories to be used in the CI/CD process; Component and Deployment repositories.
+There are two types repositories to be used in the CI/CD process;  {% include glossary.html entry="component" %} and Deployment repositories.
 
 **Component repositories** are software modules or Microservice projects that are version
-controlled. Component repository also contain the Dockerfile which builds the Docker image for the module or project.
+controlled. The  {% include glossary.html entry="component" %} repository also contain the Dockerfile which builds the Docker image for the module or project.
 
 **Deployment repository** contains the scripts that run the deployment and also contains
 some secrets used in the setting up Microservices on clouds.
@@ -35,7 +35,7 @@ This design separates the repositories containing the application software
 
 Jenkins offers a Continuous Integration or Continuous Delivery environment for source code repositories using pipelines,
 as well as automating other routine development and deployment tasks.
-In this design upstream job would be create to parameterizes the Component repository
+In this design upstream job would be create to parameterizes the  {% include glossary.html entry="component" %} repository
 and Deployment repository to form a pipeline that compile, builds, builds images,
 deploys to  development and staging environments as seen in
 [Deployment_Pipeline]({% link platform/deployment-pipeline-overview.md %}).

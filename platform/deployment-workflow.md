@@ -16,7 +16,7 @@ The diagram shows the step-by-step process by which application components are d
 CESSDA's Technical Infrastructure and the various technologies that are involved.
 
 The process is automated from the time the developer commits source code changes to the time an
-instance of the module or component is deployed to the development and staging environments.
+instance of the module or  {% include glossary.html entry="component" %} is deployed to the development and staging environments.
 However, deployment to the production environment is manually initiated after testing and
 sign-off in the staging environment.
 

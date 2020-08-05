@@ -38,7 +38,7 @@ The owner is always **cessda** (as per the screenshot below), but the Project is
 |                    CESSDA Service Portfolio Management  |   CSM   |   Tools for managing Service Portfolio management                                              |
 |                    CESSDA Thesaurus                     |   CET   |   Thesaurus for ELSST, running on Skosmos using Apache Jena Fuseki as the backend.             |
 |                    CESSDA Vocabulary Service            |   CVS   |   Components of the CESSDA Vocabulary Service, see <https://vocabularies.cessda.eu/>             |
-|                    SSHOC Dataverse                      |   DVS   |   Components of the SSHOC Dataverse product                                                    |
+|                    SSHOC Dataverse                      |   DVS   |   Components of the SSHOC Dataverse  {% include glossary.html entry="product" %}                                                    |
 
 ![New Git Reposotory](../assets/new-git-repo.png)
 

@@ -26,7 +26,7 @@ The structure of each GCP project follows the same set of principles:
  [Kubernetes clusters](https://kubernetes.io/docs/concepts/overview/components/)
 - a cluster contains components of the same logical type (development, staging, production,
  management) that form parts of different products.
-- every component is a
+- every  {% include glossary.html entry="component" %} is a
  [Docker container](https://www.docker.com/resources/what-container)
 - each [Kubernetes cluster namespace](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/)
  contains components belonging to a single product, and logically separates them from the
@@ -75,7 +75,7 @@ based on 3rd party components including:
 - [Kibana](https://www.elastic.co/kibana) for analysing and visualising the contents of ElasticSearch indices
 - [Mailrelay](https://mailrelay.com/en) for notification of Jenkins build results
 - [Nexus](https://www.sonatype.com/product-nexus-repository) for local caching of build artefacts
-- [Prometheus](https://prometheus.io/) for component monitoring
+- [Prometheus](https://prometheus.io/) for  {% include glossary.html entry="component" %} monitoring
 - [Maven](https://maven.apache.org/) for Java software project build management
 - [Selenium](https://www.seleniumhq.org/) for User journey testing
 - [Sonar](https://en.wikipedia.org/wiki/Sonar) for software QA
@@ -100,9 +100,9 @@ The `development-cluster` acts as the development environment,
 the `staging-cluster` acts as the staging environment
 and the `production-cluster` acts as the production environment.
 
-Therefore the development instance of a product is deployed to the `development-cluster` of the CESSDA Development GCP Project,
-the staging instance of a product is deployed to the `staging-cluster` of the CESSDA Development GCP Project,
-and the production instance of a product is deployed to the `production-cluster` of the CESSDA Production GCP Project.
+Therefore the development instance of a  {% include glossary.html entry="product" %} is deployed to the `development-cluster` of the CESSDA Development GCP Project,
+the staging instance of a  {% include glossary.html entry="product" %} is deployed to the `staging-cluster` of the CESSDA Development GCP Project,
+and the production instance of a  {% include glossary.html entry="product" %} is deployed to the `production-cluster` of the CESSDA Production GCP Project.
 
 To put this in the context of a specific tool, the CDC development instance is deployed to the `development-cluster`
 of the CESSDA Development GCP Project,
@@ -144,9 +144,9 @@ and each deployment environment at the point of use.
 
 All the deployment, monitoring and management code has been separated out from the source code for
 each tool by the use of different repositories.
-So the developers have write access to the application code repositories
+So the developers have write access to the  {% include glossary.html entry="application code" %} repositories
 and the CESSDA Platform team have write access to the deployment code.
-This allows for the possibility of making the application source code Open Source
+This allows for the possibility of making the  {% include glossary.html entry="application code" %} Open Source
 without revealing the specifics of the configuration of one or more clusters.
 
 ### Responsibilities

@@ -26,7 +26,7 @@ The ambition is to promote good software development practice across the Service
 in respect of the provision of {% include glossary.html entry="software artefacts" %} intended for use as part of the
 {% include glossary.html entry="RI" %}.
 
-It is important to ensure that the source code for every product is centrally available,
+It is important to ensure that the source code for every  {% include glossary.html entry="product" %} is centrally available,
 so that all Service Providers can access it,
 thus increasing the options for maintaining and extending the various artefacts,
 whilst protecting CESSDA's investment in its {% include glossary.html entry="RI" %}.
@@ -63,4 +63,4 @@ Ideally there should be a common means of accessing all of the functionality off
 to ensure the User Journey is uniform and predictable, regardless of the destination.
 Whilst the development of such a unifying user interface is yet to be agreed,
 a [style guide](https://zenodo.org/record/2631263) has been produced to help User Interface developers adopt a common look and feel.
-In followed, the Architecturural principles should reduce the overhead of retro-fitting such a component at a later date.
+In followed, the Architecturural principles should reduce the overhead of retro-fitting such a  {% include glossary.html entry="component" %} at a later date.

@@ -28,15 +28,9 @@ The naming conventions for products are designed to increase consistency across 
 
 ## Definitions
 
-- Product: an overall user experience (e.g. CDC, CVS, DVS, EQB), a User-centric view of an application
+- See {% include glossary.html entry="Glossary" %}
 
-- Application: an engineering view of the collection of components that make up a Product
-
-- Component: an individual part of an Application (e.g. Elasticsearch for CVS, Searchkit for CDC)
-
-- Application code: the software source code that the components are made up of
-
-- See also [Kubernetes component definitions](https://kubernetes.io/docs/concepts/overview/components/)
+- See also [Kubernetes  {% include glossary.html entry="component" %} definitions](https://kubernetes.io/docs/concepts/overview/components/)
 
 - See also [GCP concepts](https://cloud.google.com/docs/overview/)
 
@@ -49,9 +43,9 @@ The prefix `development-`, `management-`, `staging-` or `production-` is used wi
 ### Workload and Service/Ingress names
 
 Workloads and services/ingress names generally follow the same pattern and are composed of two parts.
-The prefix is the lowercase product name abbreviation (e.g. `cdc-`, `cvs-`, `dvs-`, `eqb-`)
+The prefix is the lowercase  {% include glossary.html entry="product" %} name abbreviation (e.g. `cdc-`, `cvs-`, `dvs-`, `eqb-`)
 or lowercase functional abbreviation (`mgmt-`, `monitoring-`). The main part is the name of
-the component (e.g. `certbot`, `mailrelay`, `reverse`, `osmh-indexer`).
+the  {% include glossary.html entry="component" %} (e.g. `certbot`, `mailrelay`, `reverse`, `osmh-indexer`).
 
 So the pattern looks like this
 
@@ -67,8 +61,8 @@ So the pattern looks like this
 
 ## Namespaces
 
-Namespaces are used to group the components of a product within a cluster, whist isolating them from components of other products.
- Namespaces are named for the product they contain, in the form of $product_name, e.g. `cdc`, `cvs`, `dvs`, `eqb`, `mgmt`,
+Namespaces are used to group the components of a  {% include glossary.html entry="product" %} within a cluster, whist isolating them from components of other products.
+ Namespaces are named for the  {% include glossary.html entry="product" %} they contain, in the form of $product_name, e.g. `cdc`, `cvs`, `dvs`, `eqb`, `mgmt`,
   `monitoring`. So a cluster typically has multiple namespaces.
 
 ## Clusters

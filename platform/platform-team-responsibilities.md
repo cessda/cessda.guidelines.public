@@ -18,7 +18,7 @@ See [Updating CI Tools]({% link platform/updating-ci-tools.md %}).
 
 ## Create repositories
 
-- Application Source code. See ['Create a Bitbucket Repository']({% link platform/bitbucket-new-repo.md %}) for details.
+- {% include glossary.html entry="Application code" %}. See ['Create a Bitbucket Repository']({% link platform/bitbucket-new-repo.md %}) for details.
 - Deployment, via Helm. See CDC Deployment (<https://bitbucket.org/cessda/cessda.cdc.deploy/src/master/>) repository for a working example.
 - Reverse Proxy. See CDC Reverse (<https://bitbucket.org/cessda/cessda.cdc.reverse/src/master/>) repository for a working example.
 - Test. See CDC Test (<https://bitbucket.org/cessda/cessda.cdc.test/src/master/>) repository for a working example.
