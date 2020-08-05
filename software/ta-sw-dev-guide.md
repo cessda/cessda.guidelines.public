@@ -151,7 +151,8 @@ Jenkins has been chosen as the {% include glossary.html entry="CI" %} server for
 
 ## Source code management
 
-The Bitbucket {% include glossary.html entry="SCM" %} system has been mandated, and each product has its own project (containing one or more repositories) within the
+The Bitbucket {% include glossary.html entry="SCM" %} system has been mandated,
+and each product has its own project (containing one or more repositories) within the
 [CESSDA Research Infrastructure project space](https://bitbucket.org/cessda/workspace/projects/).
 Each repository is linked to the {% include glossary.html entry="CIT" %}
 environment via a Jenkinsfile and corresponding Jenkins jobs,
