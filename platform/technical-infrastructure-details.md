@@ -22,7 +22,8 @@ and enable them to collaborate on those projects or tools.
 There are two types repositories to be used in the CI/CD process;  {% include glossary.html entry="component" %} and Deployment repositories.
 
 **Component repositories** are software modules or Microservice projects that are version
-controlled. The  {% include glossary.html entry="component" %} repository also contain the Dockerfile which builds the Docker image for the module or project.
+controlled. The  {% include glossary.html entry="component" %} repository also contain the Dockerfile
+which builds the Docker image for the module or project.
 
 **Deployment repository** contains the scripts that run the deployment and also contains
 some secrets used in the setting up Microservices on clouds.

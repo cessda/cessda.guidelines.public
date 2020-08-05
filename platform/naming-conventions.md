@@ -61,9 +61,11 @@ So the pattern looks like this
 
 ## Namespaces
 
-Namespaces are used to group the components of a  {% include glossary.html entry="product" %} within a cluster, whist isolating them from components of other products.
- Namespaces are named for the  {% include glossary.html entry="product" %} they contain, in the form of $product_name, e.g. `cdc`, `cvs`, `dvs`, `eqb`, `mgmt`,
-  `monitoring`. So a cluster typically has multiple namespaces.
+Namespaces are used to group the components of a  {% include glossary.html entry="product" %}
+within a cluster, whist isolating them from components of other products.
+Namespaces are named for the  {% include glossary.html entry="product" %} they contain,
+in the form of $product_name, e.g. `cdc`, `cvs`, `dvs`, `eqb`, `mgmt`, `monitoring`.
+So a cluster typically has multiple namespaces.
 
 ## Clusters
 

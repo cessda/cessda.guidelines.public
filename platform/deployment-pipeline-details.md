@@ -23,13 +23,13 @@ is the option to stop the pipeline and abandon the current build or deployment p
 
 **Figure 1:** *The pipeline for building applications from source code*
 
-Each  {% include glossary.html entry="component" %} is packaged as a [Docker container](https://www.docker.com/resources/what-container) at the end of the build
-process and given a unique image tag based on the Jenkins build number.
+Each  {% include glossary.html entry="component" %} is packaged as a [Docker container](https://www.docker.com/resources/what-container)
+at the end of the build process and given a unique image tag based on the Jenkins build number.
 
 ## Deploying the Components
 
-The pipeline is used to deploy the same build of a  {% include glossary.html entry="component" %} (the Docker container) to the development, staging and production
-environments, but different tests take place between each deployment step.
+The pipeline is used to deploy the same build of a  {% include glossary.html entry="component" %} (the Docker container) to the development,
+staging and production environments, but different tests take place between each deployment step.
 
 ![gcp23-figure2.png](../assets/gcp23-figure2.png)
 
@@ -40,7 +40,8 @@ environments, but different tests take place between each deployment step.
 The deployment of all the components for a CESSDA application are controlled by a single Jenkinsfile in a repository called
 cessda.${app_name}.deploy, where ${app_name} is the name of the application as a three-letter code.
 This repository stores the configuration of the components in the form of Kubernetes manifests.
-These define the settings used by each  {% include glossary.html entry="component" %} and, if necessary, secrets that hold credentials and other sensitive information.
+These define the settings used by each  {% include glossary.html entry="component" %} and,
+if necessary, secrets that hold credentials and other sensitive information.
 
 A new deployment occurs every time code changes are pushed to any of the  {% include glossary.html entry="component" %} source code reporitories.
 This deployment occurs on the `development-cluster` and is exposed at the development endpoint of the application.

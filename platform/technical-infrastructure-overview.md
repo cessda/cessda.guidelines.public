@@ -100,9 +100,12 @@ The `development-cluster` acts as the development environment,
 the `staging-cluster` acts as the staging environment
 and the `production-cluster` acts as the production environment.
 
-Therefore the development instance of a  {% include glossary.html entry="product" %} is deployed to the `development-cluster` of the CESSDA Development GCP Project,
-the staging instance of a  {% include glossary.html entry="product" %} is deployed to the `staging-cluster` of the CESSDA Development GCP Project,
-and the production instance of a  {% include glossary.html entry="product" %} is deployed to the `production-cluster` of the CESSDA Production GCP Project.
+Therefore the development instance of a {% include glossary.html entry="product" %}
+is deployed to the `development-cluster` of the CESSDA Development GCP Project,
+the staging instance of a  {% include glossary.html entry="product" %}
+is deployed to the `staging-cluster` of the CESSDA Development GCP Project,
+and the production instance of a  {% include glossary.html entry="product" %}
+is deployed to the `production-cluster` of the CESSDA Production GCP Project.
 
 To put this in the context of a specific tool, the CDC development instance is deployed to the `development-cluster`
 of the CESSDA Development GCP Project,
