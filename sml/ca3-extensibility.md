@@ -49,7 +49,6 @@ familiar with the project to extend the software in a reasonable amount
 of time. Documentation should include clear information about the range
 of use cases to which the software can be extended as well as potential
 limitations on expansion.
-
 There is evidence that the software has been extended and applied to a
 context to the original. This extension may have been done by another
 group or project, using extension documentation, but may have involved

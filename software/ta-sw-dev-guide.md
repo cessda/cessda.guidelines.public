@@ -175,28 +175,3 @@ No product or component will be deployed without the source code first being mad
 (with the exception of {% include glossary.html entry="COTS" %} products and products built from Open Source projects).
 
 See also 12 factor app, number 1 ([Codebase - One codebase tracked in revision control, many deploys](http://12factor.net/codebase)).
-
-## Security and Privacy
-
-### Privacy Assessment
-
-Assess the privacy impact rating using the following guidelines
-(taken from the [Simplified Implementation of the Microsoft SDL](https://www.microsoft.com/en-us/securityengineering/sdl/howto)):
-
-- *P1 High Privacy Risk. The feature, product, or service stores or
-    transfers personally identifiable information (PII), changes
-    settings or file type associations, or installs software.*
-
-- *P2 Moderate Privacy Risk. The sole behaviour that affects privacy
-    in the feature, product, or service is a one-time, user-initiated,
-    anonymous data transfer (for example, the user clicks on a link
-    and the software goes out to a Web site).*
-
-- *P3 Low Privacy Risk. No behaviours exist within the feature,
-    product, or service that affect privacy. No anonymous or personal
-    data is transferred, no personally identifiable information (PII) is stored on the machine,
-    no settings are changed on the user's behalf, and no software is installed.*
-
-Steps must be taken to protect PII that are appropriate for the level of
-privacy risk and ensure the storage location is in accordance with EU
-data protection directives, in particular GDPR.
