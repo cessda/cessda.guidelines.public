@@ -12,7 +12,8 @@ See [Naming Conventions]({% link platform/naming-conventions.md %}).
 
 ## Overview
 
-Many 3rd party tools used in the CESSDA {% include glossary.html entry="CI" %} environment are updated occasionally, either to fix bugs or to add features.
+Many 3rd party tools used in the CESSDA {% include glossary.html entry="CI" %} environment are updated occasionally,
+either to fix bugs or to add features.
 
 ## Updating Docker Images
 

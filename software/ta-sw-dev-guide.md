@@ -139,20 +139,22 @@ Jenkins has been chosen as the {% include glossary.html entry="CI" %} server for
 
 - Standards: a de facto standard for {% include glossary.html entry="CI" %}
 
-- Familiarity - experience of configuration and/or use amongst several
-    CESSDA SPs;
+- Familiarity: experience of configuration and/or use amongst several CESSDA SPs
 
-- Features: provides tried and tested {% include glossary.html entry="CI" %}; links with Bitbucket and other {% include glossary.html entry="SCM" %} systems;
+- Features: provides tried and tested {% include glossary.html entry="CI" %};
+    links with Bitbucket and other {% include glossary.html entry="SCM" %} systems;
     hundreds of free plugins available;
-    can build and deploy containers;
+    can build and deploy containers
 
-- Configuration as code: job configuration details (in the form of Jenkinsfiles) are held in source code repositories that they refer to.
+- Configuration as code: job configuration details (in the form of Jenkinsfiles)
+    are held in source code repositories that they refer to
 
 ## Source code management
 
 The Bitbucket {% include glossary.html entry="SCM" %} system has been mandated, and each product has its own project (containing one or more repositories) within the
 [CESSDA Research Infrastructure project space](https://bitbucket.org/cessda/workspace/projects/).
-Each repository is linked to the {% include glossary.html entry="CIT" %} environment via a Jenkinsfile and corresponding Jenkins jobs,
+Each repository is linked to the {% include glossary.html entry="CIT" %}
+environment via a Jenkinsfile and corresponding Jenkins jobs,
 so that software quality assurance takes place throughout the development phase.
 
 The choice of Bitbucket was based on a combination of standards, familiarity, features and transferability:

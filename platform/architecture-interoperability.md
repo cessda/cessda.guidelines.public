@@ -32,7 +32,8 @@ See also {% include glossary.html entry="12 factor app" %}, number 7
     Approach: The provision of common standards (via this document),
     a common development and test environment (via the technical infrastructure)
     and deployment environment (via extensions to the technical infrastructure)
-    and a central source-code repository will help reduce '{% include glossary.html entry="technical debt" %}' and hence facilitate business-driven change to the CESSDA {% include glossary.html entry="RI" %}.
+    and a central source-code repository will help reduce '{% include glossary.html entry="technical debt" %}'
+    and hence facilitate business-driven change to the CESSDA {% include glossary.html entry="RI" %}.
 
 See also {% include glossary.html entry="12 factor app" %}, number 1
 ([Codebase - One codebase tracked in revision control, many deploys](http://12factor.net/codebase)).
@@ -54,7 +55,8 @@ See also {% include glossary.html entry="12 factor app" %}, number 9
 ## Maintainable
 
 - Objective: enable components to be updated when IT specifications change.
-    Approach: Provided the {% include glossary.html entry="API" %} contract is maintained, the implementation of a service can be changed as required,
+    Approach: Provided the {% include glossary.html entry="API" %} contract is maintained,
+    the implementation of a service can be changed as required,
     to take advantage of developments in software technology.
     The use of {% include glossary.html entry="REST" %} APIs means that the location of services can be changed as required,
     to take advantage of developments in hardware technology.

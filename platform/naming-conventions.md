@@ -7,32 +7,38 @@ nav_order: 305
 # {{ page.title }}
 
 The naming conventions for products are designed to increase consistency across documentation and between the development,
- staging and production deployments with the aim of increasing the {% include glossary.html entry="usability" %} of the build, test and deployment scripts.
+ staging and production deployments with the aim of increasing the {% include glossary.html entry="usability" %} of the build,
+ test and deployment scripts.
 
 ## Abbreviations
 
-- CDC - [CESSDA Data Catalogue](<https://datacatalogue.cessda.eu/>)
+- CDC: [CESSDA Data Catalogue](<https://datacatalogue.cessda.eu/>)
 
-- CVS - [CESSDA Vocabulary Service](<https://vocabularies.cessda.eu/#!discover>)
+- CVS: [CESSDA Vocabulary Service](<https://vocabularies.cessda.eu/#!discover>)
 
-- DVS - Dataverse
+- DVS: Dataverse
 
-- ELSST - [European Language Social Science Thesaurus](<https://elsst.ukdataservice.ac.uk/>)
+- ELSST: [European Language Social Science Thesaurus](<https://elsst.ukdataservice.ac.uk/>)
 
-- EQB - European Question Bank
+- EQB: European Question Bank
 
-- GCP - [Google Cloud Platform](<https://cloud.google.com>)
+- GCP: [Google Cloud Platform](<https://cloud.google.com>)
 
-- GKE - [Google Kubernetes Engine](<https://console.cloud.google.com/kubernetes/>)
+- GKE: [Google Kubernetes Engine](<https://console.cloud.google.com/kubernetes/>)
 
 ## Definitions
 
-* Product - an overall user experience (e.g. CDC, CVS, DVS, EQB), a User-centric view of an application
-* Application - an engineering view of the collection of components that make up a Product
-* Component - an individual part of an Application (e.g. Elasticsearch for CVS, Searchkit for CDC)
-* Application code - the software source code that the components are made up of
-* See also [Kubernetes component definitions](https://kubernetes.io/docs/concepts/overview/components/)
-* See also [GCP concepts](https://cloud.google.com/docs/overview/)
+- Product: an overall user experience (e.g. CDC, CVS, DVS, EQB), a User-centric view of an application
+
+- Application: an engineering view of the collection of components that make up a Product
+
+- Component: an individual part of an Application (e.g. Elasticsearch for CVS, Searchkit for CDC)
+
+- Application code: the software source code that the components are made up of
+
+- See also [Kubernetes component definitions](https://kubernetes.io/docs/concepts/overview/components/)
+
+- See also [GCP concepts](https://cloud.google.com/docs/overview/)
 
 ## Cluster, Workload and Service Names
 
@@ -49,11 +55,16 @@ the component (e.g. `certbot`, `mailrelay`, `reverse`, `osmh-indexer`).
 
 So the pattern looks like this
 
-* Management tools: mgmt-$component_name (e.g. `mgmt-certbot`, `monitoring-prometheus`)
-* CDC: cdc-$component_name (e.g. `cdc-osmh-indexer`)
-* CVS: cvs-$component_name (e.g. `cvs-reverse`)
-* DVS: dvs-$component_name (e.g. `dvs-mailrelay`)
-* EQB: eqb-$component_name (e.g. `eqb-frontend`)
+- Management tools: mgmt-$component_name (e.g. `mgmt-certbot`, `monitoring-prometheus`)
+
+- CDC: cdc-$component_name (e.g. `cdc-osmh-indexer`)
+
+- CVS: cvs-$component_name (e.g. `cvs-reverse`)
+
+- DVS: dvs-$component_name (e.g. `dvs-mailrelay`)
+
+- EQB: eqb-$component_name (e.g. `eqb-frontend`)
+
 
 ## Namespaces
 
