@@ -1,8 +1,9 @@
 ---
 title: Technical Architecture
+parent: Technical Infrastructure
 has_children: true
 published: true
-nav_order: 500
+nav_order: 310
 ---
 
 # {{ page.title }}

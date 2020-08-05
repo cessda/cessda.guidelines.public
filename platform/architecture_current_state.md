@@ -1,8 +1,9 @@
 ---
-title: Appendix 2 - Current State of the Infrastructure
+title: Current State of the Infrastructure
 parent: Technical Architecture
+grand_parent: Technical Infrastructure
 published: false
-nav_order: 550
+nav_order: 3105
 ---
 
 # {{ page.title }}

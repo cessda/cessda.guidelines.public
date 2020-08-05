@@ -1,8 +1,9 @@
 ---
 title: Summary
 parent: Technical Architecture
+grand_parent: Technical Infrastructure
 published: true
-nav_order: 515
+nav_order: 3101
 ---
 
 # {{ page.title }}

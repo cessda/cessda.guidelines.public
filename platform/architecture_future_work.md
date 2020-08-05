@@ -1,8 +1,9 @@
 ---
-title: Appendix 1 - Future Work
+title: Future Work
 parent: Technical Architecture
+grand_parent: Technical Infrastructure
 published: false
-nav_order: 540
+nav_order: 3103
 ---
 
 # {{ page.title }}

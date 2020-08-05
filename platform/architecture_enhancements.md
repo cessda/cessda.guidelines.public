@@ -1,8 +1,10 @@
 ---
-title: Appendix 3 - Enhancing the Technical Architecture
+title: Enhancing the Technical Architecture
 parent: Technical Architecture
+grand_parent: Technical Infrastructure
 published: false
-nav_order: 560
+nav_order: 3104
+
 ---
 
 # {{ page.title }}

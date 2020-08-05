@@ -1,8 +1,9 @@
 ---
 title: Common Interoperability Characteristics
 parent: Technical Architecture
+grand_parent: Technical Infrastructure
 published: true
-nav_order: 520
+nav_order: 3102
 ---
 
 # {{ page.title }}

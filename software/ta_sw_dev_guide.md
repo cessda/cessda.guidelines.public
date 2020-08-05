@@ -1,8 +1,8 @@
 ---
 title: Software Development Guidelines
-parent: Technical Architecture
+parent: Software Development
 published: true
-nav_order: 525
+nav_order: 180
 ---
 # {{ page.title }}
 

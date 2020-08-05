@@ -1,7 +1,7 @@
 ---
 title: Naming Conventions
 parent: Technical Infrastructure
-nav_order: 310
+nav_order: 305
 ---
 
 # {{ page.title }}
