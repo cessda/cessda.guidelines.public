@@ -34,6 +34,7 @@ bundle exec rake lint
 
 Technical documentation is generally used for consultation or reference, instead of being read from beginning to end.
 This use case forms the basis for form and structure of the CESSDA Technical Guidelines.
+As a general rule, the »*what*« should be most prominently presented, followed by the motivation and optional examples.
 
 General recommendations:
 

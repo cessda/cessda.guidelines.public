@@ -10,7 +10,7 @@ Development of CESSDA tools and services is carried out using CESSDA-owned git-r
 
 If the code is developed publicly elsewhere, mirroring with clear pointers to the upstream are used.
 
-All software development should follow common best practices.
+All software development should follow common best practices and the [DRY-principle](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself).
 At a minimum, the recommendations of the
 [EURISE Network Technical Reference, {{ site.technical-reference.version }}]({{ site.technical-reference.url }})
 must be followed.
