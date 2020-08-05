@@ -1,9 +1,9 @@
 ---
 title: Enhancing the Technical Architecture
-parent: Technical Architecture
+parent: Architectural Principles
 grand_parent: Technical Infrastructure
 published: false
-nav_order: 3104
+nav_order: 3103
 
 ---
 

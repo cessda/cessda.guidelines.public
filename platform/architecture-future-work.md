@@ -1,9 +1,9 @@
 ---
 title: Future Work
-parent: Technical Architecture
+parent: Architectural Principles
 grand_parent: Technical Infrastructure
 published: false
-nav_order: 3103
+nav_order: 3102
 ---
 
 # {{ page.title }}
@@ -11,7 +11,7 @@ nav_order: 3103
 Guidance is produced either in advance of a new type or phase of development,
 or based on the experience of undertaking a new type or phase of development.
 
-## Web usability
+## Web {% include glossary.html entry="usability" %}
 
 Use responsive web design, so that applications can be used on smartphone, tablets, laptops and desktop devices.
 To include minimum accessibility standards and HTML/CSS compliance levels that should be met.
@@ -27,7 +27,7 @@ is a good place to find guidance.
 
 - System Error Messages
 
-- Logging (covered by 12 factor app, number 6
+- Logging (covered by {% include glossary.html entry="{% include glossary.html entry="12 factor app" %}" %}, number 6
   ([Logs - Treat logs as event streams](http://12factor.net/logs)).
 
 ## Application Level Security
@@ -98,7 +98,7 @@ is a good place to find guidance.
 
 ## Standard Operating Procedures
 
-Deployment and in-life operations and maintenance of software artefacts are currently out of scope.
+Deployment and in-life operations and maintenance of {% include glossary.html entry="software artefacts" %} are currently out of scope.
 
 The following should be considered at a later stage:
 
@@ -156,7 +156,7 @@ Second level (for Development Infrastructure) requires further consideration.
 
 ## Hosting Services
 
-Deployment and in life operations and maintenance of software artefacts are currently out of scope.
+Deployment and in life operations and maintenance of {% include glossary.html entry="software artefacts" %} are currently out of scope.
 
 Steps must be taken to ensure the storage location of PII is in accordance with EU guidelines.
 

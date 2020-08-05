@@ -130,19 +130,19 @@ The level to be attained will be determined by the prevailing CESSDA software ma
 See [Software Maturity Levels]({% link sml/cessda-software-maturity-levels.md %}) for more details.
 
 What checks should suppliers make to increase the likelihood of acceptance?
-They are expected to use the CIT environment from the start of the development process,
+They are expected to use the {% include glossary.html entry="CIT" %} environment from the start of the development process,
 so that they address the code quality requirements from the onset.
 Also that way, they can notify CESSDA MO when they have a release candidate,
 and the test results can easily be inspected as the code is already in the CESSDA environment.
 
-Jenkins has been chosen as the CI server for the following reasons:
+Jenkins has been chosen as the {% include glossary.html entry="CI" %} server for the following reasons:
 
-- Standards: a de facto standard for CI
+- Standards: a de facto standard for {% include glossary.html entry="CI" %}
 
 - Familiarity - experience of configuration and/or use amongst several
     CESSDA SPs;
 
-- Features: provides tried and tested CI; links with Bitbucket and other SCM systems;
+- Features: provides tried and tested {% include glossary.html entry="CI" %}; links with Bitbucket and other {% include glossary.html entry="SCM" %} systems;
     hundreds of free plugins available;
     can build and deploy containers;
 
@@ -150,25 +150,26 @@ Jenkins has been chosen as the CI server for the following reasons:
 
 ## Source code management
 
-The Bitbucket SCM system has been mandated, and each product has its own project (containing one or more repositories) within the
+The Bitbucket {% include glossary.html entry="SCM" %} system has been mandated, and each product has its own project (containing one or more repositories) within the
 [CESSDA Research Infrastructure project space](https://bitbucket.org/cessda/workspace/projects/).
-Each repository is linked to the CIT environment via a Jenkinsfile and corresponding Jenkins jobs,
+Each repository is linked to the {% include glossary.html entry="CIT" %} environment via a Jenkinsfile and corresponding Jenkins jobs,
 so that software quality assurance takes place throughout the development phase.
 
 The choice of Bitbucket was based on a combination of standards, familiarity, features and transferability:
 
-- Standards: a de facto standard for SCM; supports Git and Mercurial repositories;
+- Standards: a de facto standard for {% include glossary.html entry="SCM" %}; supports Git and Mercurial repositories;
 
 - Familiarity: experience of configuration and/or use amongst several CESSDA SPs;
 
-- Features: provides tried and tested distributed SCM; links with CI tools such as Jenkins; has built in issue tracker and wiki;
+- Features: provides tried and tested distributed {% include glossary.html entry="SCM" %};
+    links with {% include glossary.html entry="CI" %} tools such as Jenkins; has built in issue tracker and wiki;
 
 - Transferability: can export code and commit history to other Git repository hosting solutions.
 
 In this way, the source code for products and components deployed within the CESSDA Research Infrastructure
 will be available to CESSDA throughout their life.
 No product or component will be deployed without the source code first being made available in this way
-(with the exception of COTS products and products built from Open Source projects).
+(with the exception of {% include glossary.html entry="COTS" %} products and products built from Open Source projects).
 
 See also 12 factor app, number 1 ([Codebase - One codebase tracked in revision control, many deploys](http://12factor.net/codebase)).
 

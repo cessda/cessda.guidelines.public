@@ -12,7 +12,7 @@ nav_order: 370
 
 See [Naming Conventions]({% link platform/naming-conventions.md %}).
 
-## Update CI Tools
+## Update {% include glossary.html entry="CI" %} Tools
 
 See [Updating CI Tools]({% link platform/updating-ci-tools.md %}).
 

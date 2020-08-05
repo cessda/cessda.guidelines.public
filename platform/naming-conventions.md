@@ -7,16 +7,23 @@ nav_order: 305
 # {{ page.title }}
 
 The naming conventions for products are designed to increase consistency across documentation and between the development,
- staging and production deployments with the aim of increasing the usability of the build, test and deployment scripts.
+ staging and production deployments with the aim of increasing the {% include glossary.html entry="usability" %} of the build, test and deployment scripts.
 
 ## Abbreviations
 
-* CDC - [CESSDA Data Catalogue](https://datacatalogue.cessda.eu/)
-* CVS - [CESSDA Vocabulary Service](https://vocabularies.cessda.eu/#!discover)
-* DVS - Dataverse
-* EQB - European Question Bank
-* GCP - [Google Cloud Platform](https://cloud.google.com)
-* GKE - [Google Kubernetes Engine](https://console.cloud.google.com/kubernetes/)
+- CDC - [CESSDA Data Catalogue](<https://datacatalogue.cessda.eu/>)
+
+- CVS - [CESSDA Vocabulary Service](<https://vocabularies.cessda.eu/#!discover>)
+
+- DVS - Dataverse
+
+- ELSST - [European Language Social Science Thesaurus](<https://elsst.ukdataservice.ac.uk/>)
+
+- EQB - European Question Bank
+
+- GCP - [Google Cloud Platform](<https://cloud.google.com>)
+
+- GKE - [Google Kubernetes Engine](<https://console.cloud.google.com/kubernetes/>)
 
 ## Definitions
 
