@@ -65,7 +65,6 @@ So the pattern looks like this
 
 - EQB: eqb-$component_name (e.g. `eqb-frontend`)
 
-
 ## Namespaces
 
 Namespaces are used to group the components of a product within a cluster, whist isolating them from components of other products.
@@ -77,10 +76,13 @@ Namespaces are used to group the components of a product within a cluster, whist
 Clusters are named to reflect the various deployment environments. Simple names are used, using the template $environment-cluster.
  The cluster names chosen are:
 
-* `development-cluster`
-* `staging-cluster`
-* `production-cluster`
-* `management-cluster`
+- `development-cluster`
+
+- `staging-cluster`
+
+- `production-cluster`
+
+- `management-cluster`
 
 ## Storage / Persistent Volume Claims
 
