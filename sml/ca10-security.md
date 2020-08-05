@@ -14,16 +14,20 @@ nav_order: 455
 
 *SML1 - Initial usability:* Security was addressed in the development
 phases up to and including design.
+The Privacy Impact Rating (PIR) was assessed.
 
 *SML2 - Use is feasible:* Security was addressed in the development
-phases up to and including implementation. Developers have undertaken
-appropriate Security training.
+phases up to and including implementation.
+A mitigation plan, based on the PIR, was produced.
 
 *SML3 - Use is possible by most users:* Security was addressed in the
 development phases up to and including implementation.
+Developers have undertaken appropriate Security training.
+The PIR mitigation plan was implemented.
 
 *SML4 - Software is usable:* Security was addressed in the development
 phases up to and including verification and testing.
+The implementation of the PIR mitigation plan was verified.
 
 *SML5 - Demonstrable usability:* Security was addressed in the
 development phases up to and including product release.
