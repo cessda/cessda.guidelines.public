@@ -34,6 +34,7 @@ bundle exec rake lint
 
 Technical documentation is generally used for consultation or reference, instead of being read from beginning to end.
 This use case forms the basis for form and structure of the CESSDA Technical Guidelines.
+As a general rule, the »*what*« should be most prominently presented, followed by the motivation and optional examples.
 
 General recommendations:
 
@@ -45,9 +46,18 @@ General recommendations:
 * Use lists and structure through headings and short praragraphs.
 * Document state, not historical emergence or decision basis.
 * Avoid ambiguous language and complicated grammatical structure and vocabulary.
+* Screenshots should be small and reduced to relevant parts, ideally highlighting relevant sections and cutting unnecessary information.
+* Pictures within the same page should harmonise with each other and with the page text font size.
 
 Practical recommendations:
 
+* Use lower case file names with hyphens as word seperators.
+* Put all images in the `images` folder, only theme-related files go into `assets`.
 * Start a new sentence on a new line and use logical places to wrap text if exceeding the line limit.
 * Use lazy numbering for lists and appropriate measures to reduce the need to touch other lines/files when making changes.
+* Glossary entries must be added to `_data/glossary.yml` and referenced using
+
+```liquid
+{% include glossary.html entry="RI" %}
+```
 

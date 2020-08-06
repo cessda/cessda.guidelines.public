@@ -19,4 +19,4 @@ Thus any CESSDA service must follow the following design principles, building up
   * Provide [OpenAPI](https://www.openapis.org/) documentation.
   * Implement `X-Request-ID` headers.
 
-* Logs must be streamed to `STDOUT` and should follow [NSD JSON Schema](https://gitlab.nsd.no/logging/log-schema).
+* See [logging guidelines]({% link software/logging-guidelines.md %}) for further information re logging container output.
