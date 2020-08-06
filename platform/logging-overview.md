@@ -23,7 +23,7 @@ CESSDA uses a variation of the Elastic Stack for logging, namely Elasticsearch, 
 In the EFK stack, Fluent Bit is used as the log router, instead of `logstash`.
 The log pipeline for CESSDA is as below:
 
-![Logging_pipeline.jpg](../assets/Logging_pipeline.jpg)
+![Logging_pipeline.jpg](../images/Logging_pipeline.jpg)
 
 - The application must log each line of the stream into `stdout` *or* `stderr`
 

@@ -15,4 +15,4 @@ See [Naming Conventions]({% link platform/naming-conventions.md %}).
 The diagram shows the deployment pipeline in CESSDA's Continuous Integration and Delivery process,
 from the moment a developer commits code changes to the deployment of the  {% include glossary.html entry="product" %} to production.
 
-![Deployment pipeline](../assets/deployment-pipeline.png)
+![Deployment pipeline](../images/deployment-pipeline.png)

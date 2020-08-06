@@ -47,7 +47,7 @@ and manage CESSDA's products.
 GKE can operate both in stateless mode, and also can be configured to deploy backing components like persistent volumes/storage,
 and even run a database in the cluster.
 
-![GCP Main Project Structure Sandbox](../assets/gcp-main-project-structure-sandbox.png)
+![GCP Main Project Structure Sandbox](../images/gcp-main-project-structure-sandbox.png)
 
 ## CESSDA Development GCP Project
 

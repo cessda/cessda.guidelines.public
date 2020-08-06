@@ -22,4 +22,4 @@ sign-off in the staging environment.
 
 [Helm charts]({% link platform/deployment-with-helm.md %}) are used to orchestrate the deployment of an application's components.
 
-![DataFlow_Diagram](../assets/dataflow-diagram.png)
+![DataFlow_Diagram](../images/dataflow-diagram.png)
