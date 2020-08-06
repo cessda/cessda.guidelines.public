@@ -1,0 +1,74 @@
+- entry: "API"
+  title: "Application Programming Interface"
+  description: "“In computer programming, an application programming interface (API) is a set of routines,
+               protocols, and tools for building software and applications.”
+               Source: Wikipedia: Application programming interface"
+
+- entry: "CI"
+  title: "Continuous Integration"
+  description: "“The practice, in software engineering, of merging all developer working copies
+               to a shared mainline several times a day.” Source: Wikipedia: Continuous Integration"
+
+- entry: "CT"
+  title: "Continuous Testing"
+  description: "“The process of executing automated tests as part of the software delivery pipeline
+               to obtain immediate feedback on the business risks associated with a software release candidate.”
+               Source: Wikipedia: Continuous Testing"
+
+- entry: "CIT"
+  title: "Continuous Integration and Testing"
+  description: "A combination of CI and CT"
+
+- entry: "REST"
+  title: "Representational State Transfer"
+  description: "“An architectural style consisting of a coordinated set of architectural constraints
+               applied to components, connectors, and data elements, within a distributed hypermedia system.”
+               Source: Wikipedia: REST"
+
+- entry: "RI"
+  title: "Research Infrastructure"
+  description: "“A seamless social science data archive service for the whole of the European Research Area (ERA),
+               which is capable of supporting the research needs of the next generation of social scientists
+               wherever in Europe they may be, or beyond.” Source:  CESSDA SaW project overview"
+
+- entry: "SCM"
+  title: "Source Code Management [system]"
+  description: "A system for “the management of changes to … computer programs.” Source: Wikipedia: Version Control"
+
+- entry: "-"
+  title: "Application"
+  description: "An engineering view of the collection of Components that make up a Product"
+
+- entry: "-"
+  title: "Application code"
+  description: "The software source code that an Application's Components are made up of"
+
+- entry: "-"
+  title: "Component"
+  description: "an individual part of an Application (e.g. Elasticsearch for CVS, Searchkit for CDC)"
+
+- entry: "-"
+  title: "Product"
+  description: "A deployed Application (e.g. CDC, CVS, DVS, EQB)"
+
+- entry: "-"
+  title: "[software] Service"
+  description: "An overall user experience (e.g. CDC, CVS, DVS, EQB);
+               a User-centric view of an application, including documentation and support"
+
+- entry: "-"
+  title: "Software artefacts"
+  description: "Software Products, Applications, Services Components"
+
+- entry: "-"
+  title: "Technical debt"
+  description: "“Work that needs to be done before a particular job can be considered complete or proper.
+               If the debt is not repaid, then it will keep on accumulating interest, making it hard to implement
+               changes later on.”  Source: Wikipedia: Technical debt"
+
+- entry: "-"
+  title: "Usability"
+  description: "“The degree to which a product can be used by specified consumers to achieve quantified objectives
+               with effectiveness, efficiency, and satisfaction in a quantified context of use.”
+               Source: Ergonomic Requirements for Office Work with Visual Display Terminals, ISO 9241-11, ISO, Geneva, 1998"
+

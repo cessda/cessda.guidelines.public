@@ -1,1 +1,16 @@
-[{{ include.entry }}]({% link glossary.md %}){{- -}}
+{%- comment -%}
+  This file adds a link to the glossary page with optional mouseover,
+  if an expansion of the abbreviation can be found in data/glossary.yml.
+  Note the excessive use of whitespace hiding!
+{%- endcomment -%}
+{% assign mouseover = "" -%}
+{% for gl_entry in site.data.glossary -%}
+{% if gl_entry.entry == include.entry -%}
+{% assign mouseover = gl_entry.title -%}
+{% endif -%}
+{% endfor -%}
+{% if mouseover -%}
+<span class="glossary_entry" title="{{ mouseover }}">[{{ include.entry }}]({% link glossary.md %})</span>{{- -}}
+{% else -%}
+<span class="glossary_entry" title="">[{{ include.entry }}]({% link glossary.md %})</span>{{- -}}
+{% endif -%}

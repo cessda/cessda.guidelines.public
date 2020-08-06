@@ -55,7 +55,7 @@ Practical recommendations:
 * Put all images in the `images` folder, only theme-related files go into `assets`.
 * Start a new sentence on a new line and use logical places to wrap text if exceeding the line limit.
 * Use lazy numbering for lists and appropriate measures to reduce the need to touch other lines/files when making changes.
-* To reference Glossary entries, use
+* Glossary entries must be added to `_data/glossary.yml` and referenced using
 
 ```liquid
 {% include glossary.html entry="RI" %}
