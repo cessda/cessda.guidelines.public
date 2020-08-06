@@ -6,7 +6,15 @@ nav_order: 170
 
 # {{ page.title }}
 
-## Introduction
+## Guidelines
+
+- Software components must log each line of the stream to `stdout`
+
+- Logs should adopt the [NSD JSON Schema](https://gitlab.nsd.no/logging/log-schema)
+
+- Use logging level **WARN** as the deafault
+
+## Rational
 
 This intention of this guideline is to help Developers ensure that component logging:
 
@@ -18,7 +26,7 @@ This intention of this guideline is to help Developers ensure that component log
 
 so the logged event data can be consumed, correlated, analysed and managed by a central logging system.
 
-## Purpose of logging
+### Purpose of logging
 
 Logging output from CESSDA application components is important and brings benefits to the following groups of people:
 
@@ -26,7 +34,7 @@ Logging output from CESSDA application components is important and brings benefi
 
 - Developers: Allows code execution tracing without the use of a debugger
 
-## Loggers
+### Loggers
 
 Depending on the programming language, Developers may choose any logging client or logging framework that suits them.
 It must be properly defined in each of the classes that performs logging.
@@ -44,7 +52,7 @@ public class ConsumerScheduler {
 }
 ```
 
-## Log levels
+### Log levels
 
 The default log level for CESSDA is **WARN**.
 
@@ -54,7 +62,7 @@ Below is the example from the CDC harvester component:
 
 `log.warn("Could not parse RecordIdentifier lastModifiedDate")`
 
-## Parameterize logging  and fields creation
+### Parameterize logging  and fields creation
 
 Most frameworks provide parameterised logging capabilities.
 Parameterised logging allows Developers to specify parameters in log statements which will be evaluated only if the log is actually processed.
@@ -71,7 +79,7 @@ Below is an example:
 log.info("BulkIndexing repo [{}] with lang code [{}].", value("repo_name", repo.getName()), value("lang_code", lang));
 ```
 
-## Context
+### Context
 
 Creating a log message to indicate what is happening to a block of code is very important.
 Indicate what the operation is attempting to do, what object it is trying to act on and why that is required.
@@ -93,3 +101,5 @@ log.error("[{}] Failed to get StudyId [{}]: {}: {}",
 The message text explains the failure and includes all relevant information.
 The name of the repository, the Study ID, the code and optional message are logged.
 Finally, the exception is attached allowing for the full stack trace to be printed.
+
+See [logging overview]({% link platform/logging-overview.md %}) for additional background information.
