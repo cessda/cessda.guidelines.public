@@ -3,14 +3,25 @@
   if an expansion of the abbreviation can be found in data/glossary.yml.
   Note the excessive use of whitespace hiding!
 {%- endcomment -%}
-{% assign mouseover = "" -%}
-{% for gl_entry in site.data.glossary -%}
-{% if gl_entry.entry == include.entry -%}
-{% assign mouseover = gl_entry.title -%}
+{%- unless include.text -%}
+{%- assign display_string = include.entry -%}
+{%- else -%}
+{%- assign display_string = include.text -%}
+{%- endunless %}
+{%- assign mouseover = "" -%}
+{%- for gl_entry in site.data.glossary -%}
+  {%- if gl_entry.entry == include.entry -%}
+    {%- capture mouseover %}{{ gl_entry.title }} -- {{ gl_entry.description }}{% endcapture -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- comment -%}
+  If we don't have matching abbriviation, try the full title!
+{%- endcomment -%}
+{%- if mouseover == "" -%}
+  {%- for gl_entry in site.data.glossary -%}
+    {%- if gl_entry.title == include.entry -%}
+      {%- capture mouseover %}{{ gl_entry.description }}{% endcapture -%}
+    {%- endif -%}
+  {%- endfor -%}
 {% endif -%}
-{% endfor -%}
-{% if mouseover -%}
-<span class="glossary_entry" title="{{ mouseover }}">[{{ include.entry }}]({% link glossary.md %})</span>{{- -}}
-{% else -%}
-<span class="glossary_entry" title="">[{{ include.entry }}]({% link glossary.md %})</span>{{- -}}
-{% endif -%}
+<span class="glossary_entry" title="{{ mouseover }}">[{{ display_string }}]({% link glossary.md %})</span>{{- -}}

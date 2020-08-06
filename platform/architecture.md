@@ -64,4 +64,4 @@ to ensure the User Journey is uniform and predictable, regardless of the destina
 Whilst the development of such a unifying user interface is yet to be agreed,
 a [style guide](https://zenodo.org/record/2631263) has been produced to help User Interface developers adopt a common look and feel.
 In followed, the Architectural principles should reduce the overhead of retro-fitting such a
-{% include glossary.html entry="component" %} at a later date.
+{% include glossary.html entry="Component" text="component" %} at a later date.
