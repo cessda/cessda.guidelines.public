@@ -77,7 +77,9 @@ pipeline {
 		}
 		stage('Build Nginx Container') {
 			steps {
-				sh "docker build -t ${imageTag} -f nginx.Dockerfile ."
+				nodejs('node-12') {
+					sh "docker build -t ${imageTag} -f nginx.Dockerfile ."
+				}
 			}
 			when { branch 'master' }
 		}
