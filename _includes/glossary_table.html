@@ -1,0 +1,16 @@
+<table>
+  <thead>
+    <tr>
+      <th>Acronym</th>
+      <th>Expansion</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for row in site.data.glossary %}
+    {% tablerow pair in row %}
+      {{ pair[1] }}
+    {% endtablerow %}
+  {% endfor %}
+  </tbody>
+</table>
