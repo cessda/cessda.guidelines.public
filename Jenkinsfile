@@ -67,7 +67,9 @@ pipeline {
 		stage('Run SonarQube Scan') {
 			steps{
 				withSonarQubeEnv('cessda-sonar') {
-					sh "${scannerHome}/bin/sonar-scanner"
+					nodejs('node-12') {
+						sh "${scannerHome}/bin/sonar-scanner"
+					}
 				}
 				timeout(time: 1, unit: 'HOURS') {
 					waitForQualityGate abortPipeline: true
