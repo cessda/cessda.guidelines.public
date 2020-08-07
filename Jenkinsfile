@@ -67,7 +67,9 @@ pipeline {
 		stage('Run SonarQube Scan') {
 			steps{
 				withSonarQubeEnv('cessda-sonar') {
-					sh "${scannerHome}/bin/sonar-scanner"
+					nodejs('node-12') {
+						sh "${scannerHome}/bin/sonar-scanner"
+					}
 				}
 				timeout(time: 1, unit: 'HOURS') {
 					waitForQualityGate abortPipeline: true
@@ -77,9 +79,7 @@ pipeline {
 		}
 		stage('Build Nginx Container') {
 			steps {
-				nodejs('node-12') {
-					sh "docker build -t ${imageTag} -f nginx.Dockerfile ."
-				}
+				sh "docker build -t ${imageTag} -f nginx.Dockerfile ."
 			}
 			when { branch 'master' }
 		}
