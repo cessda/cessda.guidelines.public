@@ -31,7 +31,7 @@ technical-reference:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# Individual pages that are e.g. in draft format can be hidden 
+# Individual pages that are e.g. in draft format can be hidden
 # using 'published: false' in the Front Matter.
 #
 exclude:
@@ -52,3 +52,4 @@ exclude:
  - vendor/cache/
  - vendor/gems/
  - vendor/ruby/
+ - scripts/
