@@ -52,8 +52,8 @@ pipeline {
 				// Corrects links so that the Jenkins preview works
 				stage('Build Test Documentation') {
 					steps {
-						sh "sed -i s#\"https://jenkins.cessda.eu/\"#URL#g _config.jenkins.yml"
-						sh "sed -i s#\"/job/cessda.guidelines.public/job/${env.BRANCH_NAME}/${env.BUILD_NUMBER}/artifact/_site/\"#BASEURL#g _config.jenkins.yml"
+						sh "sed -i s#URL#\"https://jenkins.cessda.eu/\"#g _config.jenkins.yml"
+						sh "sed -i s#BASEURL#\"/job/cessda.guidelines.public/job/${env.BRANCH_NAME}/${env.BUILD_NUMBER}/artifact/_site/\"#g _config.jenkins.yml"
 						sh "jekyll build --config _config.yml,_config.jenkins.yml"
 					}
 					when { not { branch 'master' } }
