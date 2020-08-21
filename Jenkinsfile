@@ -47,6 +47,15 @@ pipeline {
 						sh "jekyll build"
 						sh "bundle exec rake htmlproofer"
 					}
+					/*when { branch 'master' }*/
+				}
+				// Corrects links so that the Jenkins preview works
+				stage('Build Test Documentation') {
+					steps {
+						sh "echo baseurl: \"/job/cessda.guidelines.public/job/${env.BRANCH_NAME}/${env.BUILD_NUMBER}/Build_20Result/\" > _config.jenkins.yml"
+						sh "jekyll build --config _config.yml,_config.jenkins.yml"
+					}
+					when { not { branch 'master' } }
 					post {
 						success {
 							publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: '_site/', reportFiles: 'index.html', reportName: 'Build Result', reportTitles: ''])
