@@ -58,7 +58,7 @@ pipeline {
 					when { not { branch 'master' } }
 					post {
 						success {
-							archiveArtifacts '_site/**'
+							publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: '_site/', reportFiles: 'index.html', reportName: 'Build Result', reportTitles: ''])
 						}
 					}
 				}
