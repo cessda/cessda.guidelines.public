@@ -52,7 +52,7 @@ pipeline {
 				// Corrects links so that the Jenkins preview works
 				stage('Build Test Documentation') {
 					steps {
-						sh "echo baseurl: \"/job/cessda.guidelines.public/job/${env.BRANCH_NAME}/${env.BUILD_NUMBER}/Build_20Result/\" > _config.jenkins.yml"
+						sh "echo baseurl: \"/job/cessda.guidelines.public/job/feature%252F21-html-publisher/Build_20Result/\" > _config.jenkins.yml"
 						sh "jekyll build --config _config.yml,_config.jenkins.yml"
 					}
 					when { not { branch 'master' } }
