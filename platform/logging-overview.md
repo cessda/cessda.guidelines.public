@@ -30,11 +30,12 @@ The log pipeline for CESSDA is as below:
 - The Docker engine uses JSON-file log driver to interpret each line as one log event and output as JSON
 
 - Fluent Bit collects logs and uses Kubernetes Filters to allow enrichment of log files with Kubernetes metadata.
-  It then routes the logs to Elasticsearch input
 
-- Elasticsearch indexes and stores log events received from the output of Fluent Bit
+- Graylog server defines and indexes logs into Elasticsearch. 
 
-- Logs are searched, aggregated and visualized with Kibana
+- Elasticsearch stores log indices for quering.  
+
+- Logs are queried, aggregated and visualized with Kibana
 
 ## Log levels
 
