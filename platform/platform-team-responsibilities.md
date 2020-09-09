@@ -35,7 +35,10 @@ See [Updating CI Tools]({% link platform/updating-ci-tools.md %}).
 
 ## Create Jenkins jobs
 
+A Jenkins jobs is needed to run the build, test and deployment pipeline.
 See [Create a New Jenkins Job]({% link platform/jenkins-new-job.md %}).
+If there is a database component, then jobs are needed to backup and restore the database contents
+as well as deploying a specified version of the database schema.
 
 ## Create DNS records
 
@@ -54,6 +57,9 @@ and [Adding the Deployment Jenkinsfile]({% link platform/adding-the-deployment-j
 Work with developers to create test suites to be used by the pipeline.
 
 - Development. Work with developers to create staging builds for user group testing.
+        If relevant, ensure the job for deploying a specified version of the database schema runs successfully.
 
 - Staging. Work with users and developers to approve production builds.
         See the [Software Releases]({% link software/releases.md %}) proceedure for details.
+
+- Production. If relevant, ensure the database backup and restore jobs run successfully.
