@@ -51,7 +51,8 @@ Either provide a template for the development team to customise, or create a wor
 
 ### LICENSE.txt
 
-CESSDA source code is made available under the Apache 2 License, and a LICENSE file must be present in the repository.
+Unless otherwise agreed, CESSDA source code is made available under the Apache 2 License.
+A LICENSE file must be present in the repository root that includes the full license text.
 
 ### README.md
 
