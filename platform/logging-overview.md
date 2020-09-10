@@ -31,7 +31,7 @@ The log pipeline for CESSDA is as below:
 
 - Fluent Bit collects logs and uses Kubernetes Filters to allow enrichment of log files with Kubernetes metadata.
 
-- Graylog server defines and indexes logs into Elasticsearch. 
+- Graylog server defines and indexes logs into Elasticsearch.
 
 - Elasticsearch stores log indices for quering.  
 
