@@ -8,28 +8,41 @@ nav_order: 170
 
 ## Guidelines
 
-- Software components must log each line of the stream to `stdout`
+Software components must log each line of the stream to `stdout`
 
-- Logging scope should generally be:
-   -  All exceptions
-   - Validation failures 
-   - Authentication sucesses and failures
-   - Authorisation failures 
-   - Systems events 
-   - Any high functionalities 
-- Desist from logging the following:
-   - Sensitive personal data 
-   - Duplicated failures 
-   - Regular data changes 
-   - Application source code 
+Logging scope should generally be:
 
-- Use logging level **WARN** as the deafault
-- Parameterise logs when necessary for logs clean-up and allow for variables when needed. - See example below 
-- Contextualise log messages when neccessary for easy log correlation. - See example below 
+- All exceptions
+
+- Validation failures
+  
+- Authentication sucesses and failures
+  
+- Authorisation failures
+  
+- Systems events
+  
+- Any high functionalities
+  
+Desist from logging the following:
+
+- Sensitive personal data
+  
+- Duplicated failures
+  
+- Regular data changes
+  
+- Application source code
+
+Use logging level **WARN** as the default
+
+Parameterise logs when necessary for logs clean-up and allow for variables when needed. See example below.
+
+Contextualise log messages when neccessary for easy log correlation. See example below.
 
 ## Rational
 
-This intention of this guideline is to help Developers ensure that component logging:
+The intention of this guideline is to help Developers ensure that component logging:
 
 - is consistent within an application
 
