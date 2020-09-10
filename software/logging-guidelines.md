@@ -15,23 +15,23 @@ Logging scope should generally be:
 - All exceptions
 
 - Validation failures
-  
+
 - Authentication sucesses and failures
-  
+
 - Authorisation failures
-  
+
 - Systems events
-  
+
 - Any high functionalities
-  
+
 Desist from logging the following:
 
 - Sensitive personal data
-  
+
 - Duplicated failures
-  
+
 - Regular data changes
-  
+
 - Application source code
 
 Use logging level **WARN** as the default
