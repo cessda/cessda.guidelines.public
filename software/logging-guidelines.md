@@ -8,23 +8,49 @@ nav_order: 170
 
 ## Guidelines
 
-- Software components must log each line of the stream to `stdout`
+Software components must log each line of the stream to `stdout`
 
-- Logs should adopt the [NSD JSON Schema](https://gitlab.nsd.no/logging/log-schema)
+Logging scope should generally be:
 
-- Use logging level **WARN** as the deafault
+- All exceptions
+
+- Validation failures
+
+- Authentication sucesses and failures
+
+- Authorisation failures
+
+- Systems events
+
+- Any high functionalities
+
+Desist from logging the following:
+
+- Sensitive personal data
+
+- Duplicated failures
+
+- Regular data changes
+
+- Application source code
+
+Use logging level **WARN** as the default
+
+Parameterise logs when necessary for logs clean-up and allow for variables when needed. See example below.
+
+Contextualise log messages when neccessary for easy log correlation. See example below.
 
 ## Rational
 
-This intention of this guideline is to help Developers ensure that component logging:
+The intention of this guideline is to help Developers ensure that component logging:
 
 - is consistent within an application
 
-- is consistent across CESSDA's service portfolio
+- is consistent across CESSDA's product portfolio
 
 - uses industry standards and best practice where relevant
 
-so the logged event data can be consumed, correlated, analysed and managed by a central logging system.
+so the logged event data can be consumed, correlated, analysed and managed by CESSDA's central logging system.
 
 ### Purpose of logging
 
