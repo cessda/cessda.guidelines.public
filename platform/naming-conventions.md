@@ -49,15 +49,15 @@ the  {% include glossary.html entry="component" %} (e.g. `certbot`, `mailrelay`,
 
 So the pattern looks like this
 
-- Management tools: mgmt-$component_name (e.g. `mgmt-certbot`, `monitoring-prometheus`)
+- Management tools: `mgmt-$component_name` (e.g. `mgmt-certbot`, `monitoring-prometheus`)
 
-- CDC: cdc-$component_name (e.g. `cdc-osmh-indexer`)
+- CDC: `cdc-$component_name` (e.g. `cdc-osmh-indexer`)
 
-- CVS: cvs-$component_name (e.g. `cvs-reverse`)
+- CVS: `cvs-$component_name` (e.g. `cvs-reverse`)
 
-- DVS: dvs-$component_name (e.g. `dvs-mailrelay`)
+- DVS: `dvs-$component_name` (e.g. `dvs-mailrelay`)
 
-- EQB: eqb-$component_name (e.g. `eqb-frontend`)
+- EQB: `eqb-$component_name` (e.g. `eqb-frontend`)
 
 ## Namespaces
 
@@ -82,15 +82,15 @@ Clusters are named to reflect the various deployment environments. Simple names 
 
 ## Storage / Persistent Volume Claims
 
-Names of persistent volumes track the names of the tools that they serve using the template *$product_name-$component_name-pvc*.
+Names of persistent volumes track the names of the tools that they serve using the template `$product_name-$component_name-pvc`.
 
 ## Configuration / Secrets
 
-Names of ConfigMaps and Secrets are of the form *$product_name-$component_name-configmap* and *$product_name-$component_name-secret*.
+Names of ConfigMaps and Secrets are of the form `$product_name-$component_name-configmap` and `$product_name-$component_name-secret`.
 
 ## Subdomains
 
-Subdomains are in the form of *$subdomain.cessda.eu*. The subdomain is not the same as the $product_name,
+Subdomains are in the form of `$subdomain.cessda.eu`. The subdomain is not the same as the $product_name,
 i.e. for the CESSDA Data Catalogue the subdomain is `datacatalogue`, whereas the $product_name is `cdc`.
 
-For development and staging environments, the $subdomain has `-dev` or `-staging` appended (e.g. `datacatalogue-dev`).
+For development and staging environments, the `$subdomain` has `-dev` or `-staging` appended (e.g. `datacatalogue-dev`).

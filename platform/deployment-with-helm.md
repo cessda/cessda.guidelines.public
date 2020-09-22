@@ -56,5 +56,5 @@ using a variable specified in the *values.yaml* file (typically of the form *ena
 Before deployment, Kubernetes manifests are validated using *kube-score* which
 checks that they follow best practices.
 
-An existing  {% include glossary.html entry="product" %} deployment can be rolled back to a specified previous version, using a Jenkins
-job *cessda.xxx.rollback* (where 'xxx' is replaced with the  {% include glossary.html entry="product" %} code, e.g. cdc, eqb)
+An existing {% include glossary.html entry="product" %} deployment can be rolled back to a specified previous version, using a Jenkins
+job `cessda.xxx.rollback` (where 'xxx' is replaced with the  {% include glossary.html entry="product" %} code, e.g. cdc, eqb)

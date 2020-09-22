@@ -60,4 +60,3 @@ Practical recommendations:
 ```liquid
 {% include glossary.html entry="RI" %}
 ```
-
