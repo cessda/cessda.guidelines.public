@@ -52,13 +52,14 @@ pipeline {
 				// Corrects links so that the Jenkins preview works
 				stage('Build Test Documentation') {
 					steps {
-						sh "echo baseurl: \"/job/cessda.guidelines.public/job/${env.BRANCH_NAME}/${env.BUILD_NUMBER}/artifact/_site/\" > _config.jenkins.yml"
+						sh "sed -i s#URL#\"https://jenkins.cessda.eu\"#g _config.jenkins.yml"
+						sh "sed -i s#BASE#\"/job/cessda.guidelines.public/job/${env.BRANCH_NAME}/${env.BUILD_NUMBER}/Build_20Result/\"#g _config.jenkins.yml"
 						sh "jekyll build --config _config.yml,_config.jenkins.yml"
 					}
 					when { not { branch 'master' } }
 					post {
 						success {
-							archiveArtifacts '_site/**'
+							publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: '_site/', reportFiles: 'index.html', reportName: 'Build Result', reportTitles: ''])
 						}
 					}
 				}
