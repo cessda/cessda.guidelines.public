@@ -23,8 +23,8 @@ In the first instance, the CESSDA Service Providers, but potentially any softwar
 ### Purpose
 
 The ambition is to promote good software development practice across the Service Provider community,
-in respect of the provision of {% include glossary.html entry="(software artefacts)" text="software artefacts" %} intended for use as part of the
-{% include glossary.html entry="RI" text="RI" %}.
+in respect of the provision of {% include glossary.html entry="(software artefacts)" text="software artefacts" %}
+intended for use as part of the {% include glossary.html entry="RI" text="RI" %}.
 
 It is important to ensure that the source code for every  {% include glossary.html entry="(product)" text="product" %} is centrally available,
 so that all Service Providers can access it,

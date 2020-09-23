@@ -98,7 +98,8 @@ is a good place to find guidance.
 
 ## Standard Operating Procedures
 
-Deployment and in-life operations and maintenance of {% include glossary.html entry="(software artefacts)" text="software artefacts" %} are currently out of scope.
+Deployment and in-life operations and maintenance of
+{% include glossary.html entry="(software artefacts)" text="software artefacts" %} are currently out of scope.
 
 The following should be considered at a later stage:
 
@@ -156,7 +157,8 @@ Second level (for Development Infrastructure) requires further consideration.
 
 ## Hosting Services
 
-Deployment and in life operations and maintenance of {% include glossary.html entry="(software artefacts)" text="software artefacts" %} are currently out of scope.
+Deployment and in life operations and maintenance of
+{% include glossary.html entry="(software artefacts)" text="software artefacts" %} are currently out of scope.
 
 Steps must be taken to ensure the storage location of PII is in accordance with EU guidelines.
 

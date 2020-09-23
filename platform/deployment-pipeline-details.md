@@ -28,7 +28,8 @@ at the end of the build process and given a unique image tag based on the Jenkin
 
 ## Deploying the Components
 
-The pipeline is used to deploy the same build of a  {% include glossary.html entry="(component)" text="component" %} (the Docker container) to the development,
+The pipeline is used to deploy the same build of a
+{% include glossary.html entry="(component)" text="component" %} (the Docker container) to the development,
 staging and production environments, but different tests take place between each deployment step.
 
 ![gcp23-figure2.png](../images/gcp23-figure2.png)
@@ -43,14 +44,15 @@ This repository stores the configuration of the components in the form of Kubern
 These define the settings used by each  {% include glossary.html entry="(component)" text="component" %} and,
 if necessary, secrets that hold credentials and other sensitive information.
 
-A new deployment occurs every time code changes are pushed to any of the  {% include glossary.html entry="(component)" text="component" %} source code reporitories.
+A new deployment occurs every time code changes are pushed to any of the
+{% include glossary.html entry="(component)" text="component" %} source code repositories.
 This deployment occurs on the `development-cluster` and is exposed at the development endpoint of the application.
 
 A conditional stage in the Jenkinsfile will automatically start Selenium tests only when a new deployment occurs on the
 `development-cluster`.
 This prevents infinite loops occurring when the tests finish and a new staging build is created.
 When the tests pass, the Docker images are tagged as staging and are deployed to the `staging-cluster`.
-Retagging occurs to show that these images have been certified to function together and should be deployed together.
+Re-tagging occurs to show that these images have been certified to function together and should be deployed together.
 
 ```groovy
 stage('Run Selenium Tests')
