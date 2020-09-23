@@ -7,7 +7,7 @@ nav_order: 305
 # {{ page.title }}
 
 The naming conventions for products are designed to increase consistency across documentation and between the development,
- staging and production deployments with the aim of increasing the {% include glossary.html entry="usability" %} of the build,
+ staging and production deployments with the aim of increasing the {% include glossary.html entry="Usability" text="usability" %} of the build,
  test and deployment scripts.
 
 ## Abbreviations

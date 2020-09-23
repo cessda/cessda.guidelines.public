@@ -61,3 +61,10 @@ Practical recommendations:
 {% include glossary.html entry="RI" %}
 ```
 
+Note that glossary entries have to be referenced with exact matching, including case.
+It is possible to display a different text in-line though:
+
+```liquid
+{% include glossary.html entry="Product" text="products" %}
+```
+
