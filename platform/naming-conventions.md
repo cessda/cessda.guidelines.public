@@ -7,7 +7,7 @@ nav_order: 305
 # {{ page.title }}
 
 The naming conventions for products are designed to increase consistency across documentation and between the development,
- staging and production deployments with the aim of increasing the {% include glossary.html entry="Usability" text="usability" %} of the build,
+ staging and production deployments with the aim of increasing the {% include glossary.html entry="(usability)" text="usability" %} of the build,
  test and deployment scripts.
 
 ## Abbreviations
@@ -30,7 +30,7 @@ The naming conventions for products are designed to increase consistency across 
 
 - See {% include glossary.html entry="Glossary" %}
 
-- See also [Kubernetes  {% include glossary.html entry="component" %} definitions](https://kubernetes.io/docs/concepts/overview/components/)
+- See also [Kubernetes  {% include glossary.html entry="(component)" text="component" %} definitions](https://kubernetes.io/docs/concepts/overview/components/)
 
 - See also [GCP concepts](https://cloud.google.com/docs/overview/)
 
@@ -38,14 +38,14 @@ The naming conventions for products are designed to increase consistency across 
 
 ### GCP cluster names
 
-The prefix `development-`, `management-`, `staging-` or `production-` is used with `cluster` to form the cluser name, e.g. `staging-cluster`.
+The prefix `development-`, `management-`, `staging-` or `production-` is used with `cluster` to form the cluster name, e.g. `staging-cluster`.
 
 ### Workload and Service/Ingress names
 
 Workloads and services/ingress names generally follow the same pattern and are composed of two parts.
-The prefix is the lowercase  {% include glossary.html entry="product" %} name abbreviation (e.g. `cdc-`, `cvs-`, `dvs-`, `eqb-`)
+The prefix is the lowercase  {% include glossary.html entry="(product)" text="product" %} name abbreviation (e.g. `cdc-`, `cvs-`, `dvs-`, `eqb-`)
 or lowercase functional abbreviation (`mgmt-`, `monitoring-`). The main part is the name of
-the  {% include glossary.html entry="component" %} (e.g. `certbot`, `mailrelay`, `reverse`, `osmh-indexer`).
+the  {% include glossary.html entry="(component)" text="component" %} (e.g. `certbot`, `mailrelay`, `reverse`, `osmh-indexer`).
 
 So the pattern looks like this
 
@@ -61,9 +61,9 @@ So the pattern looks like this
 
 ## Namespaces
 
-Namespaces are used to group the components of a  {% include glossary.html entry="product" %}
+Namespaces are used to group the components of a  {% include glossary.html entry="(product)" text="product" %}
 within a cluster, whist isolating them from components of other products.
-Namespaces are named for the  {% include glossary.html entry="product" %} they contain,
+Namespaces are named for the  {% include glossary.html entry="(product)" text="product" %} they contain,
 in the form of $product_name, e.g. `cdc`, `cvs`, `dvs`, `eqb`, `mgmt`, `monitoring`.
 So a cluster typically has multiple namespaces.
 

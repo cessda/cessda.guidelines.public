@@ -12,13 +12,13 @@ nav_order: 370
 
 See [Naming Conventions]({% link platform/naming-conventions.md %}).
 
-## Update {% include glossary.html entry="CI" %} Tools
+## Update {% include glossary.html entry="CI" text="CI" %} Tools
 
 See [Updating CI Tools]({% link platform/updating-ci-tools.md %}).
 
 ## Create repositories
 
-- {% include glossary.html entry="Application code" %}.
+- {% include glossary.html entry="(application code)" text="application code" %}.
         See ['Create a Bitbucket Repository']({% link platform/bitbucket-new-repo.md %}) for details.
 
 - Deployment, via Helm.
