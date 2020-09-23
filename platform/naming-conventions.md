@@ -30,7 +30,7 @@ The naming conventions for products are designed to increase consistency across 
 
 - See {% include glossary.html entry="Glossary" %}
 
-- See also [Kubernetes  {% include glossary.html entry="(component)" text="component" %} definitions](https://kubernetes.io/docs/concepts/overview/components/)
+- See also [Kubernetes definitions](https://kubernetes.io/docs/concepts/overview/components/)
 
 - See also [GCP concepts](https://cloud.google.com/docs/overview/)
 
