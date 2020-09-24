@@ -25,7 +25,7 @@ This resulted in large time investments debugging these templates.
 
 ### Why wasn't Helm adopted sooner
 
-Before Helm 3, a server-side  {% include glossary.html entry="component" %} called Tiller was needed to communicate
+Before Helm 3, a server-side  {% include glossary.html entry="(component)" text="component" %} called Tiller was needed to communicate
 with the cluster. Many commentators said that there were security flaws with this approach.
 With the removal of Tiller, access permissions are managed using the standard Kubernetes tools.
 
@@ -56,5 +56,7 @@ using a variable specified in the *values.yaml* file (typically of the form *ena
 Before deployment, Kubernetes manifests are validated using *kube-score* which
 checks that they follow best practices.
 
-An existing  {% include glossary.html entry="product" %} deployment can be rolled back to a specified previous version, using a Jenkins
-job *cessda.xxx.rollback* (where 'xxx' is replaced with the  {% include glossary.html entry="product" %} code, e.g. cdc, eqb)
+An existing  {% include glossary.html entry="(product)" text="product" %}
+deployment can be rolled back to a specified previous version, using a Jenkins
+job *cessda.xxx.rollback* (where 'xxx' is replaced with the
+{% include glossary.html entry="(product)" text="product" %} code, e.g. cdc, eqb)
