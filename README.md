@@ -5,7 +5,8 @@ This repository contains the technical guidelines for CESSDA ERIC.
 ## Technical Implementation
 
 The documentation is written in markdown files and compiled to html using [Jekyll](https://jekyllrb.com)
-with the [Just the docs](https://github.com/pmarsceill/just-the-docs) theme.
+with the [CESSDA theme](https://rubygems.org/gems/jekyll-cessda-docs) based on the
+[Just the docs](https://github.com/pmarsceill/just-the-docs) theme.
 
 To get started locally, make sure to [have Ruby installed](https://jekyllrb.com/docs/installation/), then run
 

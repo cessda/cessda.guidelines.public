@@ -3,7 +3,6 @@
 # If you make changes here, you need to restart Jekyll to apply them
 title: CESSDA Technical Guidelines
 baseurl: /
-color_scheme: cessda
 
 # Theme
 theme: jekyll-cessda-docs
