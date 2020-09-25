@@ -22,9 +22,9 @@ pipeline{
 ```
 
 The first block of significance is the environment block which defines any variables that will be used when building the Docker image.
-The  {% include glossary.html entry="product" %} and the module name are defined here.
-The  {% include glossary.html entry="product" %} is the overall application
-and the module is a specific {% include glossary.html entry="component" %} of the application.
+The  {% include glossary.html entry="(product)" text="product" %} and the module name are defined here.
+The  {% include glossary.html entry="(product)" text="product" %} is the overall application
+and the module is a specific {% include glossary.html entry="(component)" text="component" %} of the application.
 
 ```groovy
 environment
@@ -36,16 +36,16 @@ environment
 ```
 
 The image tag uniquely identifies each build.
-Unique tags are used in production environments to set the deployed {% include glossary.html entry="component" %} version.
+Unique tags are used in production environments to set the deployed {% include glossary.html entry="(component)" text="component" %} version.
 
 The next step is to define the agent that the build will run on. This can be done globally for the entire pipeline, or per stage.
 The default agent is specified using the syntax `agent any`.
 See the [Example Jenkinsfile]({% link platform/template-jenkinsfile-for-jdk11-maven-projects.md %})
 for more variations on how to configure agents.
 
-The stages used to build the {% include glossary.html entry="component" %} are defined next.
+The stages used to build the {% include glossary.html entry="(component)" text="component" %} are defined next.
 For example, for the coffee-api the first stage is building the Docker image.
-The build of the  {% include glossary.html entry="component" %} has been defined in a Dockerfile.
+The build of the  {% include glossary.html entry="(component)" text="component" %} has been defined in a Dockerfile.
 This build is run with the following command.
 
 ```groovy

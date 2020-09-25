@@ -19,6 +19,11 @@
   title: "Continuous Integration and Testing"
   description: "A combination of CI and CT"
 
+- entry: "COTS"
+  title: "“Commercial Off the Shelf.”
+  description: “Software and services are built and delivered usually from a third party vendor.”
+                Source: Wikipedia:Commercial off-the-shelf"
+
 - entry: "REST"
   title: "Representational State Transfer"
   description: "“An architectural style consisting of a coordinated set of architectural constraints
@@ -35,38 +40,38 @@
   title: "Source Code Management [system]"
   description: "A system for “the management of changes to … computer programs.” Source: Wikipedia: Version Control"
 
-- entry: "-"
+- entry: "(application)"
   title: "Application"
   description: "An engineering view of the collection of Components that make up a Product"
 
-- entry: "-"
+- entry: "(application code)"
   title: "Application code"
   description: "The software source code that an Application's Components are made up of"
 
-- entry: "-"
+- entry: "(component)"
   title: "Component"
   description: "an individual part of an Application (e.g. Elasticsearch for CVS, Searchkit for CDC)"
 
-- entry: "-"
+- entry: "(product)"
   title: "Product"
   description: "A deployed Application (e.g. CDC, CVS, DVS, EQB)"
 
-- entry: "-"
+- entry: "(service)"
   title: "[software] Service"
   description: "An overall user experience (e.g. CDC, CVS, DVS, EQB);
                a User-centric view of an application, including documentation and support"
 
-- entry: "-"
+- entry: "(software artefacts)"
   title: "Software artefacts"
   description: "Software Products, Applications, Services Components"
 
-- entry: "-"
+- entry: "(technical debt)"
   title: "Technical debt"
   description: "“Work that needs to be done before a particular job can be considered complete or proper.
                If the debt is not repaid, then it will keep on accumulating interest, making it hard to implement
                changes later on.”  Source: Wikipedia: Technical debt"
 
-- entry: "-"
+- entry: "(usability)"
   title: "Usability"
   description: "“The degree to which a product can be used by specified consumers to achieve quantified objectives
                with effectiveness, efficiency, and satisfaction in a quantified context of use.”

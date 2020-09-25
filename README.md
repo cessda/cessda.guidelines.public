@@ -43,7 +43,7 @@ General recommendations:
 * Describe current state, avoid the use of past and future tense.
 * Pages should be to-the-point and ideally above the fold on office screens.
 * Split longer texts into short topical pages and use interlinking.
-* Use lists and structure through headings and short praragraphs.
+* Use lists and structure through headings and short paragraphs.
 * Document state, not historical emergence or decision basis.
 * Avoid ambiguous language and complicated grammatical structure and vocabulary.
 * Screenshots should be small and reduced to relevant parts, ideally highlighting relevant sections and cutting unnecessary information.
@@ -51,12 +51,19 @@ General recommendations:
 
 Practical recommendations:
 
-* Use lower case file names with hyphens as word seperators.
+* Use lower case file names with hyphens as word separators.
 * Put all images in the `images` folder, only theme-related files go into `assets`.
 * Start a new sentence on a new line and use logical places to wrap text if exceeding the line limit.
 * Use lazy numbering for lists and appropriate measures to reduce the need to touch other lines/files when making changes.
 * Glossary entries must be added to `_data/glossary.yml` and referenced using
 
 ```liquid
-{% include glossary.html entry="RI" %}
+{% include glossary.html entry="RI" text="RI" %}
+```
+
+Note that glossary entries have to be referenced with exact matching, including case.
+It is possible to display a different text in-line though:
+
+```liquid
+{% include glossary.html entry="RI" text="Research Infrastructure" %}
 ```

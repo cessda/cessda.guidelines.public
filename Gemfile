@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-gem "just-the-docs"
+gem "jekyll-cessda-docs"
 gem 'html-proofer'
 gem 'mdl'
 gem 'rake'

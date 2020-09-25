@@ -14,7 +14,7 @@ See [Naming Conventions]({% link platform/naming-conventions.md %}).
 
 ## Overview
 
-The standard CESSDA  {% include glossary.html entry="product" %} test suite is made up of:
+The standard CESSDA  {% include glossary.html entry="(product)" text="product" %} test suite is made up of:
 
 - [Selenium testing](https://bitbucket.org/cessda/cessda.mgmt.selenium/src/master/)
 

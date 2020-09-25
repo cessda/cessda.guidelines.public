@@ -29,11 +29,11 @@ It links to the following pages (which can be read in conjunction with it, or on
 decomposition of the CESSDA Development and CESSDA Production GCP projects.
 
 [Deployment Pipeline Overview]({% link platform/deployment-pipeline-overview.md %}) - shows the deployment pipeline from
-the moment a developer commits code changes to the deployment of the  {% include glossary.html entry="product" %} to production.
+the moment a developer commits code changes to the deployment of the  {% include glossary.html entry="(product)" text="product" %} to production.
 
 [Deployment Workflow]({% link platform/deployment-workflow.md %}) - shows the step-by-step process by which application
 components are deployed and the various technologies that are involved.
-[Helm charts] (DeployWithHelm.md %}) are used to orchestrate the deployment of an application's components.
+[Helm charts]({% link platform/deployment-with-helm.md %}) are used to orchestrate the deployment of an application's components.
 
 [Deployment Pipeline Details]({% link platform/deployment-pipeline-details.md %}) - a step by step explanation of the
 build and deployment processes.
