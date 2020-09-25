@@ -1,5 +1,5 @@
 ---
-title: Setup and Configure oauth2-proxy
+title: Rate limiting with HAProxy
 parent: Technical Infrastructure
 nav_order: 391
 ---
@@ -16,7 +16,7 @@ and HAProxy offers capabilities to set reasonable limits for users on a per IP a
 
 See [HAProxy's documentation on application-layer DDOS protection](https://www.haproxy.com/blog/application-layer-ddos-attack-protection-with-haproxy/).
 
-This limits the rate that an IP can access the API of CVS to 10 requests per second
+This limits the rate that an IP address can access the API of CVS to 10 requests per second
 
 ```haproxy
 acl api url_beg /v1/
@@ -34,7 +34,7 @@ backend per_ip_rates
 
 This table stores entries for 10 seconds before expiry.
 
-Combined with the third line this causes an IP that makes more than 10 requests in 10 seconds to receive HTTP 429 status codes.
+Combined with the third line this causes an IP address that makes more than 10 requests in 10 seconds to receive HTTP 429 status codes.
 
 ## Configuring Kubernetes
 
