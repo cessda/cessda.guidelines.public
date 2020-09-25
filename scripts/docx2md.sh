@@ -50,16 +50,16 @@ if [ ! -f "$1.docx" ]; then
 fi
 
 # cleanup
-rm -rf $1
+rm -rf "$1"
 
 mkdir -p "$1"
-cd "$1"
+cd "$1" || exit 11
 
 pandoc -f docx -t markdown  --extract-media="media" -o "$1.md" "../$1.docx"
 
 code=$?
 
 if test "$code" == "0"; then
-   echo "Conversion completed - output written to $1/$1.md"
-   echo "and associated media files written to $1/media"
+  echo "Conversion completed - output written to $1/$1.md"
+  echo "and associated media files written to $1/media"
 fi 
