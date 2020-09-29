@@ -48,11 +48,11 @@ rm -rf "$filename"
 mkdir -p "$filename"
 cd "$filename" || exit 11
 
-pandoc --from html --to markdown "$1" --extract-media="media" --o "$filename".md
+pandoc --from html --to markdown "$1" --extract-media="media" --o "${filename}.md"
 
 code=$?
 
 if test "$code" == "0"; then
-  echo "Conversion completed - output written to $filename/$filename.md"
-  echo "and associated media files written to $filename/media"
+  echo "Conversion completed - output written to ${filename}/${filename}.md"
+  echo "and associated media files written to ${filename}/media"
 fi 
