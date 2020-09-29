@@ -9,7 +9,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 * Defined quality gate
 * Added software development requirements
+* Added developer instructions to README
 * Defined service operation levels and requirements
+* Switched to CESSDA theme
+* Added information on documentation
 
 ## [03.00] - 2019-03-29 - [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2614050.svg)](https://doi.org/10.5281/zenodo.2614050)
 
