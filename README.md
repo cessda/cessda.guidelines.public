@@ -68,4 +68,3 @@ It is possible to display a different text in-line though:
 ```liquid
 {% include glossary.html entry="RI" text="Research Infrastructure" %}
 ```
-

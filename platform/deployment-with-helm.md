@@ -58,5 +58,5 @@ checks that they follow best practices.
 
 An existing  {% include glossary.html entry="(product)" text="product" %}
 deployment can be rolled back to a specified previous version, using a Jenkins
-job *cessda.xxx.rollback* (where 'xxx' is replaced with the
+job `cessda.xxx.rollback` (where 'xxx' is replaced with the
 {% include glossary.html entry="(product)" text="product" %} code, e.g. cdc, eqb)
