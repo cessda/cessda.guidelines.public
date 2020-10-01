@@ -23,7 +23,9 @@ For a software system to be operated by CESSDA as a **TRL-7 beta service**, the 
 * All applicable Software Maturity Level CAs must reach "Expected"
 * The quality gate is relaxed to 50% Code Test Coverage and 10% Duplicated Code Lines
 
-For a software system to be considered as a candidate for future integration, the following criteria must be met:
+For a software system to be considered as a candidate for future integration,
+i.e. to form the basis for developing a service,
+the following criteria must be met:
 
 * All applicable Software Maturity Level CAs must reach "Minimum"
 * The quality gate is relaxed to 50% Code Test Coverage and 10% Duplicated Code Lines
