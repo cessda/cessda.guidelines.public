@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 * Defined quality gate
 * Added software development requirements
+* Added release candidates and evaluation
 * Added developer instructions to README
 * Defined service operation levels and requirements
 * Switched to CESSDA theme
