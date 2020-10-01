@@ -52,4 +52,4 @@ CESSDA currently uses [SonarQube](https://sonarqube.cessda.eu) to automatically 
 See [SonarQube metric definitions](https://sonarqube.cessda.eu/documentation/user-guide/metric-definitions/) for further details.
 
 Checks are performed on each pipeline build.
-A software build of a new commit will fail and prevent deployment, if the quality gate is not reached for new code in that commit.
+Passing the quality gate is a requirement for any [release]({% link software/releases.md %}).
