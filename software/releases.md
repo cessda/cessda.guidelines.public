@@ -7,7 +7,7 @@ nav_order: 140
 
 # {{ page.title }}
 
-Development of CESSDA products must ensure to meet the [Software Requirements]({% link software/requirements.md %}).
+Development of CESSDA products must ensure the [Software Requirements]({% link software/requirements.md %}) are met.
 
 A roadmap with planned releases, including date and version number, must be maintained.
 All issues shall be assigned to a release.
