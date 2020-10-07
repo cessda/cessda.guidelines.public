@@ -14,26 +14,26 @@ See [Naming Conventions]({% link platform/naming-conventions.md %}).
 
 CESSDA uses [eduTEAMS](https://eduteams.org/) to provide single sign on (SSO) for tools and services running on the CESSDA platform.
 
-eduTEAMS controls access to restricted resources using virtual organisations,
-which can contain groups for more granular access controls.
+eduTEAMS controls access to restricted resources using Virtual Organisations (VO),
+which can contain groups for more granular access controls. Our VO is called `CESSDA`.
+Users can register at <https://mms.eduteams.org/fed/registrar/?vo=cessda.vo.eduteams.org>.
 
 To be compatible with eduTEAMS, services are required to support [OpenID Connect](https://openid.net/connect/) or
 [SAML](http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html).
 
 ## Connecting Services to eduTEAMS
 
-The reference documentation is available at [Reference Documentation](https://wiki.geant.org/display/eduTEAMS/Registering+services+on+the+eduTEAMS+Service).
+Registering services that run on the CESSDA infrastructure is handled by Main Office.
 
-Firstly, fill out the form at <https://webapp.eduteams.org/sp_request>.
+The reference documentation is available at [Reference Documentation](https://wiki.geant.org/display/eduTEAMS/Registering+services+on+the+eduTEAMS+Service)
+and the application forum is avaliable at <https://webapp.eduteams.org/sp_request>.
 
 Make sure to select the technology that the service uses (i.e. OpenID Connect or SAML),
 as well as the correct flow and token endpoint method if OpenID Connect is used.
 
-Note down the Client ID and the secret, and save them both in a safe place.
+Note down the `Client ID` and the `secret`. These must be treated as secrets.
 These credentials cannot be retrieved again after the form is closed.
-
-The ClientID and secrets used with production systems must be handled by the CESSDA Platform Team,
-however for test systems these can be stored as part of the applications deployment.
+<!--Link to the secrets documentation when this is written-->
 
 ## Using eduTEAMS Attributes
 
@@ -45,6 +45,6 @@ Here are some of the attributes of note:
 * Email Address
 * Groups
   * These are assigned in eduTEAMS Virtual Organisations, and can be used to restrict functionality like an editor to authorised users.
-  * `urn:geant:eduteams.org:service:eduteams:group:CESSDA-Test:developers#eduteams.org`
-    * Users with this group string are part of the *CESSDA-Test* VO and the *developers* group
+  * `urn:geant:eduteams.org:service:eduteams:group:cessda.vo.eduteams.org:developers#eduteams.org`
+    * Users with this group string are part of the *CESSDA* VO and the *developers* group
     * More examples are part of the reference documentation
