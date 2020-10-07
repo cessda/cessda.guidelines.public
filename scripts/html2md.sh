@@ -32,27 +32,27 @@ if [ -z "$1" ]; then
   exit 13
 fi
 
-curl $1
+curl "$1"
 res=$?
 
 if test "$res" != "0"; then
-   exit 11
+  exit 11
 fi 
 
 # remove the 'http://' or 'https://' part of the URL, to use as the output filename
 filename=${1##*/}
 
 # cleanup
-rm -rf $filename
+rm -rf "$filename"
 
 mkdir -p "$filename"
-cd "$filename"
+cd "$filename" || exit 11
 
-pandoc --from html --to markdown $1 --extract-media="media" --o $filename.md
+pandoc --from html --to markdown "$1" --extract-media="media" --o "${filename}.md"
 
 code=$?
 
 if test "$code" == "0"; then
-   echo "Conversion completed - output written to $filename/$filename.md"
-  echo "and associated media files written to $filename/media"
+  echo "Conversion completed - output written to ${filename}/${filename}.md"
+  echo "and associated media files written to ${filename}/media"
 fi 
