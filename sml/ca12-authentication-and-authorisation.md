@@ -13,13 +13,13 @@ nav_order: 465
 - Excellent standard - SML5
 
 *SML1 - Initial usability:* Single user mode, no fine-grained
-authorization.
+authorisation.
 
-*SML2 - Use is feasible:* Multiple users, no fine-grained authorization
+*SML2 - Use is feasible:* Multiple users, no fine-grained authorisation
 (i.e. all users have same role).
 
 *SML3 - Use is possible by most users:* Multiple users, fine-grained
-authorization (i.e. users can have different roles).
+authorisation (i.e. users can have different roles).
 
 *SML4 - Software is usable:* Authentication is externalised (e.g. via
 social login, federated access management etc) and authorisation is

@@ -26,7 +26,7 @@ To be compatible with eduTEAMS, services are required to support [OpenID Connect
 Registering services that run on the CESSDA infrastructure is handled by Main Office.
 
 The reference documentation is available at [Reference Documentation](https://wiki.geant.org/display/eduTEAMS/Registering+services+on+the+eduTEAMS+Service)
-and the application forum is avaliable at <https://webapp.eduteams.org/sp_request>.
+and the application forum is available at <https://webapp.eduteams.org/sp_request>.
 
 Make sure to select the technology that the service uses (i.e. OpenID Connect or SAML),
 as well as the correct flow and token endpoint method if OpenID Connect is used.

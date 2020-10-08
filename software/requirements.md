@@ -11,7 +11,7 @@ For all CESSDA products and tools the following requirements must be met
 * The product's [license]({{ site.technical-reference.url }}developer-guidelines/01-basics.html) must be clearly stated.
   * Unless otherwise agreed, [APACHE-2.0](https://choosealicense.com/licenses/apache-2.0/) should be used.
   * Include the full license text in a `LICENSE.txt` in the repository root.
-  * Ensure all files cary a short header, preferrably through its [SPDX indentifier](https://spdx.org/)
+  * Ensure all files carry a short header, preferably through its [SPDX indentifier](https://spdx.org/)
   `SPDX-License-Identifier: Apache-2.0`.
 
 * The Intellectual Property must be clear.

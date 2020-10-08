@@ -58,10 +58,10 @@ This document is to be taken as **the primary source** of information about deci
 and delivery of software artefacts by CESSDA's suppliers.
 As such, the latest version should be referred to before undertaking any development work on CESSDA's behalf.
 
-That said, detailed 'how to' guides are made available via the publically available CESSDA Technical Guidelines documentation.
+That said, detailed 'how to' guides are made available via the publicly available CESSDA Technical Guidelines documentation.
 See for instance the [guidelines for Developers](https://docs.tech.cessda.eu/software/index.html).
 
-## Documentation throughout the development lifecycle
+## Documentation throughout the development life-cycle
 
 The following documentation types must be made available in the relevant parts of the *docs* directory
 of the source code repository for the software artefact,
@@ -122,7 +122,7 @@ The following types of tests will be performed, prior to formal acceptance by CE
 
 - Security;
 
-- Internationalisation and Localization;
+- Internationalisation and Localisation;
 
 - Authentication and Authorisation.
 

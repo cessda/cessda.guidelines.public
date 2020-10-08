@@ -16,7 +16,7 @@ Logging scope should generally be:
 
 - Validation failures
 
-- Authentication sucesses and failures
+- Authentication successes and failures
 
 - Authorisation failures
 
@@ -38,7 +38,7 @@ Use logging level **WARN** as the default
 
 Parameterise logs when necessary for logs clean-up and allow for variables when needed. See example below.
 
-Contextualise log messages when neccessary for easy log correlation. See example below.
+Contextualise log messages when necessary for easy log correlation. See example below.
 
 ## Rational
 
@@ -88,7 +88,7 @@ Below is the example from the CDC harvester component:
 
 `log.warn("Could not parse RecordIdentifier lastModifiedDate")`
 
-### Parameterize logging  and fields creation
+### Parameterise logging  and fields creation
 
 Most frameworks provide parameterised logging capabilities.
 Parameterised logging allows Developers to specify parameters in log statements which will be evaluated only if the log is actually processed.

@@ -1,5 +1,5 @@
 ---
-title: Depolyment Pipeline Overview
+title: Deployment Pipeline Overview
 parent: Technical Infrastructure
 nav_order: 325
 ---
