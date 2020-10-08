@@ -15,7 +15,7 @@ See [Naming Conventions]({% link platform/naming-conventions.md %}).
 CESSDA uses [eduTEAMS](https://eduteams.org/) to provide single sign on (SSO) for tools and services running on the CESSDA platform.
 
 eduTEAMS controls access to restricted resources using Virtual Organisations (VO),
-which can contain groups for more granular access controls. Our CESSDA VO has the identifier `cessda.vo.eduteams.org`.
+which can contain groups for more granular access controls. The CESSDA VO has the identifier `cessda.vo.eduteams.org`.
 Users can register using a [dedicated URL](https://mms.eduteams.org/registrar/?vo=eduTEAMS&targetexisting=%3Fvo%3Dcessda.vo.eduteams.org&targetnew=%3Fvo%3Dcessda.vo.eduteams.org&targetextended=%3Fvo%3Dcessda.vo.eduteams.org).
 
 To be compatible with eduTEAMS, services are required to support [OpenID Connect](https://openid.net/connect/) or
@@ -26,7 +26,7 @@ To be compatible with eduTEAMS, services are required to support [OpenID Connect
 Registering services that run on the CESSDA infrastructure is handled by Main Office.
 
 The reference documentation is available at [Reference Documentation](https://wiki.geant.org/display/eduTEAMS/Registering+services+on+the+eduTEAMS+Service)
-and the application form is avaliable at <https://webapp.eduteams.org/sp_request>.
+and the application form is available at <https://webapp.eduteams.org/sp_request>.
 
 Make sure to select the technology that the service uses (i.e. OpenID Connect or SAML),
 as well as the correct flow and token endpoint method if OpenID Connect is used.
