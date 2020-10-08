@@ -18,3 +18,15 @@ that form the basis for CESSDA Quality Assurance are also included.
 A description of the [Technical Infrastructure]({% link platform/index.md %})
 that CESSDA provides for the products to run on is also included.
 This includes information about the underlying architectural principles.
+
+{% if site.development_status %}
+  {% if site.jenkins_job %}
+  Built by Jenkins: [{{site.jenkins_job}}]({{site.jenkins_job}})
+  {% else %}
+  **This is a development build!**
+  {% endif %}
+{% else %}
+This is version {{ site.version }}, released on {{ site.time | date: "%d %B %Y" }}.
+{% endif %}
+
+

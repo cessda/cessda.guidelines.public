@@ -54,6 +54,7 @@ pipeline {
 					steps {
 						sh "sed -i s#URL#\"https://jenkins.cessda.eu\"#g _config.jenkins.yml"
 						sh "sed -i s#BASE#\"/job/cessda.guidelines.public/job/${env.BRANCH_NAME}/${env.BUILD_NUMBER}/Build_20Result/\"#g _config.jenkins.yml"
+						sh "sed -i s#JENKINSJOB#\"https://jenkins.cessda.eu/job/cessda.guidelines.public/job/${env.BRANCH_NAME}/${env.BUILD_NUMBER}/\"#g _config.jenkins.yml"
 						sh "jekyll build --config _config.yml,_config.jenkins.yml"
 					}
 					when { not { branch 'master' } }
