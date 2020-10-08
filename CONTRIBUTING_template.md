@@ -1,4 +1,4 @@
-# Contributing to [CESSDA XYZ] -- TEMPLATE! ADOPT BEFORE USE
+# Contributing to [CESSDA XYZ] -- TEMPLATE! ADAPT BEFORE USE
 
 Thank you for considering contributing to [CESSDA XYZ].
 
@@ -38,5 +38,5 @@ CESSDA ERIC reserves the right to accept or reject any contribution.
 
 For CESSDA to consider your contribution, the following criteria must be met.
 
-* You must sign the [CESSDA Contributor License Agreement](https://bit.ly/contrib_req)
-* You must adhere to [CESSDA's quality requirements](https://bitbucket.org/cessda/cessda.guidelines.public/src/master/quality.md)
+* You must sign the [CESSDA Contributor License Agreement](https://docs.google.com/forms/d/e/1FAIpQLSfS2sOjZ2Ax5nIhvONY5E1yVsDgMkNzl0yw2TbMTA-5MYdCXQ/viewform?usp=sf_link)
+* You must adhere to [CESSDA's quality requirements](https://docs.tech.cessda.eu/software/requirements.html)
