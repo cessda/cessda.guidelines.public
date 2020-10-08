@@ -18,4 +18,4 @@ must be followed.
 To assess the fitness for CESSDA purposes, software systems must pass the [quality gate]({% link software/quality-gate.md %}).
 
 In certain cases, CESSDA can [archive source code repositories]({% link software/code-archiving.md %})
-of abandonded software development efforts.
+of abandoned software development efforts.

@@ -14,7 +14,7 @@ nav_order: 420
 
 *SML1 - Initial usability:* The software was not designed with
 extensibility in mind, so there is either no ability to extend or modify
-program behavior, or it is very difficult to do, even for usages similar
+program behaviour, or it is very difficult to do, even for usages similar
 to those of the software core design; execution parameters cannot be
 changed. There is no, or limited, availability of the source code; the
 logical flow of code may be hard to follow, with little to no cohesion.
@@ -43,7 +43,7 @@ elements.
 
 *SML4 - Software is usable:* The extensibility capability for the
 software is well defined, broad range of use cases, providing many
-points of extensibility. A detailed extensibility plan is publically
+points of extensibility. A detailed extensibility plan is publicly
 available and is sufficient to allow an experienced developer to become
 familiar with the project to extend the software in a reasonable amount
 of time. Documentation should include clear information about the range

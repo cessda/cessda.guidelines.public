@@ -26,6 +26,7 @@ the [theme's options](https://pmarsceill.github.io/just-the-docs/docs/navigation
 The documentation is written using Markdown files with Jekyll headers.
 Coding follows the [Google Style Guide for Markdown](https://google.github.io/styleguide/docguide/style.html),
 including ATX style headers and a maximal line lengths of 140 characters.
+We follow British spelling with -ise, check e.g. with `aspell --lang=en_GB-ise`.
 
 Style Guide compliance is checked with [markdownlint](https://github.com/markdownlint/markdownlint) by running
 

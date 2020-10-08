@@ -1,5 +1,5 @@
 ---
-title: Infrastructure Compatiblity
+title: Infrastructure Compatibility
 parent: Software Development
 nav_order: 120
 ---

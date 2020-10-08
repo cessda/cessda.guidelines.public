@@ -7,7 +7,7 @@ nav_order: 141
 
 # {{ page.title }}
 
-Software releases of open source components should be published on Zenodo, as per CESSDA's [Publication Policy & Proceedures](https://zenodo.org/record/3904264).
+Software releases of open source components should be published on Zenodo, as per CESSDA's [Publication Policy & Procedures](https://doi.org/10.5281/zenodo.3904264).
 
 A publication consists of a release tarball matching the release tag in the repository.
 This can be done by
