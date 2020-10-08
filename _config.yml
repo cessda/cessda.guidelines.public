@@ -4,7 +4,7 @@
 title: CESSDA Technical Guidelines
 baseurl: /
 version: '1.0.0'
-development_status: true
+development_status: false
 
 # Theme
 theme: jekyll-cessda-docs
