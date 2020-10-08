@@ -50,7 +50,7 @@ See also 12 factor app, number 8
 ([Concurrency - Scale out via the process model](http://12factor.net/concurrency)).
 
 See also 12 factor app, number 9
-([Disposability - Maximize robustness with fast startup and graceful shutdown](http://12factor.net/disposability)).
+([Disposability - Maximise robustness with fast startup and graceful shutdown](http://12factor.net/disposability)).
 
 ## Maintainable
 

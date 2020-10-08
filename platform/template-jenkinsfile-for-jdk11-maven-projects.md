@@ -82,7 +82,7 @@ Building from minor branches (for pull requests and integration branches)
                 }
 ```
 
-Run Sonar scan asnd faiul the build if the Quality Gate is not passed
+Run Sonar scan and fail the build if the Quality Gate is not passed
 
 ```groovy
               stage('Run Sonar Scan') {
