@@ -41,4 +41,3 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [01.00] - 2017-10
 
 * Extracted from Technical Architecture v1.0.
-
