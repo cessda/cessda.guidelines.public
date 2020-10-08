@@ -3,6 +3,8 @@
 # If you make changes here, you need to restart Jekyll to apply them
 title: CESSDA Technical Guidelines
 baseurl: /
+version: '1.0.0'
+development_status: true
 
 # Theme
 theme: jekyll-cessda-docs
