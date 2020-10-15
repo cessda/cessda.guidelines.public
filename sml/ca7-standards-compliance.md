@@ -23,18 +23,16 @@ and interfaces.
 *SML2 - Use is feasible:* The software and software development process
 endeavour to comply with recognised standards or widely used best
 practices, but without verification or testing and may not be complete.
-There maybe some documented evidence that standards are used, but it may
-not be complete.
+There maybe some documented evidence that standards are used, but it can not be verified.
 
 *SML3 - Use is possible by most users:* The software and software
 development process comply with open, recognised or proprietary
 standards, but there is incomplete verification of compliance.
-Compliance to recognised standards has be tested but this may not be for
-all components. There is documented evidence of standards being used,
-but not of the verification of components.
+Compliance to recognised standards has be tested but not be for
+all components.
 
 *SML4 - Software is usable:* The software and software development
-process comply with recognised and proprietary standards. Compliance
+process comply with open,recognised and/or proprietary standards. Compliance
 with these standards has been verified through testing for all
 components. Documented evidence for selected standards and the
 verification through testing is available.
