@@ -53,3 +53,4 @@ exclude:
  - vendor/gems/
  - vendor/ruby/
  - scripts/
+ - document-navigation-structure.md
