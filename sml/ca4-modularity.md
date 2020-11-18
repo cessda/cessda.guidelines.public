@@ -45,6 +45,5 @@ paths.
 data are encapsulated into objects or accessible through web service
 interfaces. There is consistent error handling with meaningful messages
 and advice, and use of generic extensions to program languages for
-stronger type checking and compilation-time error checking. Services are
-available externally and code within each module contains few
+stronger type checking and compilation-time error checking. Code within each module contains few
 independent logical paths.

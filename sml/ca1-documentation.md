@@ -32,7 +32,8 @@ not explained.
 
 *SML3 - Use is possible by most users:* There is a user manual that can
 guide a reasonably skilled user through use and customisation of the
-software to the user's individual requirements. Documentation is
+software to the user's individual requirements. Terminology and methodology is
+well explained. Documentation is
 consistent with current version of the software.
 
 *SML4 - Software is usable:* There are examples of walk-through
@@ -62,13 +63,14 @@ explained. Exception and failure messages are not fully explained.
 configuration manual that can guide an experienced operational user
 through deployment, management and configuration of the software.
 Exception and failure messages are explained, but descriptions of
-solutions are not available. Documentation is consistent with current
+solutions are not available. Terminology and methodology is
+fully explained. Documentation is consistent with current
 version of the software.
 
 *SML4 - Software is usable:* There are examples of walk-through
-tutorials, demonstrations of various configurations if needed. Exception
-and failure messages are fully explained, and solutions are documented.
-Upgrade workflows are fully documented, if needed. Documentation is
+tutorials, demonstrations of various configurations. Exception
+and failure messages are fully explained, and solutions are documented. Upgrade workflows are fully documented.
+ Documentation is
 consistent with current version of the software.
 
 *SML5 - Demonstrable usability:* Documentation is appropriate for
@@ -81,21 +83,21 @@ part of the documentation available.
 ## CA1.3: Development Documentation
 
 *SML1 - Initial usability:* Partial or no external documentation
-available of the application program interface (API); no, partial or
+available of the application program interface (API). If available,  partial or
 inconsistently commented source code. Documentation is insufficient to
-gain an understanding of the software/service functionality without
+gain an understanding of the software functionality without
 significant investment of time.
 
 *SML2 - Use is feasible:* There is external documentation that describes
 public API functionality and is sufficient to be used by an experienced
 developer. If available, source code is consistently and clearly
-commented. Source code naming conventions are adhered to and consistent.
+commented. Source code naming conventions are adhered to and consistent if available. 
 
 *SML3 - Use is possible by most users:* There is external documentation
 that describes all API functionality, human computer interface (HCI) and
-code modules, which is sufficient to be used by any developer. An
-extension guide provides information on how to customise and add to the
-software, add plug-ins*.* Internal and external documentation are
+code modules, which is sufficient to be used by any developer. THere is an
+extension guide that provides information on how to customise and add plug-ins to the
+software. Documentation of the source code (if available) is 
 sufficient to allow an experienced developer to understand program flow
 and logic with moderate effort.
 
@@ -108,6 +110,6 @@ the software.
 *SML5 - Demonstrable usability:* All stages of the software development
 lifecycle are fully documented, including design, testing and future
 improvement planning. Documentation is appropriate for different
-categories of users. Documentation describes the current version of the
-software. User created documentation and comments form part of the
+categories of users. Documentation is consistent with current version of
+the software. User created documentation and comments form part of the
 documentation available.

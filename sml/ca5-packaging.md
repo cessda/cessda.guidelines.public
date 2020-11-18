@@ -14,24 +14,22 @@ nav_order: 430
 
 *SML1 - Initial usability:* Only source code or executable available;
 i.e. no packaging to create a package or container. There is no, or
-incomplete, configuration documentation and no deployment facility is
+incomplete, configuration documentation and no deployment information is
 available. Even an experienced user may have difficulties deploying the
 software.
 
-*SML2 - Use is feasible:* Software includes package or container
+*SML2 - Use is feasible:* Software includes package files or container
 creation. Detailed configuration instructions are available and
 deployment is possible for an experienced user.
 
-*SML3 - Use is possible by most users:* The packaged/containerised
+*SML3 - Use is possible by most users:* The packaged bundle or the containerised
 software is easily configurable for different contexts as locations of
-resources (files, directories, URLs) are configurable. All
+resources (files, directories, URLs). All
 configuration-specific information is centralised.
 
-*SML4 - Software is usable:* Configurable scripts are available to
+*SML4 - Software is usable:* Configuration information is avaialble and can be scripted to
 deploy the packaged/containerised software from the command line.
-Versions of deployed software can be upgraded/rolled back from the
-command line. Data and/or index files can be restored from the command
-line.
+Versions of deployed software can be upgraded/rolled back automatically. Data and/or index files can be restored automatically.
 
 *SML5 - Demonstrable usability:* A Continuous Integration server job (or
 equivalent) is available to deploy the packaged/containerised software.

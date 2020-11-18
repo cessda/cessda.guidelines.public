@@ -22,9 +22,9 @@ and proof of handling of unknown input.
 *SML3 - Use is possible by most users:* Software application
 demonstrated, tested and validated in a relevant context.
 
-*SML4 - Software is usable:* Actual software application \"qualified\"
+*SML4 - Software is usable:* Software application is \"qualified\"
 through test and demonstration (meets requirements) and successfully
 delivered.
 
-*SML5 - Demonstrable usability:* Actual software application tested and
+*SML5 - Demonstrable usability:* Software application tested and
 validated through successful use of application output.
