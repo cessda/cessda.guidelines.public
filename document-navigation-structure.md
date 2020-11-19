@@ -62,7 +62,7 @@ The indentation is intended to indicate major sections, subsections and sub-subs
   (430) CA5: Packaging
   (435) CA6: Portability
   (440) CA7: Standards Compliance
-  (445) CA8: Support
+  (445) CA8: ~~Support~~Maintenance
   (450) CA9: Verification and Testing
   (455) CA10: Security
   (460) CA11: Internationalisation and Localisation
