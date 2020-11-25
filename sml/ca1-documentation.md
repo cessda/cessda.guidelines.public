@@ -18,7 +18,34 @@ and is therefore excluded from this product-oriented collection.
 
 - Excellent standard - SML5
 
-## CA1.1: Operational Documentation
+## CA1.1: End-user Documentation
+
+*SML1 - Initial usability:* Partial or no external documentation
+available; Documentation is insufficient to gain an understanding of the
+functionality of the software even for an experienced user.
+
+*SML2 - Use is feasible:* There is external documentation that is
+accessible and sufficient for an expert user to configure and use the
+software for the user's individual needs. Terminology and methodology is
+not explained.
+
+*SML3 - Use is possible by most users:* There is a user manual that can
+guide a reasonably skilled user through use and customisation of the
+software to the user's individual requirements. Terminology and methodology is
+well explained. Documentation is consistent with the current version of the software.
+
+*SML4 - Software is usable:* There are examples of walk-through
+tutorials, how-to guides and demonstrations of various use case
+customisations if applicable for the user's individual needs.
+Documentation is consistent with the current version of the software.
+
+*SML5 - Demonstrable usability:* User materials and tutorials can be
+used as training resources. There is detailed in-software contextual
+user support documentation. Documentation is consistent with current
+version of the software. User created documentation and comments form
+part of the documentation available.
+
+## CA1.2: Operational Documentation
 
 *SML1 - Initial usability:* Partial or no external documentation
 available; Documentation is insufficient to gain an understanding for
@@ -51,7 +78,7 @@ be used to teach other users. Documentation is consistent with current
 version of the software. User created documentation and comments form
 part of the documentation available.
 
-## CA1.2: Development Documentation
+## CA1.3: Development Documentation
 
 *SML1 - Initial usability:* Partial or no external documentation
 is available for the application programming interface (API).
