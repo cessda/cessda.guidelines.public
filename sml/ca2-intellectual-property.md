@@ -14,29 +14,29 @@ nav_order: 415
 
 *SML1 - Initial usability:* Software developers have been identified and
 their responsibilities have been determined. Relevant policies of
-developer organisation(s) (or developers) have been reviewed for
+developer organisation(s) or developers have been reviewed for
 applicability to intellectual property rights. There may be evidence of
 a draft intellectual property rights agreement that would result from
-cooperative activities with other developer organisations (or
-developers). Rights are not specified internally in the source code or
+cooperative activities with other developer organisations or
+developers. Rights are not specified internally in the source code or
 externally in documentation. Usage rights or limitations have not been
 specified.
 
-*SML2 - Use is feasible:* Developer organisation(s) (or developers) have an agreement that
+*SML2 - Use is feasible:* Developer organisation(s) or developers have an agreement that
 addresses any potential conflicts in the proposed intellectual property
 rights and responsibilities for development. A limited rights statement
 has been drafted, and applied inconsistently in documentation or/and source
-code. Developer organisation(s) (or developers) can be contacted to
+code. Developer organisation(s) or developers can be contacted to
 negotiate rights for use.
 
 *SML3 - Use is possible by most users:* Agreements on development responsibilities, the list of developers, a
 recommended citation, and intellectual property rights statements,
 offering limited rights for use, are available, perhaps upon request
-for review. Developer organisations(s) (or developers) can be contacted
+for review. Developer organisations(s) or developers can be contacted
 through a single point to obtain formal statements on restricted rights
 or to negotiate any additional rights.
 
-*SML4 - Software is usable:* There is evidence that all developer organisation(s) (or developers)
+*SML4 - Software is usable:* There is evidence that all developer organisation(s) or developers
 have confirmed that the list of developers, recommended citation and
 intellectual property rights statements (including limited rights for
 use, in the software source code, documentation, and in the expression
@@ -47,7 +47,7 @@ expressing intellectual property and concise statements in language
 that can be understood by laypersons, such as a pre-written,
 recognisable license. Brief statements are available describing limited
 rights, restrictions, and conditions for use. Developer organisations(s)
-(or developers) can be contacted through a single point to obtain formal
+or developers can be contacted through a single point to obtain formal
 statements on restricted rights or to negotiate any additional rights.
 
 *SML5 - Demonstrable usability:* There are multiple statements embedded

@@ -12,19 +12,17 @@ nav_order: 450
 
 - Excellent standard - SML5
 
-*SML1 - Initial usability:* Software application formulated and unit
-testing performed.
+*SML1 - Initial usability:* Software application is buildable and runnable.
+Unit testing has been performed and code coverage metrics obtained.
 
-*SML2 - Use is feasible:* Software application demonstrated and tested
-in a laboratory context. Testing includes testing for error conditions
-and proof of handling of unknown input.
+*SML2 - Use is feasible:* Software application has been built, tested and run.
+Testing includes stress testing, functional testing and end to end testing.
 
-*SML3 - Use is possible by most users:* Software application
+*SML3 - Use is possible by most users:* A release candidate has been
 demonstrated, tested and validated in a relevant context.
 
-*SML4 - Software is usable:* Software application is \"qualified\"
-through test and demonstration (meets requirements) and successfully
-delivered.
+*SML4 - Software is usable:* A release candidate has been \"qualified\"
+through test and demonstration (meets requirements) and successfully released.
 
-*SML5 - Demonstrable usability:* Software application tested and
-validated through successful use of application output.
+*SML5 - Demonstrable usability:* A production system has been tested and
+validated through successful use of the application.

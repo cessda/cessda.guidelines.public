@@ -12,16 +12,12 @@ nav_order: 460
 
 - Excellent standard - SML5
 
-*SML1 - Initial usability:* Internationalisation and Localisation not addressed.
+*SML1 - Initial usability:* Internationalisation and Localisation are not addressed.
 
-*SML2 - Use is feasible:* Software is locale aware.
+*SML2 - Use is feasible:* Software is locale aware (i.e. locale can be set and changed).
 
-*SML3 - Use is possible by most users:* Content to localise is stored in
-resource/property files and/or and external data store.
+*SML3 - Use is possible by most users:* All text to localise has been internationalised.
 
-*SML4 - Software is usable:* Content to localise (text, layout, graphics
-and multimedia, keyboard shortcuts, fonts, locale data and character
-sets, build process) has been internationalised.
+*SML4 - Software is usable:* All content to localise (other than text) has been internationalised.
 
-*SML5 - Demonstrable usability:* Software has been tested with multiple
-pseudo or genuine translations.
+*SML5 - Demonstrable usability:* Software has been tested with multiple locales.

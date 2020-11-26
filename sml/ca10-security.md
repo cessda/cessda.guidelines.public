@@ -13,7 +13,7 @@ nav_order: 455
 - Excellent standard - SML5
 
 *SML1 - Initial usability:* Security was addressed in the requirement
-phases up to and including development.
+phases up to and including design.
 The Privacy Impact Rating (PIR) was assessed.
 
 *SML2 - Use is feasible:* Security was addressed in the requirement
@@ -21,7 +21,7 @@ phases up to and including implementation.
 A mitigation plan, based on the PIR, was produced.
 
 *SML3 - Use is possible by most users:* Security was addressed in the
-requirment phases up to and including implementation.
+requirement phases up to and including implementation.
 Developers have undertaken appropriate Security training.
 The PIR mitigation plan was implemented.
 
