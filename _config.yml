@@ -5,6 +5,7 @@ title: CESSDA Technical Guidelines
 baseurl: /
 version: '1.1.0'
 development_status: true
+matomo_siteid: '5'
 
 # Theme
 theme: jekyll-cessda-docs

@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+* Improve documentation for documentation theme
+* Add matomo user statistics
+
 ## [1.0.0] - 2020-10-08
 
 * Added contributor instructions to README

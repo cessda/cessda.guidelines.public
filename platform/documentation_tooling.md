@@ -29,11 +29,58 @@ gem 'mdl'
 gem 'rake'
 ```
 
+Then make sure to specify the theme in your `_config.yml`
+
+```yaml
+theme: jekyll-cessda-docs
+```
+
 To get started locally, make sure to [have Ruby installed](https://jekyllrb.com/docs/installation/), then run
 
 ```shell
 gem install jekyll bundler
 bundle install
+bundle exec jekyll serve
+```
+
+### Just the docs support
+
+You can use most of the functionalities of Just the docs, in particular
+[search](https://pmarsceill.github.io/just-the-docs/docs/search/).
+
+### Matomo
+
+The theme allows to enable support for CESSDA's Matomo through a `_config.yml` setting
+
+```yaml
+matomo_siteid: '0'
+```
+
+The siteid must be registered in Matomo first and configured to only accept the correct domains.
+
+### CESSDA Technical Guidelines
+
+For the CESSDA Technical Guidelines a glossary functionality has been added.
+Glossary entries must be added to `_data/glossary.yml` and referenced using
+
+```liquid
+{%- raw -%}
+{% include glossary.html entry="RI" text="RI" %}
+{% endraw -%}
+```
+
+Note that glossary entries have to be referenced with exact matching, including case.
+It is possible to display a different text in-line though:
+
+```liquid
+{%- raw -%}
+{% include glossary.html entry="RI" text="Research Infrastructure" %}
+{% endraw -%}
+```
+
+Also, always make sure to run the local instance with
+
+```shell
 bundle exec jekyll serve --config _config.yml,_devsettings.yml
 ```
 
