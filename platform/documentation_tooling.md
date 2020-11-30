@@ -53,10 +53,10 @@ You can use most of the functionalities of Just the docs, in particular
 The theme allows to enable support for CESSDA's Matomo through a `_config.yml` setting
 
 ```yaml
-matomo: true
+matomo_siteid: '0'
 ```
 
-Note that configuration in Matomo is needed to accept the data.
+The siteid must be registered in Matomo first and configured to only accept the correct domains.
 
 ### CESSDA Technical Guidelines
 
