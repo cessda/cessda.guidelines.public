@@ -9,8 +9,7 @@ The numbers in parenthesis refer to the nav_order value which is set in the head
 
 The indentation is intended to indicate major sections, subsections and sub-subsections.
 
-```
-
+```none
 (000) Home
 
 (100) Software Development
@@ -79,5 +78,4 @@ The indentation is intended to indicate major sections, subsections and sub-subs
   (494) Document Details/Title Page (not published)
 
 (998) Glossary
-
 ```
