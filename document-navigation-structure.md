@@ -1,14 +1,17 @@
 # Navigation Structure of CESSDA Technical Guidelines
 
-This is the record of how the various sections are structured, and should be used by developers for reference,
-and updated when new pages are added.
+This is the record of how the various sections are structured,
+and should be used by developers for reference, and updated when new pages are added.
 
 It is not intended for publication.
 
 The numbers in parenthesis refer to the nav_order value which is set in the header of each page.
+
 The indentation is intended to indicate major sections, subsections and sub-subsections.
 
+```none
 (000) Home
+
 (100) Software Development
   (110) Software Requirements
   (120) Infrastructure Compatibility
@@ -19,9 +22,11 @@ The indentation is intended to indicate major sections, subsections and sub-subs
   (160) Code Archiving
   (170) Logging Guidelines
   (180) Software Development Guidelines
+
 (200) Service Operation
   (210) Service Requirements
   (220) Service Objectives
+
 (300) Technical Infrastructure
   (301) Documentation Tooling
   (305) Naming Conventions
@@ -41,7 +46,7 @@ The indentation is intended to indicate major sections, subsections and sub-subs
   (355) Building Maven Projects with Jenkins
   (360) Building Docker Images on Jenkins
     (3601) Adding the Build Jenkinsfile
-    (3602) Adding the Deployment  Jenkinsfile
+    (3602) Adding the Deployment Jenkinsfile
   (365) Building with Docker
   (370) Platform Team Responsibilities
     (3701) Create a Bitbucket Repository
@@ -54,6 +59,7 @@ The indentation is intended to indicate major sections, subsections and sub-subs
   (390) Setup and Configure oauth2-proxy
   (391) Rate limiting with HAProxy
   (395) Logging Overview
+
 (400) Software Maturity Levels
   (410) CA1: Documentation
   (415) CA2: Intellectual Property
@@ -70,4 +76,6 @@ The indentation is intended to indicate major sections, subsections and sub-subs
   (492) References
   (493) Version History (not published)
   (494) Document Details/Title Page (not published)
+
 (998) Glossary
+```
