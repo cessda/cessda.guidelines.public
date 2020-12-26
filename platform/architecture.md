@@ -52,7 +52,7 @@ resulting in a {% include glossary.html entry="RI" text="RI" %} that:
 
 - provides a sub-optimal User experience in many ways.
 
-The combination of a common development toolchain and the [Software Maturity Levels]({% link sml/cessda-software-maturity-levels.md %})
+The combination of a common development toolchain and the [Software Maturity Levels]({% link sml/index.md %})
 will help to establish a development maturity level for both the {% include glossary.html entry="RI" text="RI" %}
 and the individual Service Providers.
 Future work plans can contain actions specifically targeted on raising this maturity level,

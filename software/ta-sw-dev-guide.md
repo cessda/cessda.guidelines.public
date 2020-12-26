@@ -127,7 +127,7 @@ The following types of tests will be performed, prior to formal acceptance by CE
 - Authentication and Authorisation.
 
 The level to be attained will be determined by the prevailing CESSDA software maturity level (which is expected to change over time).
-See [Software Maturity Levels]({% link sml/cessda-software-maturity-levels.md %}) for more details.
+See [Software Maturity Levels]({% link sml/index.md %}) for more details.
 
 What checks should suppliers make to increase the likelihood of acceptance?
 They are expected to use the {% include glossary.html entry="CIT" text="CIT" %} environment from the start of the development process,
