@@ -26,7 +26,8 @@ ingests data, and enables the collection and processing of metrics such as count
 
 ### Metrics Gathering
 
-One of the importance aspect of monitoring is how the metrics derived for the components in the infrastructure are used.
+One of the importance aspect of monitoring is how the metrics derived for the components in the infrastructure
+are used.
 CESSDA relies on two methodologies, [USE](http://www.brendangregg.com/usemethod.html) and [RED](https://www.weave.works/blog/the-red-method-key-metrics-for-microservices-architecture/) for determining which metrics to use and for what.
 
 1. The Utilization, Saturation and Errors (USE) Method is used for analysing the performance of the infrastructure
@@ -63,27 +64,34 @@ rely on exporters to expose metrics to Prometheus.
 
 ## Architecture
 
-- The Monitoring Architecture is a Prometheus stack made up of Prometheus server, metrics exporters/client libraries, AlertManager and Grafana.
+- The Monitoring Architecture is a Prometheus stack made up of Prometheus server, metrics exporters/client  libraries, AlertManager and Grafana.
 
 - The Prometheus server consist of a time series database (tsdb), a data retrieval agent, and a web server.
-The data retrieval agent is used to discover targets in Kubernetes and pull metrics from exporters or applications
-exposed with clients libraries and stored in a time series database.
-PromQL is a functional query language that is used to select and aggregate time-series data from the Prometheus database.
+ The data retrieval agent is used to discover targets in Kubernetes and pull metrics from exporters or applications
+ exposed with clients libraries and stored in a time series database.
+ PromQL is a functional query language that is used to select and aggregate time-series data from the
+ Prometheus database.
 
-- AlertManager sends notifications, through a specified notification channel, based on alert rules defined in Prometheus operation configurations.
+- AlertManager sends notifications, through a specified notification channel,
+  based on alert rules defined in Prometheus operation configurations.
 
-- Grafana receives metrics from Prometheus and is used to create visualisation dashboards for metrics trends and analysis.
+- Grafana receives metrics from Prometheus and is used to create visualisation dashboards for
+  metrics trends and analysis.
 
 ### CESSDA Monitoring Composition
 
-- Prometheus servers are installed across the four clusters in the CESSDA infrastructure (management, production, staging and development).
+- Prometheus servers are installed across the four clusters in the CESSDA infrastructure
+  (management, production, staging and development).
 
 - Kube-state-metrics and Node are the main exporters deployed in the four clusters that collect Kubernetes
   resource metrics and make them available for Prometheus server to store in its time series database.
-There are other exporters deployed for third party tools like Jenkins, Elasticsearch and HaProxy, depending on which tools are running in the cluster.
+ There are other exporters deployed for third party tools like Jenkins, Elasticsearch and HaProxy,
+ depending on which tools are running in the cluster.
 
-- Alertmanger and Grafana are only deployed on the Management cluster to centrally send alert notifications and visualize and analyze metrics respectively.
+- Alertmanger and Grafana are only deployed on the Management cluster to centrally send alert notifications and
+  visualize and analyze metrics respectively.
 
-- Metrics data stored in time-series-database are retained on persistence volume claims in the clusters. Retention policy set on Prometheus are based on the storage size of the data.
+- Metrics data stored in time-series-database are retained on persistence volume claims in the clusters.
+  Retention policy set on Prometheus are based on the storage size of the data.
 
 ![Monitoring Architecture](../images/monitoring-architecture.jpg)
