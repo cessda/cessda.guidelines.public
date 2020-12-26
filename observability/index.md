@@ -1,29 +1,42 @@
 ---
 title: Observability
 has_children: true
-nav_order: 200
+nav_order: 500
 ---
 
 # {{ page.title }}
 
-CESSDA IT Observability is a business process that collect and analyze data from its infrastructure and to leverage that data to improve business results and drive value creation for the organization. Observability of Infrstructure includes:
-- CESSDA Core {% include glossary.html entry="(product)" text="Products" %}
-(one of CDC, CVS, EQB, ELSST)
-- Infrastructure Management tools 
--  {% include glossary.html entry="(CI)" text="CI/CT" %} process with Jenkins 
+CESSDA IT observability is a business process that collects and analyses data from its infrastructure and leverages that data to improve business results and drive value creation for the organization. Observability of the infrastructure includes:
 
-It's Observability strategy is made of three pillars :
+- CESSDA Core {% include glossary.html entry="(product)" text="Products" %}
+
+(one of CDC, CVS, EQB, ELSST)
+
+- Infrastructure Management tools
+  {% include glossary.html entry="(CI)" text="CI/CT" %} process with Jenkins
+
+The observability strategy is made up of three pillars:
 
 ![CESSDA Observability](../images/observability-3.jpg)
 
-1. Metrics Monitoring : Metrics represent  the raw measurements of resource usage or behavior that can be 
-observed and collected throughout our infrastructure.  [Monitoring system]({% link observability/monitoring.md %}) collects, exposes, 
-and analyzes those values to improve awareness of CESSDA's components’ characteristics and behavior.
-1. Logging & aggregation : Logs are detailed set of events that occur within CESSDA's microsevices or its Infrastructure in general . 
-CESSDA [central logging system]({% link observability/logging.md %}) collects, filters & enrich and visulaised and aggregates from in its Infrastructure.
-1. Alerting : Alerting is the responsive component of a the observablity system that performs actions based on changes in  metrics 
-threshold or/and an unacceptable conditions. Alerts notification are sent via to emails or slack.  Alerts based on the following elements:
-- Metrics: that generated from the monitoring system 
-- Logs: producd from logging system if there are failures or unacceptable conditions occur 
-- Service Endpoints:  monitored and alerted by Uptime Robot system for their availability. 
--  Processes: generated when there are failures in the CI/CT processes.
+1. Metrics Monitoring: Metrics represent the raw measurements of resource usage or behaviour that can be
+observed and collected throughout our infrastructure.
+The [monitoring system]({% link observability/monitoring-overview.md %}) collects, exposes,
+and analyses those values to improve awareness of the characteristics and behaviour of the components
+the the core products are composed of.
+
+1. Logging & aggregation: Logs are detailed records of events that occur within the components or the Infrastructure in general.
+The [central logging system]({% link observability/logging-overview.md %}) collects, aggregates, filters and enriches the contents of the logs and enables visualisation of system and product events,
+which can aid debugging and problem solving.
+
+1. Alerting: Alerting is the responsive component of the observability system that performs actions based on
+  changes in metrics, threshold violations or/and the occurrence of unacceptable conditions.
+Alert notification are sent via email or dedicated Slack channels, are based on the following elements:
+
+- Metrics: that are generated from the monitoring system.
+
+- Logs: produced from the logging system if failures or unacceptable conditions occur.
+
+- Service Endpoints: availability is monitored by [Uptime Robot]{https://uptimerobot.com/}.
+
+- Processes: generated when there are failures in the CI/CT processes.
