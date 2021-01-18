@@ -7,6 +7,7 @@ nav_order: 170
 # {{ page.title }}
 
 ## Guidelines
+
 CESSDA  software components must follows Structure Logging format in JSON to makes it easier for querying and reading of  logs.
 
 Software components must log each line of the stream to `stdout`
