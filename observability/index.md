@@ -14,7 +14,7 @@ Observability of the infrastructure includes:
 
 (one of CDC, CVS, EQB, ELSST)
 
-- Infrastructure Management tools
+- Infrastructure Management tools,
   {% include glossary.html entry="(CI)" text="CI/CT" %} process with Jenkins
 
 The observability strategy is made up of three pillars:
@@ -22,7 +22,7 @@ The observability strategy is made up of three pillars:
 ![CESSDA Observability](../images/observability-3.jpg)
 
 1. Metrics Monitoring: Metrics represent the raw measurements of resource usage or behaviour that can be
-  observed and collected throughout our infrastructure.
+  observed and collected throughout the infrastructure.
   The [monitoring system]({% link observability/monitoring-overview.md %}) collects, exposes,
   and analyses those values to improve awareness of the characteristics and behaviour of the components
   the the core products are composed of.
@@ -35,7 +35,7 @@ The observability strategy is made up of three pillars:
 
 1. Alerting: Alerting is the responsive component of the observability system that performs actions based on
   changes in metrics, threshold violations or/and the occurrence of unacceptable conditions.
-  Alert notification are sent via email or dedicated Slack channels, are based on the following elements:
+  Alert notification, sent via email or dedicated Slack channels, are based on the following elements:
 
 - Metrics: that are generated from the monitoring system.
 

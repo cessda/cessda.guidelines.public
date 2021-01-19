@@ -1,14 +1,10 @@
 ---
-title: Monitoring Overview
+title: Monitoring overview
 parent: Observability
 nav_order: 510
 ---
 
 # {{ page.title }}
-
-## Terminology
-
-See [Naming Conventions]({% link platform/naming-conventions.md %}).
 
 ## Overview
 
@@ -24,9 +20,9 @@ Also Kubernetes Service Discovery configurations can be read via a REST API and 
 The monitoring system watches containerized workloads, integrates with Kubernetes and other components in the cloud ecosystem,
 ingests data, and enables the collection and processing of metrics such as counters, gauges, histograms and summaries.
 
-### Metrics Gathering
+## Metrics gathering
 
-One of the importance aspect of monitoring is how the metrics derived for the components in the infrastructure
+One of the important aspect of monitoring is how the metrics derived for the components in the infrastructure
 are used.
 CESSDA relies on two methodologies, [USE](http://www.brendangregg.com/usemethod.html)
 and [RED](https://www.weave.works/blog/the-red-method-key-metrics-for-microservices-architecture/)
@@ -48,14 +44,15 @@ for determining which metrics to use and for what.
 
 - **D**uration - distributions of the amount of time each request takes.
 
-### Metrics Exposure
+## Metrics exposure
 
 Infrastructure components and services are instrumented within the Prometheus stack, depending on
 whether they are customised applications or off-the-shelf tools.
 
 Customised application use [client libraries](https://prometheus.io/docs/instrumenting/clientlibs/)
 depending on the application language.
-CESSDA core products rely on these libraries to define and expose internal metrics via an HTTP endpoint to the Prometheus server.
+CESSDA core products rely on these libraries to define and expose internal metrics
+(via an HTTP endpoint) to the Prometheus server.
 Officially, Prometheus supports languages like Java, GO, Python and Ruby.
 There is also unofficial support for other programming languages.
 
@@ -80,20 +77,20 @@ rely on exporters to expose metrics to Prometheus.
 - Grafana receives metrics from Prometheus and is used to create visualisation dashboards for
   metrics trends and analysis.
 
-### CESSDA Monitoring Composition
+## CESSDA monitoring composition
 
 - Prometheus servers are installed across the four clusters in the CESSDA infrastructure
   (management, production, staging and development).
 
 - Kube-state-metrics and Node are the main exporters deployed in the four clusters that collect Kubernetes
-  resource metrics and make them available for Prometheus server to store in its time series database.
+  resource metrics and make them available for the Prometheus server to store in its time series database.
  There are other exporters deployed for third party tools like Jenkins, Elasticsearch and HaProxy,
  depending on which tools are running in the cluster.
 
 - Alertmanger and Grafana are only deployed on the Management cluster to centrally send alert notifications and
   visualize and analyze metrics respectively.
 
-- Metrics data stored in time-series-database are retained on persistence volume claims in the clusters.
-  Retention policy set on Prometheus are based on the storage size of the data.
+- Metrics data stored in a time series database are retained on persistent volumes in the clusters.
+  The retention policy set on Prometheus is based on ensuring that the data does not exceed the available storage space.
 
 ![Monitoring Architecture](../images/monitoring-architecture.jpg)

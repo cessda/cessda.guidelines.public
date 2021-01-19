@@ -1,5 +1,5 @@
 ---
-title: Logging Overview
+title: Logging overview
 parent: Observability
 nav_order: 520
 ---
@@ -26,11 +26,11 @@ The log pipeline for CESSDA is as below:
 
 ![Logging_pipeline.jpg](../images/Logging_pipeline.jpg)
 
-- The application must log each line of the stream into `stdout`.
+- The application must log each line of the stream to `stdout`.
 
 - The Docker engine uses the JSON-file log driver to interpret each line as one log event and outputs it as JSON
 
-- Fluent Bit collects logs and uses Kubernetes Filters to allow enrichment of log files with Kubernetes metadata.
+- Fluent Bit collects logs and uses Kubernetes Filters to enrich them with Kubernetes metadata.
 
 - Graylog server defines and indexes logs into Elasticsearch.
 
