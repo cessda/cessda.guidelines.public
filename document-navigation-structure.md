@@ -58,7 +58,8 @@ The indentation is intended to indicate major sections, subsections and sub-subs
   (385) Jenkinsfile Template for JDK11 Maven Projects
   (390) Setup and Configure oauth2-proxy
   (391) Rate limiting with HAProxy
-  (395) Logging Overview
+  (392) Authenticating with EduTeams
+  (--) ~~Logging Overview~~
 
 (400) Software Maturity Levels
   (410) CA1: Documentation
@@ -76,6 +77,10 @@ The indentation is intended to indicate major sections, subsections and sub-subs
   (492) References
   (493) Version History (not published)
   (494) Document Details/Title Page (not published)
+
+(500) Observability
+  (510) Monitoring Overview
+  (520) Logging Overview
 
 (998) Glossary
 ```

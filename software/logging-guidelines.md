@@ -8,6 +8,8 @@ nav_order: 170
 
 ## Guidelines
 
+CESSDA  software components must follows Structure Logging format in JSON to makes it easier for querying and reading of  logs.
+
 Software components must log each line of the stream to `stdout`
 
 Logging scope should generally be:
@@ -128,4 +130,4 @@ The message text explains the failure and includes all relevant information.
 The name of the repository, the Study ID, the code and optional message are logged.
 Finally, the exception is attached allowing for the full stack trace to be printed.
 
-See [logging overview]({% link platform/logging-overview.md %}) for additional background information.
+See [logging overview]({% link observability/logging-overview.md %}) for additional background information.
