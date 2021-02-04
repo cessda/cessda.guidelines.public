@@ -1,6 +1,7 @@
 # CESSDA Technical Guidelines
 
 This repository contains the technical guidelines for CESSDA ERIC.
+Pull Requests from CESSDA affiliated developers are highly welcome.
 
 ## Technical Implementation
 
