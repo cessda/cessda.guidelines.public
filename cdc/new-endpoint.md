@@ -15,8 +15,8 @@ Typical roles are systems administrator/infrastructure manager, research data ma
 
 ## Usage
 
-Depending on your role, you may be interested in the technical section (1) or the data-specific sections (2).
-Section 3 is of general interest.
+Depending on your role, you may be interested in the technical section (1)
+or the data-specific sections (2). Section 3 is of general interest.
 
 ## Purpose
 
@@ -52,7 +52,9 @@ Kuha2 and other OAI-PMH applications. Access is restricted to staff of CESSDa Se
 There are several Open Source implementations of tools that support the
 [OAI-PMH protocol version 2.0](http://www.openarchives.org/OAI/openarchivesprotocol.html) to choose from.
 
-Most Service Providers use either [Dataverse](https://github.com/IQSS/dataverse/releases) or [Kuha2](https://kuha2.readthedocs.io/) and as a result some guidance and support is available from within the CESSDA community.
+Most Service Providers use either [Dataverse](https://github.com/IQSS/dataverse/releases)
+or [Kuha2](https://kuha2.readthedocs.io/)
+and as a result some guidance and support is available from within the CESSDA community.
 
 Some other options are listed on the [OAI-PMH tools page](https://www.openarchives.org/pmh/tools/),
 however as there is no revision date shown, the list may be out of date.
@@ -100,11 +102,11 @@ OAI-PMH repository on a regular basis, based on changes to the records in its on
 
 Send an email to the CESSDA Platform team (support AT cessda DOT eu) containing the following information:
 
-* URL of the OAI-PMH endpoint (e.g. https://xxx.xxx.xxx/oai-pmh)
+* URL of the OAI-PMH endpoint (e.g. `https://xxx.xxx.xxx/oai-pmh`)
 
-* Metadata prefix (e.g. oai_ddi25)
+* Metadata prefix (e.g. `oai_ddi25`)
 
-* Set specification, if relevant (e.g. subject:social-sciences)
+* Set specification, if relevant (e.g. `subject:social-sciences`)
 
 * Name and email address of the person responsible for the endpoint,
     in case there are any problems with harvesting it.
