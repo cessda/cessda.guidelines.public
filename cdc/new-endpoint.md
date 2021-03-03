@@ -39,7 +39,7 @@ A Basecamp space [OAI-PMH Endpoints](https://3.basecamp.com/3584575/projects/200
 for the  dissemination of knowledge about the installation, configuration and use of Dataverse,
 Kuha2 and other OAI-PMH applications. Access is restricted to staff of CESSDa Service Providers.
 
-##  At a glance
+## At a glance
 
 * Set up an OAI-PMH endpoint (as a repository)
 
