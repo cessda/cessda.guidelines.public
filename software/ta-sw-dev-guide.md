@@ -71,7 +71,9 @@ It should be created and maintained using the [documentation as code approach]({
 
 See [End User documentation guidelines]({% link software/enduser-documentation.md %}).
 
-Operational and Development documentation must be made available and should be maintained and updated throughout the development process, up to the acceptance testing phase.
+Operational and Development documentation must be made available
+and should be maintained and updated throughout the development process,
+up to the acceptance testing phase.
 
 ### Operational
 
