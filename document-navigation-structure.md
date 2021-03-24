@@ -22,6 +22,10 @@ The indentation is intended to indicate major sections, subsections and sub-subs
   (160) Code Archiving
   (170) Logging Guidelines
   (180) Software Development Guidelines
+    1801 End User documentation
+    1802 Operational documentation
+    1803 Development documentation
+    1804 Content management
 
 (200) Service Operation
   (210) Service Requirements
