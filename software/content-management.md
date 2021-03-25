@@ -1,0 +1,26 @@
+---
+title: Documentation content management
+parent: Software Development Guidelines
+grand_parent: Software Development
+published: true
+nav_order: 1804
+---
+# {{ page.title }}
+
+A Bitbucket repository is used to store, track changes to, build, test and deploy the user manual.
+
+It is located at `https://bitbucket.org/cessda/cessda.<product name>.userguide`
+
+E.g. `https://bitbucket.org/cessda/cessda.cdc.userguide`
+
+The content source files are in Markdown format and have the extension `.md`.
+
+The build process checks the syntax of the Markdown files using the markdown lint rules
+and will not deploy the content if any file breaks them, or if any hypertext links they contain cannot be resolved.
+
+If there are no errors, an HTML page is generated for each Markdown file,
+and the pages are all deployed as a static website at `https://<product name>.cessda.eu/documentation/`
+
+E.g. `https://datacatalogue.cessda.eu/documentation/`
+
+A more detailed (and more technical) explanation can be found in [documentation tooling]({% link platform/documentation-tooling.md %}).

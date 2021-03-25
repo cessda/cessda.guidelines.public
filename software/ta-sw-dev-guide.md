@@ -1,6 +1,7 @@
 ---
 title: Software Development Guidelines
 parent: Software Development
+has_children: true
 published: true
 nav_order: 180
 ---
@@ -63,40 +64,24 @@ See for instance the [guidelines for Developers](https://docs.tech.cessda.eu/sof
 
 ## Documentation throughout the development life-cycle
 
-The following documentation types must be made available in the relevant parts of the *docs* directory
-of the source code repository for the software artefact,
-and should be maintained and updated throughout the development process, up to the acceptance testing phase:
+### End-user
+
+End user documentation may be added prior to release, and is not a pre-requisite for delivery.
+It should be created and maintained using the [documentation as code approach]({% link software/content-management.md %}).
+
+See [End User documentation guidelines]({% link software/enduser-documentation.md %}).
+
+Operational and Development documentation must be made available
+and should be maintained and updated throughout the development process,
+up to the acceptance testing phase.
 
 ### Operational
 
-- Installation guide (configuration details for deployment,
-    see also 12 factor app, number 3 [Config - Store config in the environment](http://12factor.net/config))
+See [Operational documentation guidelines]({% link software/operational-documentation.md %}).
 
 ### Development
 
-- Source code commented throughout;
-    Requirements (functional and non-functional, including wireframes for any UI components)
-    API documentation, extension/developer's guide; Systems architecture (fit with CESSDA RI);
-    Technical specification (implementation details);
-    Test cases and results (de facto recorded by the Continuous Integration and Test process,
-    and are best examined there in order to ensure they are current)
-
-- Customisation/use guide
-
-## End-user
-
-End user documentation may be added prior to release, and is not a pre-requisite for delivery.
-It should be created and maintained using the 'documentation as code' approach,
-in a repository named cessda.xxx.userguide, where **'xxx'** is the 3 letter abbreviation for the product,
-also used as the [Bitbucket project key](https://bitbucket.org/cessda/workspace/projects/).
-
-The following types are expected:
-
-- User guide
-
-- Tutorials
-
-- Release notes
+See [Development documentation guidelines]({% link software/development-documentation.md %}).
 
 ## Acceptance
 
