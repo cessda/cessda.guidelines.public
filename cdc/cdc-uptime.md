@@ -6,4 +6,4 @@ nav_order: 730
 
 # {{ page.title }}
 
-<iframe src="https://uptime-products.cessda.eu/779709927" width="800" height="1000"></iframe>
+<iframe src=" https://stats.uptimerobot.com/779709927" width="800" height="1000"></iframe>
