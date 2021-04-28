@@ -62,7 +62,7 @@ political imperative of research infrastructures as they need to
 demonstrate a return on investment, but is also essential for growth
 with limited funds and ongoing interoperability.
 
-[1]: https://cdn.earthdata.nasa.gov/conduit/upload/2004/RRLs_v1.0.pdf
+[1]: Nasa Reuse Readiness Levels (RRLs)
 
 ### Background
 
@@ -79,9 +79,9 @@ TRL Level 8 is the minimum acceptable for a system to be considered
 production-ready by them. Interestingly, both RRLs and TRLs were devised
 by and are widely used by NASA.
 
-[2]: http://fitsm.itemo.org/fitsm
-[3]: https://wiki.eosc-hub.eu/display/EOSC/Service+Maturity+Classification
-[4]: http://ec.europa.eu/research/participants/data/ref/h2020/other/wp/2016-2017/annexes/h2020-wp1617-annex-ga_en.pdf
+[2]: The FitSM Standard
+[3]: EOSC Technology Readiness Levels (TRLs)
+[4]: HORIZON 2020 WORK PROGRAMME 2016-- 2017, 20. General Annexes, G. EC Technology Readiness Levels
 
 RRLs define 9 levels of maturity ranging from 1 ("software is not
 recommended for reuse") to the most mature 9 ("software is being reused
