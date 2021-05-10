@@ -15,11 +15,12 @@ E.g. `https://bitbucket.org/cessda/cessda.cdc.userguide`
 
 The content source files are in Markdown format and have the extension `.md`.
 
-The build process checks the syntax of the Markdown files using the markdown lint rules
-and will not deploy the content if any file breaks them, or if any hypertext links they contain cannot be resolved.
+The build process checks the syntax of the Markdown files using the markdown lint rules.
 
 If there are no errors, an HTML page is generated for each Markdown file,
-and the pages are all deployed as a static website at `https://<product name>.cessda.eu/documentation/`
+which is checked with HtmlProofer to make sure any image references and internal links are valid.
+If all the checks pass, the pages are all deployed as a static website at
+`https://<product name>.cessda.eu/documentation/`.
 
 E.g. `https://datacatalogue.cessda.eu/documentation/`
 
