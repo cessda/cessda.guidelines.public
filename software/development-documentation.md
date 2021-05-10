@@ -1,7 +1,7 @@
 ---
 title: Development documentation
 parent: Software Development Guidelines
-grandparent: Software Development
+grand_parent: Software Development
 published: true
 nav_order: 1803
 ---
