@@ -59,5 +59,6 @@ in particular.
 * Source code documentation
   * Use de facto standard for chosen language, e.g: JavaDoc for Java;
   * Program flow: interaction between components. Diagram(s) preferred;
-  * Program logic: say what happens when a process is triggered e.g. End User interacts with {% include glossary.html entry="HCI" text="HCI" %};
+  * Program logic: say what happens when a process is triggered e.g. End User interacts with
+      {% include glossary.html entry="HCI" text="HCI" %};
   * End to end descriptions of the implementation of each of the Use Cases.
