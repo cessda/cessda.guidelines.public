@@ -9,7 +9,7 @@ nav_order: 1801
 
 ## Purpose
 
-Provide guidance for CESSDA Product Content Contacts,
+Provide guidance for CESSDA Content Contacts,
 so they know what is expected of them with respect to producing end user documentation.
 
 It should be read in conjunction with the

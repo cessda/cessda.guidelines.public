@@ -92,15 +92,15 @@ developer. If available, source code is consistently and clearly
 commented and source code naming conventions are adhered to consistently.
 
 *SML3 - Use is possible by most users:* There is external documentation
-that describes all API functionality, human computer interface (HCI) and
-code modules, which is sufficient to be used by any developer.
+that describes all API functionality, human computer interface ({% include glossary.html entry="HCI" text="HCI" %})
+and code modules, which is sufficient to be used by any developer.
 There is an extension guide that provides information on how to customise and add plug-ins to the software.
 If available, source code documentation is sufficient to allow an experienced developer
 to understand program flow and logic with moderate effort.
 
 *SML4 - Software is usable:* There is a guide to the documentation and
-how to use it. There are examples of how to use the API & HCI for
-different use cases, and materials & tutorials can be used to train
+how to use it. There are examples of how to use the API & {% include glossary.html entry="HCI" text="HCI" %}
+for different use cases, and materials & tutorials can be used to train
 other developers. Documentation is consistent with the current version of
 the software.
 

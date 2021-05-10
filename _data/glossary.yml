@@ -24,6 +24,11 @@
   description: “Software and services are built and delivered usually from a third party vendor.”
                 Source: Wikipedia:Commercial off-the-shelf"
 
+- entry: "HCI"
+  title: "Human-Computer Interface"
+  description: "“... the point of communication between the human user and the computer.”
+               Source: Wikipedia: Human-Computer Interaction"
+
 - entry: "REST"
   title: "Representational State Transfer"
   description: "“An architectural style consisting of a coordinated set of architectural constraints

@@ -16,8 +16,3 @@ as well as advanced search. It also details how to provide feedback.
 
 Detailed instructions are provided on [how to add study level metadata]({% link cdc/new-endpoint.md %})
 to the CESSDA Data Catalogue. Currently inclusion in CDC is by invitation only.
-
-## Uptime
-
-The [CDC Uptime page]({% link cdc/cdc-uptime.md %}) shows uptime percentages for the last 24 hours,
-7 days, 30 days and 90 days. It also shows response times for the last 2 days.
