@@ -95,7 +95,6 @@ The indentation is intended to indicate major sections, subsections and sub-subs
 (700) CESSDA Data Catalogue
   (710) Documentation
   (720) Adding a new endpoint
-  (730) Uptime
 
 (998) Glossary
 ```
