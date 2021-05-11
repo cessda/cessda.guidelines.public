@@ -27,19 +27,19 @@ pipeline{
 Define the environment variables and include the generic image tagging statement
 
 ```groovy
-    environment {
-        product_name = "product"
-        module_name = "module"
-        image_tag = "${docker_repo}/${product_name}-${module_name}:${env.BRANCH_NAME}-${env.BUILD_NUMBER}"
-    }
+environment {
+    product_name = "product"
+    module_name = "module"
+    image_tag = "${docker_repo}/${product_name}-${module_name}:${env.BRANCH_NAME}-${env.BUILD_NUMBER}"
+}
 ```
 
 Specify the Jenkins agent to use to perform the build
 
 ```groovy
-    agent {
-         label 'jnlp-himem'
-    }
+agent {
+    label 'jnlp-himem'
+}
 ```
 
 Steps for building a deployable image (from main branch)
@@ -57,7 +57,7 @@ stages {
                 stage('Build Project') {
                     steps {
                         withMaven {
-                            sh "./mvnw clean install -DbuildNumber=${env.BUILD_NUMBER}"
+                            sh './mvnw clean install'
                         }
                     }
                     when { branch 'master' }
@@ -89,12 +89,12 @@ Run Sonar scan and fail the build if the Quality Gate is not passed
                     steps {
                         withSonarQubeEnv('cessda-sonar') {
                             withMaven {
-                                sh "./mvnw sonar:sonar -DbuildNumber=${env.BUILD_NUMBER}"
+                                sh './mvnw sonar:sonar'
                             }
                         }
                         timeout(time: 1, unit: 'HOURS') {
                             waitForQualityGate abortPipeline: true
-                            }
+                        }
                     }
                     when { branch 'master' }
                 }
@@ -114,16 +114,17 @@ Build the Docker image, tag it and push it to the image registry
                 sh "gcloud container images add-tag ${image_tag} ${docker_repo}/${product_name}-${module_name}:${env.BRANCH_NAME}-latest"
             }
             when { branch 'master' }
-            }
+        }
         stage('Check Requirements and Deployments') {
             steps {
                 dir('./infrastructure/gcp/') {
-                    build job: 'cessda.cdc.deploy/master', parameters: [string(name: 'osmh_indexer_image_tag',
-                    value: "${env.BRANCH_NAME}-${env.BUILD_NUMBER}")], wait: false
-                    }
+                    build job: 'cessda.cdc.deploy/master', parameters: [
+                        string(name: 'osmh_indexer_image_tag', value: "${env.BRANCH_NAME}-${env.BUILD_NUMBER}")
+                    ], wait: false
                 }
-            when { branch 'master' }
             }
+            when { branch 'master' }
+        }
 ```
 
 Run the static analysis scan, fail the build if the scan reports any critical security vulnerabilities and save the results
@@ -142,7 +143,7 @@ Run the static analysis scan, fail the build if the scan reports any critical se
                     sh 'scan'
                 }
             }
-             post {
+            post {
                 always {
                     archiveArtifacts 'reports/*'
                 }

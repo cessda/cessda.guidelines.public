@@ -20,10 +20,10 @@ and/or the [CDC Indexer](https://bitbucket.org/cessda/cessda.cdc.osmh-indexer.cm
 
 ### .gitignore
 
-The .gitignore should be populated with file that are not needed in the repository, such as log files, databases, executable,
+The `.gitignore` should be populated with file that are not needed in the repository, such as log files, databases, executable,
 results from compilation, reports from test frameworks, cached files etc.
 
-Here are several examples: [.gitignore templates](https://github.com/github/gitignore).
+Here are several examples: [`.gitignore` templates](https://github.com/github/gitignore).
 If copying an example file, it should be adapted to the application, and language used.
 
 ### CHANGELOG.md
