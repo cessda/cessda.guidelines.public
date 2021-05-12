@@ -15,111 +15,38 @@ See [Naming Conventions]({% link platform/naming-conventions.md %}).
 
 The  {% include glossary.html entry="(component)" text="component" %} deployment code is stored in a different repository to the build code.
 It uses a parametrised Jenkinsfile so an exact version of the application can be deployed (for example, a specific version for production).
-This parameter can be manually or automatically specified by called jobs.
+This parameter can be manually or automatically specified by calling jobs.
 
 ```groovy
-parameters
-{
-    string(name: 'IMAGE_TAG',
-      defaultValue: 'latest',
-    description: 'The version of the application to deploy, default is latest if unspecified')
+parameters {
+    string(name: 'imageTag', defaultValue: 'latest', description: 'The version of the application to deploy, default is latest if unspecified')
 }
 ```
 
 From this the environment should match the build environment.
 
-There is only one stage in this Jenkinsfile. This stage deploys the application with the image tag specified in the job parameters.
+If the chart has external dependencies, these must be updated before the deployment starts. This can be done with the following stage.
 
 ```groovy
-stage('Create deployment')
-{
-    steps
-    {
-        dir('./infrastructure/gcp/')
-        {
-            echo 'Run Coffeepot Creation Script'
-            echo "Using image tag ${image_tag}"
-            sh("bash coffeepot-creation.sh")
-        }
+stage('Update Dependencies') {
+    steps {
+        sh 'helm dependency update .'
     }
 }
 ```
 
-The script `coffeepot-deployment.sh` substitutes variables from the template yaml files and replaces them with the correct values.
- This is done with a series of `sed` commands to edit the variables.
+This stage deploys the application with the image tag specified in the job parameters.
 
-```bash
-sed "s#DEPLOYMENTNAME#$product_name-$module_name#g; s#NAMESPACE#$product_name#g; s#IMAGENAME#$image_tag#g"
- ../k8s/template-coffeepot-deployment.yaml > ../k8s/$product_name-$module_name-deployment.yaml
-sed "s/SERVICENAME/$product_name-$module_name/g; s/NAMESPACE/$product_name/g" ../k8s/template-coffeepot-service.yaml >
- ../k8s/$product_name-$module_name-service.yaml
-sed "s/NAMESPACE/$product_name/g" ../k8s/template-coffeepot-namespace.yaml >
- ../k8s/$product_name-$module_name-namespace.yaml
+```groovy
+stage('Create deployment') {
+    steps {
+        echo 'Run Coffeepot Creation Deployment'
+        echo "Using image tag ${imageTag}"
+        sh "helm upgrade ${productName} . -n ${productName} -i --atomic --set image.tag=${imageTag}"
+    }
+}
 ```
 
-Note that the first `sed` command has a `#` character as the delimiter instead of a `/`.
-This is because the substitution contains `/` characters which would break `sed` if a different character was not used.
-
-This is applied to a series of template yaml files for the deployment and the service for the application. Examples are shown below:
-
-```yaml
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: NAMESPACE
-```
-
-```yaml
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: DEPLOYMENTNAME
-  namespace: NAMESPACE
-  labels:
-    app: DEPLOYMENTNAME
-spec:
-  replicas: 1
-  template:
-    metadata:
-      labels:
-        app: DEPLOYMENTNAME
-    spec:
-      containers:
-        - name: DEPLOYMENTNAME
-          image: IMAGENAME
-          ports:
-            - containerPort: 1337
-          resources:
-            limits:
-              memory: "256Mi"
-  selector:
-    matchLabels:
-      app: DEPLOYMENTNAME
-```
-
-```yaml
-apiVersion: v1
-kind: Service
-metadata:
-  name: SERVICENAME
-  namespace: NAMESPACE
-spec:
-  selector:
-    app: SERVICENAME
-  ports:
-  - port: 1337
-    targetPort: 1337
-```
-
-The generated yaml files are deployed using the `kubectl apply` command:
-
-```bash
-# Create deployment
-kubectl apply -f ../k8s/$product_name-$module_name-deployment.yaml
-
-# Service
-kubectl apply -f ../k8s/$product_name-$module_name-service.yaml
-```
-
-Kubectl apply will apply any configuration changes made to the deployment manifests and update the image used in the deployment.
-Kubernetes will then roll out the new version of the application in a way that minimises downtime.
+Helm deploys the component with the name `${productName}` to the namespace `${productName}` using the image tag `${imageTag}`.
+See [the Helm documentation](https://helm.sh/docs/) and [using Helm to deploy products]({% link platform/deployment-with-helm.md %})
+for more information.

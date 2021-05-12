@@ -12,19 +12,19 @@ The naming conventions for products are designed to increase consistency across 
 
 ## Abbreviations
 
-- CDC: [CESSDA Data Catalogue](<https://datacatalogue.cessda.eu/>)
+- CDC: [CESSDA Data Catalogue](https://datacatalogue.cessda.eu/)
 
-- CVS: [CESSDA Vocabulary Service](<https://vocabularies.cessda.eu/#!discover>)
+- CVS: [CESSDA Vocabulary Service](https://vocabularies.cessda.eu/)
 
 - DVS: Dataverse
 
-- ELSST: [European Language Social Science Thesaurus](<https://elsst.ukdataservice.ac.uk/>)
+- ELSST: [European Language Social Science Thesaurus](https://elsst.ukdataservice.ac.uk/)
 
 - EQB: European Question Bank
 
-- GCP: [Google Cloud Platform](<https://cloud.google.com>)
+- GCP: [Google Cloud Platform](https://cloud.google.com)
 
-- GKE: [Google Kubernetes Engine](<https://console.cloud.google.com/kubernetes/>)
+- GKE: [Google Kubernetes Engine](https://console.cloud.google.com/kubernetes/)
 
 ## Definitions
 

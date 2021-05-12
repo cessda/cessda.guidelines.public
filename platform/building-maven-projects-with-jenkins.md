@@ -37,21 +37,14 @@ This makes it run with the Jenkins subordinate container configured which has
 Java and Maven already installed.
 
 The next stage is building and running a Sonar scan on the application.
-To scan Maven projects in SonarQube the `pom.xml` file needs to have this snippet
-inserted in the `<properties>` section.
-
-```xml
-<sonar-maven-plugin.version>3.6.0.1398</sonar-maven-plugin.version>
-```
-
-In the build section of the `pom.xml` another snippet must be added.
+To scan Maven projects in SonarQube the `pom.xml` file needs to have this snippet inserted in the `<build>` section.
 This allows the sonar plugin to be downloaded from Maven Central:
 
 ```xml
 <plugin>
   <groupId>org.sonarsource.scanner.maven</groupId>
   <artifactId>sonar-maven-plugin</artifactId>
-  <version>${sonar-maven-plugin.version}</version>
+  <version>3.6.0.1398</version>
 </plugin>
 ```
 
@@ -60,39 +53,39 @@ The Jenkinsfile snippet to build and run SonarQube is shown below:
 ```groovy
 stage('Build Project and Run Sonar Scan') {
     steps {
+        withMaven {
+            sh './mvnw clean install'
+        }
+    }
+}
+stage('Run SonarQube Scan') {
+    steps {
         withSonarQubeEnv('cessda-sonar') {
             withMaven {
-                sh 'mvn clean install sonar:sonar'
+                sh './mvnw sonar:sonar'
             }
         }
     }
 }
 ```
 
-We use the `withMaven{}` step which configures a Maven environment to use within a pipeline job by calling `sh mvn`.
-Additionally, Jenkins discovers the generated Maven artefacts, running and publishing JUnit test results and reports.  
+We use the `withMaven{}` step which configures Maven to use proxies for Maven Central, as well as credentials for our internal Maven repository.
+Additionally, Jenkins discovers JUnit test reports and automatically publishes them.
 
-The healthScaleFactor parameter is an amplification factor that is applied to test
-failures when computing the test result contribution to the build health score.
-From the above script, it is set to the default, factor 1.0.
-A factor of 1.0 means that 10% of tests failing will score 90% health score.
-The factor is persisted with the build results, so changes will only be reflected in new builds.  
+The command `sh '.\mvnw clean install'` cleans any existing resources and builds the projects.
+The command `sh '.\mvnw sonar:sonar'` generates a report that is sent to the [SonarQube](https://sonarqube.cessda.eu) dashboard.
 
-The command `sh 'mvn clean install sonar:sonar'` cleans any existing resources,
-builds the projects and generates a report that is sent to the [SonarQube](https://sonarqube.cessda.eu) dashboard.
-
-The next stage is to read the SonarQube analysis.  
+The next stage gets the result of the SonarQube analysis.
 
 ```groovy
 stage("Get Sonar Quality Gate") {
     steps {
         timeout(time: 1, unit: 'HOURS') {
             waitForQualityGate abortPipeline: true
-            }
         }
     }
 }
 ```
 
 The timeout option specifies the maximum time to wait for the response of a service call.
-We set the parameter to one hour. The pipeline will be aborted if the Quality Gate fails.
+The pipeline will be aborted if the Quality Gate fails or if the timeout expires.

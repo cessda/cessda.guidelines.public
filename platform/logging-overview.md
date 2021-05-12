@@ -33,7 +33,7 @@ The log pipeline for CESSDA is as below:
 
 - Graylog server defines and indexes logs into Elasticsearch.
 
-- Elasticsearch stores log indices for quering.  
+- Elasticsearch stores log indices for querying.
 
 - Logs are queried, aggregated and visualized with Kibana
 
