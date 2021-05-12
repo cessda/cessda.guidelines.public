@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+* Updated example pipeline documentation to match current build and deployment pipelines
+
 ## [1.0.1] - 2020-12-01
 
 * Improve documentation for documentation theme
@@ -43,4 +45,3 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 * Define software quality requirements
 * Define code archiving criteria
 * Include import of Software Maturity Levels, [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2614050.svg)](https://doi.org/10.5281/zenodo.2614050)
-
