@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 
 * Updated example pipeline documentation to match current build and deployment pipelines
+* Added section for Data Catalogue
+* Added guidelines for authors of End User, Development and Operational documentation
+* Added online forms (Contributor License Agreement, new repository request, software maturity levels assessment, ELSST CLA)
+* Added Observability section
+* Updated Software Maturity Levels section
+
 
 ## [1.0.1] - 2020-12-01
 
