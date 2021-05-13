@@ -13,7 +13,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 * Added online forms (Contributor License Agreement, new repository request, software maturity levels assessment, ELSST CLA)
 * Added Observability section
 * Updated Software Maturity Levels section
-
+* Updated Create a Bitbucket Repository section
 
 ## [1.0.1] - 2020-12-01
 
