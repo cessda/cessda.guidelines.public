@@ -33,37 +33,52 @@ The owner is always **cessda** (as per the screenshot below), but the Project is
 |                    CESSDA Knowledge Sharing Platform    |   KSP   |   Components of the Knowledge Sharing Platform                                                 |
 |                    CESSDA Managed Content               |   CMC   |   Location for managed content, such as CVs, Thesauri                                          |
 |                    CESSDA Metadata Validator            |   CMV   |   Used to validate ingested DDI content                                                        |
+|                    CESSDA Ontology Manager              |   COM  |   Thesaurus hosting system for ELSST, running on Skosmos using Apache Jena Fuseki as the backend                        |
 |                    CESSDA Operations                    |   COPS  |   Operational issues (administration of toolchain, utility scripts etc)                        |
 |                    CESSDA Research Infrastructure       |   CRI   |   Infrastructure management                                                                    |
 |                    CESSDA Service Portfolio Management  |   CSM   |   Tools for managing Service Portfolio management                                              |
-|                    CESSDA Thesaurus                     |   CET   |   Thesaurus for ELSST, running on Skosmos using Apache Jena Fuseki as the backend.             |
+|                    CESSDA Shared Code                     |   CSC   |   Code and code snippets, scripts, libraries etc that are thought to be of general use to Service Providers. N.B. do not put any commercial off the shelf code, or other code developed outside of CESSDA in these repositories             |
 |                    CESSDA Vocabulary Service            |   CVS   |   Components of the CESSDA Vocabulary Service, see <https://vocabularies.cessda.eu/>             |
 |                    SSHOC Dataverse                      |   DVS   |   Components of the SSHOC Dataverse  {% include glossary.html entry="(product)" text="product" %}                                                    |
 
-![New Git Reposotory](../images/new-git-repo.png)
+### Specify the basic details
 
-### Create an empty repository
+![New Git Repository](../images/new-git-repo.png)
 
-If it is a *greenfield development* simply create a new repository, add a description and assign it to one of the above projects.
+### Set advanced options, as required
 
-See [Create a repository](<https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository/>)
-for more details.
+![Repository advanced options](../images/bitbucket-advanced-options.png)
 
-Then add the [standard contents]({% link platform/gcp-repository-standard-contents.md %}),
-some of which will remain unchanged, others of which need to be edited by the code contributors.
+### Do one of the following
 
-### Create a repository for existing files/projects
+* Create an empty repository
 
-If there is a project in an external location, but with just a few unversioned files in it,
-create a repository on Bitbucket and add the code to it.
+    If it is a *greenfield development* simply create a new repository, add a description and assign it to one of the above projects.
+    See [Create a repository](<https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository/>)
+    for more details.
 
-See [Add unversioned code to a repository]
-(<https://support.atlassian.com/bitbucket-cloud/docs/add-unversioned-code-to-a-repository/>) for more details.
+* Create a repository for existing files/projects
 
-### Import or convert code from an existing tool
+    If there is a project in an external location, but with just a few unversioned files in it,
+    create a repository on Bitbucket and add the code to it.
+    See
+    [Add unversioned code to a repository](<https://support.atlassian.com/bitbucket-cloud/docs/add-unversioned-code-to-a-repository/>)
+    for more details.
 
-To get code from an existing project into Bitbucket Cloud quickly from another hosting site or system,
-Bitbucket provides an importer to grab a repository. See
-[Import or convert code from
+* Import or convert code from an existing tool
+
+    To get code from an existing project into Bitbucket Cloud quickly from another hosting site or system,
+    Bitbucket provides an importer to grab a repository. See
+    [Import or convert code from
     an existing tool](<https://support.atlassian.com/bitbucket-cloud/docs/import-or-convert-code-from-an-existing-tool/>).
-for more details.
+    for more details.
+
+In each case, check that the [standard contents]({% link platform/gcp-repository-standard-contents.md %})
+for code repositories are present (some of which can remain unchanged, others need to be edited by the code contributors).
+Note that docs-as-code repositories omit the standard content files that have lowercase names.
+
+### Set branch permissions
+
+Add any groups that have write permission for the repository to the 'Merge via pull request' section.
+
+![Set branch permissions](../images/branch-permissions.png)
