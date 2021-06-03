@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 * Added Observability section
 * Updated Software Maturity Levels section
 * Updated Create a Bitbucket Repository section
+* Add feedback collector
 
 ## [1.0.1] - 2020-12-01
 
