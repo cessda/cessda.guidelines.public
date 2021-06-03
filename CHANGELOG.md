@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.1.0] - 2021-06-03
+
 * Updated example pipeline documentation to match current build and deployment pipelines
 * Added section for Data Catalogue
 * Added guidelines for authors of End User, Development and Operational documentation
