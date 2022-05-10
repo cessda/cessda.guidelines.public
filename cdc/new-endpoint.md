@@ -11,13 +11,6 @@ nav_order: 720
 Service Provider staff that are concerned with making their study level metadata available via the
 [CESSDA Data Catalogue](https://datacatalogue.cessda.eu).
 
-Typical roles are systems administrator/infrastructure manager, research data manager.
-
-## Usage
-
-Depending on your role, you may be interested in the technical section (1)
-or the data-specific sections (2). Section 3 is of general interest.
-
 ## Purpose
 
 To provide some general guidance to Service Providers about the steps involved in setting up
@@ -59,17 +52,6 @@ and as a result some guidance and support is available from within the CESSDA co
 Some other options are listed on the [OAI-PMH tools page](https://www.openarchives.org/pmh/tools/),
 however as there is no revision date shown, the list may be out of date.
 
-The NESSTAR Server can be configured to act as an OAI-PMH repository,
-but it is not recommended to use it as such, for a variety of reasons:
-
-* NESSTAR is not being developed beyond the current version (version 4.0)
-
-* It has some outdated dependencies (such as Java), that pose a security risk as a result
-
-* Its performance is sub-optimal (unless placed behind a cache) when many hundreds of files are made available for harvesting
-
-* The only DDI XML file version it supports is 1.2.2 (the most basic DDI format)
-
 The OAI-PMH protocol supports both harvester and repository functionality.
 The endpoint must be configured to act as an
 [OAI-PMH repository](http://www.openarchives.org/OAI/2.0/guidelines-repository.htm).
@@ -78,7 +60,7 @@ It may also enable harvester functionality, but that is not a requirement for CD
 Once the chosen tool has been installed and configured as an OAI-PMH repository,
 it can be validated using a free to use service such as [OVAL BASE](http://oval.base-search.net).
 
-## 2. Add study level metadata files to the repositoryâ€™s document store
+## 2. Add study level metadata files to the repositoryÕs document store
 
 The CESSDA Data Catalogue can only harvest XML in either DDI 1.2.2 or DDI 2.5 format.
 In either case, the DDI XML files that should be compliant with the
