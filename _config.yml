@@ -23,7 +23,7 @@ defaults:
 
 technical-reference:
  version: "v0.2"
- url: "https://technical-reference.readthedocs.io/en/v0.2/"
+ url: "https://technical-reference.readthedocs.io/en/latest/"
 
 # Exclude from processing.
 # The following items will not be processed, by default.

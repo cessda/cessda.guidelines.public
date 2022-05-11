@@ -46,7 +46,7 @@ There are several Open Source implementations of tools that support the
 [OAI-PMH protocol version 2.0](http://www.openarchives.org/OAI/openarchivesprotocol.html) to choose from.
 
 Most Service Providers use either [Dataverse](https://github.com/IQSS/dataverse/releases)
-or [Kuha2](https://kuha2.readthedocs.io/)
+or [Kuha2](https://kuha2.readthedocs.io/en/latest/)
 and as a result some guidance and support is available from within the CESSDA community.
 
 Some other options are listed on the [OAI-PMH tools page](https://www.openarchives.org/pmh/tools/),
@@ -60,7 +60,7 @@ It may also enable harvester functionality, but that is not a requirement for CD
 Once the chosen tool has been installed and configured as an OAI-PMH repository,
 it can be validated using a free to use service such as [OVAL BASE](http://oval.base-search.net).
 
-## 2. Add study level metadata files to the repository’s document store
+## 2. Add study level metadata files to the repository's document store
 
 The CESSDA Data Catalogue can only harvest XML in either DDI 1.2.2 or DDI 2.5 format.
 In either case, the DDI XML files that should be compliant with the

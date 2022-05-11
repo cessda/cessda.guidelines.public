@@ -16,7 +16,7 @@ Typical roles are CTO, Platform Team member, Working Group Leader.
 
 Depending on your role, you may be interested in:
 
-* assessing the SML score of a CESSDA Product (see [Software Maturity Levels](https://docs.tech.cessda.eu/sml/cessda-software-maturity-levels.html));
+* assessing the SML score of a CESSDA Product (see [Software Maturity Levels](https://docs.tech.cessda.eu/sml/index.html));
 
 ## Purpose
 
