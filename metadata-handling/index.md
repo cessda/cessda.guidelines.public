@@ -1,5 +1,5 @@
 ---
-title: CESSDA Data Catalogue
+title: Metadata Handling
 has_children: true
 nav_order: 700
 ---
