@@ -1,6 +1,6 @@
 ---
 title: Adding a new endpoint
-parent: CESSDA Data Catalogue
+parent: Metadata Handling
 nav_order: 720
 ---
 
@@ -35,9 +35,7 @@ Kuha2 and other OAI-PMH applications. Access is restricted to staff of CESSDa Se
 ## At a glance
 
 * Set up an OAI-PMH endpoint (as a repository)
-
 * Add CMM-compliant DDI XML study level metadata files
-
 * Let CESSDA know it is available
 
 ## 1. Set up an OAI-PMH endpoint
@@ -60,21 +58,18 @@ It may also enable harvester functionality, but that is not a requirement for CD
 Once the chosen tool has been installed and configured as an OAI-PMH repository,
 it can be validated using a free to use service such as [OVAL BASE](http://oval.base-search.net).
 
-## 2. Add study level metadata files to the repository’s document store
+## 2. Add study level metadata files to the repository's document store
 
-The CESSDA Data Catalogue can only harvest XML in either DDI 1.2.2 or DDI 2.5 format.
-In either case, the DDI XML files that should be compliant with the
+The CESSDA Data Catalogue can only harvest XML in DDI 2.5 format.
+Additionally, the DDI XML files should be compliant with the
 [CESSDA Metadata Model v1.0](https://zenodo.org/record/3543756).
 
 DDI XML file format compliance with CMM can be checked using the [CESSDA Metadata Validator](https://cmv.cessda.eu).
 
-If possible, the metadata prefix of the OAI-PMH repository should be set to oai_ddi (when serving DDI 1.2.2)
-or oai_ddi25 (when serving DDI 2.5) for consistency with other OAI-PMH endpoints harvested by CDC.
-
 The CDC contains SSH study level metadata.
 If the repository contains (or is expected to contain) any non-SSH study level metadata,
 use the [OAI-PMH Set construct](http://www.openarchives.org/OAI/openarchivesprotocol.html#Set)
-to partition the metadata, so that CDC can harvest the set containing the SSH study level metadata.
+to partition the metadata, so that CDC can harvest the set containing only the SSH study level metadata.
 
 The Service Provider should have a process in place to update the XML files served by the
 OAI-PMH repository on a regular basis, based on changes to the records in its online catalogue

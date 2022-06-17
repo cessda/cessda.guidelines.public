@@ -1,4 +1,9 @@
-# CESSDA Identifiers Specification
+---
+title: CESSDA Identifiers Specification
+parent: Metadata Handling
+---
+
+# {{ page.title }}
 
 Identifiers are defined as
 
@@ -27,7 +32,7 @@ Example from UKDS:
 ...
 ```
 
-The SHA-256 of `https://oai.ukdataservice.ac.uk:8443/oai/provider-6` is `93d5bf21cc7e9ae1463816f848be9d46067f1302eb8b4fab8ef102ff485aefaa`.
+The SHA-256 of `https://oai.ukdataservice.ac.uk:8443/oai/provider-6` is `93d5bf21cc7e9ae1463816f848be9d46067f1302eb8b4fab8ef102ff485aefaa`
 
 Example from FSD:
 
@@ -48,4 +53,4 @@ Example from FSD:
 ...
 ```
 
-The SHA-256 of `https://services.fsd.tuni.fi/v0/oai-oai:fsd.uta.fi:FSD1028` is `b9fd25c481a1d74b6d1b1a5fb55116034fcdd9bddd789c38548815423801579a`.
+The SHA-256 of `https://services.fsd.tuni.fi/v0/oai-oai:fsd.uta.fi:FSD1028` is `b9fd25c481a1d74b6d1b1a5fb55116034fcdd9bddd789c38548815423801579a`

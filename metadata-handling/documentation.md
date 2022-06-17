@@ -1,6 +1,6 @@
 ---
 title: Documentation
-parent: CESSDA Data Catalogue
+parent: Metadata Handling
 nav_order: 710
 ---
 
