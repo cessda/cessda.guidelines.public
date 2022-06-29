@@ -1,4 +1,10 @@
-# Versioning for CVS and ELSST
+---
+title: Versioning for CVS and ELSST
+parent: Metadata Handling in CESSDA
+nav_order: 730
+---
+
+# {{ page.title }}
 
 ## CVS
 

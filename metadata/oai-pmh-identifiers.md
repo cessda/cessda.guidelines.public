@@ -1,6 +1,7 @@
 ---
-title: CESSDA Identifiers Specification
-parent: Metadata Handling
+title: CESSDA OAI-PMH Identifiers Specification
+parent: Metadata Handling in CESSDA
+nav_order: 710
 ---
 
 # {{ page.title }}
