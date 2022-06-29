@@ -24,7 +24,8 @@ We have several sub-agencies for the various services
 
 ## ELSST
 
-ELSST's canonical URLs are resolved to the Skosmos instance using redirects. Every concept has a unique identifier which is mapped using the URI template.
+ELSST's canonical URLs are resolved to the Skosmos instance using redirects.
+Every concept has a unique identifier which is mapped using the URI template.
 
 * URN form: `urn:ddi:int.cessda.elsst:{uuid}:{version}`
 * URI form: `https://elsst.cessda.eu/id/{uuid}`

@@ -52,7 +52,8 @@ The CESSDA Data Catalogue can only harvest XML in DDI 2.5 format.
 Additionally, the DDI XML files should be compliant with the
 [CESSDA Metadata Model v1.0](https://zenodo.org/record/3543756).
 
-DDI XML file format compliance with CMM can be checked using the [CESSDA Metadata Validator](https://cmv.cessda.eu). We recommend validating some of your metadata to expose potential systemic issues before making your endpoint available.
+DDI XML file format compliance with CMM can be checked using the [CESSDA Metadata Validator](https://cmv.cessda.eu).
+We recommend validating some of your metadata to expose potential systemic issues before making your endpoint available.
 
 The CDC contains SSH study level metadata.
 If the repository contains (or is expected to contain) any non-SSH study level metadata,
