@@ -79,9 +79,9 @@ TRL Level 8 is the minimum acceptable for a system to be considered
 production-ready by them. Interestingly, both RRLs and TRLs were devised
 by and are widely used by NASA.
 
-[2]: http://fitsm.itemo.org/fitsm
+[2]: https://fitsm.itemo.org/fitsm
 [3]: https://wiki.eosc-hub.eu/display/EOSC/Service+Maturity+Classification
-[4]: http://ec.europa.eu/research/participants/data/ref/h2020/other/wp/2016-2017/annexes/h2020-wp1617-annex-ga_en.pdf
+[4]: https://ec.europa.eu/research/participants/data/ref/h2020/other/wp/2016-2017/annexes/h2020-wp1617-annex-ga_en.pdf
 
 RRLs define 9 levels of maturity ranging from 1 ("software is not
 recommended for reuse") to the most mature 9 ("software is being reused

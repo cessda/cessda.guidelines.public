@@ -69,7 +69,7 @@ based on 3rd party components including:
 - [Certbot](https://certbot.eff.org/) for automated TLS/SSL certificate renewal
 - [Grafana](https://grafana.com/) for visualisation of monitoring data
 - [Graylog](https://www.graylog.org/) for log aggregation
-- [HAProxy](http://www.haproxy.org/) for reverse proxying
+- [HAProxy](https://www.haproxy.org/) for reverse proxying
 - [Jenkins](https://jenkins.io/) for CI/CT - build, test and deploy components
 - [JMeter](https://jmeter.apache.org/) for stress testing
 - [Kibana](https://www.elastic.co/kibana) for analysing and visualising the contents of ElasticSearch indices
@@ -161,7 +161,7 @@ used to ensure compliance with the guidelines. Developers are expected to fix an
 
 Developers should provide [Unit tests](https://en.wikipedia.org/wiki/Unit_testing) for their products,
 and the CESSDA Platform team will work with the developers and/or relevant user groups
-to develop Selenium tests to cover the main user journeys for each product.  
+to develop Selenium tests to cover the main user journeys for each product.
 
 The CESSDA Platform team is responsible for creating and updating the scripts
 that deploy products to the various build environments (development, staging, production).

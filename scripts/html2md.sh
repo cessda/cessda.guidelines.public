@@ -37,9 +37,9 @@ res=$?
 
 if test "$res" != "0"; then
   exit 11
-fi 
+fi
 
-# remove the 'http://' or 'https://' part of the URL, to use as the output filename
+# remove the 'https://' or 'https://' part of the URL, to use as the output filename
 filename=${1##*/}
 
 # cleanup
@@ -55,4 +55,4 @@ code=$?
 if test "$code" == "0"; then
   echo "Conversion completed - output written to ${filename}/${filename}.md"
   echo "and associated media files written to ${filename}/media"
-fi 
+fi
