@@ -26,7 +26,8 @@ This allows continuous integration testing to run on the branch, giving feedback
 
 ## Pull Requests
 
-Pull requests (link) are a structured workflow for merging changes from development branches or repositories into the main branch of a repository.
+[Pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
+are a structured workflow for merging changes from development branches or repositories into the main branch of a repository.
 They contain a description of the purpose of a change and combine multiple commits.
 Pull requests also contain a review mechanism, allowing other members of a repository to sanity check changes.
 
