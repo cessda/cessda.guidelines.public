@@ -25,7 +25,7 @@ The indentation is intended to indicate major sections, subsections and sub-subs
     1801 End User documentation
     1802 Operational documentation
     1803 Development documentation
-    1804 Content management
+    1804 Merging and pull requests
 
 (200) Service Operation
   (210) Service Requirements
@@ -44,7 +44,6 @@ The indentation is intended to indicate major sections, subsections and sub-subs
   (330) Deployment Workflow
   (335) Deployment Pipeline Details
   (336) The CESSDA Branching Model for Deployments
-  (340) Deploying Core Products
   (345) Using Helm to deploy products
   (350) Technical Infrastructure Details
   (355) Building Maven Projects with Jenkins
@@ -63,7 +62,6 @@ The indentation is intended to indicate major sections, subsections and sub-subs
   (390) Setup and Configure oauth2-proxy
   (391) Rate limiting with HAProxy
   (392) Authenticating with EduTeams
-  (--) ~~Logging Overview~~
 
 (400) Software Maturity Levels
   (410) CA1: Documentation
@@ -73,7 +71,7 @@ The indentation is intended to indicate major sections, subsections and sub-subs
   (430) CA5: Packaging
   (435) CA6: Portability
   (440) CA7: Standards Compliance
-  (445) CA8: ~~Support~~Maintenance
+  (445) CA8: Maintenance
   (450) CA9: Verification and Testing
   (455) CA10: Security
   (460) CA11: Internationalisation and Localisation
@@ -92,9 +90,11 @@ The indentation is intended to indicate major sections, subsections and sub-subs
   (630) Software Maturity Levels
   (640) ELSST contributor license agreement
 
-(700) CESSDA Data Catalogue
-  (710) Documentation
+(700) Metadata Handling in CESSDA
+  (710) CESSDA OAI-PMH Identifiers Specification
   (720) Adding a new endpoint
+  (730) URN Handling and Resolution
+  (740) Versioning for CVS and ELSST
 
 (998) Glossary
 ```
