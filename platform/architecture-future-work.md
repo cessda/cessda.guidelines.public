@@ -28,7 +28,7 @@ is a good place to find guidance.
 - System Error Messages
 
 - Logging (covered by 12 factor app, number 6)
-  ([Logs - Treat logs as event streams](http://12factor.net/logs)).
+  ([Logs - Treat logs as event streams](https://12factor.net/logs)).
 
 ## Application Level Security
 

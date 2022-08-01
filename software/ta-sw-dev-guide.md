@@ -30,13 +30,13 @@ Strings in general should be externalised.
 In particular, messages intended to be displayed to the User via the GUI,
 console or other output mechanism should not be present in source code as this inhibits language localisation.
 Also source code should be free of configuration information in order to comply with
-12 factor app principle number 3 [Config - Store config in the environment](http://12factor.net/config)).
+12 factor app principle number 3 [Config - Store config in the environment](https://12factor.net/config)).
 Configuration information should be made available at run time via environment variables.
 
 ## Environment-specific information
 
 The 12 factor app, number 10
-([Dev/prod parity - Keep development, staging, and production as similar as possible](http://12factor.net/dev-prod-parity))
+([Dev/prod parity - Keep development, staging, and production as similar as possible](https://12factor.net/dev-prod-parity))
 points to the need to deploy new developments quickly,
 involve the developers in deployment and keep the tools as similar as possible through the development,
 testing and deployment environments.
@@ -159,4 +159,4 @@ will be available to CESSDA throughout their life.
 No product or component will be deployed without the source code first being made available in this way
 (with the exception of {% include glossary.html entry="COTS" text="COTS" %} products and products built from Open Source projects).
 
-See also 12 factor app, number 1 ([Codebase - One codebase tracked in revision control, many deploys](http://12factor.net/codebase)).
+See also 12 factor app, number 1 ([Codebase - One codebase tracked in revision control, many deploys](https://12factor.net/codebase)).

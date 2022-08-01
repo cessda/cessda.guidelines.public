@@ -7,7 +7,7 @@ Pull Requests from CESSDA affiliated developers are highly welcome.
 
 The documentation is written in markdown files and compiled to html using [Jekyll](https://jekyllrb.com)
 with the [CESSDA theme](https://rubygems.org/gems/jekyll-cessda-docs) based on the
-[Just the docs](https://github.com/pmarsceill/just-the-docs) theme.
+[Just the docs](https://github.com/just-the-docs/just-the-docs) theme.
 
 To get started locally, make sure to [have Ruby installed](https://jekyllrb.com/docs/installation/), then run
 
@@ -20,7 +20,7 @@ bundle exec jekyll serve --config _config.yml,_devsettings.yml
 ### Menu structure
 
 The page order and navigation structure is defined manually using
-the [theme's options](https://pmarsceill.github.io/just-the-docs/docs/navigation-structure/).
+the [theme's options](https://just-the-docs.github.io/just-the-docs/docs/navigation-structure/).
 
 ## Development
 

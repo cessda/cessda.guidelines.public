@@ -8,9 +8,9 @@ nav_order: 301
 
 To generate static documentation pages, including this one, CESSDA uses [Jekyll](https://jekyllrb.com).
 A custom [CESSDA theme](https://rubygems.org/gems/jekyll-cessda-docs) has been developed based on the
-[Just the docs](https://github.com/pmarsceill/just-the-docs) theme.
+[Just the docs](https://github.com/just-the-docs/just-the-docs) theme.
 
-As such, the documentation for [Just the docs](https://pmarsceill.github.io/just-the-docs/) can be followed,
+As such, the documentation for [Just the docs](https://just-the-docs.github.io/just-the-docs/) can be followed,
 but the design should not be touched.
 
 The repository for the [CESSDA Technical Guidelines](https://bitbucket.org/cessda/cessda.guidelines.public)
@@ -46,7 +46,7 @@ bundle exec jekyll serve
 ### Just the docs support
 
 You can use most of the functionalities of Just the docs, in particular
-[search](https://pmarsceill.github.io/just-the-docs/docs/search/).
+[search](https://just-the-docs.github.io/just-the-docs/docs/search/).
 
 ### Matomo
 

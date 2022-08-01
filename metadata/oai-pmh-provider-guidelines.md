@@ -31,7 +31,7 @@ Kuha2 and other OAI-PMH applications. Access is restricted to staff of CESSDA Se
 ## Set up an OAI-PMH endpoint
 
 There are several Open Source implementations of tools that support the
-[OAI-PMH protocol version 2.0](http://www.openarchives.org/OAI/openarchivesprotocol.html) to choose from.
+[OAI-PMH protocol version 2.0](https://www.openarchives.org/OAI/openarchivesprotocol.html) to choose from.
 
 Most Service Providers use either [Dataverse](https://github.com/IQSS/dataverse/releases)
 or [Kuha2](https://kuha2.readthedocs.io/)
@@ -42,9 +42,9 @@ Some other options are listed on the [OAI-PMH tools page](https://www.openarchiv
 however as there is no revision date shown, the list may be out of date.
 
 The endpoint must be configured to act as an
-[OAI-PMH repository](http://www.openarchives.org/OAI/2.0/guidelines-repository.htm).
+[OAI-PMH repository](https://www.openarchives.org/OAI/2.0/guidelines-repository.htm).
 Once the chosen tool has been installed and configured,
-it can be validated using a free to use service such as [OVAL BASE](http://oval.base-search.net).
+it can be validated using a free to use service such as [OVAL BASE](https://oval.base-search.net).
 
 ## Add study level metadata files to the repository's document store
 
@@ -57,7 +57,7 @@ We recommend validating some of your metadata to expose potential systemic issue
 
 The CDC contains SSH study level metadata.
 If the repository contains (or is expected to contain) any non-SSH study level metadata,
-use the [OAI-PMH Set construct](http://www.openarchives.org/OAI/openarchivesprotocol.html#Set)
+use the [OAI-PMH Set construct](https://www.openarchives.org/OAI/openarchivesprotocol.html#Set)
 to partition the metadata, so that CDC can harvest the set containing only the SSH study level metadata.
 
 The Service Provider should have a process in place to update the XML files served by the

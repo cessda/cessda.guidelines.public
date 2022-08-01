@@ -19,7 +19,7 @@ which can contain groups for more granular access controls. The CESSDA VO has th
 Users can register using a [dedicated URL](https://mms.eduteams.org/registrar/?vo=eduTEAMS&targetexisting=%3Fvo%3Dcessda.vo.eduteams.org&targetnew=%3Fvo%3Dcessda.vo.eduteams.org&targetextended=%3Fvo%3Dcessda.vo.eduteams.org).
 
 To be compatible with eduTEAMS, services are required to support [OpenID Connect](https://openid.net/connect/) or
-[SAML](http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html).
+[SAML](https://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html).
 
 ## Connecting Services to eduTEAMS
 

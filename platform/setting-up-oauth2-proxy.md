@@ -22,7 +22,7 @@ A cookie secret must be generated for each deployment. This is done at the chart
 - Use the GCP health checks
   - These provide liveness and readiness probes
 - The backend is configured to use the standard service endpoint of the protected service
-  - `--upstream=http://mgmt-graylog:9000/`
+  - `--upstream=https://mgmt-graylog:9000/`
 
 ### Set up Keycloak
 

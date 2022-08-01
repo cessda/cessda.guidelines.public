@@ -24,7 +24,7 @@ ingests data, and enables the collection and processing of metrics such as count
 
 One of the important aspect of monitoring is how the metrics derived for the components in the infrastructure
 are used.
-CESSDA relies on two methodologies, [USE](http://www.brendangregg.com/usemethod.html)
+CESSDA relies on two methodologies, [USE](https://www.brendangregg.com/usemethod.html)
 and [RED](https://www.weave.works/blog/the-red-method-key-metrics-for-microservices-architecture/)
 for determining which metrics to use and for what.
 

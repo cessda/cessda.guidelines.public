@@ -40,7 +40,7 @@ It should be read in conjunction with the SML requirement
 - Management instructions
 
 - Configurations options (with examples), and location of configuration files
-  - see also 12 factor app, number 3 [Config - Store config in the environment](http://12factor.net/config))
+  - see also 12 factor app, number 3 [Config - Store config in the environment](https://12factor.net/config))
 
 - Confirmation that relevant application logs are written to STDOUT.
 
