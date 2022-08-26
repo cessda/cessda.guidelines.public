@@ -16,7 +16,7 @@ This can be done by
 git archive --format=tar TAG
 ```
 
-where `TAG` is the release's tag, though [Zenodo](https://guides.github.com/activities/citable-code/) has support for some other platforms.
+where `TAG` is the release's tag, though [Zenodo](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content) has support for some other platforms.
 
 The `README` and `Changelog` must be up to date prior to release
 and they must be added to the Zenodo record in addition to the tarball.
