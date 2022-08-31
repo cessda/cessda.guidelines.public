@@ -1,5 +1,5 @@
 ---
-title: Merging and Pull Requests
+title: Branching and Pull Requests
 parent: Software Development Guidelines
 grand_parent: Software Development
 published: true
@@ -24,7 +24,7 @@ An example commit message may be "#23: Implemented the framework for the new spi
 Branches should be pushed regularly from development machines to the remote repository.
 This allows continuous integration testing to run on the branch, giving feedback in case of compilation issues and test failures.
 
-## Pull Requests
+## Pull Requests and Code Review
 
 [Pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 are a structured workflow for merging changes from development branches or repositories into the main branch of a repository.
@@ -38,7 +38,7 @@ This should not be the same as the commit messages, but should be broader in sco
 Pull requests are reviewed by other members of the repository familiar with the repository's contents.
 If changes are necessary, feedback must be given on what changes are required.
 This iteration loop should continue until changes are resolved to the reviewer's expectations.
-Once this happens, the review should approve and merge the changes.
+Once this happens, the reviewer should approve and merge the changes.
 
 ## Manual Merging
 
