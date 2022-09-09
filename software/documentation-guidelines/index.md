@@ -1,5 +1,5 @@
 ---
-title: Software Development Guidelines
+title: Documentation Guidelines
 parent: Software Development
 has_children: true
 published: true

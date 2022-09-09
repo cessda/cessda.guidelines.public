@@ -1,9 +1,8 @@
 ---
-title: Branching and Pull Requests
-parent: Software Development Guidelines
-grand_parent: Software Development
+title: Merging and Pull Requests
+parent: Software Development
 published: true
-nav_order: 1804
+nav_order: 190
 ---
 # {{ page.title }}
 
