@@ -28,8 +28,9 @@ ELSST's canonical URLs are resolved to the Skosmos instance using redirects.
 Every concept has a unique identifier which is mapped using the URI template.
 
 * URN form: `urn:ddi:int.cessda.elsst:{uuid}:{version}`
-* URI form: `https://elsst.cessda.eu/id/{uuid}`
+* URI form: `https://elsst.cessda.eu/id/{uuid}` for the latest, `https://elsst.cessda.eu/id/{version}/{uuid}`
 
+Versions are written as `{year}-{month}` with the zero in the month omitted, e.g. 2022-1, 2013-12.
 We do not have a way to resolve versions at the moment.
 
 The form to use in the SKOS representation is still under discussion.
