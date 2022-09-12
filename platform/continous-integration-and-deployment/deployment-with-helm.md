@@ -1,7 +1,8 @@
 ---
 title: Using Helm to deploy products
-parent: Technical Infrastructure
-nav_order: 345
+parent: Continuous Integration and Deployment
+grand_parent: Technical Infrastructure
+nav_order: 3245
 ---
 
 # {{ page.title }}

@@ -1,7 +1,6 @@
 ---
 title: Common Interoperability Characteristics
-parent: Architectural Principles
-grand_parent: Technical Infrastructure
+parent: Technical Infrastructure
 published: true
 nav_order: 3101
 ---

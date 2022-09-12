@@ -1,7 +1,8 @@
 ---
 title: Deployment Pipeline Details
-parent: Technical Infrastructure
-nav_order: 335
+parent: Continuous Integration and Deployment
+grand_parent: Technical Infrastructure
+nav_order: 3235
 ---
 
 # {{ page.title }}

@@ -1,7 +1,7 @@
 ---
 title: Technical Infrastructure Overview
 parent: Technical Infrastructure
-nav_order: 315
+nav_order: 302
 ---
 
 # {{ page.title }}
@@ -64,8 +64,8 @@ The CESSDA Production GCP Project contains two Kubernetes clusters, `production-
 The management-cluster contains various utility, monitoring, testing and deployment tools,
 based on 3rd party components including:
 
-- [AlertManager]( https://prometheus.io/docs/alerting/alertmanager/) for automatic alerting when
- fault or alarm conditions occur
+- [AlertManager](https://prometheus.io/docs/alerting/alertmanager/) for automatic alerting when
+ faults or alarm conditions occur
 - [Certbot](https://certbot.eff.org/) for automated TLS/SSL certificate renewal
 - [Grafana](https://grafana.com/) for visualisation of monitoring data
 - [Graylog](https://www.graylog.org/) for log aggregation
@@ -73,12 +73,10 @@ based on 3rd party components including:
 - [Jenkins](https://jenkins.io/) for CI/CT - build, test and deploy components
 - [JMeter](https://jmeter.apache.org/) for stress testing
 - [Kibana](https://www.elastic.co/kibana) for analysing and visualising the contents of ElasticSearch indices
-- [Mailrelay](https://mailrelay.com/en) for notification of Jenkins build results
 - [Nexus](https://www.sonatype.com/product-nexus-repository) for local caching of build artefacts
 - [Prometheus](https://prometheus.io/) for  {% include glossary.html entry="(component)" text="component" %} monitoring
-- [Maven](https://maven.apache.org/) for Java software project build management
-- [Selenium](https://www.seleniumhq.org/) for User journey testing
-- [Sonar](https://en.wikipedia.org/wiki/Sonar) for software QA
+- [Selenium](https://www.seleniumhq.org/) for user journey testing
+- [SonarQube](https://www.sonarsource.com/products/sonarqube/) code quality analysis
 
 It also contains a Docker Registry - images built in the `management-cluster` are pushed to it,
 and deployments to other clusters in the project pull from it.
@@ -117,13 +115,12 @@ acts as the staging environment and the `production-cluster` acts as the product
 
 ## Application Deployment Process
 
-See also [Deployment Pipeline overview]({% link platform/deployment-pipeline-overview.md %})
-and [Deployment Pipeline details]({% link platform/deployment-pipeline-details.md %}).
+See also [Deployment Pipeline overview]({% link platform/continous-integration-and-deployment/deployment-pipeline-overview.md %})
+and [Deployment Pipeline details]({% link platform/continous-integration-and-deployment/deployment-pipeline-details.md %}).
 
 [Jenkins pipelines](https://jenkins.io/doc/book/pipeline/) are used to build, test and deploy components.
 The general principle is to build once, deploy many times, configure on launch and automatically test en route.
-Components are deployed to three different environments (the `development-cluster`,
-`staging-cluster` and `production-cluster` described above).
+Components are deployed to three different environments (the `development-cluster`, `staging-cluster` and `production-cluster` described above).
 The Docker registry is used as local storage to enable the 'build once, deploy many times' approach.
 
 ### Jenkinsfile examples

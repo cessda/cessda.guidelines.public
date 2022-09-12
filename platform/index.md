@@ -28,15 +28,17 @@ It links to the following pages (which can be read in conjunction with it, or on
 [GCP Main Project Structure]({% link platform/gcp-main-project-structure.md %}) - top down
 decomposition of the CESSDA Development and CESSDA Production GCP projects.
 
-[Deployment Pipeline Overview]({% link platform/deployment-pipeline-overview.md %}) - shows the deployment pipeline from
-the moment a developer commits code changes to the deployment of the  {% include glossary.html entry="(product)" text="product" %} to production.
+[Deployment Pipeline Overview]({% link platform/continous-integration-and-deployment/deployment-pipeline-overview.md %}) -
+shows the deployment pipeline from the moment a developer commits code changes to the deployment of the
+{% include glossary.html entry="(product)" text="product" %} to production.
 
-[Deployment Workflow]({% link platform/deployment-workflow.md %}) - shows the step-by-step process by which application
-components are deployed and the various technologies that are involved.
-[Helm charts]({% link platform/deployment-with-helm.md %}) are used to orchestrate the deployment of an application's components.
+[Deployment Workflow]({% link platform/continous-integration-and-deployment/deployment-workflow.md %}) -
+shows the step-by-step process by which application components are deployed and the various technologies that are involved.
+[Helm charts]({% link platform/continous-integration-and-deployment/deployment-with-helm.md %})
+are used to orchestrate the deployment of an application's components.
 
-[Deployment Pipeline Details]({% link platform/deployment-pipeline-details.md %}) - a step by step explanation of the
-build and deployment processes.
+[Deployment Pipeline Details]({% link platform/continous-integration-and-deployment/deployment-pipeline-details.md %}) -
+a step by step explanation of the build and deployment processes.
 
 [Deploying Core Products]({% link platform/deploying-core-products.md %}) - explains the responsibilities of various
 Actors in order to get a new release deployed.

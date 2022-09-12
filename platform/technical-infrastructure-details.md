@@ -40,8 +40,8 @@ as well as automating other routine development and deployment tasks.
 In this design, an upstream job would be created to parametrize the
 {% include glossary.html entry="(component)" text="component" %} repository
 and Deployment repository to form a pipeline that compile, builds, builds images,
-deploys to  development and staging environments as seen in
-[Deployment_Pipeline]({% link platform/deployment-pipeline-overview.md %}).
+deploys to development and staging environments as seen in
+[Deployment_Pipeline]({% link platform/continous-integration-and-deployment/deployment-pipeline-overview.md %}).
 Jenkins deploys automatically into the development and staging environments.
 Jenkins also gives a seamless and more robust way to integrate the entire toolchain for build, test, and deployment.
 

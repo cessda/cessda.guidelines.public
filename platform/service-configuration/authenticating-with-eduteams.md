@@ -1,7 +1,8 @@
 ---
 title: Authenticating with eduTEAMS
-parent: Technical Infrastructure
-nav_order: 392
+parent: Service Configuration
+grand_parent: Technical Infrastructure
+nav_order: 393
 ---
 
 # {{ page.title }}

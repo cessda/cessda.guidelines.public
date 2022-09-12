@@ -1,9 +1,9 @@
 ---
 title: Creating a Test Suite
-parent: Platform Team Responsibilities
-grand_parent: Technical Infrastructure
+parent: Platform Processes
+grand_parent: Continuous Integration and Deployment
 published: true
-nav_order: 3704
+nav_order: 32704
 ---
 
 # {{ page.title }}
@@ -31,7 +31,7 @@ The results are shown in the Jenkins job console output (see example below):
 
 ![Shiftleft Scan Results](../images/shiftleft-scan-results.png)
 
-## Software testing Pipeline  
+## Software testing Pipeline
 
 ![Testing Suite Pipeline](../images/testing-suite-pipeline.png)
 

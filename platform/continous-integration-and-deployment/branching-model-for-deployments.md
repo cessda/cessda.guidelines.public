@@ -1,7 +1,8 @@
 ---
 title: The CESSDA Branching Model for Deployments
-parent: Technical Infrastructure
-nav_order: 336
+parent: Continuous Integration and Deployment
+grand_parent: Technical Infrastructure
+nav_order: 3236
 ---
 
 # {{ page.title }}
@@ -12,7 +13,7 @@ See [Naming Conventions]({% link platform/naming-conventions.md %}).
 
 ## Overview
 
-CESSDA uses [Helm]({% link platform/deployment-with-helm.md %}) to manage deployments,
+CESSDA uses [Helm]({% link platform/continous-integration-and-deployment/deployment-with-helm.md %}) to manage deployments,
 which allows applications to be modelled as a single entity in Kubernetes.
 
 Deployments in CESSDA are deployed from dedicated repositories,
@@ -61,7 +62,7 @@ This selects a different database address depending on the cluster the applicati
 ## Branching Model
 
 The branching model is shared with CESSDA applications.
-See [deployment pipeline details]({% link platform/deployment-pipeline-details.md %}).
+See [deployment pipeline details]({% link platform/continous-integration-and-deployment/deployment-pipeline-details.md %}).
 
 `master` is the integration branch, where all changes are deployed from.
 Other branches are merged into `master` when the changes are integrated.
