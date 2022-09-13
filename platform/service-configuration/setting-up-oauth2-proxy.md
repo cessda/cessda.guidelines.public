@@ -2,7 +2,7 @@
 title: Setup and Configure oauth2-proxy
 parent: Service Configuration
 grand_parent: Technical Infrastructure
-nav_order: 391
+nav_order: 3901
 ---
 
 # {{ page.title }}

@@ -2,7 +2,7 @@
 title: Adding the Build Jenkinsfile
 parent: Building Docker Images on Jenkins
 grand_parent: Continuous Integration and Deployment
-nav_order: 32601
+nav_order: 33071
 ---
 
 # {{ page.title }}

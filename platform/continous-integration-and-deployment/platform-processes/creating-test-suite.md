@@ -3,7 +3,7 @@ title: Creating a Test Suite
 parent: Platform Processes
 grand_parent: Continuous Integration and Deployment
 published: true
-nav_order: 32704
+nav_order: 3704
 ---
 
 # {{ page.title }}

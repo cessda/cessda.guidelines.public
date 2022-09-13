@@ -2,7 +2,7 @@
 title: Rate limiting with HAProxy
 parent: Service Configuration
 grand_parent: Technical Infrastructure
-nav_order: 392
+nav_order: 3902
 ---
 
 # {{ page.title }}

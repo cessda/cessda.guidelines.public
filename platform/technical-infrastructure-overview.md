@@ -1,7 +1,7 @@
 ---
 title: Technical Infrastructure Overview
 parent: Technical Infrastructure
-nav_order: 302
+nav_order: 301
 ---
 
 # {{ page.title }}
