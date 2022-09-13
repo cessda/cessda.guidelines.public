@@ -1,6 +1,7 @@
 ---
-title: Platform Team Responsibilities
-parent: Technical Infrastructure
+title: Platform Processes
+parent: Continuous Integration and Deployment
+grand_parent: Technical Infrastructure
 has_children: true
 published: true
 nav_order: 370
@@ -18,8 +19,8 @@ See [Updating CI Tools]({% link platform/updating-ci-tools.md %}).
 
 ## Create repositories
 
-- {% include glossary.html entry="(application code)" text="application code" %}.
-        See ['Create a Bitbucket Repository']({% link platform/bitbucket-new-repo.md %}) for details.
+- {% include glossary.html entry="(application code)" text="application code" %}. See
+  ['Create a Bitbucket Repository']({% link platform/continous-integration-and-deployment/platform-processes/bitbucket-new-repo.md %}) for details.
 
 - Deployment, via Helm.
         See CDC Deployment (<https://bitbucket.org/cessda/cessda.cdc.deploy/src/master/>) repository for a working example.
@@ -36,7 +37,7 @@ See [Updating CI Tools]({% link platform/updating-ci-tools.md %}).
 ## Create Jenkins jobs
 
 A Jenkins jobs is needed to run the build, test and deployment pipeline.
-See [Create a New Jenkins Job]({% link platform/jenkins-new-job.md %}).
+See [Create a New Jenkins Job]({% link platform/continous-integration-and-deployment/platform-processes/jenkins-new-job.md %}).
 If there is a database component, then jobs are needed to backup and restore the database contents
 as well as deploying a specified version of the database schema.
 
@@ -49,10 +50,11 @@ Then update the
 ## Create/edit Jenkinsfile for each repository
 
 Provide a basic pipeline to build, test and deploy the component.
-See [Building Maven Projects With Jenkins]({% link platform/building-maven-projects-with-jenkins.md %}) for details.
+See [Building Maven Projects With Jenkins]({% link platform/continous-integration-and-deployment/building-maven-projects-with-jenkins.md %})
+for details.
 
-See also [TemplateJenkinsfileForJDK11MavenProjects]({% link platform/template-jenkinsfile-for-jdk11-maven-projects.md %})
-and [Adding the Deployment Jenkinsfile]({% link platform/adding-the-deployment-jenkinsfile.md %}).
+See also [TemplateJenkinsfileForJDK11MavenProjects]({% link platform/template-jenkinsfile-for-jdk11-maven-projects.md %}) and
+[Adding the Deployment Jenkinsfile]({% link platform/continous-integration-and-deployment/building-docker-images-on-jenkins/adding-the-deployment-jenkinsfile.md %}).
 
 Work with developers to create test suites to be used by the pipeline.
 

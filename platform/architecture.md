@@ -1,7 +1,6 @@
 ---
 title: Architectural Principles
 parent: Technical Infrastructure
-has_children: true
 published: true
 nav_order: 310
 ---

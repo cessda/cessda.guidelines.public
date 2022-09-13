@@ -1,7 +1,7 @@
 ---
 title: Create a Bitbucket Repository
-parent: Platform Team Responsibilities
-grand_parent: Technical Infrastructure
+parent: Platform Processes
+grand_parent: Continuous Integration and Deployment
 published: true
 nav_order: 3701
 ---

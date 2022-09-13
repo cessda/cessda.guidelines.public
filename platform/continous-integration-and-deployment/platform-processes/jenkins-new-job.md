@@ -1,7 +1,7 @@
 ---
 title: Create a New Jenkins Job
-parent: Platform Team Responsibilities
-grand_parent: Technical Infrastructure
+parent: Platform Processes
+grand_parent: Continuous Integration and Deployment
 published: true
 nav_order: 3703
 ---
@@ -21,7 +21,7 @@ Email notifications can be sent automatically whenever a job succeeds or fails (
 ## Create new job
 
 Click on *New Item*, enter a name and select *Copy existing Item* option
-(enter the name of the relevant template in the *Copy from* text box). Finally press *OK* to create the job.  
+(enter the name of the relevant template in the *Copy from* text box). Finally press *OK* to create the job.
 
 ![Jenkins New Item](../images/jenkins-new-item.png)
 

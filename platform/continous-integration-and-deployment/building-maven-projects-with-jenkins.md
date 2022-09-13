@@ -1,7 +1,8 @@
 ---
 title: Building Maven Projects with Jenkins
-parent: Technical Infrastructure
-nav_order: 355
+parent: Continuous Integration and Deployment
+grand_parent: Technical Infrastructure
+nav_order: 3306
 ---
 
 # {{ page.title }}
@@ -15,7 +16,9 @@ See [Naming Conventions]({% link platform/naming-conventions.md %}).
 The de facto build tool for Java Applications is Maven.
 A Jenkinsfile is used to automate the build process.
 
-See also [Building Docker Images on Jenkins]({% link platform/building-docker-images-on-jenkins.md %}) for related information.
+See also
+[Building Docker Images on Jenkins]({% link platform/continous-integration-and-deployment/building-docker-images-on-jenkins/index.md %})
+for related information.
 
 The assumption is that Java and Maven are installed on the Jenkins system node.
 Alternatively the Jenkins subordinate container should be configured to run an image which has Java and Maven pre-installed.
@@ -28,7 +31,7 @@ A Jenkinsfile will always start with a pipeline object that encapsulates the ent
 The first step is to define the agent to use for the build as shown below:
 
 ```groovy
-pipeline{
+pipeline {
     agent any
 }
 ```

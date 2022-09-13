@@ -1,7 +1,8 @@
 ---
 title: Building with Docker
-parent: Technical Infrastructure
-nav_order: 365
+parent: Continuous Integration and Deployment
+grand_parent: Technical Infrastructure
+nav_order: 3308
 ---
 
 # {{ page.title }}

@@ -1,8 +1,8 @@
 ---
 title: Adding the Deployment Jenkinsfile
 parent: Building Docker Images on Jenkins
-grand_parent: Technical Infrastructure
-nav_order: 3602
+grand_parent: Continuous Integration and Deployment
+nav_order: 33072
 ---
 
 # {{ page.title }}
@@ -48,5 +48,6 @@ stage('Create deployment') {
 ```
 
 Helm deploys the component with the name `${productName}` to the namespace `${productName}` using the image tag `${imageTag}`.
-See [the Helm documentation](https://helm.sh/docs/) and [using Helm to deploy products]({% link platform/deployment-with-helm.md %})
+See [the Helm documentation](https://helm.sh/docs/) and
+[using Helm to deploy products]({% link platform/continous-integration-and-deployment/deployment-with-helm.md %})
 for more information.
