@@ -1,7 +1,8 @@
 ---
 title: Documentation Tooling
-parent: Technical Infrastructure
-nav_order: 301
+parent: Software Development Guidelines
+grand_parent: Software Development
+nav_order: 1804
 ---
 
 # {{ page.title }}
@@ -134,4 +135,3 @@ task :htmlproofer do
   HTMLProofer.check_directory("./_site", options).run
 end
 ```
-

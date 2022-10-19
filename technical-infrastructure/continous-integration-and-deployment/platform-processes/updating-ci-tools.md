@@ -1,7 +1,8 @@
 ---
 title: Updating CI Tools
-parent: Technical Infrastructure
-nav_order: 375
+parent: Platform Processes
+grand_parent: Continuous Integration and Deployment
+nav_order: 3702
 ---
 
 # {{ page.title }}
