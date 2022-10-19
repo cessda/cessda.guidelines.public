@@ -1,5 +1,5 @@
 ---
-title: Contributor license agreement
+title: Contributor License Agreement
 parent: Online forms
 nav_order: 610
 ---
@@ -17,15 +17,14 @@ code contributor, external contractor.
 
 Depending on your role, you may be interested in:
 
-* creating/editing software (see [Software development guidelines](https://docs.tech.cessda.eu/software/index.html));
-
-* creating/editing supporting documentation (see [Documentation guidelines](https://docs.tech.cessda.eu/sml/ca1-documentation.html));
-
-* creating/updating items in an issue tracker (see [Issue tracker guidelines](https://docs.tech.cessda.eu/index.html)).
+* developing/maintaining software (see [Software development guidelines](/software/index.html));
+* creating/editing supporting documentation (see [Documentation guidelines](/sml/ca1-documentation.html));
+* reporting/updating items in an issue tracker (see [Issue tracker guidelines](/software/issue-tracking.html)).
 
 ## Purpose
 
-Use this form to request access to CESSDA's [Git code repositories, hosted on Bitbucket](https://bitbucket.org/cessda/).
+Use this form to request write access to CESSDA's Git code repositories, hosted on [Bitbucket](https://bitbucket.org/cessda/)
+and [GitHub](https://github.com/cessda/).
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfS2sOjZ2Ax5nIhvONY5E1yVsDgMkNzl0yw2TbMTA-5MYdCXQ/viewform?embedded=true"
   width="640" height="1163" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
