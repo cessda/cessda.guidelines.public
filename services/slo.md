@@ -20,5 +20,3 @@ nav_order: 220
 
 CESSDA currently uses [Uptime Robot](https://uptimerobot.com/about) to monitor
 availability of its production systems.
-
-

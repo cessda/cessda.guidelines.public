@@ -29,4 +29,3 @@ the following criteria must be met:
 
 * All applicable Software Maturity Level CAs must reach "Minimum"
 * The quality gate is relaxed to 50% Code Test Coverage and 10% Duplicated Code Lines
-

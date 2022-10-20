@@ -79,4 +79,3 @@ By default, development builds are created. The release process is
 1. Change `development_status` to `false` in `_config.yml` and double-check the `version`
 1. Build & release the outcome
 1. Increase the `version` in `_config.yml` and reset `development_status` to `true`
-
