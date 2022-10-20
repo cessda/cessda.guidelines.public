@@ -77,11 +77,11 @@ up to the acceptance testing phase.
 
 ### Operational
 
-See [Operational documentation guidelines]({% link software/operational-documentation.md %}).
+See [Operational documentation guidelines]({% link software/documentation-guidelines/operational-documentation.md %}).
 
 ### Development
 
-See [Development documentation guidelines]({% link software/development-documentation.md %}).
+See [Development documentation guidelines]({% link software/documentation-guidelines/development-documentation.md %}).
 
 ## Acceptance
 
