@@ -43,11 +43,11 @@ The owner is always **cessda** (as per the screenshot below), but the Project is
 
 ### Specify the basic details
 
-![New Git Repository](../images/new-git-repo.png)
+![New Git Repository](../../../images/new-git-repo.png)
 
 ### Set advanced options, as required
 
-![Repository advanced options](../images/bitbucket-advanced-options.png)
+![Repository advanced options](../../../images/bitbucket-advanced-options.png)
 
 ### Do one of the following
 
@@ -81,4 +81,4 @@ Note that docs-as-code repositories omit the standard content files that have lo
 
 Add any groups that have write permission for the repository to the 'Merge via pull request' section.
 
-![Set branch permissions](../images/branch-permissions.png)
+![Set branch permissions](../../../images/branch-permissions.png)

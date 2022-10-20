@@ -73,7 +73,7 @@ stage('Run Selenium Tests')
 
 ### Deploying to Production
 
-![Figure 4: The pipeline for deploying applications to production](../images/gcp23-figure4.png)
+![Figure 4: The pipeline for deploying applications to production](../../images/gcp23-figure4.png)
 
 **Figure 4:** *The pipeline for deploying applications to production*
 
@@ -81,9 +81,9 @@ Deploying to the `production-cluster` is initiated by a manual step and is done 
 `cessda.${app_name}.deploy.prod`.
 To deploy a new version of the application, select ‘Build with parameters’ and enter the staging build number that you want to deploy.
 
-![Screenshot of the Build with Parameters button in Jenkins](../images/gcp23-figure5-part1.png)
+![Screenshot of the Build with Parameters button in Jenkins](../../images/gcp23-figure5-part1.png)
 
-![Screenshot of the parameters page in Jenkins](../images/gcp23-figure5-part2.png)
+![Screenshot of the parameters page in Jenkins](../../images/gcp23-figure5-part2.png)
 
 **Figure 5:** *An example of the production build job from CDC*
 
