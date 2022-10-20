@@ -5,4 +5,4 @@ has_children: true
 nav_order: 390
 ---
 
-Content here
+# {{ page.title }}
