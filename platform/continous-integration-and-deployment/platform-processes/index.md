@@ -54,7 +54,7 @@ See [Building Maven Projects With Jenkins]({% link platform/continous-integratio
 for details.
 
 See also [TemplateJenkinsfileForJDK11MavenProjects]({% link platform/template-jenkinsfile-for-jdk11-maven-projects.md %}) and
-[Adding the Deployment Jenkinsfile]({% link platform/continous-integration-and-deployment/building-docker-images-on-jenkins/adding-the-deployment-jenkinsfile.md %}).
+[Adding the Deployment Jenkinsfile](platform/continous-integration-and-deployment/building-docker-images-on-jenkins/adding-the-deployment-jenkinsfile.html).
 
 Work with developers to create test suites to be used by the pipeline.
 
@@ -62,6 +62,6 @@ Work with developers to create test suites to be used by the pipeline.
         If relevant, ensure the job for deploying a specified version of the database schema runs successfully.
 
 - Staging. Work with users and developers to approve production builds.
-        See the [Software Releases]({% link software/releases.md %}) proceedure for details.
+        See the [Software Releases]({% link software/releases.md %}) procedure for details.
 
 - Production. If relevant, ensure the database backup and restore jobs run successfully.
