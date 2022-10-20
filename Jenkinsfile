@@ -57,7 +57,7 @@ pipeline {
 						sh "sed -i s#JENKINSJOB#\"https://jenkins.cessda.eu/job/cessda.guidelines.public/job/${env.BRANCH_NAME}/${env.BUILD_NUMBER}/\"#g _config.jenkins.yml"
 						sh "jekyll build --config _config.yml,_config.jenkins.yml"
 					}
-					when { not { branch 'master' } }
+					when { not { branch 'main' } }
 					post {
 						success {
 							publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: '_site/', reportFiles: 'index.html', reportName: 'Build Result', reportTitles: ''])
@@ -77,13 +77,13 @@ pipeline {
 					waitForQualityGate abortPipeline: true
 				}
 			}
-			when { branch 'master' }
+			when { branch 'main' }
 		}
 		stage('Build Nginx Container') {
 			steps {
 				sh "docker build -t ${imageTag} -f nginx.Dockerfile ."
 			}
-			when { branch 'master' }
+			when { branch 'main' }
 		}
 		stage('Push Docker Container') {
 			steps {
@@ -91,13 +91,13 @@ pipeline {
 				sh "docker push ${imageTag}"
 				sh "gcloud container images add-tag ${imageTag} ${docker_repo}/${productName}-${componentName}:${env.BRANCH_NAME}-latest"
 			}
-			when { branch 'master' }
+			when { branch 'main' }
 		}
 		stage('Deploy Guidelines') {
 			steps {
 				build job: 'cessda.guidelines.deploy/master', parameters: [string(name: 'imageTag', value: "${env.BRANCH_NAME}-${env.BUILD_NUMBER}")]
 			}
-			when { branch 'master' }
+			when { branch 'main' }
 		}
 	}
 }

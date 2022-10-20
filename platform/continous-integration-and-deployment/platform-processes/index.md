@@ -54,7 +54,7 @@ See [Building Maven Projects With Jenkins]({% link platform/continous-integratio
 for details.
 
 See also [TemplateJenkinsfileForJDK11MavenProjects]({% link platform/template-jenkinsfile-for-jdk11-maven-projects.md %}) and
-[Adding the Deployment Jenkinsfile](platform/continous-integration-and-deployment/building-docker-images-on-jenkins/adding-the-deployment-jenkinsfile.html).
+[Adding the Deployment Jenkinsfile](../building-docker-images-on-jenkins/adding-the-deployment-jenkinsfile.html).
 
 Work with developers to create test suites to be used by the pipeline.
 

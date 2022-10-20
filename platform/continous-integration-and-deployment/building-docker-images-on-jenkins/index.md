@@ -19,8 +19,8 @@ This automation ensures that all applications are produced with common naming an
 
 ## For Developers
 
-See [Adding the Build Jenkinsfile](platform/continous-integration-and-deployment/building-docker-images-on-jenkins/adding-the-build-jenkinsfile.html)
+See [Adding the Build Jenkinsfile](adding-the-build-jenkinsfile.html)
 
 ## For Platform team
 
-See [Adding the Deployment Jenkinsfile](platform/continous-integration-and-deployment/building-docker-images-on-jenkins/adding-the-deployment-jenkinsfile.html)
+See [Adding the Deployment Jenkinsfile](adding-the-deployment-jenkinsfile.html)
