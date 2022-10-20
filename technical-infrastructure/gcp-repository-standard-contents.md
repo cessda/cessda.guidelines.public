@@ -24,7 +24,7 @@ The `.gitignore` should be populated with file that are not needed in the reposi
 results from compilation, reports from test frameworks, cached files etc.
 
 Here are several [`.gitignore` templates](https://github.com/github/gitignore) hosted on GitHub.
-The `.gitignore` templates should be customised for any application specific paths, such as secrets and build directoryies.
+The `.gitignore` templates should be customised for any application specific paths, such as secrets and build directories.
 
 ### CHANGELOG.md
 
