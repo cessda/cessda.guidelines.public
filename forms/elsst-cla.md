@@ -1,5 +1,5 @@
 ---
-title: ELSST CLA
+title: ELSST Contributor License Agreement
 parent: Online forms
 nav_order: 640
 ---
@@ -9,7 +9,7 @@ nav_order: 640
 ## Audience
 
 CESSDA Service Provider staff that manage and/or maintain the content of CESSDA's
-[European Language Social Science Thesaurus (ELSST)](https://thesauri.cessda.eu/elsst/en/).
+[European Language Social Science Thesaurus (ELSST)](https://elsst.cessda.eu/).
 
 Typical roles are Content Contact, content editor.
 
