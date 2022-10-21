@@ -134,4 +134,3 @@ task :htmlproofer do
   HTMLProofer.check_directory("./_site", options).run
 end
 ```
-

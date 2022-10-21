@@ -68,4 +68,4 @@ See [deployment pipeline details]({% link platform/continous-integration-and-dep
 Other branches are merged into `master` when the changes are integrated.
 Only the master branch is deployed.
 
-![Branching Model Diagram](../images/branch-diagram.svg)
+![Branching Model Diagram](../../images/branch-diagram.svg)

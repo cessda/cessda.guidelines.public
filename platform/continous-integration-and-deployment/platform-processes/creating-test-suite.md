@@ -29,11 +29,11 @@ The tests are performed as part of the build process. If the tests pass, the Doc
 The Static Analysis (SAST) scan runs against the newly built Docker image.
 The results are shown in the Jenkins job console output (see example below):
 
-![Shiftleft Scan Results](../images/shiftleft-scan-results.png)
+![Shiftleft Scan Results](../../../images/shiftleft-scan-results.png)
 
 ## Software testing Pipeline
 
-![Testing Suite Pipeline](../images/testing-suite-pipeline.png)
+![Testing Suite Pipeline](../../../images/testing-suite-pipeline.png)
 
 ### Testing Suite Jenkinsfile template (cessda.product.test)
 

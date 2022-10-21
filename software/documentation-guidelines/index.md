@@ -69,7 +69,7 @@ See for instance the [guidelines for Developers](https://docs.tech.cessda.eu/sof
 End user documentation may be added prior to release, and is not a pre-requisite for delivery.
 It should be created and maintained using the [documentation as code approach]({% link software/content-management.md %}).
 
-See [End User documentation guidelines]({% link software/enduser-documentation.md %}).
+See [End User documentation guidelines]({% link software/documentation-guidelines/enduser-documentation.md %}).
 
 Operational and Development documentation must be made available
 and should be maintained and updated throughout the development process,
@@ -77,11 +77,11 @@ up to the acceptance testing phase.
 
 ### Operational
 
-See [Operational documentation guidelines]({% link software/operational-documentation.md %}).
+See [Operational documentation guidelines]({% link software/documentation-guidelines/operational-documentation.md %}).
 
 ### Development
 
-See [Development documentation guidelines]({% link software/development-documentation.md %}).
+See [Development documentation guidelines]({% link software/documentation-guidelines/development-documentation.md %}).
 
 ## Acceptance
 

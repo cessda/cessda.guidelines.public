@@ -38,4 +38,3 @@ referencing the relevant issues in the repository is provided.
 
 For contributions to upstream products, the link to the merged pull request(s) can be used instead,
 the list of changes done must then be included there.
-

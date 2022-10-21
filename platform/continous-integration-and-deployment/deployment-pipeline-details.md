@@ -20,7 +20,7 @@ check code quality and identify any significant issues (such as lack of test cov
 If the pre-defined [quality gates](https://docs.sonarqube.org/latest/user-guide/quality-gates/) are not passed then there
 is the option to stop the pipeline and abandon the current build or deployment process.
 
-![Figure 1: The pipeline for building applications from source code](../images/gcp23-figure1.png)
+![Figure 1: The pipeline for building applications from source code](../../images/gcp23-figure1.png)
 
 **Figure 1:** *The pipeline for building applications from source code*
 
@@ -33,7 +33,7 @@ The pipeline is used to deploy the same build of a
 {% include glossary.html entry="(component)" text="component" %} (the Docker container) to the development,
 staging and production environments, but different tests take place between each deployment step.
 
-![Figure 2: The pipeline for automatically deploying applications to staging](../images/gcp23-figure2.png)
+![Figure 2: The pipeline for automatically deploying applications to staging](../../images/gcp23-figure2.png)
 
 **Figure 2:** *The pipeline for automatically deploying applications to staging*
 
@@ -73,7 +73,7 @@ stage('Run Selenium Tests')
 
 ### Deploying to Production
 
-![Figure 4: The pipeline for deploying applications to production](../images/gcp23-figure4.png)
+![Figure 4: The pipeline for deploying applications to production](../../images/gcp23-figure4.png)
 
 **Figure 4:** *The pipeline for deploying applications to production*
 
@@ -81,9 +81,9 @@ Deploying to the `production-cluster` is initiated by a manual step and is done 
 `cessda.${app_name}.deploy.prod`.
 To deploy a new version of the application, select ‘Build with parameters’ and enter the staging build number that you want to deploy.
 
-![Screenshot of the Build with Parameters button in Jenkins](../images/gcp23-figure5-part1.png)
+![Screenshot of the Build with Parameters button in Jenkins](../../images/gcp23-figure5-part1.png)
 
-![Screenshot of the parameters page in Jenkins](../images/gcp23-figure5-part2.png)
+![Screenshot of the parameters page in Jenkins](../../images/gcp23-figure5-part2.png)
 
 **Figure 5:** *An example of the production build job from CDC*
 

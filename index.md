@@ -28,5 +28,3 @@ This includes information about the underlying architectural principles.
 {% else %}
 This is version {{ site.version }}, released on {{ site.time | date: "%d %B %Y" }}.
 {% endif %}
-
-
