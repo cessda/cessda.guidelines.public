@@ -9,7 +9,7 @@ nav_order: 3305
 
 ## Terminology
 
-See [Naming Conventions]({% link platform/naming-conventions.md %}).
+See [Naming Conventions]({% link technical-infrastructure/naming-conventions.md %}).
 
 ## An Overview
 

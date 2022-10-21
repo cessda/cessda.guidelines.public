@@ -10,7 +10,7 @@ nav_order: 3701
 
 ## Terminology
 
-See [Naming Conventions]({% link platform/naming-conventions.md %}).
+See [Naming Conventions]({% link technical-infrastructure/naming-conventions.md %}).
 
 ## Instructions for members of the Platform Team
 
@@ -73,7 +73,7 @@ The owner is always **cessda** (as per the screenshot below), but the Project is
     an existing tool](<https://support.atlassian.com/bitbucket-cloud/docs/import-or-convert-code-from-an-existing-tool/>).
     for more details.
 
-In each case, check that the [standard contents]({% link platform/gcp-repository-standard-contents.md %})
+In each case, check that the [standard contents]({% link technical-infrastructure/gcp-repository-standard-contents.md %})
 for code repositories are present (some of which can remain unchanged, others need to be edited by the code contributors).
 Note that docs-as-code repositories omit the standard content files that have lowercase names.
 

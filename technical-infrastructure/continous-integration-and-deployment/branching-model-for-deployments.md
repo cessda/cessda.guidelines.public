@@ -9,11 +9,11 @@ nav_order: 3304
 
 ## Terminology
 
-See [Naming Conventions]({% link platform/naming-conventions.md %}).
+See [Naming Conventions]({% link technical-infrastructure/naming-conventions.md %}).
 
 ## Overview
 
-CESSDA uses [Helm]({% link platform/continous-integration-and-deployment/deployment-with-helm.md %}) to manage deployments,
+CESSDA uses [Helm]({% link technical-infrastructure/continous-integration-and-deployment/deployment-with-helm.md %}) to manage deployments,
 which allows applications to be modelled as a single entity in Kubernetes.
 
 Deployments in CESSDA are deployed from dedicated repositories,
@@ -62,7 +62,7 @@ This selects a different database address depending on the cluster the applicati
 ## Branching Model
 
 The branching model is shared with CESSDA applications.
-See [deployment pipeline details]({% link platform/continous-integration-and-deployment/deployment-pipeline-details.md %}).
+See [deployment pipeline details]({% link technical-infrastructure/continous-integration-and-deployment/deployment-pipeline-details.md %}).
 
 `master` is the integration branch, where all changes are deployed from.
 Other branches are merged into `master` when the changes are integrated.

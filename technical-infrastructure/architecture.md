@@ -9,7 +9,7 @@ nav_order: 310
 
 ## Terminology
 
-See [Naming Conventions]({% link platform/naming-conventions.md %}).
+See [Naming Conventions]({% link technical-infrastructure/naming-conventions.md %}).
 
 ## Overview
 
@@ -39,7 +39,7 @@ that there is adequate test case coverage and that basic interoperability standa
 As a result, substandard code cannot make its way in to production, instead any necessary remedial actions will be highlighted.
 
 Without an intentional (as opposed to ad-hoc or emergent) Technical Architecture,
-there is a danger that the [CESSDA common interoperability]({% link platform/architecture-interoperability.md %})
+there is a danger that the [CESSDA common interoperability]({% link technical-infrastructure/architecture-interoperability.md %})
 characteristics may be addressed in such a diverse and incompatible manner that the intended benefits do not materialise,
 resulting in a {% include glossary.html entry="RI" text="RI" %} that:
 

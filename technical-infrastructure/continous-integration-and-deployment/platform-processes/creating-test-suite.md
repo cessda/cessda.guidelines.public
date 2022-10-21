@@ -10,7 +10,7 @@ nav_order: 3704
 
 ## Terminology
 
-See [Naming Conventions]({% link platform/naming-conventions.md %}).
+See [Naming Conventions]({% link technical-infrastructure/naming-conventions.md %}).
 
 ## Overview
 
@@ -37,5 +37,5 @@ The results are shown in the Jenkins job console output (see example below):
 
 ### Testing Suite Jenkinsfile template (cessda.product.test)
 
-See [Template Jenkinsfile]({% link platform/template-jenkinsfile.md %}) or
-[Template Jenkinsfile for JDK11 Maven projects]({% link platform/template-jenkinsfile-for-jdk11-maven-projects.md %})
+See [Template Jenkinsfile]({% link technical-infrastructure/template-jenkinsfile.md %}) or
+[Template Jenkinsfile for JDK11 Maven projects]({% link technical-infrastructure/template-jenkinsfile-for-jdk11-maven-projects.md %})

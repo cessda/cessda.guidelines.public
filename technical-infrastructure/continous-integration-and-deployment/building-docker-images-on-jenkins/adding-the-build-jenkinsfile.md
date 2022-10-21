@@ -9,7 +9,7 @@ nav_order: 33071
 
 ## Terminology
 
-See [Naming Conventions]({% link platform/naming-conventions.md %}).
+See [Naming Conventions]({% link technical-infrastructure/naming-conventions.md %}).
 
 ## Overview
 
@@ -41,7 +41,7 @@ Unique tags are used in production environments to set the deployed {% include g
 
 The next step is to define the agent that the build will run on. This can be done globally for the entire pipeline, or per stage.
 The default agent is specified using the syntax `agent any`.
-See the [Example Jenkinsfile]({% link platform/template-jenkinsfile-for-jdk11-maven-projects.md %})
+See the [Example Jenkinsfile]({% link technical-infrastructure/template-jenkinsfile-for-jdk11-maven-projects.md %})
 for more variations on how to configure agents.
 
 The stages used to build the {% include glossary.html entry="(component)" text="component" %} are defined next.

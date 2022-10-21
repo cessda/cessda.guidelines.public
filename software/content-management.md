@@ -24,4 +24,4 @@ If all the checks pass, the pages are all deployed as a static website at
 
 E.g. `https://datacatalogue.cessda.eu/documentation/`
 
-A more detailed (and more technical) explanation can be found in [documentation tooling]({% link platform/documentation-tooling.md %}).
+A more detailed (and more technical) explanation can be found in [documentation tooling]({% link technical-infrastructure/documentation-tooling.md %}).
