@@ -78,7 +78,9 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo "Deploying on the CESSDA Cloud Platform"
-                build job: 'cessda.deploy.app/main', parameters: [string(name: 'imageTag', value: "${env.BRANCH_NAME}-${env.BUILD_NUMBER}")], wait: false
+                build job: 'cessda.deploy.app/main', parameters: [
+                  string(name: 'imageTag', value: "${env.BRANCH_NAME}-${env.BUILD_NUMBER}")
+                ], wait: false
             }
         }
     }
