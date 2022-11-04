@@ -31,20 +31,20 @@ Make sure to use the default settings for the build.
 This will create a new Docker image and push it to the CESSDA repository.
 Make a note of the image tag created. It should match the build number in Jenkins.
 
-![Jenkins build](../images/jenkins-build-82.png)
+![Jenkins build](../../../images/jenkins-build-82.png)
 
 In the Google Cloud console, open the *cessda-prod* project, go to Kubernetes Engine -> Workloads
 and select the *mgmt-jenkins* Stateful Set. Click to open the details page.
 
-![Jenkins Workload](../images/gcp-jenkins-workload.png)
+![Jenkins Workload](../../../images/gcp-jenkins-workload.png)
 
 Now select the YAML tab to see the Jenkins Stateful Set definition.
 
-![Jenkins YAML file header](../images/jenkins-yaml-details.png)
+![Jenkins YAML file header](../../../images/jenkins-yaml-details.png)
 
 Change the Stateful Set’s image tag to be the one built by Jenkins, then click save.
 Jenkins should then update. This process can take several minutes to complete.
 
-![Jenkins YAML file image version](../images/jenkins-yaml-details-build-82.png)
+![Jenkins YAML file image version](../../../images/jenkins-yaml-details-build-82.png)
 
 If Jenkins doesn’t restart after updating, revert the image tag back to the previous version.
