@@ -15,7 +15,7 @@ See [Naming Conventions]({% link technical-infrastructure/naming-conventions.md 
 
 ## Update {% include glossary.html entry="CI" text="CI" %} Tools
 
-See [Updating CI Tools]({% link technical-infrastructure/updating-ci-tools.md %}).
+See [Updating CI Tools]({% link technical-infrastructure/continous-integration-and-deployment/platform-processes/updating-ci-tools.md %}).
 
 ## Create repositories
 
