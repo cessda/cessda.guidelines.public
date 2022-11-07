@@ -39,16 +39,13 @@ that there is adequate test case coverage and that basic interoperability standa
 As a result, substandard code cannot make its way in to production, instead any necessary remedial actions will be highlighted.
 
 Without an intentional (as opposed to ad-hoc or emergent) Technical Architecture,
-there is a danger that the [CESSDA common interoperability]({% link technical-infrastructure/architecture-interoperability.md %})
-characteristics may be addressed in such a diverse and incompatible manner that the intended benefits do not materialise,
+there is a danger that the [CESSDA interoperability characteristics]({% link software/interoperability.md %})
+may be addressed in such a diverse and incompatible manner that the intended benefits do not materialise,
 resulting in a {% include glossary.html entry="RI" text="RI" %} that:
 
 - is not joined up
-
 - duplicates data and/or metadata
-
 - contains components that can only be installed, configured or operated by the Service Providers that developed them.
-
 - provides a sub-optimal User experience in many ways.
 
 The combination of a common development toolchain and the [Software Maturity Levels]({% link sml/index.md %})
