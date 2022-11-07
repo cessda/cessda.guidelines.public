@@ -15,7 +15,7 @@ The guidelines also define how CESSDA [operates services]({% link services/index
 The [Software Maturity Levels]({% link sml/index.md %})
 that form the basis for CESSDA Quality Assurance are also included.
 
-A description of the [Technical Infrastructure]({% link platform/index.md %})
+A description of the [Technical Infrastructure]({% link technical-infrastructure/index.md %})
 that CESSDA provides for the products to run on is also included.
 This includes information about the underlying architectural principles.
 
@@ -28,5 +28,3 @@ This includes information about the underlying architectural principles.
 {% else %}
 This is version {{ site.version }}, released on {{ site.time | date: "%d %B %Y" }}.
 {% endif %}
-
-

@@ -8,10 +8,7 @@ nav_order: 600
 
 Use the online forms to:
 
-* request access to CESSDA's Git repositories (Contributor license agreement)
-
-* ask for a new Git repository to be created (Repository request)
-
-* complete a Software Maturity Levels assessment for a Product (Software Maturity Levels)
-
-* request access to the ELSST content editing tool (ELSST CLA)
+* request access to CESSDA's Git repositories ([Contributor License Agreement](cla.html))
+* ask for a new Git repository to be created ([Repository Request](repo-request.html))
+* complete a Software Maturity Levels assessment for a Product ([Software Maturity Levels](sml.html))
+* request access to the ELSST content editing tool ([ELSST Contributor License Agreement](elsst-cla.html))
