@@ -24,12 +24,12 @@ The observability strategy is made up of three pillars:
 
 1. **Metrics Monitoring:** Metrics represent the raw measurements of resource usage or behaviour that can be
   observed and collected throughout the infrastructure.
-  The [monitoring system]({% link observability/monitoring-overview.md %}) collects, exposes,
+  The [monitoring system]({% link technical-infrastructure/observability/monitoring-overview.md %}) collects, exposes,
   and analyses those values to improve awareness of the characteristics and behaviour of the components
   the the core products are composed of.
 1. **Logging & aggregation:** Logs are detailed records of events that occur within the components
   or the Infrastructure in general.
-  The [central logging system]({% link observability/logging-overview.md %}) collects, aggregates,
+  The [central logging system]({% link technical-infrastructure/observability/logging-overview.md %}) collects, aggregates,
   filters and enriches the contents of the logs and enables visualisation of system and product events,
   which can aid debugging and problem solving.
 1. **Alerting:** Alerting is the responsive component of the observability system that performs actions based on

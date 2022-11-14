@@ -86,4 +86,4 @@ rely on exporters to expose metrics to Prometheus.
 - Metrics data stored in a time series database are retained on persistent volumes in the clusters.
   The retention policy set on Prometheus is based on ensuring that the data does not exceed the available storage space.
 
-![Monitoring Architecture](../images/monitoring-architecture.jpg)
+![Monitoring Architecture](../../images/monitoring-architecture.jpg)
