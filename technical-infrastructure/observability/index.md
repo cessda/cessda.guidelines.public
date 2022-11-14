@@ -27,12 +27,12 @@ The observability strategy is made up of three pillars:
   The [monitoring system]({% link observability/monitoring-overview.md %}) collects, exposes,
   and analyses those values to improve awareness of the characteristics and behaviour of the components
   the the core products are composed of.
-2. **Logging & aggregation:** Logs are detailed records of events that occur within the components
+1. **Logging & aggregation:** Logs are detailed records of events that occur within the components
   or the Infrastructure in general.
   The [central logging system]({% link observability/logging-overview.md %}) collects, aggregates,
   filters and enriches the contents of the logs and enables visualisation of system and product events,
   which can aid debugging and problem solving.
-3. **Alerting:** Alerting is the responsive component of the observability system that performs actions based on
+1. **Alerting:** Alerting is the responsive component of the observability system that performs actions based on
   changes in metrics, threshold violations or/and the occurrence of unacceptable conditions.
 
 Alert notifications, sent via email or dedicated Slack channels, are based on the following elements:
