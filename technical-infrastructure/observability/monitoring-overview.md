@@ -1,7 +1,7 @@
 ---
 title: Monitoring overview
 parent: Observability
-nav_order: 510
+nav_order: 3951
 ---
 
 # {{ page.title }}
@@ -29,20 +29,13 @@ and [RED](https://www.weave.works/blog/the-red-method-key-metrics-for-microservi
 for determining which metrics to use and for what.
 
 1. The Utilization, Saturation and Errors (USE) Method is used for analysing the performance of the infrastructure
-
-- **U**tilization: the average time that the resource was busy servicing work
-
-- **S**aturation: the degree to which the resource has extra work which it can't service, often queued
-
-- **E**rrors: the count of error events
-
+  - **U**tilization: the average time that the resource was busy servicing work
+  - **S**aturation: the degree to which the resource has extra work which it can't service, often queued
+  - **E**rrors: the count of error events
 1. The Rate, Error and Duration (RED) Method is used to derive user experience metrics, based on the behaviour of a product's components.
-
-- **R**ate - the number of requests, per second, being served.
-
-- **E**rrors - the number of failed requests per second.
-
-- **D**uration - distributions of the amount of time each request takes.
+  - **R**ate - the number of requests, per second, being served.
+  - **E**rrors - the number of failed requests per second.
+  - **D**uration - distributions of the amount of time each request takes.
 
 ## Metrics exposure
 
@@ -93,4 +86,4 @@ rely on exporters to expose metrics to Prometheus.
 - Metrics data stored in a time series database are retained on persistent volumes in the clusters.
   The retention policy set on Prometheus is based on ensuring that the data does not exceed the available storage space.
 
-![Monitoring Architecture](../images/monitoring-architecture.jpg)
+![Monitoring Architecture](../../images/monitoring-architecture.jpg)
