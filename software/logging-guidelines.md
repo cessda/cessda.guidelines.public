@@ -76,7 +76,7 @@ In such a scenario, an issue will be created in the Bitbucket issue tracker for 
 Below is the example from the CDC harvester component:
 
 ```java
-log.warn("Could not parse RecordIdentifier lastModifiedDate")
+log.warn("Could not parse RecordIdentifier lastModifiedDate");
 ```
 
 ### Parameterise logging  and fields creation
