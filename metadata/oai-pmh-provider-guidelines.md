@@ -6,11 +6,11 @@ nav_order: 720
 
 # {{ page.title }}
 
-This document contains information for Service Providers who want their metadata records harvested by the CESSDA Data Catalogue.
+This document contains information for Service Providers who want their metadata records harvested by the CESSDA Data Catalogue (CDC).
 This is for Service Providers that have an online OAI-PMH repository of their study level data holdings,
 and wants to make it findable via the CDC.
 CDC is currently indexed by [Google Dataset Search](https://datasetsearch.research.google.com)
-and is harvested by some European aggregators (such as OpenAIRE and B2Find).
+and is harvested by some European aggregators (such as OpenAIRE, B2Find and GoTriple).
 
 A Basecamp space [OAI-PMH Endpoints](https://3.basecamp.com/3584575/projects/20060866) has been set up
 for the dissemination of knowledge about the installation, configuration and use of Dataverse,
@@ -36,9 +36,8 @@ it can be validated using a free to use service such as [OVAL BASE](https://oval
 
 ## Metadata Requirements
 
-Data Providers must provide an endpoint supporting CESSDA compliant metadata represented as DDI 2.5 Codebook,
-and the DDI files must also be compliant with the [CESSDA Metadata Model](https://zenodo.org/record/3543756).
-
+Data Providers must provide an endpoint exposing metadata represented as DDI 2.5 Codebook.
+The DDI files must also be compliant with the [CESSDA Metadata Model (CMM)](https://zenodo.org/record/3543756).
 The compliance with CMM can be checked using the [CESSDA Metadata Validator](https://cmv.cessda.eu).
 We recommend validating some of your metadata to expose potential systemic issues before making your endpoint available.
 
