@@ -1,6 +1,7 @@
 ---
 title: Logging overview
 parent: Observability
+grand_parent: Technical Infrastructure
 nav_order: 3952
 ---
 

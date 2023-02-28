@@ -1,7 +1,7 @@
 ---
 title: ELSST Contributor License Agreement
-parent: Online forms
-nav_order: 640
+parent: Online Forms
+nav_order: 940
 ---
 
 # {{ page.title }}

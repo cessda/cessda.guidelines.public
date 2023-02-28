@@ -1,7 +1,7 @@
 ---
 title: Repository request
-parent: Online forms
-nav_order: 620
+parent: Online Forms
+nav_order: 920
 ---
 
 # {{ page.title }}

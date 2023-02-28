@@ -39,5 +39,5 @@ Alert notifications, sent via email or dedicated Slack channels, are based on th
 
 - Metrics: that are generated from the monitoring system.
 - Logs: produced from the logging system if failures or unacceptable conditions occur.
-- Service Endpoints: availability is monitored by [Uptime Robot](https://uptimerobot.com/).
+- Service Endpoints: [availability]({% link technical-infrastructure/observability/availability.md %}).
 - Processes: generated when there are failures in the CI/CT processes.
