@@ -62,6 +62,10 @@ The indentation is intended to indicate major sections, subsections and sub-subs
   (390) Setup and Configure oauth2-proxy
   (391) Rate limiting with HAProxy
   (392) Authenticating with EduTeams
+  (395) Observability
+    (3951) Availability and Status
+    (3952) Logging Overview
+    (3953) Monitoring Overview
 
 (400) Software Maturity Levels
   (410) CA1: Documentation
@@ -80,21 +84,21 @@ The indentation is intended to indicate major sections, subsections and sub-subs
   (493) Version History (not published)
   (494) Document Details/Title Page (not published)
 
-(500) Observability
-  (510) Monitoring Overview
-  (520) Logging Overview
-
-(600) Online forms
-  (610) Contributor license agreement
-  (620) Repository request
-  (630) Software Maturity Levels
-  (640) ELSST contributor license agreement
-
 (700) Metadata Handling in CESSDA
   (710) CESSDA OAI-PMH Identifiers Specification
   (720) Adding a new endpoint
   (730) URN Handling and Resolution
   (740) Versioning for CVS and ELSST
+
+(800) CESSDA content management
+  (810) CVS Agency creation guidelines
+
+(900) Online forms
+  (910) Contributor license agreement
+  (920) Repository request
+  (930) Software Maturity Levels
+  (940) ELSST contributor license agreement
+  (950) CESSDA Vocabulary Service Agency Registration Form
 
 (998) Glossary
 ```

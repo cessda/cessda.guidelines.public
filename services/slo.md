@@ -18,5 +18,6 @@ nav_order: 220
 * CESSDA TRL-8 services have a target of 99% average uptime.
 * CESSDA TRL-7 services have a target of 90% average uptime.
 
-CESSDA currently uses [Uptime Robot](https://uptimerobot.com/about) to monitor
-availability of its production systems.
+CESSDA uses external tools to monitor the
+[availability]({% link technical-infrastructure/observability/availability.md %})
+of its production systems.

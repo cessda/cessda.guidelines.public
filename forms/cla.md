@@ -1,7 +1,7 @@
 ---
 title: Contributor License Agreement
-parent: Online forms
-nav_order: 610
+parent: Online Forms
+nav_order: 910
 ---
 
 # {{ page.title }}

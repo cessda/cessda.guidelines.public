@@ -9,6 +9,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * Added release process instructions
 
+## [1.2.0] - 2023-03-01
+
+## Added
+
+* Added details of how to apply for a CVS Agency (#94)
+* Add details of external monitoring of CESSDA's services (#83)
+* Documented the release process (#62)
+* Documented the process for issues and pull requests (#60)
+* Added CDC Identifer, ELSST versioning and URN resolution pages (#58)
+* Added document content guides (#56)
+
+## Changed
+
+* Removed "This is a development build!" from the index page (#91)
+* Restructured the document set (#70, #71, #72, #75, #78, #85, #87, #89)
+* Updated the ELSST URN specifications (68)
+* Clarified the branching and merging policies (#66)
+* Updated Home page (#53)
+
+## Fixed
+
+* Fixed broken images (#64)
+* Removed duplicated  content (#59)
+* Fixed Broken link in SML form page (#55)
+
 ## [1.1.0] - 2021-06-03
 
 * Updated example pipeline documentation to match current build and deployment pipelines
