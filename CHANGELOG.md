@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * Added release process instructions
 
-## [1.2.0] - 2023-03-01
+## [1.2.0] - 2023-03-21
 
 ## Added
 
@@ -22,9 +22,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Changed
 
+* Updated 'Pull Requests and Code Review' section (#98)
 * Removed "This is a development build!" from the index page (#91)
 * Restructured the document set (#70, #71, #72, #75, #78, #85, #87, #89)
-* Updated the ELSST URN specifications (68)
+* Updated the ELSST URN specifications (#68)
 * Clarified the branching and merging policies (#66)
 * Updated Home page (#53)
 
