@@ -37,7 +37,7 @@ This should not be the same as the commit messages, but should be broader in sco
 Pull requests are reviewed by other members of the repository familiar with the repository's contents.
 If changes are necessary, feedback must be given on what changes are required.
 This iteration loop should continue until changes are resolved to the reviewer's expectations.
-Once this happens, the reviewer should approve and merge the changes.
+Once this happens, the reviewer should approve the changes and the author should merge them.
 
 ## Manual Merging
 
