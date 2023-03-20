@@ -28,6 +28,7 @@ Release candidates will be evaluated along the following criteria
 * Releases must be tagged in the git repository
 * Releases must be available as Docker images with the release version as tag
 * Release tarballs should be [published]({% link software/publication.md %})
+* After release of software, [SML]({% link sml/index.md %}) assessment can be performed on the service in accordance with the [service state]({% link services/requirements.md %})
 
 ## Proof of delivery
 
