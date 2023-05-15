@@ -16,7 +16,7 @@ See [Naming Conventions]({% link technical-infrastructure/naming-conventions.md 
 
 Unless otherwise stated, see [Software requirements]({% link software/requirements.md %})
 for links to examples of good practice for the following files,
-and/or the [CDC Indexer](https://bitbucket.org/cessda/cessda.cdc.osmh-indexer.cmm/src/) repository.
+and/or the [CDC Indexer](https://github.com/cessda/cessda.cdc.osmh-indexer.cmm) repository.
 
 ### .gitignore
 
