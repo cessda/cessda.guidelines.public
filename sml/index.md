@@ -57,7 +57,7 @@ need to measure the maturity of software used within CESSDA is essential
 to ensure the quality of the technical Research Infrastructure is
 maintained. Reuse Readiness Levels [RRLs][1], as developed by NASA
 Earth Science Data Systems, form the basis upon which the CESSDA
-software maturity assessments are made. Usability is not only a
+software Maturity Assessment CMA qualities are made. Usability is not only a
 political imperative of research infrastructures as they need to
 demonstrate a return on investment, but is also essential for growth
 with limited funds and ongoing interoperability.
@@ -66,15 +66,14 @@ with limited funds and ongoing interoperability.
 
 ### Background
 
-The measurement of maturity can be achieved in various ways. Services
-(and service management) use Capability Maturity Modelling, for example
-[FitSM][2]. A method commonly used for technology is the 9 point
+The measurement of maturity can be achieved in various ways. Services use Capability Maturity Modelling within Service Management framework such as 
+[FitSM][2]. A method commonly used for technology is the
 [Technology Readiness Levels (TRLs)][3] scale, however this does not
 address usability, which is essential for the development of CESSDA's
 technical Research Infrastructure. RRLs address this gap in the
 assessment of the maturity of software artefacts. Note that the EU
 adopted TRLs as part of the [H2020 programme][4] and both FitSM and
-TRLs have been subsequently adopted by the EOSC-hub, which mandates that
+TRLs have been subsequently adopted by the EOSC, which mandates that
 TRL Level 8 is the minimum acceptable for a system to be considered
 production-ready by them. Interestingly, both RRLs and TRLs were devised
 by and are widely used by NASA.
@@ -112,5 +111,5 @@ RRL6 - Software is reusable; the software can be reused by most users although t
 ## CESSDA Software maturity levels
 
 The software maturity levels provide guidance on what minimum, expected
-and excellent standards look like, and will be used to evaluate the
-products produced by SPs.
+and excellent standards for each of CMA qualities. These will be used to evaluate the
+products produced by SPs and any other development organisation. 
