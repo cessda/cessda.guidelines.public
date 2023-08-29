@@ -6,7 +6,6 @@ nav_order: 400
 
 # {{ page.title }}
 
-The latest published version can be downloaded in PDF format from [CESSDA Software Maturity Levels](https://doi.org/10.5281/zenodo.2614050).
 
 ## Management Summary
 
