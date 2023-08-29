@@ -16,8 +16,9 @@ Providers, but potentially any software development organisation.
 
 ### Purpose
 
-This document was created so that readers interested in CESSDA's Software Maturity
- Levels (SMLs) can find out more about the various attributes, levels and expectations that underpin them.
+This document was created so that readers interested in CESSDA's Software
+Maturity Levels (SMLs) can find out more about the various attributes,
+levels and expectations that underpin them.
 
 Usability is not only a political imperative of European Research
 Infrastructure Consortiums' need to maximise their return on investment,
@@ -65,9 +66,12 @@ with limited funds and ongoing interoperability.
 ### Background
 
 The measurement of maturity can be achieved in various ways.
-Services use Capability Maturity Modelling within Service Management framework such as [FitSM][2].
-A method commonly used for technology is the [Technology Readiness Levels (TRLs)][3] scale. However this does not address usability, which is essential for the development of CESSDA's
-technical Research Infrastructure. RRLs address this gap in the
+Services use Capability Maturity Modelling within Service Management framework
+such as [FitSM][2].
+A method commonly used for technology is the
+[Technology Readiness Levels (TRLs)][3] scale.
+However this does not address usability, which is essential for the development
+of CESSDA's technical Research Infrastructure. RRLs address this gap in the
 assessment of the maturity of software artefacts. Note that the EU
 adopted TRLs as part of the [H2020 programme][4] and both FitSM and
 TRLs have been subsequently adopted by the EOSC, which mandates that
@@ -97,6 +101,8 @@ RRL6 - Software is reusable; the software can be reused by most users although t
 ## CESSDA Software maturity levels
 
 The software maturity levels provide guidance on what minimum, expected
-and excellent standards for each of CMA qualities. These will be used to evaluate the products produced by SPs and any other development organisation.
+and excellent standards for each of CMA qualities.
+These will be used to evaluate the products produced by SPs and any other
+development organisation.
 
 [5]: https://marketplace.eosc-portal.eu/
