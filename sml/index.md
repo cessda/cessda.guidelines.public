@@ -64,9 +64,9 @@ with limited funds and ongoing interoperability.
 
 ### Background
 
-The measurement of maturity can be achieved in various ways. Services use Capability Maturity Modelling within Service Management framework such as [FitSM][2]. A method commonly used for technology is the
-[Technology Readiness Levels (TRLs)][3] scale, however this does not
-address usability, which is essential for the development of CESSDA's
+The measurement of maturity can be achieved in various ways.
+Services use Capability Maturity Modelling within Service Management framework such as [FitSM][2].
+A method commonly used for technology is the [Technology Readiness Levels (TRLs)][3] scale. However this does not address usability, which is essential for the development of CESSDA's
 technical Research Infrastructure. RRLs address this gap in the
 assessment of the maturity of software artefacts. Note that the EU
 adopted TRLs as part of the [H2020 programme][4] and both FitSM and
