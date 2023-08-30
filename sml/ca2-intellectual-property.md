@@ -1,5 +1,5 @@
 ---
-title: "CA2: Intellectual Property"
+title: "CMA2: Intellectual Property"
 parent: Software Maturity Levels
 nav_order: 415
 ---
