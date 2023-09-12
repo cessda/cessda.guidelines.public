@@ -8,19 +8,18 @@ nav_order: 930
 
 ## Audience
 
-CESSDA Main Office and Service Provider staff that manage CESSDA's Service portfolio.
-
-Typical roles are CTO, Platform Team member, Working Group Leader.
+CESSDA Main Office IT members and Service Provider staff
+or any software development orgainsation that manage CESSDA's
+products.
 
 ## Usage
 
-Depending on your role, you may be interested in:
-
-* assessing the SML score of a CESSDA Product (see [Software Maturity Levels](https://docs.tech.cessda.eu/sml/index.html));
+Before assigning the SML score of a CESSDA Product see
+[Software Maturity Levels](https://docs.tech.cessda.eu/sml/index.html) for assessment requirements.
 
 ## Purpose
 
-Use this form to assess the SML score of a Product.
+Use the form below to assess and award the SML score of a product.
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdADcUTMDcFXW8gNLZsCHVvigeGXkOchjSNMOGwiiEVl4qAKA/viewform?embedded=true"
   width="640" height="691" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
