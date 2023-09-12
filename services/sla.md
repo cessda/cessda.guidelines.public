@@ -39,21 +39,21 @@ be created in the [CESSDA Helpdesk](https://helpdesk.cessda.eu/).
 Service incidents are prioritised as follows:
 
 * “High”: These incidents relate to the security of the service. These
-incidents have higher precedence and are acknowledged and responded to
-more quickly.
+  incidents have higher precedence and are acknowledged and responded to
+  more quickly.
 * “Medium”: These incidents relate to normal service access and usage.
 
 Any incident reported through the CESSDA helpdesk channel will be acknowledged
 and responded to, depending on the above classification:
 
 * For a high priority incident, acknowledgement should be within one (1)
-working day
+  working day
 * For a medium priority incident, acknowledgement should be within three (3)
-working days, and five (5) working days in July and August.
+  working days, and five (5) working days in July and August.
 
 ## Service Level Targets
 
-**Monthly Availability**
+Monthly Availability:
 
 * Defined as the ability of a service to fulfil its intended function
 over a calendar month.
@@ -67,11 +67,11 @@ to the following limitations and constraints:
 
 * Support is provided in English
 * Downtime caused by fixing critical security issues is not considered a
-service incident.
+  service incident.
 * Force majeure. A party shall not be liable for any failure or delay in the
-performance of this Agreement for the period that such failure or delay is due
-to causes beyond its reasonable control. This list includes, but is not
-limited to:
+  performance of this Agreement for the period that such failure or delay is due
+  to causes beyond its reasonable control. This list includes, but is not
+  limited to:
   * pandemic, fire, flood, earthquake or natural phenomena,
   * war, embargo, riot, civil disorder, rebellion, revolution.
 
