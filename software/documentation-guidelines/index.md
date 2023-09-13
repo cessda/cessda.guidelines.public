@@ -138,7 +138,7 @@ Jenkins has been chosen as the {% include glossary.html entry="CI" text="CI" %} 
 
 The Bitbucket {% include glossary.html entry="SCM" text="SCM" %} system has been mandated,
 and each product has its own project (containing one or more repositories) within the
-[CESSDA Research Infrastructure project space](https://bitbucket.org/cessda/workspace/projects/).
+[CESSDA Research Infrastructure project space](https://github.com/cessda).
 Each repository is linked to the {% include glossary.html entry="CIT" text="CIT" %}
 environment via a Jenkinsfile and corresponding Jenkins jobs,
 so that software quality assurance takes place throughout the development phase.

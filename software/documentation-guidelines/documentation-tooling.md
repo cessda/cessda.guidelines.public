@@ -14,7 +14,7 @@ A custom [CESSDA theme](https://rubygems.org/gems/jekyll-cessda-docs) has been d
 As such, the documentation for [Just the docs](https://just-the-docs.github.io/just-the-docs/) can be followed,
 but the design should not be touched.
 
-The repository for the [CESSDA Technical Guidelines](https://bitbucket.org/cessda/cessda.guidelines.public)
+The repository for the [CESSDA Technical Guidelines](https://github.com/cessda/cessda.guidelines.public)
 should be consulted for implementation details.
 The repository's `README` also lists a number of recommendations on language.
 
