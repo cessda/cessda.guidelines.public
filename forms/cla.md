@@ -23,8 +23,7 @@ Depending on your role, you may be interested in:
 
 ## Purpose
 
-Use this form to request write access to CESSDA's Git code repositories, hosted on [Bitbucket](https://bitbucket.org/cessda/)
-and [GitHub](https://github.com/cessda/).
+Use this form to request write access to CESSDA's Git code repositories, hosted on [GitHub](https://github.com/cessda/).
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfS2sOjZ2Ax5nIhvONY5E1yVsDgMkNzl0yw2TbMTA-5MYdCXQ/viewform?embedded=true"
   width="640" height="1163" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>

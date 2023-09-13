@@ -7,11 +7,11 @@ nav_order: 1804
 ---
 # {{ page.title }}
 
-A Bitbucket repository is used to store, track changes to, build, test and deploy the user manual.
+A Git repository is used to store, track changes to, build, test and deploy the user manual.
 
-It is located at `https://bitbucket.org/cessda/cessda.<product name>.userguide`
+It is located at `https://github.com/cessda/cessda.<product name>.userguide`
 
-E.g. `https://bitbucket.org/cessda/cessda.cdc.userguide`
+E.g. `https://github.com/cessda/cessda.cdc.userguide`
 
 The content source files are in Markdown format and have the extension `.md`.
 

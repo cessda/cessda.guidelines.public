@@ -7,7 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-* Added release process instructions
+## Added
+
+* Release process instructions
+* Generic SLA page
+* Creating new Github repo page (in place of new Bitbucket repo page)
+
+## Changed
+
+* References to Bitbucket (now reference Github)
+
+## Fixed
+
+Misspelling of continuous (affected many links to internal pages)
 
 ## [1.2.0] - 2023-03-21
 

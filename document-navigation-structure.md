@@ -53,7 +53,7 @@ The indentation is intended to indicate major sections, subsections and sub-subs
     (3602) Adding the Deployment Jenkinsfile
   (365) Building with Docker
   (370) Platform Team Responsibilities
-    (3701) Create a Bitbucket Repository
+    (3701) Create a Github Repository
     (3702) Standard Git Repository Contents
     (3703) Create a New Jenkins Job
     (3704) Creating a Test Suite

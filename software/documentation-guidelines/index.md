@@ -127,7 +127,7 @@ Jenkins has been chosen as the {% include glossary.html entry="CI" text="CI" %} 
 - Familiarity: experience of configuration and/or use amongst several CESSDA SPs
 
 - Features: provides tried and tested {% include glossary.html entry="CI" text="CI" %};
-    links with Bitbucket and other {% include glossary.html entry="SCM" text="SCM" %} systems;
+    links with Github and other {% include glossary.html entry="SCM" text="SCM" %} systems;
     hundreds of free plugins available;
     can build and deploy containers
 
@@ -136,14 +136,14 @@ Jenkins has been chosen as the {% include glossary.html entry="CI" text="CI" %} 
 
 ## Source code management
 
-The Bitbucket {% include glossary.html entry="SCM" text="SCM" %} system has been mandated,
+The Github {% include glossary.html entry="SCM" text="SCM" %} system has been mandated,
 and each product has its own project (containing one or more repositories) within the
 [CESSDA Research Infrastructure project space](https://github.com/cessda).
 Each repository is linked to the {% include glossary.html entry="CIT" text="CIT" %}
 environment via a Jenkinsfile and corresponding Jenkins jobs,
 so that software quality assurance takes place throughout the development phase.
 
-The choice of Bitbucket was based on a combination of standards, familiarity, features and transferability:
+The choice of Github was based on a combination of standards, familiarity, features and transferability:
 
 - Standards: a de facto standard for {% include glossary.html entry="SCM" text="SCM" %}; supports Git and Mercurial repositories;
 

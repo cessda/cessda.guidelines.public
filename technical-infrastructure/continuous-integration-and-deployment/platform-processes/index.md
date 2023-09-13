@@ -15,7 +15,7 @@ See [Naming Conventions]({% link technical-infrastructure/naming-conventions.md 
 
 ## Update {% include glossary.html entry="CI" text="CI" %} Tools
 
-See [Updating CI Tools]({% link technical-infrastructure/continous-integration-and-deployment/platform-processes/updating-ci-tools.md %}).
+See [Updating CI Tools]({% link technical-infrastructure/continuous-integration-and-deployment/platform-processes/updating-ci-tools.md %}).
 
 ## Create repositories
 
@@ -37,7 +37,7 @@ See [Updating CI Tools]({% link technical-infrastructure/continous-integration-a
 ## Create Jenkins jobs
 
 A Jenkins jobs is needed to run the build, test and deployment pipeline.
-See [Create a New Jenkins Job]({% link technical-infrastructure/continous-integration-and-deployment/platform-processes/jenkins-new-job.md %}).
+See [Create a New Jenkins Job]({% link technical-infrastructure/continuous-integration-and-deployment/platform-processes/jenkins-new-job.md %}).
 If there is a database component, then jobs are needed to backup and restore the database contents
 as well as deploying a specified version of the database schema.
 

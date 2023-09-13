@@ -16,7 +16,7 @@ For example, if a developer is working on an issue titled "#23 - Update the spin
 the branch name chosen should be similar to `feature/23-update-spinner`.
 
 Commits in these branches must also be tagged with the issue number.
-This allows the commits to be linked to issues automatically on platforms such as BitBucket and GitHub.
+This allows the commits to be linked to issues automatically on platforms such as GitHub.
 It also links the commits to the issue beyond the lifetime of the branch.
 An example commit message may be "#23: Implemented the framework for the new spinner".
 
