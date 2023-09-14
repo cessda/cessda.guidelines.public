@@ -95,7 +95,7 @@ pipeline {
 		}
 		stage('Deploy Guidelines') {
 			steps {
-				build job: 'cessda.guidelines.deploy/master', parameters: [string(name: 'imageTag', value: "${env.BRANCH_NAME}-${env.BUILD_NUMBER}")]
+				build job: 'cessda.guidelines.deploy/main', parameters: [string(name: 'imageTag', value: "${env.BRANCH_NAME}-${env.BUILD_NUMBER}")]
 			}
 			when { branch 'main' }
 		}
