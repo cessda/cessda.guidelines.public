@@ -53,10 +53,10 @@ and responded to, depending on the above classification:
 
 ## Service Level Targets
 
-Monthly Availability:
+### Monthly Availability
 
 * Defined as the ability of a service to fulfil its intended function
-over a calendar month.
+  over a calendar month.
 * Average service level target (as a percentage per month): 95%.
 * Minimum (as a percentage per month): 80%.
 
