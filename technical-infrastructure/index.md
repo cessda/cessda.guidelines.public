@@ -28,23 +28,23 @@ It links to the following pages (which can be read in conjunction with it, or on
 [GCP Main Project Structure]({% link technical-infrastructure/gcp-main-project-structure.md %}) - top down
 decomposition of the CESSDA Development and CESSDA Production GCP projects.
 
-[Deployment Pipeline Overview]({% link technical-infrastructure/continous-integration-and-deployment/deployment-pipeline-overview.md %}) -
+[Deployment Pipeline Overview]({% link technical-infrastructure/continuous-integration-and-deployment/deployment-pipeline-overview.md %}) -
 shows the deployment pipeline from the moment a developer commits code changes to the deployment of the
 {% include glossary.html entry="(product)" text="product" %} to production.
 
-[Deployment Workflow]({% link technical-infrastructure/continous-integration-and-deployment/deployment-workflow.md %}) -
+[Deployment Workflow]({% link technical-infrastructure/continuous-integration-and-deployment/deployment-workflow.md %}) -
 shows the step-by-step process by which application components are deployed and the various technologies that are involved.
-[Helm charts]({% link technical-infrastructure/continous-integration-and-deployment/deployment-with-helm.md %})
+[Helm charts]({% link technical-infrastructure/continuous-integration-and-deployment/deployment-with-helm.md %})
 are used to orchestrate the deployment of an application's components.
 
-[Deployment Pipeline Details]({% link technical-infrastructure/continous-integration-and-deployment/deployment-pipeline-details.md %}) -
+[Deployment Pipeline Details]({% link technical-infrastructure/continuous-integration-and-deployment/deployment-pipeline-details.md %}) -
 a step by step explanation of the build and deployment processes.
 
 [Deploying Core Products]({% link technical-infrastructure/deploying-core-products.md %}) - explains the responsibilities of various
 Actors in order to get a new release deployed.
 
 [Technical Infrastructure Details]({% link technical-infrastructure/technical-infrastructure-details.md %}) - shows a general overview
-of the GCP projects, Jenkins CI/CD toolchain and Bitbucket code repositories and how they are
+of the GCP projects, Jenkins CI/CD toolchain and Github code repositories and how they are
 integrated within the deployment pipeline.
 
 [Jenkinsfile Template]({% link technical-infrastructure/template-jenkinsfile.md %}) - This shows the general form of a Jenkinsfile used

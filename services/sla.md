@@ -9,7 +9,7 @@ nav_order: 230
 ## General
 
 This Generic Service Level Agreement (CESSDA SLA) is valid for all CESSDA
-services listed at the [CESSDA Service Catalogue](https://www.cessda.eu/Tools)  
+services listed at the [CESSDA Service Catalogue](https://www.cessda.eu/Tools)
 This SLA may be extended or replaced by service-specific SLAs.
 
 ## Service Operations and Exceptions
@@ -56,7 +56,7 @@ and responded to, depending on the above classification:
 Monthly Availability:
 
 * Defined as the ability of a service to fulfil its intended function
-over a calendar month.
+  over a calendar month.
 * Average service level target (as a percentage per month): 95%.
 * Minimum (as a percentage per month): 80%.
 

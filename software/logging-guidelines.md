@@ -72,7 +72,7 @@ public class ConsumerScheduler {
 The default log level for CESSDA is **WARN**.
 
 This communicates to the Platform support team that this message needs some kind of attention.
-In such a scenario, an issue will be created in the Bitbucket issue tracker for resolution.
+In such a scenario, an issue will be created in the Github issue tracker for resolution.
 Below is the example from the CDC harvester component:
 
 ```java
