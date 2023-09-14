@@ -32,7 +32,7 @@ This excludes Norwegian public holidays and working days from December 20 to
 January 5.
 
 All service incidents and feedback should be sent to
-**[support@cessda.eu](support@cessda.eu).** Alternatively, the feedback form
+**support@cessda.eu.** Alternatively, the feedback form
 provided on each service’s web page can be used. Both options cause a ticket to
 be created in the [CESSDA Helpdesk](https://helpdesk.cessda.eu/).
 
@@ -78,7 +78,7 @@ to the following limitations and constraints:
 ## Communication and Reporting
 
 Any incidents or feedback relating to services should be reported via
-**[support@cessda.eu](support@cessda.eu)** or by using the feedback form on the
+**support@cessda.eu** or by using the feedback form on the
 service web pages.
 
 CESSDA will investigate the root cause of the incident, keep the reporter

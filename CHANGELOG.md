@@ -7,23 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## Added
+### Added
 
 * Release process instructions
 * Generic SLA page
 * Creating new Github repo page (in place of new Bitbucket repo page)
 
-## Changed
+### Changed
 
 * References to Bitbucket (now reference Github)
 
-## Fixed
+### Fixed
 
 Misspelling of continuous (affected many links to internal pages)
 
 ## [1.2.0] - 2023-03-21
 
-## Added
+### Added
 
 * Added details of how to apply for a CVS Agency (#94)
 * Add details of external monitoring of CESSDA's services (#83)
@@ -32,7 +32,7 @@ Misspelling of continuous (affected many links to internal pages)
 * Added CDC Identifer, ELSST versioning and URN resolution pages (#58)
 * Added document content guides (#56)
 
-## Changed
+### Changed
 
 * Updated 'Pull Requests and Code Review' section (#98)
 * Removed "This is a development build!" from the index page (#91)
@@ -41,7 +41,7 @@ Misspelling of continuous (affected many links to internal pages)
 * Clarified the branching and merging policies (#66)
 * Updated Home page (#53)
 
-## Fixed
+### Fixed
 
 * Fixed broken images (#64)
 * Removed duplicated  content (#59)
