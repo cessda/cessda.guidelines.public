@@ -53,7 +53,7 @@ and responded to, depending on the above classification:
 
 ## Service Level Targets
 
-Monthly Availability:
+### Monthly Availability
 
 * Defined as the ability of a service to fulfil its intended function
   over a calendar month.
