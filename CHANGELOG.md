@@ -5,21 +5,21 @@ All notable changes to the CESSDA Technical Guidelines will be documented in thi
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [1.3.0]
 
 ### Added
 
 * Release process instructions
-* Generic SLA page
-* Creating new Github repo page (in place of new Bitbucket repo page)
+* Generic SLA page (#116)
+* Creating new GitHub repo page (replaces new BitBucket repo page)
 
 ### Changed
 
-* References to Bitbucket (now reference Github)
+* References to BitBucket now reference GitHub
 
 ### Fixed
 
-Misspelling of continuous (affected many links to internal pages)
+* Misspelling of continuous (affected many links to internal pages)
 
 ## [1.2.0] - 2023-03-21
 
@@ -29,7 +29,7 @@ Misspelling of continuous (affected many links to internal pages)
 * Add details of external monitoring of CESSDA's services (#83)
 * Documented the release process (#62)
 * Documented the process for issues and pull requests (#60)
-* Added CDC Identifer, ELSST versioning and URN resolution pages (#58)
+* Added CDC Identifier, ELSST versioning and URN resolution pages (#58)
 * Added document content guides (#56)
 
 ### Changed
@@ -44,7 +44,7 @@ Misspelling of continuous (affected many links to internal pages)
 ### Fixed
 
 * Fixed broken images (#64)
-* Removed duplicated  content (#59)
+* Removed duplicated content (#59)
 * Fixed Broken link in SML form page (#55)
 
 ## [1.1.0] - 2021-06-03
@@ -94,3 +94,10 @@ Misspelling of continuous (affected many links to internal pages)
 * Define software quality requirements
 * Define code archiving criteria
 * Include import of Software Maturity Levels, [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2614050.svg)](https://doi.org/10.5281/zenodo.2614050)
+
+[1.3.0]: https://github.com/cessda/cessda.guidelines.public/releases/tag/1.3.0
+[1.2.0]: https://github.com/cessda/cessda.guidelines.public/releases/tag/1.2.0
+[1.1.0]: https://github.com/cessda/cessda.guidelines.public/releases/tag/1.1.0
+[1.0.1]: https://github.com/cessda/cessda.guidelines.public/releases/tag/1.0.1
+[1.0.0]: https://github.com/cessda/cessda.guidelines.public/releases/tag/1.0.0
+[0.1.0]: https://github.com/cessda/cessda.guidelines.public/releases/tag/0.1.0
