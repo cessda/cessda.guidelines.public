@@ -24,7 +24,7 @@ Depending on your role, you may be interested in:
 
 ## Purpose
 
-Use this form to request a new [Git repository, hosted on Github](https://github.com/cessda/).
+Use this form to request a new [Git repository, hosted on GitHub](https://github.com/cessda/).
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdP7oOyLWbRKsEtPszEY_NKyQ6Db32jmoku5IatlIzmeP6LVQ/viewform?embedded=true"
   width="640" height="875" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>

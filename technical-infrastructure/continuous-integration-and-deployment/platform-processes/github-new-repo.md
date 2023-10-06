@@ -1,5 +1,5 @@
 ---
-title: Create a Github Repository
+title: Create a GitHub Repository
 parent: Platform Processes
 grand_parent: Continuous Integration and Deployment
 published: true
@@ -14,9 +14,9 @@ See [Naming Conventions]({% link technical-infrastructure/naming-conventions.md 
 
 ## Instructions for members of the Platform Team
 
-Before doing anything, you must **log in to Github using an account that has administrative privileges**.
+Before doing anything, you must **log in to GitHub using an account that has administrative privileges**.
 
-### First decide which Github organisation to put the repository in
+### First decide which GitHub organisation to put the repository in
 
 * cessda - use for public repositories (the vast majority of repositories are public)
 

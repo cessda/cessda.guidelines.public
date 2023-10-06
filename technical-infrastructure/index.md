@@ -44,7 +44,7 @@ a step by step explanation of the build and deployment processes.
 Actors in order to get a new release deployed.
 
 [Technical Infrastructure Details]({% link technical-infrastructure/technical-infrastructure-details.md %}) - shows a general overview
-of the GCP projects, Jenkins CI/CD toolchain and Github code repositories and how they are
+of the GCP projects, Jenkins CI/CD toolchain and GitHub code repositories and how they are
 integrated within the deployment pipeline.
 
 [Jenkinsfile Template]({% link technical-infrastructure/template-jenkinsfile.md %}) - This shows the general form of a Jenkinsfile used
