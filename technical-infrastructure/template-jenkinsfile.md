@@ -20,6 +20,11 @@ See <https://jenkins.io/doc/book/pipeline/syntax/> for more information on the s
 ```groovy
 pipeline {
 
+    environment {
+        // Define an image tag at the start of the build so it can be consumed by multiple downstream stages
+        image_tag = ${env.DOCKER_ARTIFACT_REGISTRY}/app-front:${env.BUILD_NUMBER}
+    }
+
     // Typically, when defining an agent, the agent any syntax is used to select a 1GB (memory) sized Kubernetes container to build on
     agent any
 
@@ -70,7 +75,14 @@ pipeline {
             steps {
                 // CESSDA uses Kubernetes which requries Docker images
                 // This stage builds the images and sets the image tag to uniquely identify each build
-                sh "docker build -t eu.gcr.io/cessda/app-front:${env.BRANCH_NAME}-${env.BUILD_NUMBER} ."
+                sh "docker build --tag=${image_tag} ."
+            }
+        }
+        stage('Push Docker Image') {
+            steps {
+                // Push the built Docker image
+                // This is done in a separate stage so that it can be triggered conditionally
+                sh "docker push ${image_tag}"
             }
         }
         // The deploy stage calls the deployment job, which is configured elsewhere
@@ -79,7 +91,7 @@ pipeline {
             steps {
                 echo "Deploying on the CESSDA Cloud Platform"
                 build job: 'cessda.deploy.app/main', parameters: [
-                  string(name: 'imageTag', value: "${env.BRANCH_NAME}-${env.BUILD_NUMBER}")
+                    string(name: 'imageTag', value: "${env.BUILD_NUMBER}")
                 ], wait: false
             }
         }

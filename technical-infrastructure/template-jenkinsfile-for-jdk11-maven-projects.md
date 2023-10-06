@@ -14,27 +14,25 @@ See [Naming Conventions]({% link technical-infrastructure/naming-conventions.md 
 
 This shows the general form of a Jenkinsfile used with a Maven project based on JDK11.
 
-The first step is to set a log rotation policy and specify the maximum number of builds to keep.
-
-```groovy
-pipeline{
-    options {
-        buildDiscarder logRotator(artifactNumToKeepStr: '5', numToKeepStr: '20')
-    }
-}
-```
-
-Define the environment variables and include the generic image tagging statement
+The `environment` block defines environment variables that will be referenced in multiple stages of the build.
+These include the name of the product and the module, and a Docker image tag.
+The `${env.DOCKER_ARTIFACT_REGISTRY}` variable refers to the CESSDA Docker repository and is set by the build environment.
 
 ```groovy
 environment {
     product_name = "product"
     module_name = "module"
-    image_tag = "${docker_repo}/${product_name}-${module_name}:${env.BRANCH_NAME}-${env.BUILD_NUMBER}"
+    image_tag = "${env.DOCKER_ARTIFACT_REGISTRY}/${product_name}-${module_name}:${env.BUILD_NUMBER}"
 }
 ```
 
-Specify the Jenkins agent to use to perform the build
+Specify the Jenkins agent to use to perform the build. Most builds will use the standard agent.
+
+```groovy
+agent any
+```
+
+If a build needs more than 500MB of memory, an agent with 6GB of memory can be provisioned.
 
 ```groovy
 agent {
@@ -42,113 +40,79 @@ agent {
 }
 ```
 
-Steps for building a deployable image (from main branch)
+Steps to compile and test the application. This is performed in Docker container that has JDK 11 installed.
+The `reuseNode` option tells Jenkins not to provision a new workspace of the build.
+If `reuseNode` is not set, or is set to `false`, then the results of the build will not be available to future stages.
 
 ```groovy
-stages {
-    stage('Pull SDK Docker Image') {
-        agent {
-            docker {
-                    image 'openjdk:11-jdk'
-                    reuseNode true
-                }
-            }
-            stages {
-                stage('Build Project') {
-                    steps {
-                        withMaven {
-                            sh './mvnw clean install'
-                        }
-                    }
-                    when { branch 'master' }
-                }
-```
-
-Building from minor branches (for pull requests and integration branches)
-
-```groovy
-                stage('Test Project') {
-                    steps {
-                        withMaven {
-                            sh './mvnw clean verify'
-                        }
-                    }
-                    when { not { branch 'master' } }
-                }
-                stage('Record Issues') {
-                    steps {
-                        recordIssues aggregatingResults: true, tools: [errorProne(), java()]
-                    }
-                }
-```
-
-Run Sonar scan and fail the build if the Quality Gate is not passed
-
-```groovy
-              stage('Run Sonar Scan') {
-                    steps {
-                        withSonarQubeEnv('cessda-sonar') {
-                            withMaven {
-                                sh './mvnw sonar:sonar'
-                            }
-                        }
-                        timeout(time: 1, unit: 'HOURS') {
-                            waitForQualityGate abortPipeline: true
-                        }
-                    }
-                    when { branch 'master' }
-                }
-            }
-        }
-```
-
-Build the Docker image, tag it and push it to the image registry
-
-```groovy
-        stage('Build and Push Docker image') {
-            steps {
-                sh 'gcloud auth configure-docker'
-                withMaven {
-                    sh "./mvnw jib:build -Dimage=${image_tag}"
-                }
-                sh "gcloud container images add-tag ${image_tag} ${docker_repo}/${product_name}-${module_name}:${env.BRANCH_NAME}-latest"
-            }
-            when { branch 'master' }
-        }
-        stage('Check Requirements and Deployments') {
-            steps {
-                dir('./infrastructure/gcp/') {
-                    build job: 'cessda.cdc.deploy/master', parameters: [
-                        string(name: 'osmh_indexer_image_tag', value: "${env.BRANCH_NAME}-${env.BUILD_NUMBER}")
-                    ], wait: false
-                }
-            }
-            when { branch 'master' }
-        }
-```
-
-Run the static analysis scan, fail the build if the scan reports any critical security vulnerabilities and save the results
-
-```groovy
-      stage('ShiftLeft Scan') {
-            agent {
-                docker {
-                    image 'shiftleft/sast-scan'
-                    reuseNode true
-                }
-            }
-            steps {
-                // The desired build result is UNSTABLE, not FAILURE
-                catchError(buildResult: 'UNSTABLE') {
-                    sh 'scan'
-                }
-            }
-            post {
-                always {
-                    archiveArtifacts 'reports/*'
-                }
-            }
+stage('Build Project') {
+    agent {
+        docker {
+            image 'openjdk:11-jdk'
+            reuseNode true
         }
     }
+    steps {
+        withMaven {
+            sh './mvnw clean verify'
+        }
+    }
+}
+// Record warnings issued by the Java compiler
+stage('Record Issues') {
+    steps {
+        recordIssues aggregatingResults: true, tools: [java()]
+    }
+}
+```
+
+Run a SonarQube scan and fail the build if the Quality Gate is not passed
+
+```groovy
+stage('Run Sonar Scan') {
+    agent {
+        docker {
+            image 'openjdk:11-jdk'
+            reuseNode true
+        }
+    }
+    steps {
+        withSonarQubeEnv('cessda-sonar') {
+            withMaven {
+                sh './mvnw sonar:sonar'
+            }
+        }
+        timeout(time: 1, unit: 'HOURS') {
+            waitForQualityGate abortPipeline: true
+        }
+    }
+    when { branch 'master' }
+}
+```
+
+Build the Docker image, push it to the image registry and tag the image as the latest version
+
+```groovy
+stage('Build and Push Docker image') {
+    steps {
+        // Authenticate against the Docker registry
+        sh "gcloud auth configure-docker ${env.ARTIFACT_REGISTRY_HOST}"
+        withMaven { sh "./mvnw jib:build -Dimage=${image_tag}" }
+        sh "gcloud artifacts docker tags add ${image_tag} ${env.DOCKER_ARTIFACT_REGISTRY}/${product_name}-${module_name}:latest"
+    }
+    when { branch 'master' }
+}
+```
+
+Start any downstream deployment jobs
+
+```groovy
+stage('Check Requirements and Deployments') {
+    steps {
+        build job: 'cessda.cdc.deploy/master', parameters: [
+            string(name: 'osmh_indexer_image_tag', value: "${env.BRANCH_NAME}-${env.BUILD_NUMBER}")
+        ], wait: false
+    }
+    when { branch 'master' }
 }
 ```

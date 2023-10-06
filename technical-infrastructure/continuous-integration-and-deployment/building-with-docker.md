@@ -38,14 +38,14 @@ stage('Build Application'){
 }
 ```
 
-The `${docker_image}` is replaced by an image tag such as `maven:3-jdk-11` if we wanted to build a JDK 11 application.
+The `${docker_image}` is replaced by an image tag such as `openjdk:11` if we wanted to build a JDK 11 application.
 All future steps in the stage are run in the context of the docker container.
 Note that `reuseNode true` MUST be set or all steps in this stage will be run in a different workspace.
 
 ### Special Notes for Maven
 
 When running Maven in Docker, to correctly use `withMaven{}` the path must be modified so that the
-extensions provided by `withMaven` are loaded correctly. This does not apply if the Maven wrapper, `mvnw`, is used.
+extensions provided by `withMaven` are loaded correctly. This does not apply if the Maven wrapper (`mvnw`) is used.
 
 ```groovy
 stage('Build Project') {
