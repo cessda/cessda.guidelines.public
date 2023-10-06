@@ -9,7 +9,7 @@ nav_order: 930
 ## Audience
 
 CESSDA Main Office IT members and Service Provider staff
-or any software development orgainsation that manage CESSDA's
+or any software development organisation that manage CESSDA's
 products.
 
 ## Usage
