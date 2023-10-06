@@ -32,7 +32,7 @@ environment {
     productName = "mgmt"
     componentName = "coffeepot"
     // The branch name is filtered to remove invalid Docker tag characters
-    imageTag = "${env.DOCKER_ARTIFACT_REGISTRY}/${productName}-${componentName}:${env.BRANCH_NAME.toLowerCase().replaceAll('[^a-z0-9\\.\\_\\-]', '-')}-${env.BUILD_NUMBER}"
+    imageTag = "${env.DOCKER_ARTIFACT_REGISTRY}/${productName}-${componentName}:${env.BUILD_NUMBER}"
 }
 ```
 
