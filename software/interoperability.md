@@ -11,15 +11,12 @@ CESSDA's Infrastructure is based on Docker Containers orchestrated by Kubernetes
 Thus any CESSDA service must follow the following design principles, building upon the [Twelve-Factor App](https://12factor.net/):
 
 * Applications must be capsuled in individual Docker containers exposing ports.
-
 * Configuration must be read from the environment on startup.
-
 * Rest APIs
   * Use API versioning.
   * Provide [OpenAPI](https://www.openapis.org/) documentation.
   * Implement `X-Request-ID` headers.
-
-* See [logging guidelines]({% link software/logging-guidelines.md %}) for further information re logging container output.
+* See [logging guidelines]({% link software/logging-guidelines.md %}) for further information regarding logging container output.
 
 The software architecture is intended to meet CESSDA’s five common interoperability characteristics as follows.
 In each case, CESSDA’s objective for the characteristic is stated, followed by the approach used to achieve it.
