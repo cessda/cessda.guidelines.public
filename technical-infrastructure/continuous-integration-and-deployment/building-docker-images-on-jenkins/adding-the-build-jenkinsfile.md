@@ -29,13 +29,14 @@ and the module is a specific {% include glossary.html entry="(component)" text="
 
 ```groovy
 environment {
-    product_name = "mgmt"
-    module_name = "coffeepot"
+    productName = "mgmt"
+    componentName = "coffeepot"
     // The branch name is filtered to remove invalid Docker tag characters
-    image_tag = "${docker_repo}/${componentName}:${env.BRANCH_NAME.toLowerCase().replaceAll('[^a-z0-9\\.\\_\\-]', '-')}-${env.BUILD_NUMBER}"
+    imageTag = "${env.DOCKER_ARTIFACT_REGISTRY}/${productName}-${componentName}:${env.BUILD_NUMBER}"
 }
 ```
 
+The `env.DOCKER_ARTIFACT_REGISTRY` references an environment variable set by Jenkins that points to the Docker registry.
 The image tag uniquely identifies each build, and is based off the source branch and build number.
 Unique tags are used in production environments to set the deployed {% include glossary.html entry="(component)" text="component" %} version.
 
@@ -45,7 +46,7 @@ See the [Example Jenkinsfile]({% link technical-infrastructure/template-jenkinsf
 for more variations on how to configure agents.
 
 The stages used to build the {% include glossary.html entry="(component)" text="component" %} are defined next.
-For example, for the coffee-api the first stage is building the Docker image.
+For example, for the `coffee-api` the first stage is building the Docker image.
 The build of the  {% include glossary.html entry="(component)" text="component" %} has been defined in a Dockerfile.
 This build is run with the following command.
 
@@ -53,23 +54,23 @@ This build is run with the following command.
 stage("Build Docker Image") {
     steps {
         echo "Building Docker image using Dockerfile with tag"
-        sh "docker build --t ${image_tag} ."
+        sh "docker build --tag=${imageTag} ."
     }
 }
 ```
 
-A second stage is used to add a tag to the image. Note the `gcloud auth configure-docker` command, this gives Docker permission
- to push the image to the private docker repo.
+A second stage is used to add a tag to the image. Before pushing the Docker image, the `gcloud auth configure-docker`
+command must be run to gives Docker permission to push the image to the CESSDA Docker registry.
 
 ```groovy
 stage('Push Docker image') {
     steps {
-        sh "gcloud auth configure-docker"
-        sh "docker push ${image_tag}"
-        sh "gcloud container images add-tag ${image_tag} ${docker_repo}/${product_name}-${module_name}:${env.BRANCH_NAME}-latest"
+        sh "gcloud auth configure-docker ${env.ARTIFACT_REGISTRY_HOST}"
+        sh "docker push ${imageTag}"
+        sh "gcloud container images add-tag ${imageTag} ${env.DOCKER_ARTIFACT_REGISTRY}/${productName}-${componentName}:latest"
     }
 }
 ```
 
 The `latest` tag is used to mark the latest image that was built. This should not be used directly and where possible an exact version
- should be specified. This makes deployments using rolling updates easier and allows easy rollback should issues be encountered.
+should be specified. This makes deployments using rolling updates easier and allows easy rollback should issues be encountered.
