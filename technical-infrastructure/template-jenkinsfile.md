@@ -25,10 +25,10 @@ pipeline {
         image_tag = ${env.DOCKER_ARTIFACT_REGISTRY}/app-front:${env.BUILD_NUMBER}
     }
 
-    // Typically, when defining an agent, the agent any syntax is used to select a 1GB (memory) sized Kubernetes container to build on
+    // For most builds the 'agent any' statement is used to select a 1GB (memory) sized Kubernetes container to build on
     agent any
 
-    // If necessary, the agent label 'himem' can be selected for a 2.5GB container if the build requires more memory
+    // If necessary, the 'agent { label 'himem' }' statement can be used to provision a 5GB (memory) container
     agent {
         label 'himem'
     }

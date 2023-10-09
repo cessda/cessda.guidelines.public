@@ -40,8 +40,8 @@ agent {
 }
 ```
 
-Steps to compile and test the application. This is performed in Docker container that has JDK 11 installed.
-The `reuseNode` option tells Jenkins not to provision a new workspace of the build.
+Steps to compile and test the application. This is performed in a Docker container that has JDK 11 installed.
+The `reuseNode` option tells Jenkins not to provision a new workspace for the build.
 If `reuseNode` is not set, or is set to `false`, then the results of the build will not be available to future stages.
 
 ```groovy
@@ -86,7 +86,7 @@ stage('Run Sonar Scan') {
             waitForQualityGate abortPipeline: true
         }
     }
-    when { branch 'master' }
+    when { branch 'main' }
 }
 ```
 
@@ -100,7 +100,7 @@ stage('Build and Push Docker image') {
         withMaven { sh "./mvnw jib:build -Dimage=${image_tag}" }
         sh "gcloud artifacts docker tags add ${image_tag} ${env.DOCKER_ARTIFACT_REGISTRY}/${product_name}-${module_name}:latest"
     }
-    when { branch 'master' }
+    when { branch 'main' }
 }
 ```
 
@@ -109,10 +109,10 @@ Start any downstream deployment jobs
 ```groovy
 stage('Check Requirements and Deployments') {
     steps {
-        build job: 'cessda.cdc.deploy/master', parameters: [
+        build job: 'cessda.cdc.deploy/main', parameters: [
             string(name: 'osmh_indexer_image_tag', value: "${env.BRANCH_NAME}-${env.BUILD_NUMBER}")
         ], wait: false
     }
-    when { branch 'master' }
+    when { branch 'main' }
 }
 ```
