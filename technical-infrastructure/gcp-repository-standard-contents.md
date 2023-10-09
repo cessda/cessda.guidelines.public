@@ -18,13 +18,13 @@ Unless otherwise stated, see [Software requirements]({% link software/requiremen
 for links to examples of good practice for the following files,
 and/or the [CDC Indexer](https://github.com/cessda/cessda.cdc.osmh-indexer.cmm) repository.
 
-### .gitignore
+### `.gitignore`
 
 The `.gitignore` should be populated with file that are not needed in the repository, such as log files, databases, executable,
 results from compilation, reports from test frameworks, cached files etc.
 
 Here are several [`.gitignore` templates](https://github.com/github/gitignore) hosted on GitHub.
-The `.gitignore` templates should be customised for any application specific paths, such as secrets and build directories.
+The `.gitignore` templates should be customised by adding any application specific paths, such as secrets and build directories.
 
 ### CHANGELOG.md
 

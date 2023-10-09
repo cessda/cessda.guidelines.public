@@ -20,7 +20,7 @@ See [Updating CI Tools]({% link technical-infrastructure/continuous-integration-
 ## Create repositories
 
 - {% include glossary.html entry="(application code)" text="application code" %}.
-        See ['Create a Github Repository'](github-new-repo.html) for details.
+        See ['Create a GitHub Repository'](github-new-repo.html) for details.
 
 - Deployment, via Helm.
         See CDC Deployment (<https://github.com/cessda/cessda.cdc.deploy/src/master/>) repository for a working example.

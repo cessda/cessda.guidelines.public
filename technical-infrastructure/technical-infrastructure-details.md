@@ -13,9 +13,9 @@ See [Naming Conventions]({% link technical-infrastructure/naming-conventions.md 
 ## Overview
 
 The diagram shows a general overview of the GCP projects,
-Jenkins CI/CD toolchain and Github code repositories and how they are integrated within the deployment pipeline.
+Jenkins CI/CD toolchain and GitHub code repositories and how they are integrated within the deployment pipeline.
 
-* This designs explains the version control systems in [Github](https://github.com/cessda/)
+* This designs explains the version control systems in [GitHub](https://github.com/cessda/)
 
 This system allows developers to keep track of the changes in CESSDA software development projects,
 and enable them to collaborate on those projects or tools.
