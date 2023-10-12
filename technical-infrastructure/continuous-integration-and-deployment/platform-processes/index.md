@@ -20,19 +20,20 @@ See [Updating CI Tools]({% link technical-infrastructure/continuous-integration-
 ## Create repositories
 
 - {% include glossary.html entry="(application code)" text="application code" %}.
-        See ['Create a GitHub Repository'](github-new-repo.html) for details.
+        See ['Create a GitHub Repository']({% link technical-infrastructure/continuous-integration-and-deployment/platform-processes/github-new-repo.md %})
+        for details.
 
 - Deployment, via Helm.
-        See CDC Deployment (<https://github.com/cessda/cessda.cdc.deploy/src/master/>) repository for a working example.
+        See CDC Deployment (cessda/cessda.cdc.deploy - private) repository for a working example.
 
 - Reverse Proxy.
-        See CDC Reverse (<https://github.com/cessda/cessda.cdc.reverse/src/master/>) repository for a working example.
+        See CDC Reverse (cessda/cessda.cdc.reverse - private) repository for a working example.
 
 - Test.
-        See CDC Test (<https://github.com/cessda/cessda.cdc.test/src/master/>) repository for a working example.
+        See CDC Test (cessda/cessda.cdc.test - private) repository for a working example.
 
 - User Guide - generates documentation from Markdown files.
-        See CDC Userguide (<https://github.com/cessda/cessda.cdc.userguide/src/master/>) repository for a working example.
+        See CDC Userguide (<https://github.com/cessda/cessda.cdc.userguide/>) repository for a working example.
 
 ## Create Jenkins jobs
 
@@ -51,11 +52,11 @@ Then update the
 ## Create/edit Jenkinsfile for each repository
 
 Provide a basic pipeline to build, test and deploy the component.
-See [Building Maven Projects With Jenkins](../building-maven-projects-with-jenkins.html)
+See [Building Maven Projects With Jenkins]({% link technical-infrastructure/continuous-integration-and-deployment/building-maven-projects-with-jenkins.md %})
 for details.
 
 See also [TemplateJenkinsfileForJDK11MavenProjects]({% link technical-infrastructure/template-jenkinsfile-for-jdk11-maven-projects.md %})
-and [Adding the Deployment Jenkinsfile](../building-docker-images-on-jenkins/adding-the-deployment-jenkinsfile.html).
+and [Adding the Deployment Jenkinsfile]({% link technical-infrastructure/continuous-integration-and-deployment/building-docker-images-on-jenkins/adding-the-deployment-jenkinsfile.md %}).
 
 Work with developers to create test suites to be used by the pipeline.
 
