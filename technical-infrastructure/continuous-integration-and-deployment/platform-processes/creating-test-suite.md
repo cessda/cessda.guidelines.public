@@ -16,11 +16,8 @@ See [Naming Conventions]({% link technical-infrastructure/naming-conventions.md 
 
 The standard CESSDA  {% include glossary.html entry="(product)" text="product" %} test suite is made up of:
 
-- [Selenium testing](https://github.com/cessda/cessda.mgmt.selenium/src/master/)
-
-- [Jmeter testing](https://github.com/cessda/cessda.mgmt.jmeter/src/master/). See the README file for more details.
-
-- [SonarQube quality gate](https://github.com/cessda/cessda.mgmt.sonar/src/master/)
+- [Selenium testing](https://www.selenium.dev/)
+- [SonarQube quality gate](https://www.sonarsource.com/products/sonarqube/)
 
 The tests are performed as part of the build process. If the tests pass, the Docker image is created and pushed to the Docker image registry.
 

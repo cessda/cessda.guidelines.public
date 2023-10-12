@@ -14,9 +14,9 @@ so they know what is expected of them with respect to producing technical docume
 
 It should be read in conjunction with the [CESSDA Technical Guidelines](https://docs.tech.cessda.eu) in general,
 and both the
-[Standard Git Repository Contents section](https://docs.tech.cessda.eu/platform/gcp-repository-standard-contents.html)
+[Standard Git Repository Contents section]({% link technical-infrastructure/gcp-repository-standard-contents.md %})
 and the SML requirement
-[CA1.3](https://docs.tech.cessda.eu/sml/ca1-documentation.html#ca13-development-documentation)
+[CA1.3]({% link sml/ca1-documentation.md %})
 in particular.
 
 ## Technical manual

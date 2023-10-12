@@ -39,15 +39,14 @@ pipeline {
 			stages {
 				stage('Lint Documentation') {
 					steps {
-						sh "bundle exec rake lint"
+						sh 'bundle exec mdl --git-recurse .'
 					}
 				}
 				stage('Build Deployable Documentation') {
 					steps {
-						sh "jekyll build"
-						sh "bundle exec rake htmlproofer"
+						sh 'jekyll build'
+						sh 'bundle exec rake htmlproofer'
 					}
-					/*when { branch 'master' }*/
 				}
 				// Corrects links so that the Jenkins preview works
 				stage('Build Test Documentation') {

@@ -29,8 +29,8 @@ This approach is facilitated by the adoption of a microservices architecture bas
 provides a mechanism for reusing and combining {% include glossary.html entry="(software artefacts)" text="software artefacts" %},
 regardless of their implementation details or coding language.
 <!-- TODO: Link to current API guidelines, should be merged into these guidelines -->
-The [API design guidelines](https://github.com/cessda/cessda.guidelines.api/wiki/Home) are intended to ensure a level of consistency
-(in both the calling and return structures and formats) that will reduce the burden of interacting with multiple services.
+<!-- The [API design guidelines](https://github.com/cessda/cessda.guidelines.api/wiki/Home) are intended to ensure a level of consistency
+(in both the calling and return structures and formats) that will reduce the burden of interacting with multiple services. -->
 
 See also 12 factor, number 7 ([Port binding - Export services via port binding](https://12factor.net/port-binding)).
 

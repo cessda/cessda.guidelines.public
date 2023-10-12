@@ -24,7 +24,7 @@ Before doing anything, you must **log in to GitHub using an account that has adm
 
 ### Clone the template
 
-[CESSDA code repository template](<https://github.com/cessda/cessda.code-repo.template/>)
+CESSDA code repository template (cessda/cessda.code-repo.template - private)
 
 ### Edit the boilerplate files
 
