@@ -13,9 +13,9 @@ See [Naming Conventions]({% link technical-infrastructure/naming-conventions.md 
 ## Overview
 
 The diagram shows a general overview of the GCP projects,
-Jenkins CI/CD toolchain and Bitbucket code repositories and how they are integrated within the deployment pipeline.
+Jenkins CI/CD toolchain and GitHub code repositories and how they are integrated within the deployment pipeline.
 
-* This designs explains the version control systems in [Bitbucket](https://bitbucket.org/cessda/)
+* This designs explains the version control systems in [GitHub](https://github.com/cessda/)
 
 This system allows developers to keep track of the changes in CESSDA software development projects,
 and enable them to collaborate on those projects or tools.
@@ -41,7 +41,7 @@ In this design, an upstream job would be created to parametrize the
 {% include glossary.html entry="(component)" text="component" %} repository
 and Deployment repository to form a pipeline that compile, builds, builds images,
 deploys to development and staging environments as seen in
-[Deployment_Pipeline]({% link technical-infrastructure/continous-integration-and-deployment/deployment-pipeline-overview.md %}).
+[Deployment_Pipeline]({% link technical-infrastructure/continuous-integration-and-deployment/deployment-pipeline-overview.md %}).
 Jenkins deploys automatically into the development and staging environments.
 Jenkins also gives a seamless and more robust way to integrate the entire toolchain for build, test, and deployment.
 

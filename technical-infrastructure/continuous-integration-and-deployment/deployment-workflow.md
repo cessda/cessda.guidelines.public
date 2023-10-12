@@ -21,7 +21,7 @@ instance of the module or  {% include glossary.html entry="(component)" text="co
 However, deployment to the production environment is manually initiated after testing and
 sign-off in the staging environment.
 
-[Helm charts]({% link technical-infrastructure/continous-integration-and-deployment/deployment-with-helm.md %})
+[Helm charts]({% link technical-infrastructure/continuous-integration-and-deployment/deployment-with-helm.md %})
 are used to orchestrate the deployment of an application's components.
 
 ![DataFlow_Diagram](../../images/dataflow-diagram.png)

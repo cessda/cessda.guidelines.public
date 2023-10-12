@@ -37,3 +37,7 @@ Changes since previous version:
 {% else %}
 This is version {{ site.version }}, released on {{ site.time | date: "%d %B %Y" }}.
 {% endif %}
+
+![CC-BY-4.0](images/cc-by.svg "CC-BY-4.0")
+This work is licensed under
+[Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/).

@@ -30,6 +30,7 @@ The indentation is intended to indicate major sections, subsections and sub-subs
 (200) Service Operation
   (210) Service Requirements
   (220) Service Objectives
+  (230) Service Level Agreement
 
 (300) Technical Infrastructure
   (301) Documentation Tooling
@@ -52,7 +53,7 @@ The indentation is intended to indicate major sections, subsections and sub-subs
     (3602) Adding the Deployment Jenkinsfile
   (365) Building with Docker
   (370) Platform Team Responsibilities
-    (3701) Create a Bitbucket Repository
+    (3701) Create a GitHub Repository
     (3702) Standard Git Repository Contents
     (3703) Create a New Jenkins Job
     (3704) Creating a Test Suite

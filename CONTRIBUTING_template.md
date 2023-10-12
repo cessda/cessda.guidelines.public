@@ -6,7 +6,7 @@ Please note that we welcome all forms of user feedback and are generally open to
 but please read this document carefully before proceeding.
 
 General information on contributing to CESSDA Open Source Software can also be found in the
-[Contribution Guidelines](https://bitbucket.org/cessda/cessda.guidelines.public/src/master/CONTRIBUTING.md).
+[Contribution Guidelines](https://github.com/cessda/cessda.guidelines.public/blob/main/CONTRIBUTING.md).
 
 ## User feedback
 

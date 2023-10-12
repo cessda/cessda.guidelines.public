@@ -6,7 +6,7 @@ nav_order: 100
 
 # {{ page.title }}
 
-Development of CESSDA tools and services is carried out using CESSDA-owned git-repositories on Bitbucket.
+Development of CESSDA tools and services is carried out using CESSDA-owned git-repositories on GitHub.
 
 If the code is developed publicly elsewhere, mirroring with clear pointers to the upstream are used.
 

@@ -116,8 +116,8 @@ acts as the staging environment and the `production-cluster` acts as the product
 ## Application Deployment Process
 
 See also
-[Deployment Pipeline overview]({% link technical-infrastructure/continous-integration-and-deployment/deployment-pipeline-overview.md %})
-and [Deployment Pipeline details]({% link technical-infrastructure/continous-integration-and-deployment/deployment-pipeline-details.md %}).
+[Deployment Pipeline overview]({% link technical-infrastructure/continuous-integration-and-deployment/deployment-pipeline-overview.md %})
+and [Deployment Pipeline details]({% link technical-infrastructure/continuous-integration-and-deployment/deployment-pipeline-details.md %}).
 
 [Jenkins pipelines](https://jenkins.io/doc/book/pipeline/) are used to build, test and deploy components.
 The general principle is to build once, deploy many times, configure on launch and automatically test en route.

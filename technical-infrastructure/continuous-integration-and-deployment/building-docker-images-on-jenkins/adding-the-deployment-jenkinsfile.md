@@ -49,5 +49,5 @@ stage('Create deployment') {
 
 Helm deploys the component with the name `${productName}` to the namespace `${productName}` using the image tag `${imageTag}`.
 See [the Helm documentation](https://helm.sh/docs/) and
-[using Helm to deploy products]({% link technical-infrastructure/continous-integration-and-deployment/deployment-with-helm.md %})
+[using Helm to deploy products]({% link technical-infrastructure/continuous-integration-and-deployment/deployment-with-helm.md %})
 for more information.

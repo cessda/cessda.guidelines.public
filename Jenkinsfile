@@ -39,15 +39,14 @@ pipeline {
 			stages {
 				stage('Lint Documentation') {
 					steps {
-						sh "bundle exec rake lint"
+						sh 'bundle exec mdl --git-recurse .'
 					}
 				}
 				stage('Build Deployable Documentation') {
 					steps {
-						sh "jekyll build"
-						sh "bundle exec rake htmlproofer"
+						sh 'jekyll build'
+						sh 'bundle exec rake htmlproofer'
 					}
-					/*when { branch 'master' }*/
 				}
 				// Corrects links so that the Jenkins preview works
 				stage('Build Test Documentation') {
@@ -95,7 +94,7 @@ pipeline {
 		}
 		stage('Deploy Guidelines') {
 			steps {
-				build job: 'cessda.guidelines.deploy/master', parameters: [string(name: 'imageTag', value: "${env.BRANCH_NAME}-${env.BUILD_NUMBER}")]
+				build job: 'cessda.guidelines.deploy/main', parameters: [string(name: 'imageTag', value: "${env.BRANCH_NAME}-${env.BUILD_NUMBER}")]
 			}
 			when { branch 'main' }
 		}
