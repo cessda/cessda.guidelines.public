@@ -12,7 +12,7 @@ Communities and organisations wishing to use the CESSDA Vocabulary Service to cr
 manage and publish their own vocabularies, thus enhancing data interoperability by enabling
 users to search and download controlled vocabularies.
 
-Typical roles are Agency Administrator, Source Language Administrator, Target Language Administrator.
+Typical roles are an Agency Administrator, Source Language Administrator or a Target Language Administrator.
 
 ## Usage
 
@@ -27,4 +27,4 @@ Depending on your role, you may be interested in:
 Use this form to request a CESSDA Vocabulary Service Agency for your organisation.
 
 <iframe src="https://forms.gle/BeJE46Qcj7Kymr4U8"
-  width="640" height="691" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  style="width: 100%; height: 1000px;" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
