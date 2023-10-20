@@ -19,19 +19,21 @@ Jenkins CI/CD toolchain and GitHub code repositories and how they are integrated
 
 This system allows developers to keep track of the changes in CESSDA software development projects,
 and enable them to collaborate on those projects or tools.
+
+## Repository Types
+
 There are two types repositories to be used in the CI/CD process;
 {% include glossary.html entry="(component)" text="component" %} and Deployment repositories.
 
-**Component repositories** are software modules or Microservice projects that are version
-controlled. The  {% include glossary.html entry="(component)" text="component" %} repository also contain the Dockerfile
-which builds the Docker image for the module or project.
+**Component repositories** contain the source code for components for various CESSDA applications.
+The {% include glossary.html entry="(component)" text="component" %} repository also contain the Dockerfile
+which builds the Docker image for the component.
 
-**Deployment repository** contains the scripts that run the deployment and also contains
-some secrets used in the setting up Microservices on clouds.
+**Deployment repositories** contain scripts and deployment manifests that deploy components and dependencies to Kubernetes clusters
 
 This design separates the repositories containing the application software
-(which may be made Open Source at some point) from those containing the deployment scripts and other sensitive elements
-(which will remain private with write access restricted to the CESSDA Platform team only).
+(which are usually public) from those containing the deployment scripts and other sensitive elements
+(which are private with write access restricted to the CESSDA Platform team only).
 
 * The design also explains CESSDA's CI/CD automation in [Jenkins](https://jenkins.cessda.eu/).
 
