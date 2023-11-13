@@ -83,7 +83,7 @@ For example, the development instance of CDC is deployed to the `development-clu
 the staging instance of CDC is deployed to the `staging-cluster` of the CESSDA Development GCP Project,
 and the production instance of CDC is deployed to the `production-cluster` of the CESSDA Production GCP Project.
 The same goes for the development, staging and production instances of other products such as CVS, DVS and EQB.
-These deployments are independent from each other so problems in testing won't have adverse effects on production.
+These deployments are independent from each other so problems in testing environments (`development-cluster` and `staging-cluster`) won't have adverse effects on production.
 
 ## Application Deployment Process
 
