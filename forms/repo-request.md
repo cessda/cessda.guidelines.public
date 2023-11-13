@@ -17,9 +17,7 @@ Typical roles are Technical Contact, Content Contact, Platform Team member.
 Depending on your role, you may be interested in:
 
 * requesting a new Git repository to host software code for a product or tool;
-
 * requesting a new Git repository to host supporting documentation;
-
 * Requesting a new Git repository to host an issue tracker.
 
 ## Purpose
@@ -27,4 +25,4 @@ Depending on your role, you may be interested in:
 Use this form to request a new [Git repository, hosted on GitHub](https://github.com/cessda/).
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdP7oOyLWbRKsEtPszEY_NKyQ6Db32jmoku5IatlIzmeP6LVQ/viewform?embedded=true"
-  width="640" height="875" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  style="width: 100%; height: 1068px;" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>

@@ -23,5 +23,5 @@ Depending on your role, you may be interested in:
 
 Use this form to request access to the ELSST content management tool.
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd5mnyStRykIcpiZn7hZCtfakpUclKMijSoUHSOIUYHpofiXw/viewform?embedded=true"
-   width="640" height="917" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<iframe style="width: 100%; height: 1000px;" src="https://docs.google.com/forms/d/e/1FAIpQLSd5mnyStRykIcpiZn7hZCtfakpUclKMijSoUHSOIUYHpofiXw/viewform?embedded=true"
+  frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
