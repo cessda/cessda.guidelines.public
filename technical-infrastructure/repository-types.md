@@ -12,7 +12,7 @@ See [Naming Conventions]({% link technical-infrastructure/naming-conventions.md 
 
 ## Overview
 
-There are three types repositories used in the CI/CD process; {% include glossary.html entry="(component)" text="component" %} repositories and Deployment repositories.
+There are three types repositories used in the CI/CD process; {% include glossary.html entry="(component)" text="component" %} repositories and {% include glossary.html entry="(deployment)" text="deployment" %} repositories.
 
 ### Component repositories
 

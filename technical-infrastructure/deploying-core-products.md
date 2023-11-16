@@ -19,7 +19,7 @@ This is the procedure for deploying a new version of a CESSDA core {% include gl
 
 See the 'Product Coordination' document for definition of roles.
 
-- Service Maintainer
+- Technical Maintainer
 - Service Owner
 - User Group
 - Platform Maintainer
@@ -36,6 +36,7 @@ To prepare for a release, the service owner creates a release issue in the issue
 - The issue should include a checklist of steps that are necessary for a release
   - Backups before release
   - Upgrade procedures for dependency updates
+  - Reserve a DOI in Zenodo and add it to the changelog
 - The issue should also contain links to the release checklist and the release report
 
 Before the release can be performed the service owner must approve the release in writing in the release issue, or state the reason why the release cannot be performed (e.g. bugs, design changes, test failures).
@@ -47,7 +48,7 @@ Once all pre-release activities have been concluded and the release has been app
 - The source code repositories must [tagged](https://git-scm.com/book/en/v2/Git-Basics-Tagging) with the release version number. The format used is X.Y.Z.
 - The service maintainer verifies that the tagged build is successfully deployed to the staging environment.
 
-Deploying to production happens via production deployment jobs, which are postfixed with `deploy.prod` in Jenkins. These jobs automatically tag Docker images as production images, then calls the deployment script of the product with the tagged images. The deployment script will deploy the tagged images to the production cluster. This is done by the platform maintainer.
+Deploying to production happens via production deployment jobs, which are postfixed with `deploy.prod` in Jenkins. These jobs automatically tag Docker images as production images, then call the deployment script of the product with the tagged images. The deployment script will deploy the tagged images to the production cluster. This is done by the platform maintainer.
 
 ## Verifying the Release
 
@@ -63,4 +64,4 @@ Once the service owner is satisfied that the release is stable, the user group a
 
 The release is formally published on Zenodo (with a DOI reference) and GitHub (using the releases feature).
 
-Once the release is formally published and announced, the release issue and corresponding milestone is closed.
+Once the release is formally published and announced, the release issue and corresponding milestone are closed.

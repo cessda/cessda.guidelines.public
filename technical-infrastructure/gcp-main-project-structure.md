@@ -24,7 +24,7 @@ The development cluster is where newly built components are deployed. Components
 
 ![GCP Main Project Structure Development](../images/gcp-main-project-structure-development.png)
 
-The staging cluster is deployed to after integration and is used as a stable basis for user testing. Components are deployed to this cluster after integration tests have passed, which ensures this stability. Stability of applications in the staging cluster is maintained on a best effort basis.
+The staging cluster is deployed to after integration and is used as a basis for user testing. Components are deployed to this cluster after integration tests have passed. Stability of applications in the staging cluster is maintained on a best effort basis.
 
 ![GCP Main Project Structure Staging](../images/gcp-main-project-structure-staging.png)
 

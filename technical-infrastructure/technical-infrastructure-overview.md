@@ -36,7 +36,7 @@ The structure of each GCP project follows the same set of principles:
 
 The Google Kubernetes Engine (GKE) is an environment for deploying containerized (i.e. Dockerized) applications.
 A Docker container provides an isolated context in which an application can run with its own environment.
-Docker containers run Docker images, which is a snapshot of an application and all its dependencies.
+A Docker container runs a Docker image, which is a package containing the application and all its dependencies.
 This enables GKE to provide rapid application development by making it easy to deploy, update, and manage CESSDA's products.
 
 ![GCP Main Project Structure Sandbox](../images/gcp-main-project-structure-sandbox.png)
@@ -82,7 +82,7 @@ and the `production-cluster` acts as the production environment.
 For example, the development instance of CDC is deployed to the `development-cluster` of the CESSDA Development GCP Project,
 the staging instance of CDC is deployed to the `staging-cluster` of the CESSDA Development GCP Project,
 and the production instance of CDC is deployed to the `production-cluster` of the CESSDA Production GCP Project.
-The same goes for the development, staging and production instances of other products such as CVS, DVS and EQB.
+The same goes for the development, staging and production instances of other products such as CMV, CVS and ELSST.
 These deployments are independent from each other so problems in testing environments (`development-cluster` and `staging-cluster`) won't have adverse effects on production.
 
 ## Application Deployment Process
@@ -110,7 +110,7 @@ Each component of CDC is built from the main branch of the Git repository.
 - Jenkins automatically builds the main branch when commits are made to it.
 - A successful build is deployed to the development cluster.
 - Integration tests are run against the deployed components of the development cluster. If these are successful the components are deployed together on the staging cluster.
-- If ready to go live, the components are deployed manually to the `production-cluster`.
+- When ready to go live, the components are deployed manually to the `production-cluster`.
 
 ### Deployment vs Application Code
 
