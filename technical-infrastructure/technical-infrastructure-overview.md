@@ -43,8 +43,6 @@ This enables GKE to provide rapid application development by making it easy to d
 
 ## CESSDA Development GCP Project
 
-See also [Technical Infrastructure Details]({% link technical-infrastructure/technical-infrastructure-details.md %}).
-
 The CESSDA Development GCP Project contains two Kubernetes clusters, `development-cluster` and `staging-cluster`.
 See [GCP Main Project Structure]({% link technical-infrastructure/gcp-main-project-structure.md %}) for more details of the clusters.
 
