@@ -20,8 +20,8 @@
   description: "A combination of CI and CT"
 
 - entry: "COTS"
-  title: "“Commercial Off the Shelf.”
-  description: “Software and services are built and delivered usually from a third party vendor.”
+  title: "“Commercial Off the Shelf.”"
+  description: "“Software and services are built and delivered usually from a third party vendor.”
                 Source: Wikipedia:Commercial off-the-shelf"
 
 - entry: "HCI"
@@ -81,4 +81,8 @@
   description: "“The degree to which a product can be used by specified consumers to achieve quantified objectives
                with effectiveness, efficiency, and satisfaction in a quantified context of use.”
                Source: Ergonomic Requirements for Office Work with Visual Display Terminals, ISO 9241-11, ISO, Geneva, 1998"
+
+- entry: "(deployment)"
+  title: Deployment
+  description: "A particular configuration of an Application running on the CESSDA Technical Infrastructure"
 

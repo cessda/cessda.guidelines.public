@@ -31,27 +31,17 @@ The structure of each GCP project follows the same set of principles:
 - each [Kubernetes cluster namespace](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/)
  contains components belonging to a single product, and logically separates them from the
   contents of other namespaces in that cluster
-- external access to the components in each namespace is mediated by a reverse proxy situated in
- that namespace
-- all the namespaces in a cluster and hence all the components in a cluster share the computing
- resources allocated to that cluster
+- external access to the components in each namespace is mediated by a reverse proxy located in that namespace
+- all the namespaces in a cluster, and hence all the components in a cluster, share the computing resources allocated to that cluster
 
-The Google Kubernetes Engine (GKE) is an environment for deploying containerized (i.e. Dockerized)
-applications.
+The Google Kubernetes Engine (GKE) is an environment for deploying containerized (i.e. Dockerized) applications.
 A Docker container provides an isolated context in which an application can run with its own environment.
-At every deployment instance, container images are built and pushed to the Google Cloud registry associated
-with the GCP Production project.
-Docker containers use these images when running the applications.
-This enables GKE to provide rapid application development by making it easy to deploy, update,
-and manage CESSDA's products.
-GKE can operate both in stateless mode, and also can be configured to deploy backing components like persistent volumes/storage,
-and even run a database in the cluster.
+A Docker container runs a Docker image, which is a package containing the application and all its dependencies.
+This enables GKE to provide rapid application development by making it easy to deploy, update, and manage CESSDA's products.
 
 ![GCP Main Project Structure Sandbox](../images/gcp-main-project-structure-sandbox.png)
 
 ## CESSDA Development GCP Project
-
-See also [Technical Infrastructure Details]({% link technical-infrastructure/technical-infrastructure-details.md %}).
 
 The CESSDA Development GCP Project contains two Kubernetes clusters, `development-cluster` and `staging-cluster`.
 See [GCP Main Project Structure]({% link technical-infrastructure/gcp-main-project-structure.md %}) for more details of the clusters.
@@ -59,21 +49,19 @@ See [GCP Main Project Structure]({% link technical-infrastructure/gcp-main-proje
 ## CESSDA Production GCP Project
 
 The CESSDA Production GCP Project contains two Kubernetes clusters, `production-cluster` and `management-cluster`.
- See [GCP Main Project Structure]({% link technical-infrastructure/gcp-main-project-structure.md %}) for more details of the `production-cluster`.
 
 The management-cluster contains various utility, monitoring, testing and deployment tools,
 based on 3rd party components including:
 
-- [AlertManager](https://prometheus.io/docs/alerting/alertmanager/) for automatic alerting when
- faults or alarm conditions occur
+- [AlertManager](https://prometheus.io/docs/alerting/alertmanager/) for automatic alerting when faults or alarm conditions occur
 - [Certbot](https://certbot.eff.org/) for automated TLS/SSL certificate renewal
 - [Grafana](https://grafana.com/) for visualisation of monitoring data
 - [Graylog](https://www.graylog.org/) for log aggregation
 - [HAProxy](https://www.haproxy.org/) for reverse proxying
 - [Jenkins](https://jenkins.io/) for CI/CT - build, test and deploy components
 - [JMeter](https://jmeter.apache.org/) for stress testing
-- [Kibana](https://www.elastic.co/kibana) for analysing and visualising the contents of ElasticSearch indices
-- [Nexus](https://www.sonatype.com/product-nexus-repository) for local caching of build artefacts
+- [Kibana](https://www.elastic.co/kibana) for analysing and visualising logs gathered by Graylog
+- [Sonatype Nexus](https://www.sonatype.com/product-nexus-repository) for local caching of dependencies and an authoritative store of CESSDA authored libraries
 - [Prometheus](https://prometheus.io/) for  {% include glossary.html entry="(component)" text="component" %} monitoring
 - [Selenium](https://www.seleniumhq.org/) for user journey testing
 - [SonarQube](https://www.sonarsource.com/products/sonarqube/) code quality analysis
@@ -81,48 +69,31 @@ based on 3rd party components including:
 It also contains a Docker Registry - images built in the `management-cluster` are pushed to it,
 and deployments to other clusters in the project pull from it.
 
-## CESSDA Sandbox GCP Project
-
-The GCP Sandbox project contains a management-cluster which contains various utility, monitoring,
-testing and deployment tools, based on 3rd party components.
-The list is similar to that above, and it is used to test updates to the 3rd party components,
-before rolling them out to the production management-cluster.
-It may also contain other ephemeral clusters as required (e.g. to be used for deploying components during training events).
-
-It also contains a Docker Registry - images built in the `management-cluster` are pushed to it,
-and deployments to other clusters in the project pull from it.
+See [GCP Main Project Structure]({% link technical-infrastructure/gcp-main-project-structure.md %}) for more details of the `production-cluster`.
 
 ## Multiple Deployment Environments
 
-The `development-cluster` acts as the development environment,
-the `staging-cluster` acts as the staging environment
+The `development-cluster` acts as the development environment,  
+the `staging-cluster` acts as the staging environment  
 and the `production-cluster` acts as the production environment.
 
-Therefore the development instance of a {% include glossary.html entry="(product)" text="product" %}
-is deployed to the `development-cluster` of the CESSDA Development GCP Project,
-the staging instance of a  {% include glossary.html entry="(product)" text="product" %}
-is deployed to the `staging-cluster` of the CESSDA Development GCP Project,
-and the production instance of a  {% include glossary.html entry="(product)" text="product" %}
-is deployed to the `production-cluster` of the CESSDA Production GCP Project.
-
-To put this in the context of a specific tool, the CDC development instance is deployed to the `development-cluster`
-of the CESSDA Development GCP Project,
+For example, the development instance of CDC is deployed to the `development-cluster` of the CESSDA Development GCP Project,
 the staging instance of CDC is deployed to the `staging-cluster` of the CESSDA Development GCP Project,
-and the CDC production instance is deployed to the `production-cluster` of the CESSDA Production GCP Project.
-The same goes for the development, staging and production instances of CVS, DVS and EQB.
-Therefore the `development-cluster` acts as the development environment, the `staging-cluster`
-acts as the staging environment and the `production-cluster` acts as the production environment.
+and the production instance of CDC is deployed to the `production-cluster` of the CESSDA Production GCP Project.
+The same goes for the development, staging and production instances of other products such as CMV, CVS and ELSST.
+These deployments are independent from each other so problems in testing environments (`development-cluster` and `staging-cluster`) won't have adverse effects on production.
 
 ## Application Deployment Process
-
-See also
-[Deployment Pipeline overview]({% link technical-infrastructure/continuous-integration-and-deployment/deployment-pipeline-overview.md %})
-and [Deployment Pipeline details]({% link technical-infrastructure/continuous-integration-and-deployment/deployment-pipeline-details.md %}).
 
 [Jenkins pipelines](https://jenkins.io/doc/book/pipeline/) are used to build, test and deploy components.
 The general principle is to build once, deploy many times, configure on launch and automatically test en route.
 Components are deployed to three different environments (the `development-cluster`, `staging-cluster` and `production-cluster` described above).
 The Docker registry is used as local storage to enable the 'build once, deploy many times' approach.
+
+Further reading
+
+- [Deployment Pipeline overview]({% link technical-infrastructure/continuous-integration-and-deployment/deployment-pipeline-overview.md %})
+- [Deployment Pipeline details]({% link technical-infrastructure/continuous-integration-and-deployment/deployment-pipeline-details.md %}).
 
 ### Jenkinsfile examples
 
@@ -132,11 +103,12 @@ See [Jenkinsfile template for JDK11 Maven Projects]({% link technical-infrastruc
 
 ### Example Deployment - CESSDA Data Catalogue
 
-In the case of the CDC, there is a master branch (which can have feature branches, as required).
-When commits are made to master, a successful build deploys to the development cluster.
-After further testing, it is automatically deployed to the staging cluster.
-If ready to go live, it is manually deployed to the `production-cluster`
-([datacatalogue.cessda.eu](https://datacatalogue.cessda.eu/)).
+Each component of CDC is built from the main branch of the Git repository.
+
+- Jenkins automatically builds the main branch when commits are made to it.
+- A successful build is deployed to the development cluster.
+- Integration tests are run against the deployed components of the development cluster. If these are successful the components are deployed together on the staging cluster.
+- When ready to go live, the components are deployed manually to the `production-cluster`.
 
 ### Deployment vs Application Code
 

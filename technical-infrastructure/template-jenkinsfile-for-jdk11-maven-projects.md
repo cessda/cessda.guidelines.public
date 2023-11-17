@@ -12,27 +12,34 @@ See [Naming Conventions]({% link technical-infrastructure/naming-conventions.md 
 
 ## Overview
 
-This shows the general form of a Jenkinsfile used with a Maven project based on JDK11.
+This shows an example of a Jenkinsfile that could be used with a Maven project based on JDK11.
+
+CESSDA uses Jenkins’ Declarative Pipelines feature to form the logic of the builds. See <https://jenkins.io/doc/book/pipeline/syntax/> for more information on the syntax of Declarative pipelines.
+
+### The `environment` Block
 
 The `environment` block defines environment variables that will be referenced in multiple stages of the build.
-These include the name of the product and the module, and a Docker image tag.
-The `${env.DOCKER_ARTIFACT_REGISTRY}` variable refers to the CESSDA Docker repository and is set by the build environment.
+These include the name of the component of the product being compiled as well as the name of the product itself.
+
+A Docker image tag is derived from the product and component names. This is combined with `${env.DOCKER_ARTIFACT_REGISTRY}`, a global variable set by the build environment, and `${env.BUILD_NUMBER}` to create the final image name for this build.
 
 ```groovy
 environment {
     product_name = "product"
-    module_name = "module"
-    image_tag = "${env.DOCKER_ARTIFACT_REGISTRY}/${product_name}-${module_name}:${env.BUILD_NUMBER}"
+    component_name = "module"
+    image_tag = "${env.DOCKER_ARTIFACT_REGISTRY}/${product_name}-${component_name}:${env.BUILD_NUMBER}"
 }
 ```
 
-Specify the Jenkins agent to use to perform the build. Most builds will use the standard agent.
+### The `agent` Block
+
+The `agent` block specifies the Jenkins agent to use to perform the build. Most builds will use the standard agent, which can be selected using `agent any`.
 
 ```groovy
 agent any
 ```
 
-If a build needs more than 500MB of memory, an agent with 6GB of memory can be provisioned.
+If a build needs more than 500MB of memory, an agent with 6GB of memory can be provisioned by requesting an agent with the label `jnlp-himem`.
 
 ```groovy
 agent {
@@ -40,9 +47,13 @@ agent {
 }
 ```
 
-Steps to compile and test the application. This is performed in a Docker container that has JDK 11 installed.
-The `reuseNode` option tells Jenkins not to provision a new workspace for the build.
-If `reuseNode` is not set, or is set to `false`, then the results of the build will not be available to future stages.
+### The `stage` Blocks
+
+The `stage` blocks contain the steps needed to compile and test the application. Each stage can specify its own agent, in this case the "Build Project" stage is requesting that the build run in a `openjdk:11-jdk` Docker container.
+
+The `agent` block specifies `reuseNode`, a setting that tells Jenkins not to provision a new JNLP agent (and thus a clean workspace) for this stage. If `reuseNode` is not set, or is set to `false`, then the results of the build will not be available to future stages.
+
+#### The "Build Project" Stage
 
 ```groovy
 stage('Build Project') {
@@ -65,6 +76,8 @@ stage('Record Issues') {
     }
 }
 ```
+
+#### Static Analysis Stages
 
 Run a SonarQube scan and fail the build if the Quality Gate is not passed
 
@@ -90,6 +103,8 @@ stage('Run Sonar Scan') {
 }
 ```
 
+#### Build Docker Image Stage
+
 Build the Docker image, push it to the image registry and tag the image as the latest version
 
 ```groovy
@@ -98,11 +113,13 @@ stage('Build and Push Docker image') {
         // Authenticate against the Docker registry
         sh "gcloud auth configure-docker ${env.ARTIFACT_REGISTRY_HOST}"
         withMaven { sh "./mvnw jib:build -Dimage=${image_tag}" }
-        sh "gcloud artifacts docker tags add ${image_tag} ${env.DOCKER_ARTIFACT_REGISTRY}/${product_name}-${module_name}:latest"
+        sh "gcloud artifacts docker tags add ${image_tag} ${env.DOCKER_ARTIFACT_REGISTRY}/${product_name}-${component_name}:latest"
     }
     when { branch 'main' }
 }
 ```
+
+#### Downstream Deployment Stage
 
 Start any downstream deployment jobs
 
