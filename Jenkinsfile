@@ -29,6 +29,16 @@ pipeline {
 
 	stages {
 		// Compiles documentation
+		stage('Lint Markdown') {
+			agent {
+				dockerfile {
+					filename 'jekyll.Dockerfile'
+					reuseNode true
+				}
+			}
+			steps {
+				sh 'bundle exec mdl --git-recurse .'
+			}
 		stage('Build Documentation') {
 			agent {
 				dockerfile {
@@ -36,33 +46,19 @@ pipeline {
 					reuseNode true
 				}
 			}
-			stages {
-				stage('Lint Documentation') {
-					steps {
-						sh 'bundle exec mdl --git-recurse .'
-					}
+			steps {
+				sh 'jekyll build'
+			}
+		}
+		stage('Proof HTML') {
+			agent {
+				dockerfile {
+					filename 'jekyll.Dockerfile'
+					reuseNode true
 				}
-				stage('Build Deployable Documentation') {
-					steps {
-						sh 'jekyll build'
-						sh 'bundle exec rake htmlproofer'
-					}
-				}
-				// Corrects links so that the Jenkins preview works
-				stage('Build Test Documentation') {
-					steps {
-						sh "sed -i s#URL#\"https://jenkins.cessda.eu\"#g _config.jenkins.yml"
-						sh "sed -i s#BASE#\"/job/cessda.guidelines.public/job/${env.BRANCH_NAME}/${env.BUILD_NUMBER}/Build_20Result/\"#g _config.jenkins.yml"
-						sh "sed -i s#JENKINSJOB#\"https://jenkins.cessda.eu/job/cessda.guidelines.public/job/${env.BRANCH_NAME}/${env.BUILD_NUMBER}/\"#g _config.jenkins.yml"
-						sh "jekyll build --config _config.yml,_config.jenkins.yml"
-					}
-					when { not { branch 'main' } }
-					post {
-						success {
-							publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: '_site/', reportFiles: 'index.html', reportName: 'Build Result', reportTitles: ''])
-						}
-					}
-				}
+			}
+			steps {
+				sh 'bundle exec rake htmlproofer'
 			}
 		}
 		stage('Run SonarQube Scan') {
