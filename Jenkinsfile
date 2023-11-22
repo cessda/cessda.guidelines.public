@@ -39,6 +39,7 @@ pipeline {
 			steps {
 				sh 'bundle exec mdl --git-recurse .'
 			}
+		}
 		stage('Build Documentation') {
 			agent {
 				dockerfile {
