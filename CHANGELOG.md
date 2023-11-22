@@ -5,6 +5,24 @@ All notable changes to the CESSDA Technical Guidelines will be documented in thi
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.4.0] - 2023-11-22
+
+### Added
+
+* Added the CC-BY-4.0 licence text and logo to the index (#122)
+
+### Changed
+
+* Made GitHub spelling consistent throughout the documentation
+* Liquid templating is now used for all internal links
+* Significant updates to the "Technical Infrastructure" section (#105)
+* Restyled the forms to match the width of the page (#110)
+* Updated GCP Container Registry references to point to the GCP Artifact Repository (#123)
+
+### Fixed
+
+* Fixed several instances of broken external links
+
 ## [1.3.0] - 2023-09-19
 
 ### Added
@@ -95,6 +113,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * Define code archiving criteria
 * Include import of Software Maturity Levels, [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2614050.svg)](https://doi.org/10.5281/zenodo.2614050)
 
+[1.4.0]: https://github.com/cessda/cessda.guidelines.public/releases/tag/1.4.0
 [1.3.0]: https://github.com/cessda/cessda.guidelines.public/releases/tag/1.3.0
 [1.2.0]: https://github.com/cessda/cessda.guidelines.public/releases/tag/1.2.0
 [1.1.0]: https://github.com/cessda/cessda.guidelines.public/releases/tag/1.1.0
