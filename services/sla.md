@@ -27,7 +27,7 @@ for updates and maintenance.
 
 Support is available for services covered by the scope of this SLA as follows:
 
-Monday to Friday, **9:00 to 15:00 CET/CEST.**
+Monday to Friday, **9:00 to 17:00 CET/CEST.**
 This excludes Norwegian public holidays and working days from December 20 to
 January 5.
 
