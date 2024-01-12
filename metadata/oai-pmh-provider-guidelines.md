@@ -51,8 +51,8 @@ it can be validated using a free to use service such as
 ## Metadata Requirements
 
 Service (Data) Providers must provide an endpoint exposing metadata represented
-as DDI 2.5 Codebook standard.Looking ahead, the CDC is set to expand its
-support to include the DDI 3.2 Lifecycle format,furthering enhancing its
+as DDI 2.5 Codebook standard. Looking ahead, the CDC is set to expand its
+support to include the DDI Lifecycle format,furthering enhancing its
 metadata handling capabilities. The DDI files must also be compliant with the
 latest version of
 [CESSDA Metadata Model (CMM)](https://zenodo.org/records/7528240).
@@ -66,8 +66,8 @@ Additionally, some other requirements are imposed.
 - Regular updates of the metadata provided
 - Deleted status when records are no longer available (see the
 [OAI-PMH specifications on deleted records](https://www.openarchives.org/OAI/openarchivesprotocol.html#DeletedRecords))
-- Provenance records for any records not originating from this repository, i.e.
-aggregated from other sources (see the
+- Provenance records for any records not originating from this repository,
+i.e. aggregated from other sources (see the
 [OAI-PMH guidelines on provenance records](https://www.openarchives.org/OAI/2.0/guidelines-provenance.htm))
 
 The CDC contains SSH study level metadata. If the repository contains

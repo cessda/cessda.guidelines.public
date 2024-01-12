@@ -15,7 +15,7 @@ CESSDA does not provide URN resolution and there is currently no central resolve
 However, CESSDA operate multiple sub-agencies for each distinct services
 
 * `int.cessda.cv` - [CESSDA owned vocabularies](https://vocabularies.cessda.eu/?f=agency:CESSDA),
-*not* the service
+**not** the service
 * `int.cessda.elsst` - ELSST Thesaurus
 * `int.cessda.eqb` - EQB
 
