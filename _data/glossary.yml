@@ -61,6 +61,10 @@
   title: "Product"
   description: "A deployed Application (e.g. CDC, CVS, DVS, EQB)"
 
+- entry: "(management tool)"
+  title: "Management tool"
+  description: "A third party application used for supporting CESSDA services (eg. Jenkins CI/CD, Prometheus etc)"
+
 - entry: "(service)"
   title: "[software] Service"
   description: "An overall user experience (e.g. CDC, CVS, DVS, EQB);
