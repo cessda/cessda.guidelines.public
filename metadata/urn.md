@@ -8,13 +8,14 @@ nav_order: 730
 
 ## General Information
 
-CESSDA uses URNs, as required by the DDI standards. The URN agency and sub-agencies are registered at the [DDI Agency Registry](https://registry.ddialliance.org/Agency?agencyName=int.cessda).
+CESSDA uses Uniform Reseource Names (URNs), as required by the DDI standards.
+CESSDA has registered its primary agency and sub-agencies at the [DDI Agency Registry](https://registry.ddialliance.org/Agency?agencyName=int.cessda).
 
 CESSDA does not provide URN resolution and there is currently no central resolver.
+However, CESSDA operate multiple sub-agencies for each distinct services
 
-We have several sub-agencies for the various services
-
-* `int.cessda.cv` - CESSDA owned vocabularies, *not* the service
+* `int.cessda.cv` - [CESSDA owned vocabularies](https://vocabularies.cessda.eu/?f=agency:CESSDA),
+  **not** the service
 * `int.cessda.elsst` - ELSST Thesaurus
 * `int.cessda.eqb` - EQB
 
@@ -33,5 +34,7 @@ Every concept has a unique identifier which is mapped using the URI template.
 Versions are written as an ascending number, e.g. 1, 2, 3.
 We do not have a way to resolve versions at the moment.
 
-The form to use in the SKOS representation matches the URI form, with `dc:isVersionOf` set to the versionless/latest identifier
-for each concept. For the root the ID is `https://elsst.cessda.eu/id/3/` with `dc:isVersionOf` set to `https://elsst.cessda.eu/id/`.
+The form to use in the SKOS representation matches the URI form, with
+`dc:isVersionOf` set to the versionless/latest identifier for each concept.
+For the root the ID is `https://elsst.cessda.eu/id/3/` with `dc:isVersionOf`
+set to `https://elsst.cessda.eu/id/`.
