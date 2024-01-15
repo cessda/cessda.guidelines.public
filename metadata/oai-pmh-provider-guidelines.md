@@ -65,10 +65,10 @@ Additionally, some other requirements are imposed.
 
 - Regular updates of the metadata provided
 - Deleted status when records are no longer available (see the
-[OAI-PMH specifications on deleted records](https://www.openarchives.org/OAI/openarchivesprotocol.html#DeletedRecords))
+  [OAI-PMH specifications on deleted records](https://www.openarchives.org/OAI/openarchivesprotocol.html#DeletedRecords))
 - Provenance records for any records not originating from this repository,
-i.e. aggregated from other sources (see the
-[OAI-PMH guidelines on provenance records](https://www.openarchives.org/OAI/2.0/guidelines-provenance.htm))
+  i.e. aggregated from other sources (see the
+  [OAI-PMH guidelines on provenance records](https://www.openarchives.org/OAI/2.0/guidelines-provenance.htm))
 
 The CDC contains SSH study level metadata. If the repository contains
 (or is expected to contain) any non-SSH study level metadata, use the
