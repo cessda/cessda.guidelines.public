@@ -37,11 +37,7 @@ Fluent Bit, Graylog and Kibana (EFGK). The log pipeline for CESSDA is as below:
 
 CESSDA uses four types of logging levels:
 
-- **DEBUG:** Fine-grained information about what is going on within the system.
-  This log level is disabled on production systems.
-- **INFO:** Announcements about the normal operation of the system - scheduled
-jobs running, services starting and stopping, significant user-triggered
-processes. This log level is disabled on production systems.
-- **WARN:** Any condition that, while not an error in itself, may indicate that
-the system is running sub-optimally. This is the default logging level.
+- **DEBUG:** Fine-grained information about what is going on within the system. This log level is disabled on production systems.
+- **INFO:** Announcements about the normal operation of the system - scheduled jobs running, services starting and stopping, significant user-triggered processes. This log level is disabled on production systems.
+- **WARN:** Any condition that, while not an error in itself, may indicate that the system is running sub-optimally. This is the default logging level.
 - **ERROR:** A condition that indicates something has gone wrong with the system.

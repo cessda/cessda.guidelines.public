@@ -11,15 +11,13 @@ CESSDA IT observability is a business process that collects and analyses data fr
 and leverages that data to improve business results and drive value creation for the organization.
 Observability of the infrastructure includes:
 
-- CESSDA {% include glossary.html entry="(service)" text="Services" %}
-(such as CDC, CVS, EQB, ELSST)
+- CESSDA {% include glossary.html entry="(service)" text="Services" %} (such as CDC, CVS, EQB, ELSST)
 
 - Infrastructure {% include glossary.html entry="(management tool)" text="Management tools" %}  (eg. Jenkins jobs)
 
 The observability strategy is made up of three pillars:
 
 ![CESSDA Observability](../../images/observability-3.jpg)
-
 
 1. **Metrics Monitoring:** Metrics represent the raw measurements of resource usage or behaviour that can be
   observed and collected throughout the infrastructure.
@@ -39,5 +37,4 @@ Slack channels. The system alerts on the following elements:
 - Metrics: that are generated from the monitoring system.
 - Logs: produced from the logging system if failures or unacceptable conditions occur.
 - Service Endpoints: [availability]({% link technical-infrastructure/observability/availability.md %}).
-- Processes: generated when there are failures in the
-{% include glossary.html entry="(CI)" text="CI/CT" %} processes.
+- Processes: generated when there are failures in the {% include glossary.html entry="(CI)" text="CI/CT" %} processes.

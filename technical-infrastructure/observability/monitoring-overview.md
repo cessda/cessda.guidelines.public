@@ -68,42 +68,42 @@ HAProxy, Jenkins and Elasticsearch rely on exporters to expose metrics.
 
 ## Architecture
 
-- The Monitoring Architecture is a Prometheus stack made up of Prometheus
+The Monitoring Architecture is a Prometheus stack made up of Prometheus
 server, metrics exporters/client  libraries, AlertManager and Grafana.
 
-- The Prometheus server consist of a time series database (tsdb),
+The Prometheus server consist of a time series database (tsdb),
 a data retrieval agent, and a web server. The data retrieval agent is used to
 discover targets in Kubernetes and pull metrics from exporters or applications
 exposed with clients libraries and stored in a time series database. PromQL is
 a functional query language that is used to select and aggregate time-series
 data from the Prometheus database.
 
-- AlertManager sends notifications, through a specified notification channel,
+AlertManager sends notifications, through a specified notification channel,
   based on alert rules defined in Prometheus configurations.
 
-- Grafana connects and queries metrics from Prometheus server.
+Grafana connects and queries metrics from Prometheus server.
 Visualisation dashboards can be created from these metrics for trends and
 analysis purposes.
 
 ## CESSDA Monitoring Composition
 
-- Prometheus servers are installed across the four clusters in the CESSDA infrastructure
+Prometheus servers are installed across the four clusters in the CESSDA infrastructure
   (management, production, staging and development).
 
-- Kube-state-metrics and Node are the main exporters deployed in the four
+Kube-state-metrics and Node are the main exporters deployed in the four
 clusters that collect Kubernetes resource metrics and make them available for
 the Prometheus server to store in its time series database.
 
-- There are other exporters deployed for third party tools like Jenkins,
+There are other exporters deployed for third party tools like Jenkins,
 Elasticsearch and HaProxy, depending on which tools are running in the cluster.
 
-- Grafana is only deployed on the Management cluster to centrally send alert
+ Grafana is only deployed on the Management cluster to centrally send alert
 notifications and visualize and analyze metrics respectively.
 
-- Alertmanager is disabled in all the environments excepts for Management and
+Alertmanager is disabled in all the environments excepts for Management and
 productuon clusters.
 
-- Metrics data stored in a time series database are retained on persistent
+ Metrics data stored in a time series database are retained on persistent
 volumes in the clusters. The retention policy set on Prometheus is based on
 ensuring that the data does not exceed the available storage space.
 
