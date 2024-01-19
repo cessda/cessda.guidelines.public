@@ -22,13 +22,13 @@ central logging system. These streams are submitted as a structured logging form
 ## Logging processes
 
 The CESSDA logging system uses a variation of the Elastic Stack for logging - namely Elasticsearch,
-Fluent Bit (used as the log router), Graylog and Kibana (EFGK). The log pipeline for CESSDA is as below:
+Fluent Bit, Graylog and Kibana (EFGK). The log pipeline for CESSDA is as below:
 
 ![Logging_pipeline.jpg](../../images/Logging_pipeline.jpg)
 
 - The application must log each line of the stream to `stdout`.
 - The Docker engine uses the JSON-file log driver to interpret each line as one log event and outputs it as JSON.
-- Fluent Bit collects logs and uses Kubernetes Filters to enrich them with Kubernetes metadata.
+- Fluent Bit acts as log router that collects logs and uses kubernetes filters to enrich them with Kubernetes metadata.
 - Graylog server defines and indexes logs into Elasticsearch.
 - Elasticsearch stores log indices for querying.
 - Logs are queried, aggregated and visualized with Kibana.
@@ -39,8 +39,9 @@ CESSDA uses four types of logging levels:
 
 - **DEBUG:** Fine-grained information about what is going on within the system.
   This log level is disabled on production systems.
-- **INFO:** Announcements about the normal operation of the system - scheduled jobs running,
-  services starting and stopping, significant user-triggered processes.
-  This log level is disabled on production systems.
-- **WARN:** Any condition that, while not an error in itself, may indicate that the system is running sub-optimally.
+- **INFO:** Announcements about the normal operation of the system - scheduled
+jobs running, services starting and stopping, significant user-triggered
+processes. This log level is disabled on production systems.
+- **WARN:** Any condition that, while not an error in itself, may indicate that
+the system is running sub-optimally. This is the default logging level.
 - **ERROR:** A condition that indicates something has gone wrong with the system.
