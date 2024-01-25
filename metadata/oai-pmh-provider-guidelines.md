@@ -20,8 +20,7 @@ and collaborates with several European data aggregators, including
 [OpenAIRE](https://explore.openaire.eu/), [B2Find](https://b2find.eudat.eu/),
 and [GoTriple](https://gotriple.eu/), for metadata harvesting.
 
-A Basecamp space
-[OAI-PMH Endpoints](https://3.basecamp.com/3584575/projects/20060866)
+A Basecamp space OAI-PMH Endpoints
 has been set up for the dissemination of knowledge about the installation,
 configuration and use of Dataverse, Kuha2 and other OAI-PMH applications.
 Access is restricted to staff of CESSDA Service Providers.
