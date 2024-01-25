@@ -20,7 +20,7 @@ The status of a service is typically indicated as up/down or available/unavailab
 
 All CESSDA service endpoints are monitored by
 [Uptime Robot](https://uptimerobot.com/).
-A ping rrquest from Uptime Robot is sent to each endpoints every 5 minutes.
+A ping request from Uptime Robot is sent to each endpoints every 5 minutes.
 If a timely response is not received, Uptime Robot sends an alert message,
 which is picked up by CESSDA's
 [Helpdek system](https://helpdesk.cessda.eu/#dashboard)

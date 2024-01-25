@@ -8,7 +8,7 @@ nav_order: 395
 # {{ page.title }}
 
 CESSDA IT observability is a business process that collects and analyses data from its infrastructure
-and leverages that data to improve business results and drive value creation for the organization.
+and leverages that data to improve business results and drive value creation for the organisation.
 Observability of the infrastructure includes:
 
 - CESSDA {% include glossary.html entry="(service)" text="Services" %} (such as CDC, CVS, EQB, ELSST)
@@ -25,9 +25,9 @@ The observability strategy is made up of three pillars:
   and analyses those values to improve the services and optimise the infrastructure as a whole.
 1. **Logging & aggregation:** Logs are detailed records of events that occur within the components
   or the Infrastructure in general.
-  CESSDA has [central logging system]({% link technical-infrastructure/observability/logging-overview.md %}) that collects, aggregates,
+  CESSDA has a [central logging system]({% link technical-infrastructure/observability/logging-overview.md %}) that collects, aggregates,
   filters and enriches the contents of the logs and enables visualisation of system and product events,
-  which then aid debugging process and problem solving capabilities.
+  which then aid the debugging process and problem solving capabilities.
 1. **Alerting:** Alerting is the responsive component of the observability system that performs actions based on
   changes in metrics, threshold violations or/and the occurrence of unacceptable conditions.
 
