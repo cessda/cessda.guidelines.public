@@ -35,7 +35,7 @@ requirement phases up to and including product release.
 ## Privacy Assessment
 
 Note that there is a requirement to assess the Privacy Impact Rating (PIR) using the following guidelines
-(taken from the [Simplified Implementation of the Microsoft SDL](<https://www.microsoft.com/en-us/securityengineering/sdl/howto>)):
+taken from the [Simplified Implementation of the Microsoft SDL](https://www.ida.liu.se/~TDDC90/literature/papers/sdl.pdf):
 
 - *P1 High Privacy Risk. The feature, product, or service stores or
     transfers personally identifiable information (PII), changes
