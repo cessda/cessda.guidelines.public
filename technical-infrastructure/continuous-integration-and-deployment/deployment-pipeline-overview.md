@@ -16,6 +16,6 @@ See [Naming Conventions]({% link technical-infrastructure/naming-conventions.md 
 The diagram shows the deployment pipeline in CESSDA's Continuous Integration and Delivery process,
 from the moment a developer commits code changes to the deployment of the  {% include glossary.html entry="(product)" text="product" %} to production.
 
-More elaborative procedure is found in  [Deployment Workflow](deployment-workflow.md)
+More elaborative procedure is found in [Deployment-Workflow]({% deployment-workflow.html %})
 
 ![Deployment pipeline](../../images/deployment-pipeline.png)
