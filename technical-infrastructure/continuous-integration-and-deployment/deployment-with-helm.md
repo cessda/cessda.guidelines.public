@@ -14,7 +14,8 @@ See [Naming Conventions]({% link technical-infrastructure/naming-conventions.md 
 ## An Overview
 
 CESSDA uses Kubernetes to deploy and orchestrate containers running on Google
-Cloud. Previously we used scripts to manage deployments, now we use Helm charts.
+Cloud. Previously we used scripts to manage deployments,
+now we use [Helm charts](https://helm.sh/docs/topics/charts/).
 
 ### Drawbacks with deployment scripts
 
@@ -47,12 +48,15 @@ Root Chart
 
 ## How CESSDA charts are deployed
 
-Deployments on the CESSDA Technical Infrastructure use atomic deployments.
-This approach tries to ensure that if deployments do not start, either because of bugs or misconfiguration,
-the deployment will automatically roll back to a known good state.
+Deployments on the CESSDA Technical Infrastructure use atomic
+deployments.
+This approach tries to ensure that if deployments do not start,
+either because of bugs or misconfiguration, the deployment will
+automatically roll back to a known good state.
 
-All components of the chart are deployed together. Optional components can be enabled or disabled
-using a variable specified in the *values.yaml* file (typically of the form *enabled: true*).
+All components of the chart are deployed together.
+Optional components can be enabled or disabled using a variable specified
+in the *values.yaml* file (typically of the form *enabled: true*).
 
 Before deployment, Kubernetes manifests are validated using *kube-score* which
 checks that they follow best practices.
