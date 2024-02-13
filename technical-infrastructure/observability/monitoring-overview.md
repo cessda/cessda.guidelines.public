@@ -26,7 +26,7 @@ ingests data, and enables the collection and processing of metrics such as count
 One of the important aspect of monitoring is how the metrics derived for the components in the infrastructure
 are used.
 CESSDA relies on two methodologies, [USE](https://www.brendangregg.com/usemethod.html)
-and [RED](https://www.weave.works/blog/the-red-method-key-metrics-for-microservices-architecture/)
+and [RED](https://www.infoworld.com/article/3638693/the-red-method-a-new-strategy-for-monitoring-microservices.html)
 for determining which metrics to use and for what.
 
 1. The Utilization, Saturation and Errors (USE) Method is used for analysing the performance of the infrastructure

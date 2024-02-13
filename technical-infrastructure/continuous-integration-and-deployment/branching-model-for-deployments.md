@@ -64,8 +64,8 @@ This selects a different database address depending on the cluster the applicati
 The branching model is shared with CESSDA applications.
 See [deployment pipeline details]({% link technical-infrastructure/continuous-integration-and-deployment/deployment-pipeline-details.md %}).
 
-`master` is the integration branch, where all changes are deployed from.
-Other branches are merged into `master` when the changes are integrated.
-Only the master branch is deployed.
+`main` is the integration branch, where all changes are deployed from.
+Other branches are merged into `main` when the changes are integrated.
+Only the main branch is deployed.
 
-![Branching Model Diagram](../../images/branch-diagram.svg)
+![Branching Model Diagram](../../images/branch-diagram.png)
