@@ -21,12 +21,10 @@ that form the basis for CESSDA Quality Assurance are also included.
 
 Changes since previous version:
 
-* Added [Metadata Handling in CESSDA]({% link metadata/index.md %}) section
-* Added [CESSDA Content Management]({% link content-management/index.md %}) section which contains details
-  on how to apply for a Vocabulary Service Agency
-* Added a [Vocabulary Service Agency application form]({% link forms/cvs-agency.md %})
-* Added [Availability and Status page]({% link technical-infrastructure/observability/availability.md %})
-* Restructured contents to improve findability.
+* Updated [Metadata Handling in CESSDA]({% link metadata/index.md %}) section
+* Added Feedback Mechanism for the Guideline
+* Updated [Online Forms]({% link forms/index.md %}) section
+* Updated [Technical Infrastructure]({% link technical-infrastructure/index.md %}) section
 
 {% if site.development_status %}
   {% if site.jenkins_job %}
