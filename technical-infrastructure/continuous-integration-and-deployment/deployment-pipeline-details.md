@@ -56,14 +56,11 @@ When the tests pass, the Docker images are tagged as staging and are deployed to
 Re-tagging occurs to show that these images have been certified to function together and should be deployed together.
 
 ```groovy
-stage('Run Selenium Tests')
-{
-    steps
-    {
+stage('Run Selenium Tests') {
+    steps {
         build job: 'cessda.${app_name}.test', wait: false
     }
-    when
-    {
+    when {
         environment name: 'cluster', value: 'development-cluster'
     }
 }
