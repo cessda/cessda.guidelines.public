@@ -24,38 +24,30 @@ in particular.
 ### General requirements
 
 * Ensure that the content  is directly related to the current version of the product
-
 * Clearly state the version number of the documentation, which should match the current version of the product
-
 * Optionally add a date (month and year is sufficient)
-
 * State the license of the content of the documentation
     (use Creative Commons Attribution 4.0 International unless there is a very good reason not to)
-
 * Include a glossary and define any abbreviations and specialised terms.
 
 ### Specific requirements
 
 * API documentation
   * Use of Swagger is mandated.
-
 * {% include glossary.html entry="HCI" text="HCI" %} documentation
   * Exclude any system configuration options and items covered by the User manual;
   * Clarify any deviations from the CESSDA User Experience guide;
   * Model used (single page application, other);
   * Implementation details (libraries, frameworks etc).
-
 * Code modules (in the case of a microservice-based architecture module=container)
   * Name them;
   * Specify the purpose of each one;
   * Identify the code repository for each one;
   * Provide a high level architecture diagram.
-
 * Extension guide
   * Give one or more examples of how to extend modules to
       e.g. use a different protocol to communicate with external systems;
   * emit or ingest data in additional formats.
-
 * Source code documentation
   * Use de facto standard for chosen language, e.g: JavaDoc for Java;
   * Program flow: interaction between components. Diagram(s) preferred;

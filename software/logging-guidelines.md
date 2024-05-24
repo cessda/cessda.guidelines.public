@@ -6,9 +6,7 @@ nav_order: 170
 
 # {{ page.title }}
 
-## Guidelines
-
-CESSDA software components must implement *structured logging* format in JSON to makes it easier for querying and reading of logs.
+CESSDA software components must implement *structured logging* using JSON to make it easier to query and read logs.
 
 Software components must log each message in a single line of the stream to `stdout`.
 

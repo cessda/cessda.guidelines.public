@@ -1,5 +1,5 @@
 ---
-title: Documentation content management
+title: Documentation Content Management
 parent: Software Development Guidelines
 grand_parent: Software Development
 published: true

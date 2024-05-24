@@ -26,5 +26,5 @@ Before ownership can be transferred, the following must be done
 * The repository's orphaned status must be made clear in the README and its title has to carry the appropriate badge:
 
 ```markdown
- # Title ![unmaintained](https://img.shields.io/badge/repository-unmaintained-red.svg)
+# Repository Title ![unmaintained](https://img.shields.io/badge/repository-unmaintained-red.svg)
 ```
