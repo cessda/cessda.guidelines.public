@@ -13,41 +13,63 @@ See [Naming Conventions]({% link technical-infrastructure/naming-conventions.md 
 
 ## Overview
 
-The de facto build tool for Java Applications is Maven.
-A Jenkinsfile is used to automate the build process.
+CESSDA uses Java to build several of the components that make up our tools and services.
+Maven is used to provide dependency management and a build framework for these components.
 
-See also [Building Docker Images on Jenkins](building-docker-images-on-jenkins/index.html) for related information.
+> See also [Building Docker Images on Jenkins]({% link technical-infrastructure/continuous-integration-and-deployment/building-maven-projects-with-jenkins.md %}) for related information.
 
-The assumption is that Java and Maven are installed on the Jenkins system node.
-Alternatively the Jenkins subordinate container should be configured to run an image which has Java and Maven pre-installed.
+Jenkins agents do not provide a JDK or Maven. We recommend using Docker containers to provide a JDK and using
+the [Maven Wrapper](https://maven.apache.org/wrapper/index.html) to provide Maven itself.
+This document will assume that Docker and the Maven Wrapper are used.
 
 ## Adding the Build Jenkinsfile
 
 The Jenkinsfile must be added to the root of the repository.
-This is the only place that Jenkins will search for the file.
-A Jenkinsfile will always start with a pipeline object that encapsulates the entire job.
+
+> See [Adding the Build Jenkinsfile]({% link technical-infrastructure/continuous-integration-and-deployment/building-docker-images-on-jenkins/adding-the-build-jenkinsfile.md %})
+> for general information on how a typical Jenkinsfile looks like.
+
+## Configuring the Agent
+
 The first step is to define the agent to use for the build as shown below:
 
 ```groovy
 pipeline {
-    agent any
+    agent {
+        docker {
+            image 'openjdk:11'
+            reuseNode true
+        }
+    }
 }
 ```
 
-This makes it run with the Jenkins subordinate container configured which has
-Java and Maven already installed.
+This makes the build run inside a Docker container which has Java already installed.
 
-The next stage is building and running a Sonar scan on the application.
-To scan Maven projects in SonarQube the `pom.xml` file needs to have this snippet inserted in the `<build>` section.
-This allows the sonar plugin to be downloaded from Maven Central:
+### Using Eclipse Temurim JDKs
 
-```xml
-<plugin>
-  <groupId>org.sonarsource.scanner.maven</groupId>
-  <artifactId>sonar-maven-plugin</artifactId>
-  <version>3.6.0.1398</version>
-</plugin>
+If [Eclipse Temurin](https://hub.docker.com/_/eclipse-temurin) is used as a base image for Maven builds
+then `$HOME` needs to be set in the resulting container. Jenkins uses a non-root user to perform builds
+and the Temurim images use `/` as `$HOME` by default. This will cause Maven to fail as it will be unable
+to write to `/.m2`.
+
+To work around this, set `$HOME` to `$WORKSPACE_TMP` using the following snippet:
+
+```groovy
+pipeline {
+    environment {
+        HOME = "${WORKSPACE_TMP}"
+    }
+    agent {
+        docker {
+            image 'eclipse-temurin:21'
+            reuseNode true
+        }
+    }
+}
 ```
+
+## Building the Application
 
 The Jenkinsfile snippet to build and run SonarQube is shown below:
 
@@ -55,10 +77,34 @@ The Jenkinsfile snippet to build and run SonarQube is shown below:
 stage('Build Project and Run Sonar Scan') {
     steps {
         withMaven {
-            sh './mvnw clean install'
+            sh './mvnw clean verify'
         }
     }
 }
+```
+
+We use the `withMaven{}` step which configures Maven to use proxies for Maven Central, provides credentials for
+publishing to our internal Maven repository, and allows Jenkins to automatically discover and publish JUnit test reports.
+
+The command `sh './mvnw clean verify'` cleans any existing build output, builds the projects,
+runs unit and integration tests, and performs any analysis and verification of source code and build output.
+
+## Scanning using SonarQube
+
+To scan Maven projects in SonarQube the `pom.xml` file needs to have this snippet inserted in the `<build>` section.
+This allows the SonarQube Scanner plugin to be downloaded from Maven Central:
+
+```xml
+<plugin>
+  <groupId>org.sonarsource.scanner.maven</groupId>
+  <artifactId>sonar-maven-plugin</artifactId>
+  <version>plugin-version</version>
+</plugin>
+```
+
+The command `sh './mvnw sonar:sonar'` generates a report that is sent to the [SonarQube](https://sonarqube.cessda.eu) dashboard.
+
+```groovy
 stage('Run SonarQube Scan') {
     steps {
         withSonarQubeEnv('cessda-sonar') {
@@ -70,13 +116,9 @@ stage('Run SonarQube Scan') {
 }
 ```
 
-We use the `withMaven{}` step which configures Maven to use proxies for Maven Central, as well as credentials for our internal Maven repository.
-Additionally, Jenkins discovers JUnit test reports and automatically publishes them.
-
-The command `sh '.\mvnw clean install'` cleans any existing resources and builds the projects.
-The command `sh '.\mvnw sonar:sonar'` generates a report that is sent to the [SonarQube](https://sonarqube.cessda.eu) dashboard.
-
 The next stage gets the result of the SonarQube analysis.
+The timeout option specifies the maximum time to wait for the response of a service call.
+The pipeline will be aborted if the Quality Gate fails or if the timeout expires.
 
 ```groovy
 stage("Get Sonar Quality Gate") {
@@ -88,5 +130,5 @@ stage("Get Sonar Quality Gate") {
 }
 ```
 
-The timeout option specifies the maximum time to wait for the response of a service call.
-The pipeline will be aborted if the Quality Gate fails or if the timeout expires.
+These stages are separated so that cases of a failed analysis can be separated from
+an analysis failing a quality gate at a glance.

@@ -6,9 +6,7 @@ nav_order: 170
 
 # {{ page.title }}
 
-## Guidelines
-
-CESSDA software components must implement *structured logging* format in JSON to makes it easier for querying and reading of logs.
+CESSDA software components must implement *structured logging* using JSON to make it easier to query and read logs.
 
 Software components must log each message in a single line of the stream to `stdout`.
 
@@ -33,9 +31,11 @@ Parameterise logs when necessary for logs clean-up and allow for variables when 
 
 Contextualise log messages when necessary for easy log correlation. See example below.
 
+See [logging overview]({% link technical-infrastructure/observability/logging-overview.md %}) for additional background information.
+
 ## Rationale
 
-The intention of this guideline is to help Developers ensure that component logging:
+The intention of this guideline is to help developers ensure that component logging:
 
 - is consistent within an application
 - is consistent across CESSDA's product portfolio
@@ -55,8 +55,7 @@ Logging output from CESSDA application components is important and brings benefi
 Depending on the programming language, developers may choose any logging client or logging framework that suits them.
 It must be properly defined in each of the classes that performs logging.
 
-For example, the CESSDA Data Catalogue (CDC) harvester component (implemented in Java) uses Logback.
-An example from the CDC harvester component is shown below:
+For example, the [CESSDA Data Catalogue (CDC) Indexer](https://github.com/cessda/cessda.cdc.osmh-indexer.cmm/) (implemented in Java) uses [SLF4J](https://www.slf4j.org/) and [Logback](https://logback.qos.ch/). An example from the CDC indexer component is shown below:
 
 ```java
 @Slf4j
@@ -118,5 +117,3 @@ log.error("[{}] Failed to get StudyId [{}]: {}: {}",
 The message text explains the failure and includes all relevant information.
 The name of the repository, the Study ID, the code and optional message are logged.
 Finally, the exception is attached allowing for the full stack trace to be printed.
-
-See [logging overview]({% link technical-infrastructure/observability/logging-overview.md %}) for additional background information.

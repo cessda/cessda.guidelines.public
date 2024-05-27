@@ -1,6 +1,6 @@
 ---
 title: Documentation Tooling
-parent: Software Development Guidelines
+parent: Documentation Guidelines
 grand_parent: Software Development
 nav_order: 1804
 ---

@@ -1,10 +1,10 @@
 ---
-title: Documentation content management
-parent: Software Development Guidelines
-grand_parent: Software Development
+title: Documentation Content Management
+parent: Software Development
 published: true
-nav_order: 1804
+nav_order: 185
 ---
+
 # {{ page.title }}
 
 A Git repository is used to store, track changes to, build, test and deploy the user manual.
@@ -22,7 +22,7 @@ which is checked with HtmlProofer to make sure any image references and internal
 If all the checks pass, the pages are all deployed as a static website at
 `https://<product name>.cessda.eu/documentation/`.
 
-E.g. `https://datacatalogue.cessda.eu/documentation/`
+> For example: `https://datacatalogue.cessda.eu/documentation/`
 
 A more detailed (and more technical) explanation can be found in
 [documentation tooling]({% link software/documentation-guidelines/documentation-tooling.md %}).

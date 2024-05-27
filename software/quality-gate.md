@@ -6,6 +6,10 @@ nav_order: 130
 
 # {{ page.title }}
 
+CESSDA uses [SonarQube](https://sonarqube.cessda.eu) to automatically calculate metrics relating to software quality.
+These checks are performed on each pipeline build of the `main` branch of a source code repository.
+Passing the quality gate is a requirement for any [release]({% link software/releases.md %}).
+
 The following criteria define the CESSDA quality gate.
 
 - Code Test Coverage is at least 80.0%
@@ -18,6 +22,8 @@ The following criteria define the CESSDA quality gate.
 
 ### Maintainability
 
+Estimates the time needed to "clean" the code by refactoring technical debt and confusing code constructs.
+
 If the estimated time required to fix security and reliability issues is:
 
 - <=5% of the time that has already gone into the application, the rating is A
@@ -28,7 +34,7 @@ If the estimated time required to fix security and reliability issues is:
 
 ### Reliability
 
-How buggy is the code?
+Measures the count of suspected bugs in the code.
 
 - A = 0 Bugs
 - B = at least 1 Minor Bug
@@ -38,7 +44,7 @@ How buggy is the code?
 
 ### Security
 
-How secure is the code?
+Discovers common mistakes that can lead to security vulnerabilities.
 
 - A = 0 Vulnerabilities
 - B = at least 1 Minor Vulnerability
@@ -46,10 +52,7 @@ How secure is the code?
 - D = at least 1 Critical Vulnerability
 - E = at least 1 Blocker Vulnerability
 
-## Implementation
+## Further Reading
 
-CESSDA currently uses [SonarQube](https://sonarqube.cessda.eu) to automatically calculate these values and ratings.
-See [SonarQube metric definitions](https://sonarqube.cessda.eu/documentation/user-guide/metric-definitions/) for further details.
-
-Checks are performed on each pipeline build.
-Passing the quality gate is a requirement for any [release]({% link software/releases.md %}).
+See [SonarQube quality gates](https://sonarqube.cessda.eu/documentation/user-guide/quality-gates/) for an overview on quality gates.  
+See [SonarQube metric definitions](https://sonarqube.cessda.eu/documentation/user-guide/metric-definitions/) for further details on how the metrics are defined.
