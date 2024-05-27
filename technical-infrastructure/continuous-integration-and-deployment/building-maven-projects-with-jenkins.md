@@ -20,7 +20,7 @@ Maven is used to provide dependency management and a build framework for these c
 
 Jenkins agents do not provide a JDK or Maven. We recommend using Docker containers to provide a JDK and using
 the [Maven Wrapper](https://maven.apache.org/wrapper/index.html) to provide Maven itself.
-This document will assume that Docker and the Maven Wrapper is used.
+This document will assume that Docker and the Maven Wrapper are used.
 
 ## Adding the Build Jenkinsfile
 

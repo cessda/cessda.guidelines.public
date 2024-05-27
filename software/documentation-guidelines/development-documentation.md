@@ -1,6 +1,6 @@
 ---
-title: Development documentation
-parent: Software Development Guidelines
+title: Development Documentation
+parent: Documentation Guidelines
 grand_parent: Software Development
 published: true
 nav_order: 1803
@@ -12,7 +12,7 @@ nav_order: 1803
 Provide guidance for CESSDA Product Technical Contacts and developers of other CESSDA software,
 so they know what is expected of them with respect to producing technical documentation.
 
-It should be read in conjunction with the [CESSDA Technical Guidelines](https://docs.tech.cessda.eu) in general,
+It should be read in conjunction with the [CESSDA Technical Guidelines]({% link index.md %}) in general,
 and both the
 [Standard Git Repository Contents section]({% link technical-infrastructure/gcp-repository-standard-contents.md %})
 and the SML requirement

@@ -21,7 +21,7 @@ All software development should follow common best practices for the tools and l
 [EURISE Network Technical Reference, {{ site.technical-reference.version }}]({{ site.technical-reference.url }})
 must be followed.
 
-To assess the fitness for CESSDA purposes, software systems must be validated by static analysis tools. CESSDA uses SonarQube as its main static analysis tool, and code must the [quality gate]({% link software/quality-gate.md %}) in order for deployment to proceed.
+To assess the fitness for CESSDA purposes, software systems must be validated by static analysis tools. CESSDA uses SonarQube as its main static analysis tool, and code must pass the [quality gate]({% link software/quality-gate.md %}) in order for deployment to proceed.
 
 In certain cases, CESSDA can [archive source code repositories]({% link software/code-archiving.md %})
 of abandoned/finished software development efforts.
