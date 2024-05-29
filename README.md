@@ -83,6 +83,6 @@ It is possible to display a different text in-line though:
 By default, development builds are created. The release process is
 
 1. Update the Changelog
-1. Change `development_status` to `false` in `_config.yml` and double-check the `version`
-1. Build & release the outcome
-1. Increase the `version` in `_config.yml` and reset `development_status` to `true`
+2. Change `development_status` to `false` in `_config.yml` and double-check the `version`
+3. Build & release the outcome
+4. Increase the `version` in `_config.yml` and reset `development_status` to `true`
