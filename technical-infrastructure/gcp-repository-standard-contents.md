@@ -15,8 +15,8 @@ See [Naming Conventions]({% link technical-infrastructure/naming-conventions.md 
 ## Overview
 
 Unless otherwise stated, see [Software requirements]({% link software/requirements.md %})
-for links to examples of good practice for the following files,
-and/or the [CDC Indexer](https://github.com/cessda/cessda.cdc.osmh-indexer.cmm) repository.
+and/or the [CDC Indexer](https://github.com/cessda/cessda.cdc.osmh-indexer.cmm) repository
+for links to examples of good practice for the following files.
 
 ### `.gitignore`
 
@@ -56,6 +56,6 @@ A LICENSE file must be present in the repository root that includes the full lic
 
 ### README.md
 
-The README file should be completed by Developers.
+The README file should be written by the developers and provide an overview of the contents of the repository.
 Provide a template for the development team to customise - it should contain badges that indicate the build status (via Jenkins)
 and the code quality (via SonarQube).

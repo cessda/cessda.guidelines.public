@@ -43,4 +43,4 @@ CESSDA uses four types of logging levels:
   services starting and stopping, significant user-triggered processes.
   This log level is disabled on production systems.
 - **WARN:** Any condition that, while not an error in itself, may indicate that the system is running sub-optimally.
-- **ERROR:** A condition that indicates something has gone wrong with the system.
+- **ERROR:** A condition that indicates something has gone wrong with the system, representing either a service failure or the inability to carry out a requested task.

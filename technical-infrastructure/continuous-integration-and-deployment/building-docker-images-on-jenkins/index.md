@@ -16,11 +16,3 @@ See [Naming Conventions]({% link technical-infrastructure/naming-conventions.md 
 
 To build and run applications on the CESSDA GCP environment, Docker containers must be created via Jenkins.
 This automation ensures that all applications are produced with common naming and deployment conventions.
-
-## For Developers
-
-See [Adding the Build Jenkinsfile](adding-the-build-jenkinsfile.html)
-
-## For Platform team
-
-See [Adding the Deployment Jenkinsfile](adding-the-deployment-jenkinsfile.html)

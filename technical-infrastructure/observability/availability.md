@@ -1,5 +1,5 @@
 ---
-title: Availability and status
+title: Availability and Status
 parent: Observability
 has_children: true
 grand_parent: Technical Infrastructure

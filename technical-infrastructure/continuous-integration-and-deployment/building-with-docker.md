@@ -21,7 +21,7 @@ Jenkins offers Docker integration so that tools can be used in a pipeline as if 
 Docker containers are generally used on a per step basis. This is because typically we use the container to either build
 or test our application whilst still using the base JNLP image to create docker images or creating deployments.
 
-To use a Docker image in a step we use an agent block to define the container.
+To use a Docker image as part of the build process we use an agent block to define the container.
 This is done at the start of the stage block:
 
 ```groovy

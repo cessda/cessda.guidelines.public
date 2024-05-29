@@ -18,17 +18,16 @@ Before doing anything, you must **log in to GitHub using an account that has adm
 
 ### First decide which GitHub organisation to put the repository in
 
-* cessda - use for public repositories (the vast majority of repositories are public)
-
-* CESSDA-MO - use for private repositories (relating to things only the MO-IT teams needs to deal with)
+* cessda - use for public repositories and repositories shared within the CESSDA Consortium (the vast majority of repositories are public, but deployment repositories are not)
+* CESSDA-MO - use for private repositories that are not shared within the CESSDA Consortium (relating to things only the MO-IT teams needs to deal with)
 
 ### Clone the template
 
-CESSDA code repository template (cessda/cessda.code-repo.template - private)
+CESSDA code repository template (<https://github.com/cessda/cessda.code-repo.template> - private)
 
 ### Edit the boilerplate files
 
-* CHANGELOG.mg
-* CITATION.cif
-* CONTRIBUTORS.md
-* README.md
+* `CHANGELOG.md`
+* `CITATION.cif`
+* `CONTRIBUTORS.md`
+* `README.md`

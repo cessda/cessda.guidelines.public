@@ -11,12 +11,12 @@ All CESSDA tools and services are exposed to the public internet, but not all of
 Previously we used HAProxy to provide basic authentication, however this encountered issues when used with applications that
 authenticate themselves (such as CVS2).
 
-This document details the process of setting up *oauth2-proxy*,
-a tool that delegates the authentication to an oauth2 server and stores the session in a cookie.
+This document details the process of setting up `oauth2-proxy`,
+a tool that delegates the authentication to an OAuth 2 server and stores the session in a cookie.
 
 ## Setup
 
-Like all other deployed components, oauth2-proxy is deployed using a Helm chart.
+Like all other deployed components, `oauth2-proxy` is deployed using a Helm chart.
 
 A cookie secret must be generated for each deployment. This is done at the chart level using Helm.
 
@@ -41,7 +41,7 @@ Retrieve the secret from the credentials tab (see below):
 
 ![Client credential tab](../../images/keycloak-client-secret.png)
 
-### Configure oauth2-proxy
+### Configure `oauth2-proxy`
 
 - In the manifest, add the client id and secret
   - `--client-id=example-oidc-client`

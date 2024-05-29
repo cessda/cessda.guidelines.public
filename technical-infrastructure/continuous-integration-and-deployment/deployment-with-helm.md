@@ -14,13 +14,13 @@ See [Naming Conventions]({% link technical-infrastructure/naming-conventions.md 
 ## An Overview
 
 CESSDA uses Kubernetes to deploy and orchestrate containers running on Google
-Cloud. Previously we used scripts to manage deployments,
+Cloud. Previously we used manually written scripts to manage deployments,
 now we use [Helm charts](https://helm.sh/docs/topics/charts/).
 
 ### Drawbacks with deployment scripts
 
 The scripts substituted variables into template Kubernetes manifests, then
-applied them with *kubectl apply*. While an easy approach to implement, issues
+applied them with `kubectl apply`. While an easy approach to implement, issues
 arose when applications had multiple components as it required large amounts of
 copy and pasting and deployment couldn’t be validated locally.
 This resulted in large time investments debugging these templates.
@@ -40,11 +40,10 @@ Charts for individual components are stored in the *charts* directory of the mai
 These charts are named directly after the components (i.e. es, Searchkit).
 This allows charts to be developed independently so that components can be deployed individually.
 
-Root Chart
-
-* Component 1
-* Component 2
-* Etc.
+* Root Chart
+  * Component 1
+  * Component 2
+  * Etc.
 
 ## How CESSDA charts are deployed
 
@@ -56,12 +55,12 @@ automatically roll back to a known good state.
 
 All components of the chart are deployed together.
 Optional components can be enabled or disabled using a variable specified
-in the *values.yaml* file (typically of the form *enabled: true*).
+in the `values.yaml` file (typically of the form `enabled: true`).
 
-Before deployment, Kubernetes manifests are validated using *kube-score* which
+Before deployment, Kubernetes manifests are validated using `kube-score` which
 checks that they follow best practices.
 
 An existing  {% include glossary.html entry="(product)" text="product" %}
 deployment can be rolled back to a specified previous version, using a Jenkins
 job `cessda.xxx.rollback` (where 'xxx' is replaced with the
-{% include glossary.html entry="(product)" text="product" %} code, e.g. cdc, eqb)
+{% include glossary.html entry="(product)" text="product" %} code, e.g. `cdc`, `eqb`)
