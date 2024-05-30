@@ -26,14 +26,10 @@ Changes since previous version:
 * Updated [Online Forms]({% link forms/index.md %}) section
 * Updated [Technical Infrastructure]({% link technical-infrastructure/index.md %}) section
 
-{% if site.development_status %}
-  {% if site.jenkins_job %}
-  Built by Jenkins: [{{site.jenkins_job}}]({{site.jenkins_job}})
-  {% else %}
-  **This is a development build!**
-  {% endif %}
+{% if jekyll.environment == "development" %}
+**This is a development build!**
 {% else %}
-This is version {{ site.version }}, released on {{ site.time | date: "%d %B %Y" }}.
+This is version {{ jekyll.environment }}, built on {{ site.time | date: "%d %B %Y" }}.
 {% endif %}
 
 ![CC-BY-4.0](images/cc-by.svg "CC-BY-4.0")
