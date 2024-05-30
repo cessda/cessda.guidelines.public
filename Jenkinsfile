@@ -48,7 +48,7 @@ pipeline {
 				}
 			}
 			environment {
-				JEKYLL_ENV = "${GIT_COMMIT.substring(0,5)}"
+				JEKYLL_ENV = "${GIT_COMMIT}"
 			}
 			steps {
 				sh 'jekyll build'
