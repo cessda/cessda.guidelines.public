@@ -29,7 +29,7 @@ Changes since previous version:
 {% if jekyll.environment == "development" %}
 **This is a development build!**
 {% else %}
-Built from commit [{{ jekyll.environment | truncate: 6, "" }}](https://github.com/cessda/cessda.guidelines.public/commit/{{jekyll.environment}}) on {{ site.time | date: "%d %B %Y" }}.
+Built from commit [{{ jekyll.environment | truncate: 7, "" }}](https://github.com/cessda/cessda.guidelines.public/commit/{{jekyll.environment}}) on {{ site.time | date: "%d %B %Y" }}.
 {% endif %}
 
 ![CC-BY-4.0](images/cc-by.svg "CC-BY-4.0")
