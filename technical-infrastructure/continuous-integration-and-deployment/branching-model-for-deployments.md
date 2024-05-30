@@ -29,17 +29,17 @@ This also allows changes to be made to integration branches in the same way as c
 Some settings are per-environment (i.e. what cluster to deploy to, the IP address of databases, etc.).
 These need to be set in a way that is visible.
 
-Jenkinsfiles use Groovy as the programming language to control builds.
+Jenkinsfiles use [Groovy](https://groovy-lang.org/) as the programming language to control builds.
 There are two models to building pipelines in Jenkinsfiles,
 [declarative pipelines](https://www.jenkins.io/doc/book/pipeline/syntax/#declarative-pipeline) and
 [scripted pipelines](https://www.jenkins.io/doc/book/pipeline/syntax/#scripted-pipeline).
 
-Declarative pipelines don't offer much flexibility, which forces a common shape for most pipelines increasing readability and understandability.
+Declarative pipelines constrain the flexibility of the form of the Jenkinsfile, which forces a common shape for most pipelines increasing readability and understandability.
 
 Sometimes when more complex behaviour is needed scripted pipelines are necessary.
 The full scripted pipeline syntax can be used in a declarative pipeline with a `script {}` block.
 This isolates code that is dynamic and may have more complex logic and makes it easily findable.
-An example is shown here:
+For example, this code snippet selects a different database address depending on the cluster the application is deployed on.
 
 ```groovy
 stage('Deploy Application') {
@@ -56,8 +56,6 @@ stage('Deploy Application') {
     }
 }
 ```
-
-This selects a different database address depending on the cluster the application is deployed on.
 
 ## Branching Model
 

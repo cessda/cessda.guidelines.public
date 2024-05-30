@@ -46,11 +46,11 @@ pipeline {
 
 This makes the build run inside a Docker container which has Java already installed.
 
-### Using Eclipse Temurim JDKs
+### Using Eclipse Temurin JDKs
 
 If [Eclipse Temurin](https://hub.docker.com/_/eclipse-temurin) is used as a base image for Maven builds
 then `$HOME` needs to be set in the resulting container. Jenkins uses a non-root user to perform builds
-and the Temurim images use `/` as `$HOME` by default. This will cause Maven to fail as it will be unable
+and the Temurin images use `/` as `$HOME` by default. This will cause Maven to fail as it will be unable
 to write to `/.m2`.
 
 To work around this, set `$HOME` to `$WORKSPACE_TMP` using the following snippet:

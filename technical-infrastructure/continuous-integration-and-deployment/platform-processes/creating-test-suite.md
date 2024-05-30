@@ -14,25 +14,18 @@ See [Naming Conventions]({% link technical-infrastructure/naming-conventions.md 
 
 ## Overview
 
-The standard CESSDA  {% include glossary.html entry="(product)" text="product" %} test suite is made up of:
+The standard CESSDA {% include glossary.html entry="(product)" text="product" %} test suite is made up of:
 
 - [Selenium testing](https://www.selenium.dev/)
 - [SonarQube quality gate](https://www.sonarsource.com/products/sonarqube/)
 
 The tests are performed as part of the build process. If the tests pass, the Docker image is created and pushed to the Docker image registry.
 
-- [ShiftLeft SAST scan](https://www.shiftleft.io/scan/)
-
-The Static Analysis (SAST) scan runs against the newly built Docker image.
-The results are shown in the Jenkins job console output (see example below):
-
-![Shiftleft Scan Results](../../../images/shiftleft-scan-results.png)
-
 ## Software testing Pipeline
 
 ![Testing Suite Pipeline](../../../images/testing-suite-pipeline.png)
 
-### Testing Suite Jenkinsfile template (cessda.product.test)
+### Testing Suite Jenkinsfile template (`cessda.product.test`)
 
 See [Template Jenkinsfile]({% link technical-infrastructure/template-jenkinsfile.md %}) or
 [Template Jenkinsfile for JDK11 Maven projects]({% link technical-infrastructure/template-jenkinsfile-for-jdk11-maven-projects.md %})
