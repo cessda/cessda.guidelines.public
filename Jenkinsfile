@@ -21,7 +21,7 @@ pipeline {
 	environment {
 		productName = 'guidelines'
 		componentName = 'public'
-		imageTag = "${docker_repo}/${productName}-${componentName}:${env.BRANCH_NAME}-${env.BUILD_NUMBER}"
+		imageTag = "${docker_repo}/${productName}-${componentName}:${GIT_COMMIT}"
 		scannerHome = tool 'sonar-scanner'
 	}
 
@@ -46,6 +46,9 @@ pipeline {
 					filename 'jekyll.Dockerfile'
 					reuseNode true
 				}
+			}
+			environment {
+				JEKYLL_ENV = "${GIT_COMMIT.substring(0,5)}"
 			}
 			steps {
 				sh 'jekyll build'
@@ -79,19 +82,18 @@ pipeline {
 			steps {
 				sh "docker build -t ${imageTag} -f nginx.Dockerfile ."
 			}
-			when { branch 'main' }
 		}
 		stage('Push Docker Container') {
 			steps {
 				sh "gcloud auth configure-docker"
 				sh "docker push ${imageTag}"
-				sh "gcloud container images add-tag ${imageTag} ${docker_repo}/${productName}-${componentName}:${env.BRANCH_NAME}-latest"
+				sh "gcloud container images add-tag ${imageTag} ${docker_repo}/${productName}-${componentName}:latest"
 			}
 			when { branch 'main' }
 		}
 		stage('Deploy Guidelines') {
 			steps {
-				build job: 'cessda.guidelines.deploy/main', parameters: [string(name: 'imageTag', value: "${env.BRANCH_NAME}-${env.BUILD_NUMBER}")]
+				build job: 'cessda.guidelines.deploy/main', parameters: [string(name: 'imageTag', value: "${GIT_COMMIT}")]
 			}
 			when { branch 'main' }
 		}
