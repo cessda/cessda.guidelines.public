@@ -64,6 +64,11 @@ pipeline {
 			steps {
 				sh 'bundle exec rake htmlproofer'
 			}
+			post {
+				success {
+					archiveArtifacts '_site/**/*'
+				}
+			}
 		}
 		stage('Run SonarQube Scan') {
 			steps{
