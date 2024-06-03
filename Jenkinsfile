@@ -21,7 +21,7 @@ pipeline {
 	environment {
 		productName = 'guidelines'
 		componentName = 'public'
-		imageTag = "${docker_repo}/${productName}-${componentName}:${GIT_COMMIT}"
+		imageTag = "${DOCKER_ARTIFACT_REGISTRY}/${productName}-${componentName}:${GIT_COMMIT}"
 		scannerHome = tool 'sonar-scanner'
 	}
 
@@ -73,7 +73,7 @@ pipeline {
 		stage('Run SonarQube Scan') {
 			steps{
 				withSonarQubeEnv('cessda-sonar') {
-					nodejs('node-14') {
+					nodejs('node-18') {
 						sh "${scannerHome}/bin/sonar-scanner"
 					}
 				}
@@ -90,15 +90,15 @@ pipeline {
 		}
 		stage('Push Docker Container') {
 			steps {
-				sh "gcloud auth configure-docker"
+				sh "gcloud auth configure-docker ${ARTIFACT_REGISTRY_HOST}"
 				sh "docker push ${imageTag}"
-				sh "gcloud container images add-tag ${imageTag} ${docker_repo}/${productName}-${componentName}:latest"
+				sh "gcloud artifacts docker tags add ${imageTag} ${DOCKER_ARTIFACT_REGISTRY}/${productName}-${componentName}:latest"
 			}
 			when { branch 'main' }
 		}
 		stage('Deploy Guidelines') {
 			steps {
-				build job: 'cessda.guidelines.deploy/main', parameters: [string(name: 'imageTag', value: "${GIT_COMMIT}")]
+				build job: 'cessda.guidelines.deploy/main', parameters: [string(name: 'imageTag', value: "${GIT_COMMIT}")], wait: false
 			}
 			when { branch 'main' }
 		}
