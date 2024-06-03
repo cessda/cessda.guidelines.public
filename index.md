@@ -19,21 +19,12 @@ This includes information about the underlying architectural principles.
 The [Software Maturity Levels]({% link sml/index.md %})
 that form the basis for CESSDA Quality Assurance are also included.
 
-Changes since previous version:
+Recent changes to the guidelines can be found at [the detailed changelog](https://github.com/cessda/cessda.guidelines.public/commits/{{jekyll.environment}}).
 
-* Updated [Metadata Handling in CESSDA]({% link metadata/index.md %}) section
-* Added Feedback Mechanism for the Guideline
-* Updated [Online Forms]({% link forms/index.md %}) section
-* Updated [Technical Infrastructure]({% link technical-infrastructure/index.md %}) section
-
-{% if site.development_status %}
-  {% if site.jenkins_job %}
-  Built by Jenkins: [{{site.jenkins_job}}]({{site.jenkins_job}})
-  {% else %}
-  **This is a development build!**
-  {% endif %}
+{% if jekyll.environment == "development" %}
+**This is a development build!**
 {% else %}
-This is version {{ site.version }}, released on {{ site.time | date: "%d %B %Y" }}.
+Built from commit [{{ jekyll.environment | truncate: 7, "" }}](https://github.com/cessda/cessda.guidelines.public/commit/{{jekyll.environment}}) on {{ site.time | date: "%d %B %Y" }}.
 {% endif %}
 
 ![CC-BY-4.0](images/cc-by.svg "CC-BY-4.0")
