@@ -19,7 +19,7 @@ This includes information about the underlying architectural principles.
 The [Software Maturity Levels]({% link sml/index.md %})
 that form the basis for CESSDA Quality Assurance are also included.
 
-Recent changes to the guidelines can be found at [the detailed changelog](https://github.com/cessda/cessda.guidelines.public/commits/main/{{jekyll.environment}}).
+Recent changes to the guidelines can be found at [the detailed changelog](https://github.com/cessda/cessda.guidelines.public/commits/{{jekyll.environment}}).
 
 {% if jekyll.environment == "development" %}
 **This is a development build!**
