@@ -17,26 +17,27 @@ bundle install
 bundle exec jekyll serve --config _config.yml,_devsettings.yml
 ```
 
-### Menu structure
+## Menu structure
 
 The page order and navigation structure is defined manually using
 the [theme's options](https://just-the-docs.github.io/just-the-docs/docs/navigation-structure/).
+A guide to the structure can be found at [document-navigation-structure.md](./document-navigation-structure.md).
 
-## Development
+## Writing Style
 
 The documentation is written using Markdown files with Jekyll headers.
 Coding follows the [Google Style Guide for Markdown](https://google.github.io/styleguide/docguide/style.html),
 including ATX style headers and a maximal line lengths of 140 characters.
 We follow British spelling with -ise, check e.g. with `aspell --lang=en_GB-ise`.
 
-Style Guide compliance is checked with [markdownlint](https://github.com/markdownlint/markdownlint) by running
+Style Guide compliance is checked with [`markdownlint`](https://github.com/markdownlint/markdownlint) by running
 
 ```shell
-bundle exec rake lint
+bundle exec mdl --git-recurse .
 ```
 
 HTML output is checked with [`html-proofer`](https://github.com/gjtorikian/html-proofer),
-which also finds any broken links
+which also finds any broken internal and external links
 
 ```shell
 bundle exec rake htmlproofer
@@ -78,11 +79,13 @@ It is possible to display a different text in-line though:
 {% include glossary.html entry="RI" text="Research Infrastructure" %}
 ```
 
-### Releases
+## Release Process
 
-By default, development builds are created. The release process is
+The documentation is deployed using a continuous deployment process.
 
-1. Update the Changelog
-2. Change `development_status` to `false` in `_config.yml` and double-check the `version`
-3. Build & release the outcome
-4. Increase the `version` in `_config.yml` and reset `development_status` to `true`
+1. The source markdown is converted into HTML and packaged into a Docker container
+2. The Docker container is deployed to the staging environment
+3. Tests are run against the staging deployment
+4. If the tests pass, the documentation is deployed to the production environment
+
+The main branch of this repository should match what is deployed to <https://docs.tech.cessda.eu/>.
