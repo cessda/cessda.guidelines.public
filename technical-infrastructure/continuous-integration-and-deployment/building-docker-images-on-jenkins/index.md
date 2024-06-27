@@ -3,7 +3,6 @@ title: Building Docker Images on Jenkins
 parent: Continuous Integration and Deployment
 grand_parent: Technical Infrastructure
 has_children: true
-nav_order: 3307
 ---
 
 # {{ page.title }}
