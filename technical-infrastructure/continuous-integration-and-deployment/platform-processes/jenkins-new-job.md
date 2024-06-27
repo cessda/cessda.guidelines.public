@@ -3,7 +3,6 @@ title: Create a New Jenkins Job
 parent: Platform Processes
 grand_parent: Continuous Integration and Deployment
 published: true
-nav_order: 3703
 ---
 
 # {{ page.title }}

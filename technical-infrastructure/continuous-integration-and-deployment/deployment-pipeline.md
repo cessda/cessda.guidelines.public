@@ -1,8 +1,7 @@
 ---
-title: Deployment Pipeline Details
+title: Deployment Pipeline
 parent: Continuous Integration and Deployment
 grand_parent: Technical Infrastructure
-nav_order: 3303
 ---
 
 # {{ page.title }}
@@ -12,6 +11,10 @@ nav_order: 3303
 See [Naming Conventions]({% link technical-infrastructure/naming-conventions.md %}).
 
 ## Overview
+
+The diagram shows the deployment pipeline in CESSDA's Continuous Integration and delivery process, from the moment a developer commits code changes to the deployment of the {% include glossary.html entry="(product)" text="product" %} to production.
+
+![Deployment pipeline](../../images/deployment-pipeline.png)
 
 Each  {% include glossary.html entry="(component)" text="component" %} is built by Jenkins. The build is controlled by a
 [Jenkinsfile](https://jenkins.io/doc/book/pipeline/getting-started/#defining-a-pipeline-in-scm) located at the root of the

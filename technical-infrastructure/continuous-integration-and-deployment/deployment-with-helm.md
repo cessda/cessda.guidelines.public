@@ -2,7 +2,6 @@
 title: Using Helm to deploy products
 parent: Continuous Integration and Deployment
 grand_parent: Technical Infrastructure
-nav_order: 3305
 ---
 
 # {{ page.title }}
@@ -25,7 +24,7 @@ arose when applications had multiple components as it required large amounts of
 copy and pasting and deployment couldn’t be validated locally.
 This resulted in large time investments debugging these templates.
 
-### Why wasn't Helm adopted sooner
+### Why wasn't Helm adopted sooner?
 
 Before Helm 3, a server-side  {% include glossary.html entry="(component)" text="component" %} called Tiller was needed to communicate
 with the cluster. Many commentators said that there were security flaws with this approach.

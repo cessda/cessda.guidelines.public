@@ -1,9 +1,7 @@
 ---
 title: Create a GitHub Repository
-parent: Platform Processes
-grand_parent: Continuous Integration and Deployment
+parent: Software Development
 published: true
-nav_order: 3701
 ---
 
 # {{ page.title }}
