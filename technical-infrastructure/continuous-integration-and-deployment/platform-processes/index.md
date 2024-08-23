@@ -4,7 +4,6 @@ parent: Continuous Integration and Deployment
 grand_parent: Technical Infrastructure
 has_children: true
 published: true
-nav_order: 370
 ---
 
 # {{ page.title }}
@@ -20,8 +19,7 @@ See [Updating CI Tools]({% link technical-infrastructure/continuous-integration-
 ## Create repositories
 
 - {% include glossary.html entry="(application code)" text="application code" %}.
-        See ['Create a GitHub Repository']({% link technical-infrastructure/continuous-integration-and-deployment/platform-processes/github-new-repo.md %})
-        for details.
+  - See ['Create a GitHub Repository']({% link software/new-github-repository.md %}) for details.
 - Deployment, via Helm.
   - See the CDC Deployment (`cessda/cessda.cdc.deploy` - private) repository for a working example.
 - Reverse Proxy.

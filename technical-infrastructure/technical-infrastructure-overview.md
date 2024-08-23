@@ -92,8 +92,7 @@ The Docker registry is used as local storage to enable the 'build once, deploy m
 
 Further reading
 
-- [Deployment Pipeline overview]({% link technical-infrastructure/continuous-integration-and-deployment/deployment-pipeline-overview.md %})
-- [Deployment Pipeline details]({% link technical-infrastructure/continuous-integration-and-deployment/deployment-pipeline-details.md %}).
+- [Deployment Pipeline]({% link technical-infrastructure/continuous-integration-and-deployment/deployment-pipeline.md %})
 
 ### Jenkinsfile examples
 

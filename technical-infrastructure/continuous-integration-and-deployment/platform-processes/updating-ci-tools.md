@@ -2,7 +2,6 @@
 title: Updating CI Tools
 parent: Platform Processes
 grand_parent: Continuous Integration and Deployment
-nav_order: 3702
 ---
 
 # {{ page.title }}

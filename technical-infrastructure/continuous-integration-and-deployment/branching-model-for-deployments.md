@@ -2,7 +2,6 @@
 title: The CESSDA Branching Model for Deployments
 parent: Continuous Integration and Deployment
 grand_parent: Technical Infrastructure
-nav_order: 3304
 ---
 
 # {{ page.title }}
@@ -60,7 +59,7 @@ stage('Deploy Application') {
 ## Branching Model
 
 The branching model is shared with CESSDA applications.
-See [deployment pipeline details]({% link technical-infrastructure/continuous-integration-and-deployment/deployment-pipeline-details.md %}).
+See [deployment pipeline details]({% link technical-infrastructure/continuous-integration-and-deployment/deployment-pipeline.md %}).
 
 `main` is the integration branch, where all changes are deployed from.
 Other branches are merged into `main` when the changes are integrated.
