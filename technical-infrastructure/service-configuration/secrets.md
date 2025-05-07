@@ -15,7 +15,7 @@ See [Naming Conventions]({% link technical-infrastructure/naming-conventions.md 
 
 Secrets are information that should not be public. These include certificates, credentials, etc.
 Secrets must not be stored in source code repositories, because SCMs such as Git
-store a complete copy of the the repositories history.
+store a complete copy of the repository's history.
 As such, any secrets committed to a Git repository should be considered undeletable.
 
 Secrets should be managed by external utilities, and be inserted into deployments as part of the CI/CD pipeline.
