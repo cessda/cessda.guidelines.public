@@ -80,7 +80,7 @@ production-ready by them. Interestingly, both RRLs and TRLs were devised
 by and are widely used by NASA.
 
 [2]: https://fitsm.itemo.org/fitsm
-[3]: https://wiki.eosc-hub.eu/display/EOSC/Service+Maturity+Classification
+[3]: https://web.archive.org/web/20220121063627/https://wiki.eosc-hub.eu/display/EOSC/Service+Maturity+Classification
 [4]: https://ec.europa.eu/research/participants/data/ref/h2020/other/wp/2016-2017/annexes/h2020-wp1617-annex-ga_en.pdf
 
 Table 1 shows the correspondence between the various levels in the RRL
