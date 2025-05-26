@@ -10,7 +10,7 @@ CESSDA requires its tools and services to be of sufficient quality for sustainab
 
 The quality and acceptability criteria for CESSDA tools and services are defined by the
 [CESSDA Software Maturity Levels]({% link sml/index.md %})
-and the [EOSC Technology Readiness Levels (TRL)](https://wiki.eosc-hub.eu/display/EOSC/Service+Maturity+Classification).
+and the [EOSC Technology Readiness Levels (TRL)](https://web.archive.org/web/20220121063627/https://wiki.eosc-hub.eu/display/EOSC/Service+Maturity+Classification).
 
 For a software system to be operated by CESSDA as a **TRL-8 production service**, the following criteria must be met:
 
