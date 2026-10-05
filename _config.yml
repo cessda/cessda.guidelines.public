@@ -5,6 +5,7 @@ title: CESSDA Technical Guidelines
 baseurl: /
 version: '1.5.0'
 development_status: false
+matomo_host: 'https://analytics.cessda.eu/'
 matomo_siteid: '5'
 
 # Theme
