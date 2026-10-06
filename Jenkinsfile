@@ -25,7 +25,9 @@ pipeline {
 		scannerHome = tool 'sonar-scanner'
 	}
 
-	agent any
+	agent {
+		label 'jnlp-himem'
+	}
 
 	stages {
 		// Compiles documentation
